@@ -182,6 +182,7 @@ add('CRM contact updates are deduplicated', async () => { const email = 'HUGO_TE
 add('campaign list works', () => assert.ok(Array.isArray(campaigns.list())));
 
 add('reasoner works without local AI', async () => { const r = await reasoner.reason('што е транспорт'); assert.ok(r.provider === 'local-rules' || r.provider === 'local-model'); });
+add('reasoner cleans think-only model output', () => { assert.equal(reasoner.cleanModelText('<think>internal</think>Здраво'), 'Здраво'); assert.equal(reasoner.cleanModelText('<think>internal</think>', 'fallback'), 'fallback'); });
 add('reasoner routes a weather query', () => assert.equal(reasoner.routeIntent('време во Скопје', { limit: 1 })[0].tool, 'current_weather'));
 add('planner creates steps', () => { const p = planner.decompose('запомни дека HUGO_TEST_PLAN'); assert.ok(p.steps.length >= 1); });
 add('planner picks executable tools', () => { const p = planner.decompose('цена на BTC'); const step = p.steps.find((x) => x.kind === 'tool'); assert.ok(step); assert.equal(step.action, 'coin_price'); });

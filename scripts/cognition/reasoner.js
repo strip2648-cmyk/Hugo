@@ -85,6 +85,10 @@ function executableTools() {
   } catch {}
   return tools;
 }
+function cleanModelText(value, fallback = '') {
+  const cleaned = String(value || '').replace(/<think>[\s\S]*?<\/think>/gi, '').trim();
+  return cleaned || fallback;
+}
 function modelEndpoint(endpoint) {
   const raw = String(endpoint || '').trim().replace(/\/$/, '');
   if (!raw) return '';
@@ -95,19 +99,27 @@ function ollamaEndpoint(endpoint) {
   const raw = String(endpoint || process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || 'http://127.0.0.1:11434').trim().replace(/\/$/, '');
   return /\/api\/generate$/i.test(raw) ? raw : raw + '/api/generate';
 }
+function ollamaChatEndpoint(endpoint) {
+  const raw = String(endpoint || process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || 'http://127.0.0.1:11434').trim().replace(/\/$/, '');
+  if (/\/api\/chat$/i.test(raw)) return raw;
+  if (/\/api\/generate$/i.test(raw)) return raw.replace(/\/api\/generate$/i, '/api/chat');
+  return raw + '/api/chat';
+}
 function isOllamaEndpoint(endpoint) {
   const raw = String(endpoint || '').trim().replace(/\/$/, '');
-  return /(?:localhost|127\.0\.0\.1):11434(?:\/api(?:\/generate)?)?$/i.test(raw) || /\/api(?:\/generate)?$/i.test(raw);
+  return /(?:localhost|127\.0\.0\.1):11434(?:\/api(?:\/(?:generate|chat))?)?$/i.test(raw) || /\/api(?:\/(?:generate|chat))?$/i.test(raw);
 }
 async function callOllama(endpoint, options = {}, payload) {
   const system = options.system || '\u0422\u0438 \u0441\u0438 HUGO. \u041e\u0434\u0433\u043e\u0432\u0430\u0440\u0430\u0458 \u043a\u0440\u0430\u0442\u043a\u043e, \u0442\u043e\u0447\u043d\u043e \u0438 \u043d\u0430 \u043c\u0430\u043a\u0435\u0434\u043e\u043d\u0441\u043a\u0438. \u0410\u043a\u043e \u043d\u0435 \u0437\u043d\u0430\u0435\u0448, \u043a\u0430\u0436\u0438 \u0434\u0435\u043a\u0430 \u043d\u0435 \u0437\u043d\u0430\u0435\u0448.';
-  const response = await fetch(ollamaEndpoint(endpoint), {
+  const response = await fetch(ollamaChatEndpoint(endpoint), {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
       model: options.model || process.env[config.cognition.reasoning.model_env] || process.env.OLLAMA_MODEL || config.cognition.reasoning.model || 'llama3.2',
-      system,
-      prompt: JSON.stringify({ task: payload.problem, memory: payload.memory, context: payload.context, route: payload.analysis }),
+      messages: [
+        { role: 'system', content: system },
+        { role: 'user', content: JSON.stringify({ task: payload.problem, memory: payload.memory, context: payload.context, route: payload.analysis }) },
+      ],
       stream: false,
       options: { temperature: config.cognition.reasoning.temperature },
     }),
@@ -115,21 +127,31 @@ async function callOllama(endpoint, options = {}, payload) {
   });
   if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
   const data = await response.json();
-  return data.response || '';
+  return data.message?.content || data.response || '';
+}
+function toolSchema(params = {}) {
+  const properties = {};
+  for (const [name, type] of Object.entries(params)) {
+    const value = String(type || 'string');
+    properties[name] = { type: value.includes('number') ? 'number' : value.includes('boolean') ? 'boolean' : value.includes('object') ? 'object' : 'string' };
+  }
+  return { type: 'object', properties, additionalProperties: true };
+}
+function nativeTools(catalog) {
+  return catalog.map((tool) => ({ type: 'function', function: { name: tool.id, description: tool.description, parameters: toolSchema(tool.params) } }));
 }
 async function routeWithOllama(problem, options = {}) {
   const endpoint = options.endpoint || process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || process.env[config.cognition.reasoning.endpoint_env];
   if (!endpoint || !isOllamaEndpoint(endpoint)) return null;
   const catalog = executableTools();
   const system = 'Ти си HUGO tool router. Избери само една алатка од дадениот каталог. Никогаш не избирај алатка што не е во каталогот. Ако нема соодветна алатка, врати tool:null и can_execute:false. Директните intent зборови имаат предност пред генерички алтернативи. Врати само JSON без markdown: {"tool":string|null,"params":object,"can_execute":boolean,"reason":string}.';
-  const response = await fetch(ollamaEndpoint(endpoint), {
+  const response = await fetch(ollamaChatEndpoint(endpoint), {
     method: 'POST',
     headers: { 'content-type': 'application/json' },
     body: JSON.stringify({
       model: options.model || process.env[config.cognition.reasoning.model_env] || process.env.OLLAMA_MODEL || config.cognition.reasoning.model || 'llama3.2',
-      system,
-      prompt: JSON.stringify({ command: problem, tools: catalog }),
-      format: 'json',
+      messages: [{ role: 'system', content: system }, { role: 'user', content: problem }],
+      tools: nativeTools(catalog),
       stream: false,
       options: { temperature: 0 },
     }),
@@ -137,8 +159,15 @@ async function routeWithOllama(problem, options = {}) {
   });
   if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
   const data = await response.json();
+  const nativeCall = data.message?.tool_calls?.[0];
+  if (nativeCall?.function?.name) {
+    const selected = catalog.find((tool) => tool.id === nativeCall.function.name);
+    if (!selected) return null;
+    const params = nativeCall.function.arguments && typeof nativeCall.function.arguments === 'object' ? nativeCall.function.arguments : {};
+    return { tool: selected.id, params, args: params, reason: 'native Ollama tool call', source: 'ollama-native' };
+  }
   let selection;
-  try { selection = JSON.parse(data.response || '{}'); } catch { return null; }
+  try { selection = JSON.parse(data.message?.content || data.response || '{}'); } catch { return null; }
   if (!selection || selection.can_execute !== true || !selection.tool) return null;
   const selected = catalog.find((tool) => tool.id === selection.tool);
   const params = selection.params && typeof selection.params === 'object' ? selection.params : selection.args && typeof selection.args === 'object' ? selection.args : {};
@@ -174,7 +203,7 @@ async function reason(problem, context = {}, options = {}) {
     try {
       const endpoint = options.endpoint || process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || configuredEndpoint || 'http://127.0.0.1:11434';
       const content = await callOllama(endpoint, options, { problem, memory, context, analysis });
-      return { provider: 'ollama', endpoint: ollamaEndpoint(endpoint), content: truncate(content, 6000), ...analysis, memory_used: (memory.hits || []).length };
+      return { provider: 'ollama', endpoint: ollamaChatEndpoint(endpoint), content: truncate(cleanModelText(content, analysis.conclusion), 6000), ...analysis, memory_used: (memory.hits || []).length };
     } catch (error) {
       return { provider: 'local-rules', degraded: `Ollama не е достапен: ${error.message}`, ...analysis, memory_used: (memory.hits || []).length };
     }
@@ -183,7 +212,7 @@ async function reason(problem, context = {}, options = {}) {
   if (!endpoint) return { provider: 'local-rules', ...analysis, memory_used: (memory.hits || []).length };
   try {
     const content = await callLocalModel(endpoint, options, { problem, memory, context, analysis });
-    return { provider: 'local-model', endpoint, content: truncate(content, 6000), ...analysis, memory_used: (memory.hits || []).length };
+    return { provider: 'local-model', endpoint, content: truncate(cleanModelText(content, analysis.conclusion), 6000), ...analysis, memory_used: (memory.hits || []).length };
   } catch (error) {
     return { provider: 'local-rules', degraded: `\u043b\u043e\u043a\u0430\u043b\u043d\u0438\u043e\u0442 \u043c\u043e\u0434\u0435\u043b \u043d\u0435 \u0435 \u0434\u043e\u0441\u0442\u0430\u043f\u0435\u043d: ${error.message}`, ...analysis, memory_used: (memory.hits || []).length };
   }
@@ -192,4 +221,4 @@ function synthesize(task, parts, options = {}) {
   const lines = parts.filter(Boolean).map((part) => `- ${part}`);
   return truncate(`\u0417\u0430 "${truncate(task, 80)}":\n${lines.join('\n')}`, options.max || 2000);
 }
-module.exports = { reason, analyzeLocal, executableTools, routeWithOllama, classify, routeIntent, synthesize, callLocalModel, callOllama, intents, assumptionsFor };
+module.exports = { reason, analyzeLocal, executableTools, cleanModelText, routeWithOllama, classify, routeIntent, synthesize, callLocalModel, callOllama, intents, assumptionsFor };

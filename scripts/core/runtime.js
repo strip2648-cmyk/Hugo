@@ -30,6 +30,7 @@ function composeReply(text, analysis, memoryContext) {
   const parts = [];
   if (memoryContext && memoryContext.text) parts.push(memoryContext.text);
   parts.push(analysis.content || analysis.conclusion);
+  if (analysis.content) return parts.join('\n');
   if (analysis.next_actions && analysis.next_actions.length && analysis.kind !== 'knowledge') parts.push(`\u041c\u043e\u0436\u0430\u043c \u0434\u0430 \u0433\u043e \u0438\u0437\u0432\u0440\u0448\u0430\u043c: ${analysis.next_actions.join(' | ')}`);
   if (analysis.assumptions && analysis.assumptions.length) parts.push(`\u041f\u0440\u0435\u0442\u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438: ${analysis.assumptions.join(' ')}`);
   return parts.join('\n');
