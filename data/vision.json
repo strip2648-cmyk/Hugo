@@ -1,0 +1,18 @@
+{
+  "version": "6.0.0",
+  "engine": "cdp",
+  "target": "your own chrome",
+  "port": 9222,
+  "capabilities": [
+    "navigate",
+    "read",
+    "summarize",
+    "search",
+    "screenshot",
+    "click",
+    "type",
+    "fill-form",
+    "eval"
+  ],
+  "needs_playwright": false
+}

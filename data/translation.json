@@ -1,0 +1,80 @@
+{
+  "version": "6.0.0",
+  "engines": [
+    {
+      "name": "mymemory",
+      "url": "https://api.mymemory.translated.net/get",
+      "free": true,
+      "priority": 1
+    },
+    {
+      "name": "libretranslate",
+      "url": "https://libretranslate.com/translate",
+      "free": true,
+      "priority": 2
+    },
+    {
+      "name": "lingva",
+      "url": "https://lingva.ml/api/v1",
+      "free": true,
+      "priority": 3
+    },
+    {
+      "name": "google-unofficial",
+      "url": "https://translate.googleapis.com/translate_a/single",
+      "free": true,
+      "priority": 4
+    }
+  ],
+  "languages": {
+    "mk": "Macedonian",
+    "en": "English",
+    "sr": "Serbian",
+    "bg": "Bulgarian",
+    "de": "German",
+    "fr": "French",
+    "es": "Spanish",
+    "it": "Italian",
+    "ru": "Russian",
+    "zh": "Chinese",
+    "ja": "Japanese",
+    "ko": "Korean",
+    "ar": "Arabic",
+    "tr": "Turkish",
+    "pl": "Polish",
+    "nl": "Dutch",
+    "pt": "Portuguese",
+    "gr": "Greek",
+    "hr": "Croatian",
+    "sl": "Slovenian",
+    "ro": "Romanian",
+    "hu": "Hungarian",
+    "cz": "Czech",
+    "sk": "Slovak",
+    "sv": "Swedish",
+    "no": "Norwegian",
+    "da": "Danish",
+    "fi": "Finnish",
+    "he": "Hebrew",
+    "hi": "Hindi",
+    "th": "Thai",
+    "vi": "Vietnamese"
+  },
+  "quality_modes": {
+    "fast": {
+      "engine": "mymemory",
+      "max_retries": 1
+    },
+    "balanced": {
+      "engine": "auto-fallback",
+      "max_retries": 3
+    },
+    "quality": {
+      "engine": "multi-pass-llm",
+      "max_retries": 5,
+      "review": true
+    }
+  },
+  "context_aware": true,
+  "glossary_support": true
+}

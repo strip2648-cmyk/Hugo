@@ -1,0 +1,7 @@
+{
+  "version": "6.0.0",
+  "servers": [],
+  "transport": "http",
+  "request_timeout_ms": 30000,
+  "allow_tools": []
+}

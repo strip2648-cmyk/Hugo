@@ -1,0 +1,7 @@
+.env
+.hugo/
+logs/
+node_modules/
+*.log
+*.tmp
+.DS_Store

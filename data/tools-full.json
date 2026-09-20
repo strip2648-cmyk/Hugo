@@ -1,0 +1,7285 @@
+{
+  "version": "7.0.0",
+  "description": "Hugo Jarvis tool registry — free/offline-first",
+  "total": 290,
+  "tools": {
+    "generate_image": {
+      "icon": "🎨",
+      "name": "Generate image",
+      "category": "image",
+      "keywords_mk": [
+        "направи слика",
+        "нацртај",
+        "генерирај слика",
+        "слика од опис",
+        "илустрација"
+      ],
+      "keywords_en": [
+        "generate image",
+        "draw",
+        "create picture",
+        "visualize",
+        "illustrate"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q}?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "prompt"
+      },
+      "example_mk": "Направи слика на куче",
+      "example_en": "Create image of a dog",
+      "fallback": "Врати prompt ако API не работи",
+      "rate_limit": "public"
+    },
+    "generate_logo": {
+      "icon": "🏷",
+      "name": "Generate logo",
+      "category": "image",
+      "keywords_mk": [
+        "лого",
+        "логотип",
+        "бренд лого",
+        "направи лого",
+        "дизајн лого"
+      ],
+      "keywords_en": [
+        "logo",
+        "logo design",
+        "brand logo",
+        "make logo",
+        "logo generator"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},logo,minimal?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "brand"
+      },
+      "example_mk": "Направи лого за кафеана",
+      "example_en": "Make logo for cafe",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "generate_icon": {
+      "icon": "🔷",
+      "name": "Generate icon",
+      "category": "image",
+      "keywords_mk": [
+        "икона",
+        "икона апликација",
+        "иконка",
+        "направи икона",
+        "app icon"
+      ],
+      "keywords_en": [
+        "icon",
+        "app icon",
+        "make icon",
+        "icon design",
+        "favicon"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},icon,flat?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "icon"
+      },
+      "example_mk": "Икона за апликација",
+      "example_en": "App icon",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "generate_banner": {
+      "icon": "🖼",
+      "name": "Generate banner",
+      "category": "image",
+      "keywords_mk": [
+        "банер",
+        "banner",
+        "header",
+        "насловна слика",
+        "хедер"
+      ],
+      "keywords_en": [
+        "banner",
+        "header",
+        "cover",
+        "banner image",
+        "hero image"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},banner,wide?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "banner"
+      },
+      "example_mk": "Банер за сајт",
+      "example_en": "Banner for site",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "generate_avatar": {
+      "icon": "👤",
+      "name": "Generate avatar",
+      "category": "image",
+      "keywords_mk": [
+        "аватар",
+        "профилна",
+        "avatar",
+        "профил слика",
+        "лице"
+      ],
+      "keywords_en": [
+        "avatar",
+        "profile picture",
+        "pfp",
+        "profile",
+        "face"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},avatar,portrait?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "person"
+      },
+      "example_mk": "Аватар за профил",
+      "example_en": "Avatar",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "qr_code": {
+      "icon": "📱",
+      "name": "QR code",
+      "category": "utils",
+      "keywords_mk": [
+        "qr код",
+        "кјуар",
+        "qr",
+        "скенирачки код",
+        "баркод"
+      ],
+      "keywords_en": [
+        "qr code",
+        "qrcode",
+        "qr",
+        "scannable code",
+        "barcode"
+      ],
+      "api": "https://api.qrserver.com/v1/create-qr-code/?data={q}&size=300x300",
+      "method": "GET",
+      "params": {
+        "text": "string",
+        "format": "text|svg"
+      },
+      "example_mk": "QR за https://example.com",
+      "example_en": "QR for https://example.com",
+      "fallback": "Врати URL како текст",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Направи QR код (вистински енкодер, локално)"
+    },
+    "upscale_image": {
+      "icon": "🔍",
+      "name": "Upscale image",
+      "category": "image",
+      "keywords_mk": [
+        "зголеми слика",
+        "upscale",
+        "подобри резолуција",
+        "hd",
+        "поголема слика"
+      ],
+      "keywords_en": [
+        "upscale",
+        "hd",
+        "enlarge",
+        "increase resolution",
+        "upscale image"
+      ],
+      "api": "https://api.waifu2x.udp.jp/api",
+      "method": "POST",
+      "params": {
+        "url": "image url"
+      },
+      "example_mk": "Upscale слика",
+      "example_en": "Upscale image",
+      "fallback": "Врати оригинал",
+      "rate_limit": "public"
+    },
+    "remove_bg": {
+      "icon": "✂️",
+      "name": "Remove background",
+      "category": "image",
+      "keywords_mk": [
+        "отстрани позадина",
+        "remove bg",
+        "без позадина",
+        "транспарентна",
+        "cutout"
+      ],
+      "keywords_en": [
+        "remove background",
+        "removebg",
+        "transparent",
+        "cutout",
+        "no bg"
+      ],
+      "api": "https://api.remove.bg/v1.0/removebg",
+      "method": "POST",
+      "params": {
+        "image_file": "file"
+      },
+      "example_mk": "Отстрани позадина",
+      "example_en": "Remove bg",
+      "fallback": "Потребен API key",
+      "rate_limit": "needs key"
+    },
+    "image_search": {
+      "icon": "🔎",
+      "name": "Image search",
+      "category": "media",
+      "keywords_mk": [
+        "пребарај слики",
+        "најди слика",
+        "image search",
+        "слики за",
+        "фотографии"
+      ],
+      "keywords_en": [
+        "image search",
+        "find image",
+        "pictures",
+        "photos",
+        "search images"
+      ],
+      "api": "https://www.bing.com/images/search?q={q}",
+      "method": "GET",
+      "params": {
+        "query": "string"
+      },
+      "example_mk": "Слики од планини",
+      "example_en": "Images of mountains",
+      "fallback": "Отвори пребарување",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај слики преку твојот браузер"
+    },
+    "meme_gen": {
+      "icon": "😂",
+      "name": "Meme generator",
+      "category": "image",
+      "keywords_mk": [
+        "меме",
+        "направи меме",
+        "meme",
+        "смешна слика",
+        "memes"
+      ],
+      "keywords_en": [
+        "meme",
+        "make meme",
+        "memes",
+        "funny picture",
+        "meme gen"
+      ],
+      "api": "https://api.imgflip.com/get_memes",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Меме за понеделник",
+      "example_en": "Monday meme",
+      "fallback": "Врати шаблон",
+      "rate_limit": "public"
+    },
+    "comic_gen": {
+      "icon": "💬",
+      "name": "Comic generator",
+      "category": "image",
+      "keywords_mk": [
+        "стрип",
+        "направи стрип",
+        "comic",
+        "карикатура",
+        "стрипче"
+      ],
+      "keywords_en": [
+        "comic",
+        "make comic",
+        "cartoon",
+        "comic strip",
+        "panel"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},comic,panel?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "scene"
+      },
+      "example_mk": "Стрип за авантура",
+      "example_en": "Adventure comic",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "wallpaper_gen": {
+      "icon": "🌄",
+      "name": "Wallpaper generator",
+      "category": "image",
+      "keywords_mk": [
+        "позадина",
+        "wallpaper",
+        "шалтапер",
+        "десктоп позадина",
+        "мобилна позадина"
+      ],
+      "keywords_en": [
+        "wallpaper",
+        "background",
+        "desktop wallpaper",
+        "phone wallpaper",
+        "bg"
+      ],
+      "api": "https://image.pollinations.ai/prompt/{q},wallpaper,4k?model=flux",
+      "method": "GET",
+      "params": {
+        "q": "theme"
+      },
+      "example_mk": "Wallpaper со планина",
+      "example_en": "Mountain wallpaper",
+      "fallback": "Врати prompt",
+      "rate_limit": "public"
+    },
+    "coin_price": {
+      "icon": "💰",
+      "name": "Crypto price",
+      "category": "crypto",
+      "keywords_mk": [
+        "цена",
+        "крипто цена",
+        "биткоин цена",
+        "етер цена",
+        "курс"
+      ],
+      "keywords_en": [
+        "price",
+        "crypto price",
+        "bitcoin price",
+        "coin price",
+        "rate"
+      ],
+      "api": "https://api.coingecko.com/api/v3/simple/price?ids={id}&vs_currencies=usd,eur&include_24hr_change=true",
+      "method": "GET",
+      "params": {
+        "coin": "btc|eth|sol|..."
+      },
+      "example_mk": "Цена на BTC",
+      "example_en": "BTC price",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Цена на крипто (без клуч)"
+    },
+    "coin_chart": {
+      "icon": "📈",
+      "name": "Coin chart",
+      "category": "crypto",
+      "keywords_mk": [
+        "график крипто",
+        "историја цена",
+        "движење биткоин",
+        "график",
+        "price history"
+      ],
+      "keywords_en": [
+        "coin chart",
+        "price history",
+        "bitcoin chart",
+        "price movement",
+        "historical"
+      ],
+      "api": "https://api.coingecko.com/api/v3/coins/{id}/market_chart?vs_currency=usd&days={days}",
+      "method": "GET",
+      "params": {
+        "coin": "string",
+        "days": "number"
+      },
+      "example_mk": "График за BTC 30 дена",
+      "example_en": "BTC chart 30 days",
+      "fallback": "Графикот не е достапен",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Историја на цена"
+    },
+    "top_coins": {
+      "icon": "🏆",
+      "name": "Top coins",
+      "category": "crypto",
+      "keywords_mk": [
+        "топ монети",
+        "најголеми крипто",
+        "крипто ранг",
+        "топ крипто",
+        "market cap list"
+      ],
+      "keywords_en": [
+        "top coins",
+        "largest crypto",
+        "crypto ranking",
+        "top crypto",
+        "market cap"
+      ],
+      "api": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10",
+      "method": "GET",
+      "params": {
+        "limit": "number",
+        "currency": "usd|eur"
+      },
+      "example_mk": "Топ 10 крипто",
+      "example_en": "Top 10 crypto",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Топ крипто по капитализација"
+    },
+    "trending_coins": {
+      "icon": "🔥",
+      "name": "Trending coins",
+      "category": "crypto",
+      "keywords_mk": [
+        "трендинг крипто",
+        "популарни монети",
+        "жешки монети",
+        "крипто тренд",
+        "што расте"
+      ],
+      "keywords_en": [
+        "trending coins",
+        "popular coins",
+        "hot coins",
+        "crypto trend",
+        "what is trending"
+      ],
+      "api": "https://api.coingecko.com/api/v3/search/trending",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Кои се трендинг?",
+      "example_en": "What's trending?",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Трендинг крипто (24ч)"
+    },
+    "gainers_losers": {
+      "icon": "📊",
+      "name": "Gainers & Losers",
+      "category": "crypto",
+      "keywords_mk": [
+        "добитници",
+        "губитници",
+        "gainers",
+        "losers",
+        "што скокна"
+      ],
+      "keywords_en": [
+        "gainers",
+        "losers",
+        "top movers",
+        "best performers",
+        "worst performers"
+      ],
+      "api": "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Топ добитници",
+      "example_en": "Top gainers",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "defi_tvl": {
+      "icon": "🏦",
+      "name": "DeFi TVL",
+      "category": "crypto",
+      "keywords_mk": [
+        "дефи tvl",
+        "заклучена вредност",
+        "дефи протоколи",
+        "tvl",
+        "ликвидност"
+      ],
+      "keywords_en": [
+        "defi tvl",
+        "total value locked",
+        "defi protocols",
+        "liquidity",
+        "tvl"
+      ],
+      "api": "https://api.llama.fi/protocols",
+      "method": "GET",
+      "params": {
+        "limit": "number"
+      },
+      "example_mk": "DeFi TVL",
+      "example_en": "DeFi TVL",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Вкупен DeFi TVL"
+    },
+    "defi_yields": {
+      "icon": "🌾",
+      "name": "DeFi yields",
+      "category": "crypto",
+      "keywords_mk": [
+        "дефи приноси",
+        "apy",
+        "yield farming",
+        "каде да стејкувам",
+        "најдобар apy"
+      ],
+      "keywords_en": [
+        "defi yields",
+        "apy",
+        "yield farming",
+        "best yields",
+        "staking yields"
+      ],
+      "api": "https://yields.llama.fi/pools",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Најдобри DeFi yields",
+      "example_en": "Best DeFi yields",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "fear_greed": {
+      "icon": "😨",
+      "name": "Fear & Greed",
+      "category": "crypto",
+      "keywords_mk": [
+        "страв алчност",
+        "fear greed",
+        "индекс страв",
+        "пазарно расположение",
+        "crypto sentiment"
+      ],
+      "keywords_en": [
+        "fear greed",
+        "fear and greed",
+        "sentiment index",
+        "market mood",
+        "crypto sentiment"
+      ],
+      "api": "https://api.alternative.me/fng/?limit=1",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Fear & Greed индекс",
+      "example_en": "Fear & Greed index",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Fear & Greed индекс"
+    },
+    "mempool_fees": {
+      "icon": "⛓",
+      "name": "BTC mempool fees",
+      "category": "crypto",
+      "keywords_mk": [
+        "btc такса",
+        "mempool",
+        "биткоин fee",
+        "мрежна такса",
+        "сатоши"
+      ],
+      "keywords_en": [
+        "btc fee",
+        "mempool",
+        "bitcoin fee",
+        "network fee",
+        "satoshi"
+      ],
+      "api": "https://mempool.space/api/v1/fees/recommended",
+      "method": "GET",
+      "params": {},
+      "example_mk": "BTC мрежна такса",
+      "example_en": "BTC network fee",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "gas_eth": {
+      "icon": "⛽",
+      "name": "ETH gas",
+      "category": "crypto",
+      "keywords_mk": [
+        "eth gas",
+        "гас цена",
+        "ethereum fee",
+        "gas tracker",
+        "трансакциска такса eth"
+      ],
+      "keywords_en": [
+        "eth gas",
+        "gas price",
+        "ethereum fee",
+        "gas tracker",
+        "gwei"
+      ],
+      "api": "https://api.owlracle.info/v4/eth/gas",
+      "method": "GET",
+      "params": {},
+      "example_mk": "ETH gas",
+      "example_en": "ETH gas",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Bitcoin/Ethereum мрежни такси (без клуч)"
+    },
+    "btc_halving": {
+      "icon": "🎯",
+      "name": "BTC halving",
+      "category": "crypto",
+      "keywords_mk": [
+        "btc halving",
+        "halving",
+        "преполовување",
+        "кога halving",
+        "next halving"
+      ],
+      "keywords_en": [
+        "btc halving",
+        "halving",
+        "next halving",
+        "halving countdown",
+        "block reward"
+      ],
+      "api": "https://blockchain.info/q/getblockcount",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Кога е следен halving?",
+      "example_en": "When is next halving?",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Следен Bitcoin halving"
+    },
+    "block_height": {
+      "icon": "📦",
+      "name": "Block height",
+      "category": "crypto",
+      "keywords_mk": [
+        "block height",
+        "најнов блок",
+        "btc блок",
+        "височина блок",
+        "blockchain height"
+      ],
+      "keywords_en": [
+        "block height",
+        "latest block",
+        "btc block",
+        "chain height",
+        "blockchain height"
+      ],
+      "api": "https://blockchain.info/q/getblockcount",
+      "method": "GET",
+      "params": {},
+      "example_mk": "BTC блок",
+      "example_en": "BTC block",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "eth_burn": {
+      "icon": "🔥",
+      "name": "ETH burn",
+      "category": "crypto",
+      "keywords_mk": [
+        "eth burn",
+        "изгорени eth",
+        "burn rate",
+        "ultrasound",
+        "eth supply"
+      ],
+      "keywords_en": [
+        "eth burn",
+        "burned eth",
+        "burn rate",
+        "ultrasound money",
+        "eth supply"
+      ],
+      "api": "https://api.ultrasound.money/api/v2/fees/all",
+      "method": "GET",
+      "params": {},
+      "example_mk": "ETH burn",
+      "example_en": "ETH burn",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "tx_lookup": {
+      "icon": "🔍",
+      "name": "Transaction lookup",
+      "category": "crypto",
+      "keywords_mk": [
+        "трансакција",
+        "tx lookup",
+        "пребарај tx",
+        "провери трансакција",
+        "transaction hash"
+      ],
+      "keywords_en": [
+        "transaction",
+        "tx lookup",
+        "search tx",
+        "check tx",
+        "tx hash"
+      ],
+      "api": "https://blockchain.info/rawtx/{hash}",
+      "method": "GET",
+      "params": {
+        "hash": "tx hash"
+      },
+      "example_mk": "Провери tx",
+      "example_en": "Check tx",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "address_balance": {
+      "icon": "💼",
+      "name": "Address balance",
+      "category": "crypto",
+      "keywords_mk": [
+        "салдо адреса",
+        "balance wallet",
+        "btc адреса",
+        "провери салдо",
+        "address balance"
+      ],
+      "keywords_en": [
+        "address balance",
+        "wallet balance",
+        "btc address",
+        "check balance",
+        "address funds"
+      ],
+      "api": "https://blockchain.info/q/addressbalance/{addr}",
+      "method": "GET",
+      "params": {
+        "addr": "address"
+      },
+      "example_mk": "Салдо на адреса",
+      "example_en": "Address balance",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "whale_tracker": {
+      "icon": "🐋",
+      "name": "Whale tracker",
+      "category": "crypto",
+      "keywords_mk": [
+        "китови",
+        "whale alert",
+        "големи трансакции",
+        "whale tracker",
+        "whales"
+      ],
+      "keywords_en": [
+        "whales",
+        "whale alert",
+        "large transactions",
+        "whale tracker",
+        "whale movement"
+      ],
+      "api": "https://api.whale-alert.io/v1/transactions",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Whale движења",
+      "example_en": "Whale movements",
+      "fallback": "Потребен API key",
+      "rate_limit": "needs key"
+    },
+    "exchange_rates": {
+      "icon": "💱",
+      "name": "Exchange rates",
+      "category": "crypto",
+      "keywords_mk": [
+        "курс",
+        "exchange rate",
+        "fiat курс",
+        "валути",
+        "currency"
+      ],
+      "keywords_en": [
+        "exchange rates",
+        "rate",
+        "fiat",
+        "currencies",
+        "forex"
+      ],
+      "api": "https://api.exchangerate.host/latest",
+      "method": "GET",
+      "params": {
+        "base": "MKD|EUR|USD"
+      },
+      "example_mk": "Курсни листи",
+      "example_en": "Exchange rates",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Курсеви валути (без клуч)"
+    },
+    "funding_rates": {
+      "icon": "📉",
+      "name": "Funding rates",
+      "category": "crypto",
+      "keywords_mk": [
+        "funding rate",
+        "стапка финансирање",
+        "futures rate",
+        "perp rate",
+        "funding"
+      ],
+      "keywords_en": [
+        "funding rate",
+        "perpetual funding",
+        "futures rate",
+        "perp rate",
+        "funding"
+      ],
+      "api": "https://fapi.binance.com/fapi/v1/fundingRate?symbol={sym}",
+      "method": "GET",
+      "params": {
+        "sym": "BTCUSDT"
+      },
+      "example_mk": "Funding rate BTC",
+      "example_en": "BTC funding rate",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "open_interest": {
+      "icon": "📊",
+      "name": "Open interest",
+      "category": "crypto",
+      "keywords_mk": [
+        "open interest",
+        "oi",
+        "отворен интерес",
+        "futures oi",
+        "oi crypto"
+      ],
+      "keywords_en": [
+        "open interest",
+        "oi",
+        "futures oi",
+        "open positions",
+        "oi crypto"
+      ],
+      "api": "https://fapi.binance.com/fapi/v1/openInterest?symbol={sym}",
+      "method": "GET",
+      "params": {
+        "sym": "BTCUSDT"
+      },
+      "example_mk": "BTC OI",
+      "example_en": "BTC OI",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "stablecoin_rates": {
+      "icon": "💵",
+      "name": "Stablecoin rates",
+      "category": "crypto",
+      "keywords_mk": [
+        "stablecoin",
+        "usdt",
+        "usdc",
+        "stablecoin rates",
+        "stables"
+      ],
+      "keywords_en": [
+        "stablecoin",
+        "usdt",
+        "usdc",
+        "stablecoin rates",
+        "stables"
+      ],
+      "api": "https://stablecoins.llama.fi/stablecoins",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Stablecoin податоци",
+      "example_en": "Stablecoin data",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "bridge_volume": {
+      "icon": "🌉",
+      "name": "Bridge volume",
+      "category": "crypto",
+      "keywords_mk": [
+        "bridge volume",
+        "cross-chain",
+        "bridge",
+        "bridges",
+        "crosschain"
+      ],
+      "keywords_en": [
+        "bridge volume",
+        "cross-chain",
+        "bridge",
+        "bridges",
+        "crosschain"
+      ],
+      "api": "https://api.llama.fi/overview/bridges",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Bridge волумен",
+      "example_en": "Bridge volume",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "dex_volume": {
+      "icon": "💱",
+      "name": "DEX volume",
+      "category": "crypto",
+      "keywords_mk": [
+        "dex volume",
+        "dex",
+        "dexs",
+        "децентрализирани",
+        "dex activity"
+      ],
+      "keywords_en": [
+        "dex volume",
+        "dex",
+        "dexs",
+        "decentralized",
+        "dex activity"
+      ],
+      "api": "https://api.llama.fi/overview/dexs",
+      "method": "GET",
+      "params": {},
+      "example_mk": "DEX волумен",
+      "example_en": "DEX volume",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "nft_floor": {
+      "icon": "🖼",
+      "name": "NFT floor price",
+      "category": "crypto",
+      "keywords_mk": [
+        "nft floor",
+        "nft под",
+        "floor price",
+        "nft цена",
+        "collection floor"
+      ],
+      "keywords_en": [
+        "nft floor",
+        "floor price",
+        "nft collection",
+        "collection floor",
+        "nft price"
+      ],
+      "api": "https://api.opensea.io/api/v2/collections/{slug}",
+      "method": "GET",
+      "params": {
+        "slug": "collection"
+      },
+      "example_mk": "NFT floor",
+      "example_en": "NFT floor",
+      "fallback": "Не е достапно",
+      "rate_limit": "needs key"
+    },
+    "token_info": {
+      "icon": "🪙",
+      "name": "Token info",
+      "category": "crypto",
+      "keywords_mk": [
+        "token info",
+        "информации за token",
+        "token податоци",
+        "token contract",
+        "token metadata"
+      ],
+      "keywords_en": [
+        "token info",
+        "token data",
+        "token contract",
+        "token metadata",
+        "token details"
+      ],
+      "api": "https://api.coingecko.com/api/v3/coins/{id}",
+      "method": "GET",
+      "params": {
+        "id": "ethereum"
+      },
+      "example_mk": "Info за token",
+      "example_en": "Token info",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "airdrop_hunter": {
+      "icon": "🎁",
+      "name": "Airdrop hunter",
+      "category": "crypto",
+      "keywords_mk": [
+        "airdrop",
+        "airdrops",
+        "бесплатни token",
+        "airdrop checker",
+        "airdrop farming"
+      ],
+      "keywords_en": [
+        "airdrop",
+        "airdrops",
+        "free tokens",
+        "airdrop checker",
+        "airdrop farming"
+      ],
+      "api": "https://airdropalert.com/api/airdrops",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Airdrops",
+      "example_en": "Airdrops",
+      "fallback": "Не е достапно",
+      "rate_limit": "needs key"
+    },
+    "hackernews": {
+      "icon": "📰",
+      "name": "Hacker News",
+      "category": "news",
+      "keywords_mk": [
+        "хакер њуз",
+        "hn",
+        "техно вести",
+        "програмерски вести",
+        "tech news"
+      ],
+      "keywords_en": [
+        "hacker news",
+        "hn",
+        "tech news",
+        "developer news",
+        "startup news"
+      ],
+      "api": "https://hacker-news.firebaseio.com/v0/topstories.json",
+      "method": "GET",
+      "params": {
+        "limit": "number"
+      },
+      "example_mk": "HN топ",
+      "example_en": "HN top",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Hacker News топ вести"
+    },
+    "reddit_hot": {
+      "icon": "🔥",
+      "name": "Reddit hot",
+      "category": "media",
+      "keywords_mk": [
+        "reddit жешки",
+        "hot reddit",
+        "популарни reddit",
+        "subreddit",
+        "reddit top"
+      ],
+      "keywords_en": [
+        "reddit hot",
+        "hot reddit",
+        "popular reddit",
+        "subreddit",
+        "reddit top"
+      ],
+      "api": "https://www.reddit.com/r/{sub}/hot.json?limit=10",
+      "method": "GET",
+      "params": {
+        "subreddit": "string",
+        "limit": "number"
+      },
+      "example_mk": "r/technology hot",
+      "example_en": "r/technology hot",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Reddit топ постови (без клуч)"
+    },
+    "reddit_search": {
+      "icon": "👽",
+      "name": "Reddit search",
+      "category": "news",
+      "keywords_mk": [
+        "пребарај reddit",
+        "reddit search",
+        "најди на reddit",
+        "reddit постови",
+        "reddit тема"
+      ],
+      "keywords_en": [
+        "reddit search",
+        "search reddit",
+        "find on reddit",
+        "reddit posts",
+        "reddit topic"
+      ],
+      "api": "https://www.reddit.com/search.json?q={q}&limit=10",
+      "method": "GET",
+      "params": {
+        "q": "query"
+      },
+      "example_mk": "Пребарај reddit",
+      "example_en": "Search reddit",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "mkdnews": {
+      "icon": "🇲🇰",
+      "name": "Македонски вести",
+      "category": "news",
+      "keywords_mk": [
+        "вести македонија",
+        "mkd вести",
+        "миа",
+        "вести денес",
+        "македонски новости"
+      ],
+      "keywords_en": [
+        "macedonian news",
+        "mkd news",
+        "mia",
+        "today news",
+        "macedonia news"
+      ],
+      "api": "https://mia.mk/feed/",
+      "method": "GET",
+      "params": {
+        "limit": "number"
+      },
+      "example_mk": "Вести Македонија",
+      "example_en": "Macedonian news",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Вести од Македонија"
+    },
+    "world_news": {
+      "icon": "🌍",
+      "name": "World news",
+      "category": "news",
+      "keywords_mk": [
+        "светски вести",
+        "world news",
+        "глобални вести",
+        "bbc",
+        "news world"
+      ],
+      "keywords_en": [
+        "world news",
+        "global news",
+        "bbc",
+        "international news",
+        "world"
+      ],
+      "api": "https://feeds.bbci.co.uk/news/world/rss.xml",
+      "method": "GET",
+      "params": {
+        "limit": "number"
+      },
+      "example_mk": "BBC world",
+      "example_en": "BBC world",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Светски вести"
+    },
+    "techcrunch": {
+      "icon": "📱",
+      "name": "TechCrunch",
+      "category": "news",
+      "keywords_mk": [
+        "techcrunch",
+        "tech вести",
+        "startup news",
+        "сајт вести",
+        "tech news"
+      ],
+      "keywords_en": [
+        "techcrunch",
+        "tech news",
+        "startup news",
+        "technology news",
+        "tech"
+      ],
+      "api": "https://techcrunch.com/feed/",
+      "method": "GET",
+      "params": {},
+      "example_mk": "TechCrunch",
+      "example_en": "TechCrunch",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "coindesk": {
+      "icon": "💵",
+      "name": "CoinDesk",
+      "category": "news",
+      "keywords_mk": [
+        "coindesk",
+        "крипто вести",
+        "crypto news",
+        "btc вести",
+        "crypto"
+      ],
+      "keywords_en": [
+        "coindesk",
+        "crypto news",
+        "bitcoin news",
+        "crypto",
+        "btc news"
+      ],
+      "api": "https://www.coindesk.com/arc/outboundfeeds/rss/",
+      "method": "GET",
+      "params": {},
+      "example_mk": "CoinDesk",
+      "example_en": "CoinDesk",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "cointelegraph": {
+      "icon": "📰",
+      "name": "Cointelegraph",
+      "category": "news",
+      "keywords_mk": [
+        "cointelegraph",
+        "крипто вести",
+        "altcoin news",
+        "crypto news",
+        "ct"
+      ],
+      "keywords_en": [
+        "cointelegraph",
+        "crypto news",
+        "altcoin news",
+        "crypto",
+        "ct"
+      ],
+      "api": "https://cointelegraph.com/rss",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Cointelegraph",
+      "example_en": "Cointelegraph",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "producthunt": {
+      "icon": "🚀",
+      "name": "Product Hunt",
+      "category": "news",
+      "keywords_mk": [
+        "product hunt",
+        "ph",
+        "нови производи",
+        "стартапи",
+        "new products"
+      ],
+      "keywords_en": [
+        "product hunt",
+        "ph",
+        "new products",
+        "startups",
+        "product launches"
+      ],
+      "api": "https://www.producthunt.com/feed",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Product Hunt",
+      "example_en": "Product Hunt",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "indiehackers": {
+      "icon": "🎯",
+      "name": "Indie Hackers",
+      "category": "news",
+      "keywords_mk": [
+        "indie hackers",
+        "ih",
+        "инди хакери",
+        "соло founders",
+        "solo founders"
+      ],
+      "keywords_en": [
+        "indie hackers",
+        "ih",
+        "solo founders",
+        "bootstrappers",
+        "indie"
+      ],
+      "api": "https://www.indiehackers.com/feed.xml",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Indie Hackers",
+      "example_en": "Indie Hackers",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "arxiv_latest": {
+      "icon": "📄",
+      "name": "arXiv latest",
+      "category": "news",
+      "keywords_mk": [
+        "arxiv",
+        "научни трудови",
+        "research papers",
+        "нови студии",
+        "papers"
+      ],
+      "keywords_en": [
+        "arxiv",
+        "research papers",
+        "new studies",
+        "papers",
+        "academic"
+      ],
+      "api": "http://export.arxiv.org/rss/cs.AI",
+      "method": "GET",
+      "params": {},
+      "example_mk": "arXiv AI",
+      "example_en": "arXiv AI",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "devto_latest": {
+      "icon": "📝",
+      "name": "Dev.to",
+      "category": "news",
+      "keywords_mk": [
+        "devto",
+        "dev.to",
+        "dev вести",
+        "програмерски блог",
+        "dev"
+      ],
+      "keywords_en": [
+        "devto",
+        "dev.to",
+        "dev news",
+        "developer blog",
+        "dev"
+      ],
+      "api": "https://dev.to/feed",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Dev.to",
+      "example_en": "Dev.to",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "lobsters": {
+      "icon": "🦞",
+      "name": "Lobsters",
+      "category": "news",
+      "keywords_mk": [
+        "lobsters",
+        "lobster",
+        "техно новости",
+        "hn alternative",
+        "tech"
+      ],
+      "keywords_en": [
+        "lobsters",
+        "tech news",
+        "hn alternative",
+        "dev news",
+        "tech"
+      ],
+      "api": "https://lobste.rs/rss",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Lobsters",
+      "example_en": "Lobsters",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "techmeme": {
+      "icon": "📰",
+      "name": "Techmeme",
+      "category": "news",
+      "keywords_mk": [
+        "techmeme",
+        "техно aggregator",
+        "tech news",
+        "tech aggregator",
+        "techmeme"
+      ],
+      "keywords_en": [
+        "techmeme",
+        "tech aggregator",
+        "tech news",
+        "tech aggregation",
+        "techmeme"
+      ],
+      "api": "https://www.techmeme.com/feed.xml",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Techmeme",
+      "example_en": "Techmeme",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public"
+    },
+    "rss_reader": {
+      "icon": "📡",
+      "name": "RSS reader",
+      "category": "news",
+      "keywords_mk": [
+        "rss",
+        "читач rss",
+        "feed",
+        "feed reader",
+        "rss reader"
+      ],
+      "keywords_en": [
+        "rss",
+        "rss reader",
+        "feed",
+        "feed reader",
+        "rss feeds"
+      ],
+      "api": "https://api.rss2json.com/v1/api.json?rss_url={url}",
+      "method": "GET",
+      "params": {
+        "url": "string",
+        "limit": "number"
+      },
+      "example_mk": "Читај RSS",
+      "example_en": "Read RSS",
+      "fallback": "Feed недостапен",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Читај било кој RSS/Atom фид"
+    },
+    "current_weather": {
+      "icon": "🌤",
+      "name": "Current weather",
+      "category": "weather",
+      "keywords_mk": [
+        "време",
+        "температура",
+        "прогноза",
+        "врнежи",
+        "ветер"
+      ],
+      "keywords_en": [
+        "weather",
+        "temperature",
+        "forecast",
+        "rain",
+        "wind"
+      ],
+      "api": "https://wttr.in/{city}?format=j1",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "Време во Скопје",
+      "example_en": "Weather in Skopje",
+      "fallback": "Времето е недостапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Време сега (без клуч)"
+    },
+    "weather_7day": {
+      "icon": "📅",
+      "name": "7-day weather",
+      "category": "weather",
+      "keywords_mk": [
+        "7 дена прогноза",
+        "неделна прогноза",
+        "седум дена",
+        "долга прогноза",
+        "недела време"
+      ],
+      "keywords_en": [
+        "7 day forecast",
+        "weekly weather",
+        "seven day",
+        "long forecast",
+        "week weather"
+      ],
+      "api": "https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&daily=weathercode,temperature_2m_max,temperature_2m_min",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "7 дена прогноза",
+      "example_en": "7 day forecast",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "7-дневна прогноза"
+    },
+    "air_quality": {
+      "icon": "🌫",
+      "name": "Air quality",
+      "category": "weather",
+      "keywords_mk": [
+        "квалитет воздух",
+        "загадување",
+        "pm2.5",
+        "воздух",
+        "загаден воздух"
+      ],
+      "keywords_en": [
+        "air quality",
+        "pollution",
+        "pm2.5",
+        "air pollution",
+        "air quality index"
+      ],
+      "api": "https://air-quality-api.open-meteo.com/v1/air-quality?latitude={lat}&longitude={lon}",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "Квалитет на воздух",
+      "example_en": "Air quality",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Квалитет на воздухот"
+    },
+    "uv_index": {
+      "icon": "☀️",
+      "name": "UV index",
+      "category": "weather",
+      "keywords_mk": [
+        "uv индекс",
+        "uv",
+        "сончево зрачење",
+        "uv index",
+        "uv индекс"
+      ],
+      "keywords_en": [
+        "uv index",
+        "uv",
+        "sun exposure",
+        "uv radiation",
+        "uv index"
+      ],
+      "api": "https://api.open-meteo.com/v1/forecast?latitude={lat}&longitude={lon}&daily=uv_index_max",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "UV индекс",
+      "example_en": "UV index",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "UV индекс"
+    },
+    "sunrise_sunset": {
+      "icon": "🌅",
+      "name": "Sunrise / sunset",
+      "category": "weather",
+      "keywords_mk": [
+        "изгрејсонце",
+        "зајдисонце",
+        "sunrise",
+        "sunset",
+        "излез сонце"
+      ],
+      "keywords_en": [
+        "sunrise",
+        "sunset",
+        "sun times",
+        "day length",
+        "sun position"
+      ],
+      "api": "https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "Изгрејсонце Скопје",
+      "example_en": "Sunrise Skopje",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Изгрејување и залез"
+    },
+    "moon_phase": {
+      "icon": "🌙",
+      "name": "Moon phase",
+      "category": "weather",
+      "keywords_mk": [
+        "месечева фаза",
+        "moon phase",
+        "месечина",
+        "фаза на месец",
+        "луна"
+      ],
+      "keywords_en": [
+        "moon phase",
+        "lunar phase",
+        "moon",
+        "lunar calendar",
+        "moon cycle"
+      ],
+      "api": "https://api.farmsense.net/v1/moonphases/",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Месечева фаза",
+      "example_en": "Moon phase",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "earthquake": {
+      "icon": "🌍",
+      "name": "Earthquake info",
+      "category": "weather",
+      "keywords_mk": [
+        "земјотрес",
+        "earthquake",
+        "сеизмичка",
+        "трес",
+        "quake"
+      ],
+      "keywords_en": [
+        "earthquake",
+        "quake",
+        "seismic",
+        "earth tremor",
+        "earthquake info"
+      ],
+      "api": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Земјотреси денес",
+      "example_en": "Earthquakes today",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "tide_info": {
+      "icon": "🌊",
+      "name": "Tide info",
+      "category": "weather",
+      "keywords_mk": [
+        "плима",
+        "tide",
+        "tides",
+        "морски прилив",
+        "sea level"
+      ],
+      "keywords_en": [
+        "tide",
+        "tides",
+        "tidal",
+        "sea level",
+        "tide info"
+      ],
+      "api": "https://api.stormglass.io/v2/tide/extremes/point",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Плима",
+      "example_en": "Tide info",
+      "fallback": "Потребен API key",
+      "rate_limit": "needs key"
+    },
+    "wildfire": {
+      "icon": "🔥",
+      "name": "Wildfire alerts",
+      "category": "weather",
+      "keywords_mk": [
+        "пожар",
+        "wildfire",
+        "шумски пожар",
+        "fire alert",
+        "пожари"
+      ],
+      "keywords_en": [
+        "wildfire",
+        "fire",
+        "fire alert",
+        "forest fire",
+        "wildfires"
+      ],
+      "api": "https://eonet.gsfc.nasa.gov/api/v3/events",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Пожари",
+      "example_en": "Wildfires",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "weather_forecast": {
+      "icon": "🌦",
+      "name": "Weather forecast",
+      "category": "weather",
+      "keywords_mk": [
+        "прогноза",
+        "forecast",
+        "временска прогноза",
+        "време",
+        "forecast"
+      ],
+      "keywords_en": [
+        "forecast",
+        "weather forecast",
+        "weather",
+        "conditions",
+        "weather"
+      ],
+      "api": "https://wttr.in/{city}?format=j1",
+      "method": "GET",
+      "params": {
+        "city": "Skopje"
+      },
+      "example_mk": "Прогноза Скопје",
+      "example_en": "Forecast Skopje",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "geocode": {
+      "icon": "📍",
+      "name": "Geocode",
+      "category": "geo",
+      "keywords_mk": [
+        "координати",
+        "геокодирај",
+        "најди локација",
+        "адреса",
+        "географска ширина"
+      ],
+      "keywords_en": [
+        "geocode",
+        "coordinates",
+        "find location",
+        "address",
+        "latitude"
+      ],
+      "api": "https://nominatim.openstreetmap.org/search?q={q}&format=json",
+      "method": "GET",
+      "params": {
+        "query": "string"
+      },
+      "example_mk": "Координати Скопје",
+      "example_en": "Coordinates Skopje",
+      "fallback": "Не е најдено",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Град/адреса -> координати"
+    },
+    "reverse_geocode": {
+      "icon": "🗺",
+      "name": "Reverse geocode",
+      "category": "geo",
+      "keywords_mk": [
+        "адреса од координати",
+        "обратен геокод",
+        "gps адреса",
+        "координати",
+        "reverse geocode"
+      ],
+      "keywords_en": [
+        "reverse geocode",
+        "coordinates to address",
+        "gps address",
+        "address lookup",
+        "reverse"
+      ],
+      "api": "https://nominatim.openstreetmap.org/reverse?lat={lat}&lon={lon}&format=json",
+      "method": "GET",
+      "params": {
+        "latitude": "number",
+        "longitude": "number"
+      },
+      "example_mk": "Адреса на координати",
+      "example_en": "Address from coords",
+      "fallback": "Не е најдено",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Координати -> место"
+    },
+    "ip_location": {
+      "icon": "🌐",
+      "name": "IP location",
+      "category": "geo",
+      "keywords_mk": [
+        "ip локација",
+        "геолокација",
+        "провери ip",
+        "ip адреса",
+        "where is ip"
+      ],
+      "keywords_en": [
+        "ip location",
+        "ip geolocation",
+        "check ip",
+        "ip address",
+        "where is ip"
+      ],
+      "api": "http://ip-api.com/json/{ip}",
+      "method": "GET",
+      "params": {
+        "ip": "string (optional)"
+      },
+      "example_mk": "Локација на IP",
+      "example_en": "IP location",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Локација на IP"
+    },
+    "country_info": {
+      "icon": "🏳",
+      "name": "Country info",
+      "category": "geo",
+      "keywords_mk": [
+        "земја",
+        "country info",
+        "држава",
+        "info земја",
+        "country"
+      ],
+      "keywords_en": [
+        "country",
+        "country info",
+        "nation",
+        "state",
+        "country data"
+      ],
+      "api": "https://restcountries.com/v3.1/name/{name}",
+      "method": "GET",
+      "params": {
+        "name": "string"
+      },
+      "example_mk": "Info за Македонија",
+      "example_en": "Info about Macedonia",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Инфо за земја"
+    },
+    "currency_convert": {
+      "icon": "💱",
+      "name": "Currency converter",
+      "category": "geo",
+      "keywords_mk": [
+        "конверзија валута",
+        "currency convert",
+        "курс",
+        "exchange",
+        "fx"
+      ],
+      "keywords_en": [
+        "currency convert",
+        "exchange rate",
+        "fx",
+        "convert currency",
+        "currency"
+      ],
+      "api": "https://api.exchangerate.host/convert?from={from}&to={to}&amount={amount}",
+      "method": "GET",
+      "params": {
+        "from": "USD",
+        "to": "MKD",
+        "amount": "100"
+      },
+      "example_mk": "100 USD во MKD",
+      "example_en": "100 USD to MKD",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "distance_calc": {
+      "icon": "📏",
+      "name": "Distance calculator",
+      "category": "geo",
+      "keywords_mk": [
+        "растојание",
+        "distance",
+        "од до",
+        "distance calc",
+        "километри"
+      ],
+      "keywords_en": [
+        "distance",
+        "distance calc",
+        "km",
+        "miles",
+        "how far"
+      ],
+      "api": "https://api.distance.to/api/v2/distance",
+      "method": "POST",
+      "params": {
+        "from": "{latitude,longitude}",
+        "to": "{latitude,longitude}"
+      },
+      "example_mk": "Растојание Скопје-Белград",
+      "example_en": "Skopje-Belgrade distance",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Дистанца меѓу две точки (локална математика)"
+    },
+    "timezone": {
+      "icon": "🕐",
+      "name": "Timezone info",
+      "category": "geo",
+      "keywords_mk": [
+        "часовна зона",
+        "timezone",
+        "временска зона",
+        "зона",
+        "zone"
+      ],
+      "keywords_en": [
+        "timezone",
+        "time zone",
+        "zone",
+        "tz",
+        "clock"
+      ],
+      "api": "https://worldtimeapi.org/api/timezone/{zone}",
+      "method": "GET",
+      "params": {
+        "city": "string"
+      },
+      "example_mk": "Време во зона",
+      "example_en": "Time in zone",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Временска зона за локација"
+    },
+    "flight_tracker": {
+      "icon": "✈️",
+      "name": "Flight tracker",
+      "category": "geo",
+      "keywords_mk": [
+        "летови",
+        "flight tracker",
+        "авиони",
+        "track flight",
+        "лет"
+      ],
+      "keywords_en": [
+        "flight tracker",
+        "flights",
+        "airplanes",
+        "track flight",
+        "flight"
+      ],
+      "api": "https://opensky-network.org/api/states/all",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Летови во живо",
+      "example_en": "Live flights",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "earthquake_map": {
+      "icon": "🗺",
+      "name": "Earthquake map",
+      "category": "geo",
+      "keywords_mk": [
+        "земјотрес мапа",
+        "earthquake map",
+        "сеизмичка мапа",
+        "quake map",
+        "earthquake"
+      ],
+      "keywords_en": [
+        "earthquake map",
+        "quake map",
+        "seismic map",
+        "earthquakes",
+        "earthquake"
+      ],
+      "api": "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Земјотреси на мапа",
+      "example_en": "Earthquakes map",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "sun_position": {
+      "icon": "☀️",
+      "name": "Sun position",
+      "category": "geo",
+      "keywords_mk": [
+        "сонце позиција",
+        "sun position",
+        "каде е сонцето",
+        "sun angle",
+        "sun"
+      ],
+      "keywords_en": [
+        "sun position",
+        "sun angle",
+        "sun",
+        "solar position",
+        "sun tracker"
+      ],
+      "api": "https://api.sunrise-sunset.org/json?lat={lat}&lng={lon}",
+      "method": "GET",
+      "params": {
+        "lat": "41.99",
+        "lon": "21.43"
+      },
+      "example_mk": "Позиција на сонце",
+      "example_en": "Sun position",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "youtube_search": {
+      "icon": "▶️",
+      "name": "YouTube search",
+      "category": "media",
+      "keywords_mk": [
+        "youtube",
+        "пребарај youtube",
+        "видеа",
+        "најди видео",
+        "yt"
+      ],
+      "keywords_en": [
+        "youtube",
+        "search youtube",
+        "videos",
+        "find video",
+        "yt"
+      ],
+      "api": "https://vid.puffyan.us/api/v1/search?q={q}&type=video",
+      "method": "GET",
+      "params": {
+        "query": "string"
+      },
+      "example_mk": "YouTube Python",
+      "example_en": "YouTube Python",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "YouTube пребарување преку твојот браузер (YouTube не дава клучлес пребарување)"
+    },
+    "youtube_info": {
+      "icon": "📹",
+      "name": "YouTube info",
+      "category": "media",
+      "keywords_mk": [
+        "youtube info",
+        "информации видео",
+        "video info",
+        "youtube податоци",
+        "video"
+      ],
+      "keywords_en": [
+        "youtube info",
+        "video info",
+        "youtube data",
+        "video details",
+        "video"
+      ],
+      "api": "https://vid.puffyan.us/api/v1/videos/{id}",
+      "method": "GET",
+      "params": {
+        "url": "string"
+      },
+      "example_mk": "Info за видео",
+      "example_en": "Video info",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Инфо за YouTube видео (без клуч)"
+    },
+    "reddit_user": {
+      "icon": "👤",
+      "name": "Reddit user",
+      "category": "social",
+      "keywords_mk": [
+        "reddit user",
+        "reddit профил",
+        "корисник reddit",
+        "reddit account",
+        "user reddit"
+      ],
+      "keywords_en": [
+        "reddit user",
+        "reddit profile",
+        "reddit account",
+        "user reddit",
+        "reddit"
+      ],
+      "api": "https://www.reddit.com/user/{user}/about.json",
+      "method": "GET",
+      "params": {
+        "user": "spez"
+      },
+      "example_mk": "Reddit корисник",
+      "example_en": "Reddit user",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "twitter_lookup": {
+      "icon": "🐦",
+      "name": "Twitter lookup",
+      "category": "social",
+      "keywords_mk": [
+        "twitter",
+        "x",
+        "провери twitter",
+        "twitter акаунт",
+        "tweet"
+      ],
+      "keywords_en": [
+        "twitter",
+        "x",
+        "twitter lookup",
+        "twitter account",
+        "tweet"
+      ],
+      "api": "https://nitter.net/{user}/rss",
+      "method": "GET",
+      "params": {
+        "user": "elonmusk"
+      },
+      "example_mk": "Twitter елон",
+      "example_en": "Twitter elon",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "instagram_info": {
+      "icon": "📷",
+      "name": "Instagram info",
+      "category": "social",
+      "keywords_mk": [
+        "instagram",
+        "ig",
+        "профил instagram",
+        "ig корисник",
+        "instagram"
+      ],
+      "keywords_en": [
+        "instagram",
+        "ig",
+        "instagram profile",
+        "instagram user",
+        "instagram"
+      ],
+      "api": "https://www.instagram.com/{user}/?__a=1",
+      "method": "GET",
+      "params": {
+        "user": "nasa"
+      },
+      "example_mk": "Instagram NASA",
+      "example_en": "Instagram NASA",
+      "fallback": "Потребен login",
+      "rate_limit": "needs login"
+    },
+    "tiktok_info": {
+      "icon": "🎵",
+      "name": "TikTok info",
+      "category": "social",
+      "keywords_mk": [
+        "tiktok",
+        "tik tok",
+        "профил tiktok",
+        "tiktok инфо",
+        "tiktok"
+      ],
+      "keywords_en": [
+        "tiktok",
+        "tik tok",
+        "tiktok profile",
+        "tiktok info",
+        "tiktok"
+      ],
+      "api": "https://www.tiktok.com/oembed?url={url}",
+      "method": "GET",
+      "params": {
+        "url": "https://www.tiktok.com/@user/video/123"
+      },
+      "example_mk": "TikTok info",
+      "example_en": "TikTok info",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "twitch_status": {
+      "icon": "🎮",
+      "name": "Twitch status",
+      "category": "social",
+      "keywords_mk": [
+        "twitch",
+        "twitch статус",
+        "streamer",
+        "пребарај twitch",
+        "twitch"
+      ],
+      "keywords_en": [
+        "twitch",
+        "twitch status",
+        "streamer",
+        "twitch lookup",
+        "twitch"
+      ],
+      "api": "https://decapi.me/twitch/uptime/{channel}",
+      "method": "GET",
+      "params": {
+        "channel": "ninja"
+      },
+      "example_mk": "Twitch статус",
+      "example_en": "Twitch status",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "spotify_search": {
+      "icon": "🎵",
+      "name": "Spotify search",
+      "category": "social",
+      "keywords_mk": [
+        "spotify",
+        "музика",
+        "пребарај spotify",
+        "song",
+        "track"
+      ],
+      "keywords_en": [
+        "spotify",
+        "music",
+        "search spotify",
+        "song",
+        "track"
+      ],
+      "api": "https://api.spotify.com/v1/search?q={q}&type=track",
+      "method": "GET",
+      "params": {
+        "q": "imagine"
+      },
+      "example_mk": "Spotify пребарување",
+      "example_en": "Spotify search",
+      "fallback": "Потребен token",
+      "rate_limit": "needs key"
+    },
+    "soundcloud_search": {
+      "icon": "🎧",
+      "name": "SoundCloud search",
+      "category": "social",
+      "keywords_mk": [
+        "soundcloud",
+        "пребарај soundcloud",
+        "track",
+        "музика sc",
+        "soundcloud"
+      ],
+      "keywords_en": [
+        "soundcloud",
+        "search soundcloud",
+        "track",
+        "music",
+        "soundcloud"
+      ],
+      "api": "https://api-v2.soundcloud.com/search?q={q}",
+      "method": "GET",
+      "params": {
+        "q": "lofi"
+      },
+      "example_mk": "SoundCloud lofi",
+      "example_en": "SoundCloud lofi",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "discord_info": {
+      "icon": "💬",
+      "name": "Discord info",
+      "category": "social",
+      "keywords_mk": [
+        "discord",
+        "discord info",
+        "сервер",
+        "discord server",
+        "discord"
+      ],
+      "keywords_en": [
+        "discord",
+        "discord info",
+        "server",
+        "discord server",
+        "discord"
+      ],
+      "api": "https://discord.com/api/v10/invites/{code}",
+      "method": "GET",
+      "params": {
+        "code": "invite"
+      },
+      "example_mk": "Discord invite",
+      "example_en": "Discord invite",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "telegram_info": {
+      "icon": "✈️",
+      "name": "Telegram info",
+      "category": "social",
+      "keywords_mk": [
+        "telegram",
+        "tg",
+        "канал",
+        "channel",
+        "telegram"
+      ],
+      "keywords_en": [
+        "telegram",
+        "tg",
+        "channel",
+        "telegram channel",
+        "telegram"
+      ],
+      "api": "https://t.me/{channel}",
+      "method": "GET",
+      "params": {
+        "channel": "durov"
+      },
+      "example_mk": "Telegram канал",
+      "example_en": "Telegram channel",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "mastodon_info": {
+      "icon": "🐘",
+      "name": "Mastodon info",
+      "category": "social",
+      "keywords_mk": [
+        "mastodon",
+        "fediverse",
+        "mastodon профил",
+        "fediverse",
+        "mastodon"
+      ],
+      "keywords_en": [
+        "mastodon",
+        "fediverse",
+        "mastodon profile",
+        "fediverse",
+        "mastodon"
+      ],
+      "api": "https://mastodon.social/api/v1/accounts/lookup?acct={acct}",
+      "method": "GET",
+      "params": {
+        "acct": "user@mastodon.social"
+      },
+      "example_mk": "Mastodon профил",
+      "example_en": "Mastodon profile",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "bluesky_info": {
+      "icon": "🦋",
+      "name": "Bluesky info",
+      "category": "social",
+      "keywords_mk": [
+        "bluesky",
+        "bsky",
+        "bluesky профил",
+        "at protocol",
+        "bluesky"
+      ],
+      "keywords_en": [
+        "bluesky",
+        "bsky",
+        "bluesky profile",
+        "at protocol",
+        "bluesky"
+      ],
+      "api": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor={handle}",
+      "method": "GET",
+      "params": {
+        "handle": "bsky.app"
+      },
+      "example_mk": "Bluesky профил",
+      "example_en": "Bluesky profile",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "threads_info": {
+      "icon": "🧵",
+      "name": "Threads info",
+      "category": "social",
+      "keywords_mk": [
+        "threads",
+        "meta threads",
+        "профил threads",
+        "threads user",
+        "threads"
+      ],
+      "keywords_en": [
+        "threads",
+        "meta threads",
+        "threads profile",
+        "threads user",
+        "threads"
+      ],
+      "api": "https://www.threads.net/@{user}",
+      "method": "GET",
+      "params": {
+        "user": "zuck"
+      },
+      "example_mk": "Threads профил",
+      "example_en": "Threads profile",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "linkedin_info": {
+      "icon": "💼",
+      "name": "LinkedIn info",
+      "category": "social",
+      "keywords_mk": [
+        "linkedin",
+        "профил linkedin",
+        "linkedin user",
+        "linkedin",
+        "company"
+      ],
+      "keywords_en": [
+        "linkedin",
+        "linkedin profile",
+        "linkedin user",
+        "linkedin",
+        "company"
+      ],
+      "api": "https://www.linkedin.com/in/{user}",
+      "method": "GET",
+      "params": {
+        "user": "satyanadella"
+      },
+      "example_mk": "LinkedIn профил",
+      "example_en": "LinkedIn profile",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "execute_python": {
+      "icon": "🐍",
+      "name": "Execute Python",
+      "category": "code",
+      "keywords_mk": [
+        "изврши python",
+        "python код",
+        "стартувај python",
+        "пресметај python",
+        "python"
+      ],
+      "keywords_en": [
+        "execute python",
+        "python code",
+        "run python",
+        "python calculation",
+        "python"
+      ],
+      "api": "https://emkc.org/api/v2/piston/execute",
+      "method": "POST",
+      "params": {
+        "code": "string"
+      },
+      "example_mk": "Python код",
+      "example_en": "Python code",
+      "fallback": "Не успеа",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши Python локално"
+    },
+    "execute_js": {
+      "icon": "📜",
+      "name": "Execute JavaScript",
+      "category": "code",
+      "keywords_mk": [
+        "изврши js",
+        "javascript код",
+        "стартувај js",
+        "js код",
+        "javascript"
+      ],
+      "keywords_en": [
+        "execute js",
+        "javascript code",
+        "run js",
+        "js code",
+        "javascript"
+      ],
+      "api": "https://emkc.org/api/v2/piston/execute",
+      "method": "POST",
+      "params": {
+        "code": "string"
+      },
+      "example_mk": "JS код",
+      "example_en": "JS code",
+      "fallback": "Не успеа",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши JavaScript локално (песок)"
+    },
+    "json_format": {
+      "icon": "{}",
+      "name": "JSON format",
+      "category": "code",
+      "keywords_mk": [
+        "форматирај json",
+        "json",
+        "убав json",
+        "pretty json",
+        "json format"
+      ],
+      "keywords_en": [
+        "format json",
+        "json",
+        "pretty json",
+        "beautify json",
+        "json format"
+      ],
+      "api": "local:JSON.parse",
+      "method": "LOCAL",
+      "params": {
+        "json": "string|object"
+      },
+      "example_mk": "Форматирај JSON",
+      "example_en": "Format JSON",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Форматирај JSON"
+    },
+    "base64_encode": {
+      "icon": "🔐",
+      "name": "Base64 encode",
+      "category": "code",
+      "keywords_mk": [
+        "base64 кодирај",
+        "encode base64",
+        "base64",
+        "кодирај",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64 encode",
+        "encode base64",
+        "base64",
+        "b64",
+        "encode"
+      ],
+      "api": "local:btoa",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Encode base64",
+      "example_en": "Encode base64",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Base64 енкодирање"
+    },
+    "base64_decode": {
+      "icon": "🔓",
+      "name": "Base64 decode",
+      "category": "code",
+      "keywords_mk": [
+        "base64 декодирај",
+        "decode base64",
+        "base64",
+        "откодирај",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64 decode",
+        "decode base64",
+        "base64",
+        "b64",
+        "decode"
+      ],
+      "api": "local:atob",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Decode base64",
+      "example_en": "Decode base64",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Base64 декодирање"
+    },
+    "url_encode": {
+      "icon": "🔗",
+      "name": "URL encode",
+      "category": "code",
+      "keywords_mk": [
+        "url encode",
+        "encode url",
+        "кодирај url",
+        "url",
+        "encode"
+      ],
+      "keywords_en": [
+        "url encode",
+        "encode url",
+        "url",
+        "uri encode",
+        "encode"
+      ],
+      "api": "local:encodeURIComponent",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Encode URL",
+      "example_en": "Encode URL",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "URL енкодирање"
+    },
+    "url_decode": {
+      "icon": "🔗",
+      "name": "URL decode",
+      "category": "code",
+      "keywords_mk": [
+        "url decode",
+        "decode url",
+        "декодирај url",
+        "url decode",
+        "decode"
+      ],
+      "keywords_en": [
+        "url decode",
+        "decode url",
+        "url",
+        "uri decode",
+        "decode"
+      ],
+      "api": "local:decodeURIComponent",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Decode URL",
+      "example_en": "Decode URL",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "URL декодирање"
+    },
+    "hash_md5": {
+      "icon": "#️⃣",
+      "name": "MD5 hash",
+      "category": "code",
+      "keywords_mk": [
+        "md5",
+        "hash",
+        "хеш",
+        "md5 hash",
+        "хеширај"
+      ],
+      "keywords_en": [
+        "md5",
+        "hash",
+        "md5 hash",
+        "hash string",
+        "hash"
+      ],
+      "api": "local:crypto",
+      "method": "LOCAL",
+      "params": {
+        "text": "text"
+      },
+      "example_mk": "MD5 hash",
+      "example_en": "MD5 hash",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "hash_sha256": {
+      "icon": "#️⃣",
+      "name": "SHA256 hash",
+      "category": "code",
+      "keywords_mk": [
+        "sha256",
+        "hash",
+        "хеш",
+        "sha256 hash",
+        "хеширај"
+      ],
+      "keywords_en": [
+        "sha256",
+        "hash",
+        "sha256 hash",
+        "hash string",
+        "hash"
+      ],
+      "api": "local:crypto",
+      "method": "LOCAL",
+      "params": {
+        "text": "text"
+      },
+      "example_mk": "SHA256 hash",
+      "example_en": "SHA256 hash",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "regex_test": {
+      "icon": "🔍",
+      "name": "Regex test",
+      "category": "code",
+      "keywords_mk": [
+        "regex",
+        "тест regex",
+        "regex pattern",
+        "регуларен израз",
+        "regex test"
+      ],
+      "keywords_en": [
+        "regex",
+        "regex test",
+        "regex pattern",
+        "regular expression",
+        "regex"
+      ],
+      "api": "local:RegExp",
+      "method": "LOCAL",
+      "params": {
+        "pattern": "string",
+        "text": "string",
+        "flags": "string"
+      },
+      "example_mk": "Regex test",
+      "example_en": "Regex test",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Тестирај регуларен израз"
+    },
+    "diff_check": {
+      "icon": "📊",
+      "name": "Diff check",
+      "category": "code",
+      "keywords_mk": [
+        "diff",
+        "спореди",
+        "compare text",
+        "diff check",
+        "разлика"
+      ],
+      "keywords_en": [
+        "diff",
+        "compare text",
+        "diff check",
+        "difference",
+        "compare"
+      ],
+      "api": "local:diff",
+      "method": "LOCAL",
+      "params": {
+        "left": "string",
+        "right": "string"
+      },
+      "example_mk": "Diff текстови",
+      "example_en": "Diff texts",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Спореди два текста"
+    },
+    "yaml_format": {
+      "icon": "📄",
+      "name": "YAML format",
+      "category": "code",
+      "keywords_mk": [
+        "форматирај yaml",
+        "yaml",
+        "yaml format",
+        "yaml",
+        "format yaml"
+      ],
+      "keywords_en": [
+        "format yaml",
+        "yaml",
+        "yaml format",
+        "beautify yaml",
+        "yaml"
+      ],
+      "api": "local:yaml",
+      "method": "LOCAL",
+      "params": {
+        "text": "yaml"
+      },
+      "example_mk": "Форматирај YAML",
+      "example_en": "Format YAML",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "sql_format": {
+      "icon": "💾",
+      "name": "SQL format",
+      "category": "code",
+      "keywords_mk": [
+        "форматирај sql",
+        "sql",
+        "sql format",
+        "убав sql",
+        "sql format"
+      ],
+      "keywords_en": [
+        "format sql",
+        "sql",
+        "sql format",
+        "beautify sql",
+        "sql format"
+      ],
+      "api": "local:sql",
+      "method": "LOCAL",
+      "params": {
+        "text": "sql"
+      },
+      "example_mk": "Форматирај SQL",
+      "example_en": "Format SQL",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "markdown_preview": {
+      "icon": "📝",
+      "name": "Markdown preview",
+      "category": "code",
+      "keywords_mk": [
+        "markdown",
+        "прегледај markdown",
+        "md preview",
+        "markdown preview",
+        "md"
+      ],
+      "keywords_en": [
+        "markdown",
+        "markdown preview",
+        "md preview",
+        "preview md",
+        "markdown"
+      ],
+      "api": "local:markdown",
+      "method": "LOCAL",
+      "params": {
+        "text": "markdown"
+      },
+      "example_mk": "Markdown преглед",
+      "example_en": "Markdown preview",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "code_generate": {
+      "icon": "🤖",
+      "name": "Code generate",
+      "category": "code",
+      "keywords_mk": [
+        "генерирај код",
+        "code generate",
+        "code gen",
+        "помош код",
+        "code helper"
+      ],
+      "keywords_en": [
+        "generate code",
+        "code generate",
+        "code gen",
+        "code helper",
+        "write code"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "code task"
+      },
+      "example_mk": "Генерирај код",
+      "example_en": "Generate code",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "summarize": {
+      "icon": "🧠",
+      "name": "Summarize",
+      "category": "text",
+      "keywords_mk": [
+        "сумирај",
+        "резиме",
+        "скрати текст",
+        "суштина",
+        "кратко"
+      ],
+      "keywords_en": [
+        "summarize",
+        "summary",
+        "shorten text",
+        "main idea",
+        "brief"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "text": "string",
+        "max_sentences": "number"
+      },
+      "example_mk": "Сумирај текст",
+      "example_en": "Summarize text",
+      "fallback": "Направи локално",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Сумирај текст (локално)"
+    },
+    "translate": {
+      "icon": "🌍",
+      "name": "Translate",
+      "category": "text",
+      "keywords_mk": [
+        "преведи",
+        "превод",
+        "превод на",
+        "translate",
+        "преведи"
+      ],
+      "keywords_en": [
+        "translate",
+        "translation",
+        "convert language",
+        "translate",
+        "interpret"
+      ],
+      "api": "https://api.mymemory.translated.net/get?q={q}&langpair={from}|{to}",
+      "method": "GET",
+      "params": {
+        "text": "string",
+        "to": "mk|en|sr|bg"
+      },
+      "example_mk": "Преведи hello",
+      "example_en": "Translate hello",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Преведи преку твојот браузер (без клуч)"
+    },
+    "dictionary": {
+      "icon": "📚",
+      "name": "Dictionary",
+      "category": "web",
+      "keywords_mk": [
+        "речник",
+        "значење",
+        "дефиниција",
+        "што значи",
+        "збор"
+      ],
+      "keywords_en": [
+        "dictionary",
+        "meaning",
+        "definition",
+        "define",
+        "word"
+      ],
+      "api": "https://api.dictionaryapi.dev/api/v2/entries/en/{word}",
+      "method": "GET",
+      "params": {
+        "word": "string"
+      },
+      "example_mk": "Значење на hello",
+      "example_en": "Meaning of hello",
+      "fallback": "Не е најдено",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Значење на збор (без клуч)"
+    },
+    "spell_check": {
+      "icon": "✍️",
+      "name": "Spell check",
+      "category": "text",
+      "keywords_mk": [
+        "правопис",
+        "провери текст",
+        "граматика",
+        "грешки",
+        "лектура"
+      ],
+      "keywords_en": [
+        "spell check",
+        "check text",
+        "grammar",
+        "errors",
+        "proofread"
+      ],
+      "api": "https://api.languagetool.org/v2/check",
+      "method": "POST",
+      "params": {
+        "text": "string",
+        "language": "en-US|mk"
+      },
+      "example_mk": "Провери правопис",
+      "example_en": "Check spelling",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Правопис (без клуч)"
+    },
+    "word_count": {
+      "icon": "🔢",
+      "name": "Word count",
+      "category": "text",
+      "keywords_mk": [
+        "број зборови",
+        "изброј зборови",
+        "должина текст",
+        "колку зборови",
+        "words"
+      ],
+      "keywords_en": [
+        "word count",
+        "count words",
+        "text length",
+        "how many words",
+        "words"
+      ],
+      "api": "local:String",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Изброј зборови",
+      "example_en": "Count words",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Број зборови и знаци"
+    },
+    "char_count": {
+      "icon": "🔢",
+      "name": "Character count",
+      "category": "text",
+      "keywords_mk": [
+        "број карактери",
+        "chars",
+        "знаци",
+        "колку карактери",
+        "char count"
+      ],
+      "keywords_en": [
+        "character count",
+        "chars",
+        "characters",
+        "how many chars",
+        "char count"
+      ],
+      "api": "local:String",
+      "method": "LOCAL",
+      "params": {
+        "text": "text"
+      },
+      "example_mk": "Број карактери",
+      "example_en": "Char count",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "reading_time": {
+      "icon": "⏱",
+      "name": "Reading time",
+      "category": "text",
+      "keywords_mk": [
+        "време читање",
+        "колку се чита",
+        "минути читање",
+        "читање време",
+        "reading time"
+      ],
+      "keywords_en": [
+        "reading time",
+        "time to read",
+        "minutes",
+        "reading minutes",
+        "reading time"
+      ],
+      "api": "local:TextMetrics",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Време за читање",
+      "example_en": "Reading time",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Време за читање"
+    },
+    "text_to_speech": {
+      "icon": "🔊",
+      "name": "Text to speech",
+      "category": "text",
+      "keywords_mk": [
+        "text to speech",
+        "tts",
+        "кажи текст",
+        "зборувај текст",
+        "speak"
+      ],
+      "keywords_en": [
+        "text to speech",
+        "tts",
+        "speak text",
+        "say text",
+        "speak"
+      ],
+      "api": "local:speechSynthesis",
+      "method": "LOCAL",
+      "params": {
+        "text": "text",
+        "lang": "mk-MK"
+      },
+      "example_mk": "Кажи текст",
+      "example_en": "Speak text",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "sentiment": {
+      "icon": "😊",
+      "name": "Sentiment analysis",
+      "category": "text",
+      "keywords_mk": [
+        "сентимент",
+        "sentiment",
+        "расположение текст",
+        "позитивно негативно",
+        "tone"
+      ],
+      "keywords_en": [
+        "sentiment",
+        "sentiment analysis",
+        "tone",
+        "feeling",
+        "mood"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Сентимент текст",
+      "example_en": "Sentiment text",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Сентимент (локален лексикон)"
+    },
+    "keyword_extract": {
+      "icon": "🔑",
+      "name": "Keyword extraction",
+      "category": "text",
+      "keywords_mk": [
+        "клучни зборови",
+        "keywords",
+        "извади клучни",
+        "keywords",
+        "extract"
+      ],
+      "keywords_en": [
+        "keywords",
+        "keyword extraction",
+        "extract keywords",
+        "key terms",
+        "keywords"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "text": "string",
+        "limit": "number"
+      },
+      "example_mk": "Клучни зборови",
+      "example_en": "Keywords",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Клучни зборови"
+    },
+    "named_entities": {
+      "icon": "🏷",
+      "name": "Named entities",
+      "category": "text",
+      "keywords_mk": [
+        "именувани ентитети",
+        "ner",
+        "named entities",
+        "extract entities",
+        "entities"
+      ],
+      "keywords_en": [
+        "named entities",
+        "ner",
+        "extract entities",
+        "entities",
+        "ner"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Ентитети",
+      "example_en": "Entities",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Имиња, домени, меилови"
+    },
+    "rewrite": {
+      "icon": "✏️",
+      "name": "Rewrite text",
+      "category": "text",
+      "keywords_mk": [
+        "препиши",
+        "rewrite",
+        "rewrite текст",
+        "парафразирај",
+        "rewrite"
+      ],
+      "keywords_en": [
+        "rewrite",
+        "rephrase",
+        "paraphrase",
+        "rewrite text",
+        "rephrase"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "rewrite: text"
+      },
+      "example_mk": "Препиши текст",
+      "example_en": "Rewrite text",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "expand": {
+      "icon": "📝",
+      "name": "Expand text",
+      "category": "text",
+      "keywords_mk": [
+        "прошири текст",
+        "expand",
+        "додади детали",
+        "продолжи текст",
+        "expand"
+      ],
+      "keywords_en": [
+        "expand text",
+        "expand",
+        "add details",
+        "longer version",
+        "expand"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "expand: text"
+      },
+      "example_mk": "Прошири текст",
+      "example_en": "Expand text",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "tone_change": {
+      "icon": "🎭",
+      "name": "Change tone",
+      "category": "text",
+      "keywords_mk": [
+        "промени тон",
+        "tone",
+        "смени стил",
+        "tone change",
+        "tone"
+      ],
+      "keywords_en": [
+        "change tone",
+        "tone",
+        "change style",
+        "tone change",
+        "rewrite tone"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "tone: text"
+      },
+      "example_mk": "Промени тон",
+      "example_en": "Change tone",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "bullets": {
+      "icon": "•",
+      "name": "Bullet points",
+      "category": "text",
+      "keywords_mk": [
+        "bullet points",
+        "листа точки",
+        "bullets",
+        "bullet list",
+        "пунктови"
+      ],
+      "keywords_en": [
+        "bullet points",
+        "bullets",
+        "bullet list",
+        "bulleted list",
+        "bullets"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Bullet points",
+      "example_en": "Bullet points",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Претвори во булети"
+    },
+    "password_gen": {
+      "icon": "🔐",
+      "name": "Password generator",
+      "category": "utils",
+      "keywords_mk": [
+        "лозинка",
+        "генерирај лозинка",
+        "password",
+        "silna lozinka",
+        "pass"
+      ],
+      "keywords_en": [
+        "password",
+        "generate password",
+        "strong password",
+        "random password",
+        "passphrase"
+      ],
+      "api": "local:crypto.getRandomValues",
+      "method": "LOCAL",
+      "params": {
+        "length": "number",
+        "symbols": "boolean"
+      },
+      "example_mk": "Генерирај лозинка",
+      "example_en": "Generate password",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Генерирај лозинка (локално)"
+    },
+    "uuid_gen": {
+      "icon": "🆔",
+      "name": "UUID generator",
+      "category": "utils",
+      "keywords_mk": [
+        "uuid",
+        "id",
+        "идентификатор",
+        "нов id",
+        "id gen"
+      ],
+      "keywords_en": [
+        "uuid",
+        "id",
+        "identifier",
+        "new id",
+        "uuid gen"
+      ],
+      "api": "local:crypto.randomUUID",
+      "method": "LOCAL",
+      "params": {
+        "count": "number"
+      },
+      "example_mk": "UUID",
+      "example_en": "UUID",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "UUID v4"
+    },
+    "random_number": {
+      "icon": "🎲",
+      "name": "Random number",
+      "category": "utils",
+      "keywords_mk": [
+        "случаен број",
+        "random",
+        "random number",
+        "random broj",
+        "random"
+      ],
+      "keywords_en": [
+        "random number",
+        "random",
+        "random",
+        "number",
+        "dice"
+      ],
+      "api": "local:Math.random",
+      "method": "LOCAL",
+      "params": {
+        "min": "number",
+        "max": "number"
+      },
+      "example_mk": "Случаен број 1-100",
+      "example_en": "Random 1-100",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Случаен број"
+    },
+    "coin_flip": {
+      "icon": "🪙",
+      "name": "Coin flip",
+      "category": "utils",
+      "keywords_mk": [
+        "фрли паричка",
+        "coin flip",
+        "flip coin",
+        "паричка",
+        "coin"
+      ],
+      "keywords_en": [
+        "coin flip",
+        "flip coin",
+        "heads tails",
+        "coin toss",
+        "coin"
+      ],
+      "api": "local:Math.random",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Фрли паричка",
+      "example_en": "Flip coin",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Фрли паричка"
+    },
+    "dice_roll": {
+      "icon": "🎲",
+      "name": "Dice roll",
+      "category": "utils",
+      "keywords_mk": [
+        "фрли коцка",
+        "dice roll",
+        "roll dice",
+        "коцка",
+        "dice"
+      ],
+      "keywords_en": [
+        "dice roll",
+        "roll dice",
+        "d6",
+        "dice",
+        "roll"
+      ],
+      "api": "local:Math.random",
+      "method": "LOCAL",
+      "params": {
+        "sides": "number",
+        "count": "number"
+      },
+      "example_mk": "Фрли коцка",
+      "example_en": "Roll dice",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Фрли коцка"
+    },
+    "base64": {
+      "icon": "🔐",
+      "name": "Base64 encode/decode",
+      "category": "utils",
+      "keywords_mk": [
+        "base64",
+        "кодирај base64",
+        "decode base64",
+        "base64",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64",
+        "encode base64",
+        "decode base64",
+        "base64",
+        "b64"
+      ],
+      "api": "local:btoa/atob",
+      "method": "LOCAL",
+      "params": {
+        "text": "text",
+        "mode": "encode"
+      },
+      "example_mk": "Base64",
+      "example_en": "Base64",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "color_convert": {
+      "icon": "🎨",
+      "name": "Color converter",
+      "category": "utils",
+      "keywords_mk": [
+        "боја конверзија",
+        "color convert",
+        "hex rgb",
+        "боја",
+        "color"
+      ],
+      "keywords_en": [
+        "color convert",
+        "hex to rgb",
+        "rgb to hex",
+        "color",
+        "color converter"
+      ],
+      "api": "local:convert",
+      "method": "LOCAL",
+      "params": {
+        "color": "string"
+      },
+      "example_mk": "Конвертирај боја",
+      "example_en": "Convert color",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Конвертирај бои (hex/rgb/hsl)"
+    },
+    "unit_convert": {
+      "icon": "📏",
+      "name": "Unit converter",
+      "category": "utils",
+      "keywords_mk": [
+        "конверзија единици",
+        "unit convert",
+        "мерки",
+        "convert units",
+        "units"
+      ],
+      "keywords_en": [
+        "unit convert",
+        "convert units",
+        "metric",
+        "imperial",
+        "units"
+      ],
+      "api": "local:convert",
+      "method": "LOCAL",
+      "params": {
+        "value": "number",
+        "from": "string",
+        "to": "string"
+      },
+      "example_mk": "100 км во милји",
+      "example_en": "100 km to mi",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Конвертирај единици"
+    },
+    "timestamp": {
+      "icon": "🕐",
+      "name": "Timestamp convert",
+      "category": "utils",
+      "keywords_mk": [
+        "timestamp",
+        "време stamp",
+        "convert timestamp",
+        "timestamp",
+        "unix time"
+      ],
+      "keywords_en": [
+        "timestamp",
+        "unix time",
+        "convert timestamp",
+        "time stamp",
+        "unix"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Timestamp 1700000000",
+      "example_en": "Timestamp 1700000000",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Сегашен таймстамп во видови"
+    },
+    "date_diff": {
+      "icon": "📅",
+      "name": "Date difference",
+      "category": "utils",
+      "keywords_mk": [
+        "разлика датуми",
+        "date diff",
+        "помеѓу датуми",
+        "date difference",
+        "days between"
+      ],
+      "keywords_en": [
+        "date diff",
+        "days between",
+        "date difference",
+        "dates",
+        "diff"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {
+        "from": "string",
+        "to": "string"
+      },
+      "example_mk": "Денови помеѓу датуми",
+      "example_en": "Days between",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Разлика меѓу датуми"
+    },
+    "age_calc": {
+      "icon": "🎂",
+      "name": "Age calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "возраст",
+        "age calc",
+        "колку години",
+        "age calculator",
+        "age"
+      ],
+      "keywords_en": [
+        "age",
+        "age calc",
+        "how old",
+        "age calculator",
+        "years old"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {
+        "birthdate": "1990-01-01"
+      },
+      "example_mk": "Возраст од 1990",
+      "example_en": "Age from 1990",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "bmi_calc": {
+      "icon": "⚖️",
+      "name": "BMI calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "bmi",
+        "bmi calculator",
+        "индекс маса",
+        "body mass index",
+        "bmi"
+      ],
+      "keywords_en": [
+        "bmi",
+        "bmi calculator",
+        "body mass index",
+        "bmi calc",
+        "bmi"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "weight_kg": "number",
+        "height_cm": "number"
+      },
+      "example_mk": "BMI 70kg 175cm",
+      "example_en": "BMI 70kg 175cm",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "BMI"
+    },
+    "tip_calc": {
+      "icon": "💰",
+      "name": "Tip calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "бакшиш",
+        "tip calc",
+        "tip",
+        "бакшиш калкулатор",
+        "tip"
+      ],
+      "keywords_en": [
+        "tip",
+        "tip calculator",
+        "tip calc",
+        "gratuity",
+        "tip"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "bill": "number",
+        "percent": "number",
+        "people": "number"
+      },
+      "example_mk": "Бакшиш 10%",
+      "example_en": "Tip 10%",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Бакшиш и поделба"
+    },
+    "percent_calc": {
+      "icon": "%",
+      "name": "Percent calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "процент",
+        "percent",
+        "percent calc",
+        "проценти",
+        "percent"
+      ],
+      "keywords_en": [
+        "percent",
+        "percent calc",
+        "percentage",
+        "percent",
+        "calc"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "value": "number",
+        "percent": "number",
+        "mode": "of|change"
+      },
+      "example_mk": "15% од 100",
+      "example_en": "15% of 100",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Проценти"
+    },
+    "loan_calc": {
+      "icon": "🏦",
+      "name": "Loan calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "кредит",
+        "loan calc",
+        "loan calculator",
+        "заем",
+        "loan"
+      ],
+      "keywords_en": [
+        "loan",
+        "loan calc",
+        "loan calculator",
+        "mortgage",
+        "loan"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "amount": "number",
+        "annual_rate_percent": "number",
+        "months": "number"
+      },
+      "example_mk": "Кредит 100k",
+      "example_en": "Loan 100k",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Кредит: рата и вкупно"
+    },
+    "bmi_metric": {
+      "icon": "⚖️",
+      "name": "BMI metric",
+      "category": "utils",
+      "keywords_mk": [
+        "bmi metric",
+        "bmi",
+        "индекс маса метрички",
+        "bmi metric",
+        "bmi"
+      ],
+      "keywords_en": [
+        "bmi metric",
+        "bmi",
+        "body mass index metric",
+        "bmi metric",
+        "bmi"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "weight_kg": "70",
+        "height_cm": "175"
+      },
+      "example_mk": "BMI метрички",
+      "example_en": "BMI metric",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "random_choice": {
+      "icon": "🎯",
+      "name": "Random choice",
+      "category": "utils",
+      "keywords_mk": [
+        "избери случајно",
+        "random choice",
+        "pick random",
+        "случајно",
+        "random pick"
+      ],
+      "keywords_en": [
+        "random choice",
+        "pick random",
+        "random pick",
+        "choose",
+        "random"
+      ],
+      "api": "local:Math.random",
+      "method": "LOCAL",
+      "params": {
+        "options": "a,b,c"
+      },
+      "example_mk": "Избери од листа",
+      "example_en": "Pick from list",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "shuffle": {
+      "icon": "🔀",
+      "name": "Shuffle list",
+      "category": "utils",
+      "keywords_mk": [
+        "измешај",
+        "shuffle",
+        "измешај листа",
+        "shuffle list",
+        "shuffle"
+      ],
+      "keywords_en": [
+        "shuffle",
+        "shuffle list",
+        "randomize list",
+        "mix list",
+        "shuffle"
+      ],
+      "api": "local:Math.random",
+      "method": "LOCAL",
+      "params": {
+        "list": "a,b,c"
+      },
+      "example_mk": "Измешај листа",
+      "example_en": "Shuffle list",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "qr_generate": {
+      "icon": "📱",
+      "name": "QR generate",
+      "category": "utils",
+      "keywords_mk": [
+        "qr генерирај",
+        "qr generate",
+        "qr код",
+        "qr",
+        "qr"
+      ],
+      "keywords_en": [
+        "qr generate",
+        "qr code",
+        "qr",
+        "qr code",
+        "qrcode"
+      ],
+      "api": "https://api.qrserver.com/v1/create-qr-code/?data={q}",
+      "method": "GET",
+      "params": {
+        "q": "text"
+      },
+      "example_mk": "QR код",
+      "example_en": "QR code",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "shorten_url": {
+      "icon": "🔗",
+      "name": "Shorten URL",
+      "category": "utils",
+      "keywords_mk": [
+        "скрати url",
+        "shorten url",
+        "краток линк",
+        "short url",
+        "shorten"
+      ],
+      "keywords_en": [
+        "shorten url",
+        "short url",
+        "url shortener",
+        "short link",
+        "shorten"
+      ],
+      "api": "https://tinyurl.com/api-create.php?url={url}",
+      "method": "GET",
+      "params": {
+        "url": "https://example.com"
+      },
+      "example_mk": "Скрати URL",
+      "example_en": "Shorten URL",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "todo_list": {
+      "icon": "✅",
+      "name": "Todo list",
+      "category": "productivity",
+      "keywords_mk": [
+        "задачи",
+        "todo",
+        "листа",
+        "што треба",
+        "tasks"
+      ],
+      "keywords_en": [
+        "todo",
+        "tasks",
+        "to do list",
+        "checklist",
+        "what to do"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "action": "add/list/done",
+        "text": "task"
+      },
+      "example_mk": "Додај задача",
+      "example_en": "Add task",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "notes": {
+      "icon": "📝",
+      "name": "Notes",
+      "category": "productivity",
+      "keywords_mk": [
+        "белешка",
+        "notes",
+        "запиши",
+        "notes",
+        "белешки"
+      ],
+      "keywords_en": [
+        "notes",
+        "note",
+        "write down",
+        "memo",
+        "notebook"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "action": "create/read/delete",
+        "text": "note"
+      },
+      "example_mk": "Запиши белешка",
+      "example_en": "Write note",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "reminders": {
+      "icon": "⏰",
+      "name": "Reminders",
+      "category": "productivity",
+      "keywords_mk": [
+        "потсетник",
+        "reminder",
+        "reminders",
+        "потсети ме",
+        "reminders"
+      ],
+      "keywords_en": [
+        "reminder",
+        "reminders",
+        "remind me",
+        "alarm",
+        "reminders"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "text": "remind task",
+        "when": "time"
+      },
+      "example_mk": "Потсети ме",
+      "example_en": "Remind me",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "habits_tracker": {
+      "icon": "📊",
+      "name": "Habits tracker",
+      "category": "productivity",
+      "keywords_mk": [
+        "навики",
+        "habits",
+        "track навики",
+        "habit tracker",
+        "habits"
+      ],
+      "keywords_en": [
+        "habits",
+        "habit tracker",
+        "track habits",
+        "daily habits",
+        "habits"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "habit": "exercise",
+        "done": "true"
+      },
+      "example_mk": "Навика вежбање",
+      "example_en": "Habit exercise",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "pomodoro": {
+      "icon": "🍅",
+      "name": "Pomodoro",
+      "category": "productivity",
+      "keywords_mk": [
+        "помодоро",
+        "pomodoro",
+        "фокус тајмер",
+        "pomodoro",
+        "focus"
+      ],
+      "keywords_en": [
+        "pomodoro",
+        "focus timer",
+        "pomodoro",
+        "focus",
+        "timer"
+      ],
+      "api": "local:setInterval",
+      "method": "LOCAL",
+      "params": {
+        "action": "start|status|stop",
+        "minutes": "number"
+      },
+      "example_mk": "Помодоро 25",
+      "example_en": "Pomodoro 25",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Pomodoro тајмер"
+    },
+    "stopwatch": {
+      "icon": "⏱",
+      "name": "Stopwatch",
+      "category": "productivity",
+      "keywords_mk": [
+        "стоперица",
+        "stopwatch",
+        "мерење време",
+        "stopwatch",
+        "timer"
+      ],
+      "keywords_en": [
+        "stopwatch",
+        "timer",
+        "measure time",
+        "stopwatch",
+        "timer"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {
+        "action": "start/stop"
+      },
+      "example_mk": "Стартувај стоперица",
+      "example_en": "Start stopwatch",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "calendar_events": {
+      "icon": "📅",
+      "name": "Calendar events",
+      "category": "productivity",
+      "keywords_mk": [
+        "календар",
+        "calendar",
+        "настани",
+        "events",
+        "calendar"
+      ],
+      "keywords_en": [
+        "calendar",
+        "events",
+        "schedule",
+        "calendar",
+        "dates"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "title": "event",
+        "date": "2024-01-01"
+      },
+      "example_mk": "Календар настан",
+      "example_en": "Calendar event",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "journal": {
+      "icon": "📔",
+      "name": "Journal",
+      "category": "productivity",
+      "keywords_mk": [
+        "дневник",
+        "journal",
+        "запиши ден",
+        "journal",
+        "diary"
+      ],
+      "keywords_en": [
+        "journal",
+        "diary",
+        "write journal",
+        "journal",
+        "log"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "action": "write|read",
+        "text": "string"
+      },
+      "example_mk": "Запиши дневник",
+      "example_en": "Write journal",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Дневник"
+    },
+    "goal_tracker": {
+      "icon": "🎯",
+      "name": "Goal tracker",
+      "category": "productivity",
+      "keywords_mk": [
+        "цели",
+        "goals",
+        "цели tracker",
+        "goal tracking",
+        "goals"
+      ],
+      "keywords_en": [
+        "goals",
+        "goal tracker",
+        "goals tracking",
+        "goals",
+        "goals"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "goal": "learn python"
+      },
+      "example_mk": "Цел python",
+      "example_en": "Goal python",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "kanban": {
+      "icon": "📋",
+      "name": "Kanban board",
+      "category": "productivity",
+      "keywords_mk": [
+        "kanban",
+        "канбан",
+        "табла",
+        "kanban",
+        "board"
+      ],
+      "keywords_en": [
+        "kanban",
+        "kanban board",
+        "board",
+        "kanban",
+        "tasks"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "action": "add|move|list",
+        "text": "string",
+        "column": "string",
+        "id": "string"
+      },
+      "example_mk": "Kanban задача",
+      "example_en": "Kanban task",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Канбан"
+    },
+    "eisenhower": {
+      "icon": "🎯",
+      "name": "Eisenhower matrix",
+      "category": "productivity",
+      "keywords_mk": [
+        "eisenhower",
+        "матрица",
+        "приоритети",
+        "eisenhower",
+        "matrix"
+      ],
+      "keywords_en": [
+        "eisenhower",
+        "matrix",
+        "priorities",
+        "eisenhower",
+        "priority matrix"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "task": "task",
+        "urgent": "true",
+        "important": "true"
+      },
+      "example_mk": "Eisenhower задача",
+      "example_en": "Eisenhower task",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "mood_tracker": {
+      "icon": "😊",
+      "name": "Mood tracker",
+      "category": "productivity",
+      "keywords_mk": [
+        "расположение",
+        "mood",
+        "mood tracker",
+        "какво е расположение",
+        "mood"
+      ],
+      "keywords_en": [
+        "mood",
+        "mood tracker",
+        "mood tracking",
+        "feelings",
+        "mood"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "score": "1-5",
+        "note": "string"
+      },
+      "example_mk": "Расположение",
+      "example_en": "Mood",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Следење на расположение"
+    },
+    "gratitude": {
+      "icon": "🙏",
+      "name": "Gratitude log",
+      "category": "productivity",
+      "keywords_mk": [
+        "благодарност",
+        "gratitude",
+        "благодарен",
+        "gratitude",
+        "thankful"
+      ],
+      "keywords_en": [
+        "gratitude",
+        "gratitude log",
+        "thankful",
+        "gratitude",
+        "thanks"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "text": "grateful for"
+      },
+      "example_mk": "Благодарност",
+      "example_en": "Gratitude",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "water_tracker": {
+      "icon": "💧",
+      "name": "Water tracker",
+      "category": "productivity",
+      "keywords_mk": [
+        "вода",
+        "water",
+        "water tracker",
+        "вода tracker",
+        "water"
+      ],
+      "keywords_en": [
+        "water",
+        "water tracker",
+        "water intake",
+        "water",
+        "hydration"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "amount": "250ml"
+      },
+      "example_mk": "Вода 250ml",
+      "example_en": "Water 250ml",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "sleep_tracker": {
+      "icon": "😴",
+      "name": "Sleep tracker",
+      "category": "productivity",
+      "keywords_mk": [
+        "спиење",
+        "sleep",
+        "sleep tracker",
+        "kako spiev",
+        "sleep"
+      ],
+      "keywords_en": [
+        "sleep",
+        "sleep tracker",
+        "sleep tracking",
+        "sleep",
+        "rest"
+      ],
+      "api": "local:localStorage",
+      "method": "LOCAL",
+      "params": {
+        "hours": "8",
+        "quality": "good"
+      },
+      "example_mk": "Спиење 8h",
+      "example_en": "Sleep 8h",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "wiktionary": {
+      "icon": "📖",
+      "name": "Wiktionary",
+      "category": "learning",
+      "keywords_mk": [
+        "речник",
+        "wiktionary",
+        "дефиниција",
+        "wiktionary",
+        "dictionary"
+      ],
+      "keywords_en": [
+        "wiktionary",
+        "dictionary",
+        "definition",
+        "wiktionary",
+        "words"
+      ],
+      "api": "https://en.wiktionary.org/api/rest_v1/page/definition/{word}",
+      "method": "GET",
+      "params": {
+        "word": "hello"
+      },
+      "example_mk": "Wiktionary hello",
+      "example_en": "Wiktionary hello",
+      "fallback": "Не е најдено",
+      "rate_limit": "public"
+    },
+    "word_of_day": {
+      "icon": "📖",
+      "name": "Word of the day",
+      "category": "learning",
+      "keywords_mk": [
+        "word of the day",
+        "збор на ден",
+        "word",
+        "daily word",
+        "wotd"
+      ],
+      "keywords_en": [
+        "word of the day",
+        "wotd",
+        "daily word",
+        "word",
+        "word"
+      ],
+      "api": "https://api.wordnik.com/v4/words.json/wordOfTheDay",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Збор на ден",
+      "example_en": "Word of day",
+      "fallback": "Потребен key",
+      "rate_limit": "needs key"
+    },
+    "quote_of_day": {
+      "icon": "💬",
+      "name": "Quote of the day",
+      "category": "learning",
+      "keywords_mk": [
+        "цитат",
+        "quote",
+        "quote на ден",
+        "цитат ден",
+        "quote"
+      ],
+      "keywords_en": [
+        "quote",
+        "quote of the day",
+        "daily quote",
+        "quote",
+        "quotes"
+      ],
+      "api": "https://api.quotable.io/random",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Цитат ден",
+      "example_en": "Quote day",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "fact_of_day": {
+      "icon": "🧠",
+      "name": "Fact of the day",
+      "category": "fun",
+      "keywords_mk": [
+        "факт",
+        "fact",
+        "fact на ден",
+        "интересен факт",
+        "fact"
+      ],
+      "keywords_en": [
+        "fact",
+        "fact of the day",
+        "daily fact",
+        "fact",
+        "facts"
+      ],
+      "api": "https://uselessfacts.jsph.pl/random.json",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Факт ден",
+      "example_en": "Fact day",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Факт на денот"
+    },
+    "history_today": {
+      "icon": "📅",
+      "name": "History today",
+      "category": "learning",
+      "keywords_mk": [
+        "историја денес",
+        "history today",
+        "on this day",
+        "history",
+        "historia"
+      ],
+      "keywords_en": [
+        "history today",
+        "on this day",
+        "history",
+        "today in history",
+        "history"
+      ],
+      "api": "https://byabbe.se/on-this-day/1/1/events.json",
+      "method": "GET",
+      "params": {},
+      "example_mk": "History денес",
+      "example_en": "History today",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "word_origin": {
+      "icon": "📚",
+      "name": "Word origin",
+      "category": "learning",
+      "keywords_mk": [
+        "etymology",
+        "origin збор",
+        "word origin",
+        "потекло",
+        "origin"
+      ],
+      "keywords_en": [
+        "etymology",
+        "word origin",
+        "origin",
+        "word history",
+        "etymology"
+      ],
+      "api": "https://api.dictionaryapi.dev/api/v2/entries/en/{word}",
+      "method": "GET",
+      "params": {
+        "word": "hello"
+      },
+      "example_mk": "Потекло на hello",
+      "example_en": "Origin of hello",
+      "fallback": "Не е најдено",
+      "rate_limit": "public"
+    },
+    "math_solver": {
+      "icon": "📐",
+      "name": "Math solver",
+      "category": "fun",
+      "keywords_mk": [
+        "математика",
+        "math",
+        "math solver",
+        "реши математика",
+        "math"
+      ],
+      "keywords_en": [
+        "math",
+        "math solver",
+        "math problem",
+        "solve math",
+        "math"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "expression": "string"
+      },
+      "example_mk": "Реши 2x+5=15",
+      "example_en": "Solve 2x+5=15",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Калкулатор (безбедно, локално)"
+    },
+    "physics_helper": {
+      "icon": "⚛️",
+      "name": "Physics helper",
+      "category": "learning",
+      "keywords_mk": [
+        "физика",
+        "physics",
+        "physics helper",
+        "физика помощ",
+        "physics"
+      ],
+      "keywords_en": [
+        "physics",
+        "physics helper",
+        "physics problems",
+        "physics",
+        "physics"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "physics: F=ma"
+      },
+      "example_mk": "Физика помош",
+      "example_en": "Physics help",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "chemistry_helper": {
+      "icon": "🧪",
+      "name": "Chemistry helper",
+      "category": "learning",
+      "keywords_mk": [
+        "хемија",
+        "chemistry",
+        "chemistry helper",
+        "хемија помощ",
+        "chemistry"
+      ],
+      "keywords_en": [
+        "chemistry",
+        "chemistry helper",
+        "chemistry problems",
+        "chemistry",
+        "chemistry"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "chemistry: balance H2+O2"
+      },
+      "example_mk": "Хемија помош",
+      "example_en": "Chemistry help",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "language_tutor": {
+      "icon": "🌐",
+      "name": "Language tutor",
+      "category": "learning",
+      "keywords_mk": [
+        "јазик учител",
+        "language tutor",
+        "учи јазик",
+        "language",
+        "tutor"
+      ],
+      "keywords_en": [
+        "language tutor",
+        "tutor",
+        "learn language",
+        "language",
+        "teacher"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "tutor: teach me Spanish"
+      },
+      "example_mk": "Учи шпански",
+      "example_en": "Learn Spanish",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "joke": {
+      "icon": "😂",
+      "name": "Joke",
+      "category": "fun",
+      "keywords_mk": [
+        "виц",
+        "шега",
+        "joke",
+        "смешно",
+        "humor"
+      ],
+      "keywords_en": [
+        "joke",
+        "funny",
+        "make me laugh",
+        "humor",
+        "jokes"
+      ],
+      "api": "https://v2.jokeapi.dev/joke/Any?type=single",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Кажи виц",
+      "example_en": "Tell a joke",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Шега"
+    },
+    "quote_gen": {
+      "icon": "💬",
+      "name": "Random quote",
+      "category": "fun",
+      "keywords_mk": [
+        "цитат",
+        "quote",
+        "random quote",
+        "цитат",
+        "quotes"
+      ],
+      "keywords_en": [
+        "quote",
+        "random quote",
+        "quote generator",
+        "quotes",
+        "quote"
+      ],
+      "api": "https://api.quotable.io/random",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Случаен цитат",
+      "example_en": "Random quote",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Цитат"
+    },
+    "riddle": {
+      "icon": "🧩",
+      "name": "Riddle",
+      "category": "fun",
+      "keywords_mk": [
+        "гатанка",
+        "riddle",
+        "riddles",
+        "гатанка",
+        "puzzle"
+      ],
+      "keywords_en": [
+        "riddle",
+        "riddles",
+        "puzzle",
+        "riddles",
+        "puzzle"
+      ],
+      "api": "https://riddles-api.vercel.app/random",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Гатанка",
+      "example_en": "Riddle",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Гаталка"
+    },
+    "trivia": {
+      "icon": "❓",
+      "name": "Trivia",
+      "category": "fun",
+      "keywords_mk": [
+        "квиз",
+        "trivia",
+        "quiz",
+        "trivia",
+        "prashanje"
+      ],
+      "keywords_en": [
+        "trivia",
+        "quiz",
+        "knowledge question",
+        "trivia",
+        "quiz"
+      ],
+      "api": "https://opentdb.com/api.php?amount=1",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Trivia прашање",
+      "example_en": "Trivia question",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Тривија"
+    },
+    "would_you_rather": {
+      "icon": "🤔",
+      "name": "Would you rather",
+      "category": "fun",
+      "keywords_mk": [
+        "would you rather",
+        "што би",
+        "wyr",
+        "what would you",
+        "wyr"
+      ],
+      "keywords_en": [
+        "would you rather",
+        "wyr",
+        "dilemma",
+        "would you",
+        "wyr"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "would you rather: cats or dogs"
+      },
+      "example_mk": "WYR прашање",
+      "example_en": "WYR question",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "truth_or_dare": {
+      "icon": "🎯",
+      "name": "Truth or dare",
+      "category": "fun",
+      "keywords_mk": [
+        "вистина или предизвик",
+        "truth or dare",
+        "tod",
+        "truth dare",
+        "tod"
+      ],
+      "keywords_en": [
+        "truth or dare",
+        "tod",
+        "truth",
+        "dare",
+        "truth or dare"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "truth or dare question"
+      },
+      "example_mk": "Truth or dare",
+      "example_en": "Truth or dare",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "magic_8_ball": {
+      "icon": "🔮",
+      "name": "Magic 8 ball",
+      "category": "fun",
+      "keywords_mk": [
+        "магична топка",
+        "magic 8 ball",
+        "8 ball",
+        "magic ball",
+        "8 ball"
+      ],
+      "keywords_en": [
+        "magic 8 ball",
+        "8 ball",
+        "magic ball",
+        "answer",
+        "8 ball"
+      ],
+      "api": "local:random",
+      "method": "LOCAL",
+      "params": {
+        "question": "your question"
+      },
+      "example_mk": "Magic 8 ball",
+      "example_en": "Magic 8 ball",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "random_fact": {
+      "icon": "🧠",
+      "name": "Random fact",
+      "category": "fun",
+      "keywords_mk": [
+        "случаен факт",
+        "random fact",
+        "fact",
+        "факт",
+        "fact"
+      ],
+      "keywords_en": [
+        "random fact",
+        "fact",
+        "fun fact",
+        "fact",
+        "facts"
+      ],
+      "api": "https://uselessfacts.jsph.pl/random.json",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Случаен факт",
+      "example_en": "Random fact",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "meme_random": {
+      "icon": "😂",
+      "name": "Random meme",
+      "category": "fun",
+      "keywords_mk": [
+        "случаен меме",
+        "random meme",
+        "meme",
+        "меме",
+        "meme"
+      ],
+      "keywords_en": [
+        "random meme",
+        "meme",
+        "memes",
+        "meme",
+        "memes"
+      ],
+      "api": "https://api.imgflip.com/get_memes",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Случаен меме",
+      "example_en": "Random meme",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "chaos_duck": {
+      "icon": "🦆",
+      "name": "Chaos duck",
+      "category": "fun",
+      "keywords_mk": [
+        "chaos",
+        "хаос",
+        "random",
+        "random idea",
+        "chaos"
+      ],
+      "keywords_en": [
+        "chaos",
+        "random",
+        "chaos mode",
+        "random",
+        "chaos"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "give me a chaotic random idea"
+      },
+      "example_mk": "Chaos идеја",
+      "example_en": "Chaos idea",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "stock_quote": {
+      "icon": "📈",
+      "name": "Stock quote",
+      "category": "business",
+      "keywords_mk": [
+        "акција цена",
+        "stock",
+        "stock price",
+        "ценa акција",
+        "stock"
+      ],
+      "keywords_en": [
+        "stock",
+        "stock quote",
+        "stock price",
+        "share price",
+        "stock"
+      ],
+      "api": "https://query1.finance.yahoo.com/v8/finance/chart/{sym}",
+      "method": "GET",
+      "params": {
+        "sym": "AAPL"
+      },
+      "example_mk": "Цена AAPL",
+      "example_en": "AAPL price",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "stock_chart": {
+      "icon": "📊",
+      "name": "Stock chart",
+      "category": "business",
+      "keywords_mk": [
+        "stock chart",
+        "stock график",
+        "акција график",
+        "chart stock",
+        "stock"
+      ],
+      "keywords_en": [
+        "stock chart",
+        "stock graph",
+        "chart",
+        "stock",
+        "stock"
+      ],
+      "api": "https://query1.finance.yahoo.com/v8/finance/chart/{sym}?range=1mo",
+      "method": "GET",
+      "params": {
+        "sym": "AAPL"
+      },
+      "example_mk": "AAPL график",
+      "example_en": "AAPL chart",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "company_search": {
+      "icon": "🏢",
+      "name": "Company search",
+      "category": "business",
+      "keywords_mk": [
+        "компанија",
+        "company",
+        "company search",
+        "фирма",
+        "company"
+      ],
+      "keywords_en": [
+        "company",
+        "company search",
+        "find company",
+        "company",
+        "business"
+      ],
+      "api": "https://api.opencorporates.com/v0.4.8/companies/search?q={q}",
+      "method": "GET",
+      "params": {
+        "q": "Tesla"
+      },
+      "example_mk": "Пребарај Tesla",
+      "example_en": "Search Tesla",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "currency_exchange": {
+      "icon": "💱",
+      "name": "Currency exchange",
+      "category": "business",
+      "keywords_mk": [
+        "валута",
+        "currency",
+        "exchange",
+        "курс",
+        "currency"
+      ],
+      "keywords_en": [
+        "currency",
+        "exchange",
+        "currency exchange",
+        "fx",
+        "currency"
+      ],
+      "api": "https://api.exchangerate.host/latest",
+      "method": "GET",
+      "params": {},
+      "example_mk": "Курсна листа",
+      "example_en": "Exchange rates",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "swot_analysis": {
+      "icon": "📊",
+      "name": "SWOT analysis",
+      "category": "business",
+      "keywords_mk": [
+        "swot",
+        "swot анализа",
+        "strengths weaknesses",
+        "swot",
+        "analysis"
+      ],
+      "keywords_en": [
+        "swot",
+        "swot analysis",
+        "swot",
+        "strengths",
+        "analysis"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "swot: company"
+      },
+      "example_mk": "SWOT за компанија",
+      "example_en": "SWOT for company",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "competitor_analysis": {
+      "icon": "🎯",
+      "name": "Competitor analysis",
+      "category": "business",
+      "keywords_mk": [
+        "competitor",
+        "конкуренција",
+        "competitor analysis",
+        "competitive",
+        "competitor"
+      ],
+      "keywords_en": [
+        "competitor",
+        "competitor analysis",
+        "competition",
+        "competitive",
+        "competitor"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "competitors: company"
+      },
+      "example_mk": "Конкуренција",
+      "example_en": "Competitors",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "pitch_helper": {
+      "icon": "🚀",
+      "name": "Pitch helper",
+      "category": "business",
+      "keywords_mk": [
+        "pitch",
+        "pitch deck",
+        "pitch helper",
+        "презентација",
+        "pitch"
+      ],
+      "keywords_en": [
+        "pitch",
+        "pitch deck",
+        "pitch helper",
+        "presentation",
+        "pitch"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "pitch: startup"
+      },
+      "example_mk": "Pitch помош",
+      "example_en": "Pitch help",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "revenue_calc": {
+      "icon": "💰",
+      "name": "Revenue calculator",
+      "category": "business",
+      "keywords_mk": [
+        "приход",
+        "revenue",
+        "revenue calc",
+        "revenue",
+        "prihod"
+      ],
+      "keywords_en": [
+        "revenue",
+        "revenue calc",
+        "revenue calculator",
+        "revenue",
+        "income"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "price": "100",
+        "qty": "50"
+      },
+      "example_mk": "Приход 100x50",
+      "example_en": "Revenue 100x50",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "pricing_calc": {
+      "icon": "💵",
+      "name": "Pricing calculator",
+      "category": "business",
+      "keywords_mk": [
+        "цена",
+        "pricing",
+        "pricing calc",
+        "цена калкулација",
+        "pricing"
+      ],
+      "keywords_en": [
+        "pricing",
+        "pricing calc",
+        "price calc",
+        "pricing",
+        "price"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "cost": "100",
+        "margin": "30"
+      },
+      "example_mk": "Цена со маржа",
+      "example_en": "Price with margin",
+      "fallback": "Грешка",
+      "rate_limit": "offline"
+    },
+    "roi_calc": {
+      "icon": "📈",
+      "name": "ROI calculator",
+      "category": "utils",
+      "keywords_mk": [
+        "roi",
+        "roi calc",
+        "return investment",
+        "roi",
+        "return"
+      ],
+      "keywords_en": [
+        "roi",
+        "roi calc",
+        "return on investment",
+        "roi",
+        "return"
+      ],
+      "api": "local:math",
+      "method": "LOCAL",
+      "params": {
+        "invest": "number",
+        "return_value": "number",
+        "months": "number"
+      },
+      "example_mk": "ROI 1000→1500",
+      "example_en": "ROI 1000→1500",
+      "fallback": "Грешка",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "ROI и поврат"
+    },
+    "current_time": {
+      "icon": "🕐",
+      "name": "Current time",
+      "category": "system",
+      "keywords_mk": [
+        "колку е часот",
+        "време",
+        "time",
+        "час",
+        "clock"
+      ],
+      "keywords_en": [
+        "current time",
+        "time",
+        "what time",
+        "clock",
+        "time"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {
+        "timezone": "string"
+      },
+      "example_mk": "Колку е часот?",
+      "example_en": "What time is it?",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Точно време"
+    },
+    "current_date": {
+      "icon": "📅",
+      "name": "Current date",
+      "category": "system",
+      "keywords_mk": [
+        "датум",
+        "date",
+        "ден денес",
+        "today",
+        "date"
+      ],
+      "keywords_en": [
+        "date",
+        "current date",
+        "today",
+        "date",
+        "calendar"
+      ],
+      "api": "local:Date",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Денес е?",
+      "example_en": "What is today?",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "browser_info": {
+      "icon": "🌐",
+      "name": "Browser info",
+      "category": "system",
+      "keywords_mk": [
+        "браузер",
+        "browser",
+        "browser info",
+        "info",
+        "browser"
+      ],
+      "keywords_en": [
+        "browser",
+        "browser info",
+        "browser details",
+        "browser",
+        "user agent"
+      ],
+      "api": "local:navigator",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Браузер info",
+      "example_en": "Browser info",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "screen_size": {
+      "icon": "📺",
+      "name": "Screen size",
+      "category": "system",
+      "keywords_mk": [
+        "екран",
+        "screen",
+        "screen size",
+        "екран резолуција",
+        "screen"
+      ],
+      "keywords_en": [
+        "screen",
+        "screen size",
+        "resolution",
+        "screen",
+        "display"
+      ],
+      "api": "local:screen",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Екран големина",
+      "example_en": "Screen size",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "battery_status": {
+      "icon": "🔋",
+      "name": "Battery status",
+      "category": "system",
+      "keywords_mk": [
+        "батерија",
+        "battery",
+        "battery level",
+        "батерија статус",
+        "battery"
+      ],
+      "keywords_en": [
+        "battery",
+        "battery status",
+        "battery level",
+        "battery",
+        "power"
+      ],
+      "api": "local:navigator.getBattery",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Батерија",
+      "example_en": "Battery",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Батерија"
+    },
+    "network_status": {
+      "icon": "📶",
+      "name": "Network status",
+      "category": "system",
+      "keywords_mk": [
+        "мрежа",
+        "network",
+        "network status",
+        "мрежа статус",
+        "network"
+      ],
+      "keywords_en": [
+        "network",
+        "network status",
+        "connection",
+        "network",
+        "online"
+      ],
+      "api": "local:navigator.onLine",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Мрежа статус",
+      "example_en": "Network status",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Дали интернетот работи"
+    },
+    "geolocation": {
+      "icon": "📍",
+      "name": "Geolocation",
+      "category": "system",
+      "keywords_mk": [
+        "локација",
+        "geolocation",
+        "gps",
+        "локација",
+        "location"
+      ],
+      "keywords_en": [
+        "location",
+        "geolocation",
+        "gps",
+        "location",
+        "position"
+      ],
+      "api": "local:navigator.geolocation",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Моја локација",
+      "example_en": "My location",
+      "fallback": "Дозвола",
+      "rate_limit": "offline"
+    },
+    "clipboard_read": {
+      "icon": "📋",
+      "name": "Clipboard read",
+      "category": "system",
+      "keywords_mk": [
+        "прочитај clipboard",
+        "clipboard",
+        "копирано",
+        "clipboard",
+        "read"
+      ],
+      "keywords_en": [
+        "clipboard read",
+        "read clipboard",
+        "paste",
+        "clipboard",
+        "read"
+      ],
+      "api": "local:navigator.clipboard",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Прочитај clipboard",
+      "example_en": "Read clipboard",
+      "fallback": "Дозвола",
+      "rate_limit": "offline"
+    },
+    "notifications": {
+      "icon": "🔔",
+      "name": "Notifications",
+      "category": "system",
+      "keywords_mk": [
+        "нотификации",
+        "notifications",
+        "известувања",
+        "notify",
+        "notification"
+      ],
+      "keywords_en": [
+        "notifications",
+        "notify",
+        "push",
+        "notifications",
+        "alerts"
+      ],
+      "api": "local:Notification",
+      "method": "LOCAL",
+      "params": {
+        "title": "string",
+        "text": "string"
+      },
+      "example_mk": "Нотификација",
+      "example_en": "Notification",
+      "fallback": "Дозвола",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Локална нотификација"
+    },
+    "system_info": {
+      "icon": "💻",
+      "name": "System info",
+      "category": "system",
+      "keywords_mk": [
+        "систем",
+        "system",
+        "system info",
+        "info систем",
+        "system"
+      ],
+      "keywords_en": [
+        "system info",
+        "system",
+        "system information",
+        "system",
+        "info"
+      ],
+      "api": "local:navigator",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "System info",
+      "example_en": "System info",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Инфо за компјутерот"
+    },
+    "remember": {
+      "icon": "🧠",
+      "name": "Remember fact",
+      "category": "memory",
+      "keywords_mk": [
+        "запамети",
+        "remember",
+        "запиши",
+        "memory",
+        "памти"
+      ],
+      "keywords_en": [
+        "remember",
+        "save fact",
+        "memory",
+        "store",
+        "keep"
+      ],
+      "api": "local:memory/facts.jsonl",
+      "method": "LOCAL",
+      "params": {
+        "fact": "text"
+      },
+      "example_mk": "Запамети дека сум Марко",
+      "example_en": "Remember I am Marko",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "recall": {
+      "icon": "💭",
+      "name": "Recall memory",
+      "category": "memory",
+      "keywords_mk": [
+        "сети се",
+        "recall",
+        "што знаеш",
+        "memorija",
+        "помни"
+      ],
+      "keywords_en": [
+        "recall",
+        "remember",
+        "what do you know",
+        "memory",
+        "find"
+      ],
+      "api": "local:memory/facts.jsonl",
+      "method": "LOCAL",
+      "params": {
+        "query": "keyword"
+      },
+      "example_mk": "Што знаеш за мене?",
+      "example_en": "What do you know about me?",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "forget": {
+      "icon": "🧹",
+      "name": "Forget fact",
+      "category": "memory",
+      "keywords_mk": [
+        "заборави",
+        "forget",
+        "избриши факт",
+        "delete memory",
+        "erase"
+      ],
+      "keywords_en": [
+        "forget",
+        "delete memory",
+        "erase",
+        "remove fact"
+      ],
+      "api": "local:memory/facts.jsonl",
+      "method": "LOCAL",
+      "params": {
+        "id": "fact id"
+      },
+      "example_mk": "Заборави го тоа",
+      "example_en": "Forget that",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "learn_from_repo": {
+      "icon": "🎓",
+      "name": "Learn from GitHub repo",
+      "category": "knowledge",
+      "keywords_mk": [
+        "учи од github",
+        "learn from repo",
+        "учи",
+        "learn",
+        "study repo"
+      ],
+      "keywords_en": [
+        "learn from repo",
+        "study github",
+        "learn",
+        "github learn",
+        "extract skills"
+      ],
+      "api": "https://api.github.com/repos/{repo}",
+      "method": "GET",
+      "params": {
+        "repo": "owner/name",
+        "limit": "number"
+      },
+      "example_mk": "Учи од e2b-dev/awesome-ai-agents",
+      "example_en": "Learn from e2b-dev/awesome-ai-agents",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Научи од GitHub репозиториум"
+    },
+    "learn_from_url": {
+      "icon": "📚",
+      "name": "Learn from URL",
+      "category": "knowledge",
+      "keywords_mk": [
+        "учи од url",
+        "learn from url",
+        "study page",
+        "учи од страница",
+        "learn"
+      ],
+      "keywords_en": [
+        "learn from url",
+        "study page",
+        "learn",
+        "url learn",
+        "extract"
+      ],
+      "api": "local:fetch",
+      "method": "GET",
+      "params": {
+        "url": "string",
+        "limit": "number"
+      },
+      "example_mk": "Учи од https://example.com",
+      "example_en": "Learn from https://example.com",
+      "fallback": "Не е достапно",
+      "rate_limit": "public",
+      "status": "real",
+      "implemented": true,
+      "description": "Научи од страница и запамти"
+    },
+    "self_upgrade": {
+      "icon": "🔄",
+      "name": "Self upgrade",
+      "category": "knowledge",
+      "keywords_mk": [
+        "сам надгради се",
+        "self upgrade",
+        "upgrade",
+        "надгради",
+        "auto upgrade"
+      ],
+      "keywords_en": [
+        "self upgrade",
+        "auto upgrade",
+        "upgrade",
+        "improve",
+        "evolve"
+      ],
+      "api": "local:self-learn",
+      "method": "LOCAL",
+      "params": {
+        "mode": "pull|status"
+      },
+      "example_mk": "Надгради се",
+      "example_en": "Self upgrade",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Ажурирај се од Git (без клуч)"
+    },
+    "translate_multi": {
+      "icon": "🌍",
+      "name": "Multi-engine translate",
+      "category": "text",
+      "keywords_mk": [
+        "преведи",
+        "translate",
+        "превод",
+        "translate",
+        "translate text"
+      ],
+      "keywords_en": [
+        "translate",
+        "translation",
+        "multi translate",
+        "translate text",
+        "convert language"
+      ],
+      "api": "https://api.mymemory.translated.net/get",
+      "method": "GET",
+      "params": {
+        "q": "text",
+        "from": "mk",
+        "to": "en"
+      },
+      "example_mk": "Преведи здраво на англиски",
+      "example_en": "Translate hello to English",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "detect_language": {
+      "icon": "🔍",
+      "name": "Detect language",
+      "category": "text",
+      "keywords_mk": [
+        "детектирај јазик",
+        "detect language",
+        "кој јазик",
+        "detect lang",
+        "language detect"
+      ],
+      "keywords_en": [
+        "detect language",
+        "language detection",
+        "which language",
+        "lang detect",
+        "detect"
+      ],
+      "api": "local:heuristic",
+      "method": "LOCAL",
+      "params": {
+        "text": "string"
+      },
+      "example_mk": "Кој јазик е ова?",
+      "example_en": "Which language is this?",
+      "fallback": "Локално",
+      "rate_limit": "offline",
+      "status": "real",
+      "implemented": true,
+      "description": "Детектирај јазик"
+    },
+    "chat_mode": {
+      "icon": "💬",
+      "name": "Chat mode",
+      "category": "conversation",
+      "keywords_mk": [
+        "чат",
+        "chat",
+        "разговор",
+        "conversation",
+        "talk"
+      ],
+      "keywords_en": [
+        "chat",
+        "conversation",
+        "talk",
+        "chat mode",
+        "converse"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "message"
+      },
+      "example_mk": "Чат со мене",
+      "example_en": "Chat with me",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "expert_mode": {
+      "icon": "🎓",
+      "name": "Expert mode",
+      "category": "conversation",
+      "keywords_mk": [
+        "експерт режим",
+        "expert mode",
+        "експерт",
+        "expert",
+        "deep"
+      ],
+      "keywords_en": [
+        "expert mode",
+        "expert",
+        "deep dive",
+        "specialist",
+        "guru"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "topic"
+      },
+      "example_mk": "Експерт за Python",
+      "example_en": "Python expert",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "tutor_mode": {
+      "icon": "📖",
+      "name": "Tutor mode",
+      "category": "conversation",
+      "keywords_mk": [
+        "учител режим",
+        "tutor mode",
+        "учи ме",
+        "tutor",
+        "teach me"
+      ],
+      "keywords_en": [
+        "tutor",
+        "teach me",
+        "learn",
+        "tutor mode",
+        "study"
+      ],
+      "api": "https://text.pollinations.ai/{prompt}",
+      "method": "GET",
+      "params": {
+        "prompt": "subject"
+      },
+      "example_mk": "Учи ме физика",
+      "example_en": "Teach me physics",
+      "fallback": "Не е достапно",
+      "rate_limit": "public"
+    },
+    "open_url": {
+      "icon": "🌐",
+      "name": "Open URL",
+      "category": "automation",
+      "keywords_mk": [
+        "отвори url",
+        "open url",
+        "отвори страница",
+        "open",
+        "visit"
+      ],
+      "keywords_en": [
+        "open url",
+        "visit",
+        "navigate",
+        "open",
+        "browse"
+      ],
+      "api": "local:window.open",
+      "method": "LOCAL",
+      "params": {
+        "url": "url"
+      },
+      "example_mk": "Отвори google.com",
+      "example_en": "Open google.com",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "take_screenshot": {
+      "icon": "📸",
+      "name": "Screenshot",
+      "category": "automation",
+      "keywords_mk": [
+        "скриншот",
+        "screenshot",
+        "фати екран",
+        "capture",
+        "screen"
+      ],
+      "keywords_en": [
+        "screenshot",
+        "capture",
+        "take screenshot",
+        "screen",
+        "snap"
+      ],
+      "api": "local:screenshot",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Направи скриншот",
+      "example_en": "Take screenshot",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "send_notification": {
+      "icon": "🔔",
+      "name": "Send notification",
+      "category": "automation",
+      "keywords_mk": [
+        "нотификација",
+        "notification",
+        "извести ме",
+        "notify",
+        "alert"
+      ],
+      "keywords_en": [
+        "notification",
+        "notify",
+        "alert",
+        "ping",
+        "tell me"
+      ],
+      "api": "local:Notification",
+      "method": "LOCAL",
+      "params": {
+        "title": "title",
+        "body": "body"
+      },
+      "example_mk": "Извести ме по 5 мин",
+      "example_en": "Notify me in 5 min",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "set_reminder": {
+      "icon": "⏰",
+      "name": "Set reminder",
+      "category": "automation",
+      "keywords_mk": [
+        "потсетник",
+        "reminder",
+        "потсети ме",
+        "remind",
+        "alarm"
+      ],
+      "keywords_en": [
+        "reminder",
+        "remind me",
+        "alarm",
+        "alert",
+        "notify"
+      ],
+      "api": "local:reminders",
+      "method": "LOCAL",
+      "params": {
+        "text": "task",
+        "when": "time"
+      },
+      "example_mk": "Потсети ме да купам леб",
+      "example_en": "Remind me to buy bread",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "create_todo": {
+      "icon": "✅",
+      "name": "Create todo",
+      "category": "automation",
+      "keywords_mk": [
+        "задача",
+        "todo",
+        "додади задача",
+        "create todo",
+        "task"
+      ],
+      "keywords_en": [
+        "todo",
+        "task",
+        "create todo",
+        "add task",
+        "checklist"
+      ],
+      "api": "local:todos",
+      "method": "LOCAL",
+      "params": {
+        "text": "task"
+      },
+      "example_mk": "Додај задача перење",
+      "example_en": "Add laundry task",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "save_note": {
+      "icon": "📝",
+      "name": "Save note",
+      "category": "automation",
+      "keywords_mk": [
+        "белешка",
+        "note",
+        "запиши",
+        "save note",
+        "memo"
+      ],
+      "keywords_en": [
+        "note",
+        "save note",
+        "write note",
+        "memo",
+        "memo"
+      ],
+      "api": "local:notes",
+      "method": "LOCAL",
+      "params": {
+        "text": "note"
+      },
+      "example_mk": "Запиши: купи млеко",
+      "example_en": "Save: buy milk",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "daily_digest": {
+      "icon": "📊",
+      "name": "Daily digest",
+      "category": "analytics",
+      "keywords_mk": [
+        "дневен извештај",
+        "daily digest",
+        "каков беше ден",
+        "digest",
+        "summary"
+      ],
+      "keywords_en": [
+        "daily digest",
+        "daily summary",
+        "day summary",
+        "digest",
+        "daily"
+      ],
+      "api": "local:memory",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Дневен извештај",
+      "example_en": "Daily digest",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "stats_dashboard": {
+      "icon": "📈",
+      "name": "Stats dashboard",
+      "category": "analytics",
+      "keywords_mk": [
+        "статистика",
+        "stats",
+        "dashboard",
+        "stats",
+        "analytics"
+      ],
+      "keywords_en": [
+        "stats",
+        "dashboard",
+        "analytics",
+        "statistics",
+        "metrics"
+      ],
+      "api": "local:memory",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Прикажи статистика",
+      "example_en": "Show stats",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "habit_check": {
+      "icon": "✅",
+      "name": "Habit check",
+      "category": "analytics",
+      "keywords_mk": [
+        "навики",
+        "habits",
+        "check habits",
+        "habits",
+        "track"
+      ],
+      "keywords_en": [
+        "habits",
+        "habit check",
+        "tracker",
+        "habits",
+        "track"
+      ],
+      "api": "local:memory",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Провери навики",
+      "example_en": "Check habits",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "mcp_call": {
+      "icon": "🔌",
+      "name": "MCP call",
+      "category": "mcp",
+      "keywords_mk": [
+        "mcp call",
+        "mcp",
+        "call tool",
+        "mcp",
+        "tool call"
+      ],
+      "keywords_en": [
+        "mcp call",
+        "mcp",
+        "call",
+        "tool",
+        "invoke"
+      ],
+      "api": "local:mcp",
+      "method": "LOCAL",
+      "params": {
+        "tool": "name",
+        "args": "args"
+      },
+      "example_mk": "MCP call list_products",
+      "example_en": "MCP call list_products",
+      "fallback": "Не е достапно",
+      "rate_limit": "local"
+    },
+    "voice_command": {
+      "icon": "🎙",
+      "name": "Voice command",
+      "category": "jarvis",
+      "keywords_mk": [
+        "глас команда",
+        "voice command",
+        "слушај",
+        "voice",
+        "listen"
+      ],
+      "keywords_en": [
+        "voice",
+        "voice command",
+        "listen",
+        "speak",
+        "talk"
+      ],
+      "api": "local:speech",
+      "method": "LOCAL",
+      "params": {},
+      "example_mk": "Слушај ме",
+      "example_en": "Listen to me",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "speak_text": {
+      "icon": "🔊",
+      "name": "Speak text",
+      "category": "jarvis",
+      "keywords_mk": [
+        "кажи",
+        "say",
+        "зборувај",
+        "speak",
+        "say this"
+      ],
+      "keywords_en": [
+        "speak",
+        "say",
+        "talk",
+        "read aloud",
+        "voice"
+      ],
+      "api": "local:speechSynthesis",
+      "method": "LOCAL",
+      "params": {
+        "text": "text"
+      },
+      "example_mk": "Кажи здраво",
+      "example_en": "Say hello",
+      "fallback": "Локално",
+      "rate_limit": "offline"
+    },
+    "crypto_news": {
+      "name": "crypto_news",
+      "category": "crypto",
+      "status": "real",
+      "implemented": true,
+      "description": "Крипто вести",
+      "params": {
+        "limit": "number"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "portfolio": {
+      "name": "portfolio",
+      "category": "crypto",
+      "status": "real",
+      "implemented": true,
+      "description": "Вредност на портфолио",
+      "params": {
+        "holdings": "array"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "tech_news": {
+      "name": "tech_news",
+      "category": "news",
+      "status": "real",
+      "implemented": true,
+      "description": "Технолошки вести",
+      "params": {
+        "limit": "number"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "news_bundle": {
+      "name": "news_bundle",
+      "category": "news",
+      "status": "real",
+      "implemented": true,
+      "description": "Комбиниран преглед: МК + свет + тех",
+      "params": {
+        "scope": "mk|world|tech"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "wikipedia": {
+      "name": "wikipedia",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "Википедија за тема (без клуч)",
+      "params": {
+        "query": "string",
+        "lang": "mk|en"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "whois_lookup": {
+      "name": "whois_lookup",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "WHOIS/RDAP за домен (без клуч)",
+      "params": {
+        "domain": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "dns_lookup": {
+      "name": "dns_lookup",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "DNS записи (без клуч)",
+      "params": {
+        "domain": "string",
+        "type": "A|AAAA|MX|TXT|NS|CNAME"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "ssl_check": {
+      "name": "ssl_check",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "SSL сертификат (вистинска TLS врска)",
+      "params": {
+        "host": "string",
+        "port": "number"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "ping_url": {
+      "name": "ping_url",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "Провери дали URL одговара (и колку брзо)",
+      "params": {
+        "url": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "web_archive": {
+      "name": "web_archive",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "Wayback снимка на страница",
+      "params": {
+        "url": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "page_speed": {
+      "name": "page_speed",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "Измери брзина на страница (наше мерење)",
+      "params": {
+        "url": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "page_read": {
+      "name": "page_read",
+      "category": "web",
+      "status": "real",
+      "implemented": true,
+      "description": "Читај страница и структура",
+      "params": {
+        "url": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "podcast_search": {
+      "name": "podcast_search",
+      "category": "media",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај подкасти (без клуч)",
+      "params": {
+        "query": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "movie_search": {
+      "name": "movie_search",
+      "category": "media",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај филм/серија (Википедија)",
+      "params": {
+        "query": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "hash_text": {
+      "name": "hash_text",
+      "category": "code",
+      "status": "real",
+      "implemented": true,
+      "description": "MD5/SHA хеш",
+      "params": {
+        "text": "string",
+        "algorithm": "md5|sha1|sha256|sha512"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "csv_tool": {
+      "name": "csv_tool",
+      "category": "code",
+      "status": "real",
+      "implemented": true,
+      "description": "Парсирај CSV",
+      "params": {
+        "csv": "string",
+        "delimiter": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "readability": {
+      "name": "readability",
+      "category": "text",
+      "status": "real",
+      "implemented": true,
+      "description": "Читливост (Flesch)",
+      "params": {
+        "text": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "qr_svg": {
+      "name": "qr_svg",
+      "category": "utils",
+      "status": "real",
+      "implemented": true,
+      "description": "QR како SVG",
+      "params": {
+        "text": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "password_strength": {
+      "name": "password_strength",
+      "category": "utils",
+      "status": "real",
+      "implemented": true,
+      "description": "Сила на лозинка (локална процена)",
+      "params": {
+        "password": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "todo": {
+      "name": "todo",
+      "category": "productivity",
+      "status": "real",
+      "implemented": true,
+      "description": "Листа на задачи (локално)",
+      "params": {
+        "action": "add|list|done|remove|clear",
+        "text": "string",
+        "due_at": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "note": {
+      "name": "note",
+      "category": "productivity",
+      "status": "real",
+      "implemented": true,
+      "description": "Белешки",
+      "params": {
+        "action": "save|get|list|remove",
+        "title": "string",
+        "text": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "reminder_add": {
+      "name": "reminder_add",
+      "category": "productivity",
+      "status": "real",
+      "implemented": true,
+      "description": "Потсетник",
+      "params": {
+        "text": "string",
+        "due_at": "ISO"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "habit": {
+      "name": "habit",
+      "category": "productivity",
+      "status": "real",
+      "implemented": true,
+      "description": "Навики и серии",
+      "params": {
+        "action": "check|list",
+        "name": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "browser_status": {
+      "name": "browser_status",
+      "category": "system",
+      "status": "real",
+      "implemented": true,
+      "description": "Статус на браузерот",
+      "params": {},
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "self_check": {
+      "name": "self_check",
+      "category": "system",
+      "status": "real",
+      "implemented": true,
+      "description": "Самопроверка",
+      "params": {},
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "knowledge_search": {
+      "name": "knowledge_search",
+      "category": "knowledge",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај знаење (меморија + граф)",
+      "params": {
+        "query": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "file_write": {
+      "name": "file_write",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Направи или препиши фајл (со верификација)",
+      "params": {
+        "path": "string",
+        "content": "string",
+        "mode": "overwrite|append|create_only"
+      },
+      "keywords_mk": [
+        "направи фајл",
+        "направи датотека",
+        "креирај фајл",
+        "запиши фајл",
+        "направи test.txt со hello"
+      ],
+      "keywords_en": [
+        "create file",
+        "write file"
+      ]
+    },
+    "file_read": {
+      "name": "file_read",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Читај фајл",
+      "params": {
+        "path": "string",
+        "max_bytes": "number"
+      },
+      "keywords_mk": [
+        "прочитај фајл",
+        "покажи фајл"
+      ],
+      "keywords_en": [
+        "read file"
+      ]
+    },
+    "file_append": {
+      "name": "file_append",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Додај во фајл",
+      "params": {
+        "path": "string",
+        "content": "string"
+      },
+      "keywords_mk": [
+        "додај во фајл"
+      ],
+      "keywords_en": [
+        "append file"
+      ]
+    },
+    "file_edit": {
+      "name": "file_edit",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Замени дел од фајл",
+      "params": {
+        "path": "string",
+        "find": "string",
+        "replace": "string"
+      },
+      "keywords_mk": [
+        "замени во фајл",
+        "измени фајл"
+      ],
+      "keywords_en": [
+        "edit file"
+      ]
+    },
+    "file_list": {
+      "name": "file_list",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Листа фајлови во папка",
+      "params": {
+        "path": "string",
+        "pattern": "string"
+      },
+      "keywords_mk": [
+        "листај фајлови"
+      ],
+      "keywords_en": [
+        "list files"
+      ]
+    },
+    "file_tree": {
+      "name": "file_tree",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Дрво на папка",
+      "params": {
+        "path": "string",
+        "depth": "number"
+      },
+      "keywords_mk": [
+        "дрво на папка"
+      ],
+      "keywords_en": [
+        "folder tree"
+      ]
+    },
+    "file_search": {
+      "name": "file_search",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај фајлови по име или содржина",
+      "params": {
+        "path": "string",
+        "name_pattern": "string",
+        "content_pattern": "string"
+      },
+      "keywords_mk": [
+        "пребарај фајлови",
+        "најди фајл"
+      ],
+      "keywords_en": [
+        "search files"
+      ]
+    },
+    "file_mkdir": {
+      "name": "file_mkdir",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Направи папка",
+      "params": {
+        "path": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "file_copy": {
+      "name": "file_copy",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Копирај фајл или папка",
+      "params": {
+        "from": "string",
+        "to": "string"
+      },
+      "keywords_mk": [
+        "копирај фајл"
+      ],
+      "keywords_en": [
+        "copy file"
+      ]
+    },
+    "file_move": {
+      "name": "file_move",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Премести фајл или папка",
+      "params": {
+        "from": "string",
+        "to": "string"
+      },
+      "keywords_mk": [
+        "премести фајл"
+      ],
+      "keywords_en": [
+        "move file"
+      ]
+    },
+    "file_delete": {
+      "name": "file_delete",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Избриши (во корпа; трајно само со потврда)",
+      "params": {
+        "path": "string",
+        "recursive": "boolean",
+        "permanent": "boolean"
+      },
+      "keywords_mk": [
+        "избриши фајл"
+      ],
+      "keywords_en": [
+        "delete file"
+      ]
+    },
+    "file_stat": {
+      "name": "file_stat",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Информации за фајл",
+      "params": {
+        "path": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "file_hash": {
+      "name": "file_hash",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "SHA-256 на фајл",
+      "params": {
+        "path": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "path_resolve": {
+      "name": "path_resolve",
+      "category": "files",
+      "status": "real",
+      "implemented": true,
+      "description": "Како HUGO гледа на патеката (Windows/WSL)",
+      "params": {
+        "path": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "host_report": {
+      "name": "host_report",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Што има на машината: Windows, WSL, Chrome, PowerShell",
+      "params": {
+        "refresh": "boolean"
+      },
+      "keywords_mk": [
+        "што има на компјутерот",
+        "детектирај систем"
+      ],
+      "keywords_en": [
+        "host report"
+      ]
+    },
+    "ps_run": {
+      "name": "ps_run",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши PowerShell",
+      "params": {
+        "script": "string",
+        "json": "boolean"
+      },
+      "keywords_mk": [
+        "powershell"
+      ],
+      "keywords_en": [
+        "powershell"
+      ]
+    },
+    "cmd_run": {
+      "name": "cmd_run",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши CMD команда (Windows)",
+      "params": {
+        "command": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "shell_run": {
+      "name": "shell_run",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши команда (bash/cmd) на компјутерот",
+      "params": {
+        "command": "string",
+        "kind": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "wsl_list": {
+      "name": "wsl_list",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Листа WSL дистрибуции",
+      "params": {},
+      "keywords_mk": [
+        "wsl дистрибуции"
+      ],
+      "keywords_en": [
+        "wsl distros"
+      ]
+    },
+    "wsl_info": {
+      "name": "wsl_info",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Информации за WSL",
+      "params": {
+        "distro": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "wsl_run": {
+      "name": "wsl_run",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Изврши команда во WSL",
+      "params": {
+        "distro": "string",
+        "command": "string"
+      },
+      "keywords_mk": [
+        "wsl команда"
+      ],
+      "keywords_en": [
+        "wsl command"
+      ]
+    },
+    "wsl_read": {
+      "name": "wsl_read",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Читај фајл во WSL",
+      "params": {
+        "path": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "wsl_write": {
+      "name": "wsl_write",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Пиши фајл во WSL",
+      "params": {
+        "path": "string",
+        "content": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "process_list": {
+      "name": "process_list",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Листа процеси",
+      "params": {
+        "filter": "string",
+        "limit": "number"
+      },
+      "keywords_mk": [
+        "процеси"
+      ],
+      "keywords_en": [
+        "processes"
+      ]
+    },
+    "process_kill": {
+      "name": "process_kill",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Затвори процес (со потврда)",
+      "params": {
+        "pid": "number",
+        "name": "string"
+      },
+      "keywords_mk": [
+        "затвори процес"
+      ],
+      "keywords_en": [
+        "kill process"
+      ]
+    },
+    "app_open": {
+      "name": "app_open",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Отвори апликација, папка или линк на компјутерот",
+      "params": {
+        "target": "string"
+      },
+      "keywords_mk": [
+        "отвори апликација",
+        "отвори папка"
+      ],
+      "keywords_en": [
+        "open app"
+      ]
+    },
+    "app_start": {
+      "name": "app_start",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Стартувај апликација по име (notepad, calc...)",
+      "params": {
+        "name": "string"
+      },
+      "keywords_mk": [
+        "отвори notepad"
+      ],
+      "keywords_en": [
+        "start notepad"
+      ]
+    },
+    "window_list": {
+      "name": "window_list",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Отворени прозорци",
+      "params": {},
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "window_focus": {
+      "name": "window_focus",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Донеси прозорец напред",
+      "params": {
+        "title": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "clip_get": {
+      "name": "clip_get",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Прочитај clipboard",
+      "params": {},
+      "keywords_mk": [
+        "clipboard"
+      ],
+      "keywords_en": [
+        "clipboard"
+      ]
+    },
+    "clip_set": {
+      "name": "clip_set",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Стави во clipboard",
+      "params": {
+        "text": "string"
+      },
+      "keywords_mk": [
+        "стави во clipboard"
+      ],
+      "keywords_en": [
+        "set clipboard"
+      ]
+    },
+    "screen_shot": {
+      "name": "screen_shot",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Слика од целиот екран",
+      "params": {
+        "dir": "string"
+      },
+      "keywords_mk": [
+        "слика од екран"
+      ],
+      "keywords_en": [
+        "screenshot"
+      ]
+    },
+    "volume_control": {
+      "name": "volume_control",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Тон на компјутерот: mute / up / down",
+      "params": {
+        "action": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "media_key": {
+      "name": "media_key",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Медиумски копчиња (playpause/next)",
+      "params": {
+        "key": "string"
+      },
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "say": {
+      "name": "say",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Изговори текст локално (без клуч)",
+      "params": {
+        "text": "string"
+      },
+      "keywords_mk": [
+        "кажи",
+        "изговори"
+      ],
+      "keywords_en": [
+        "say"
+      ]
+    },
+    "notify": {
+      "name": "notify",
+      "category": "host",
+      "status": "real",
+      "implemented": true,
+      "description": "Локална нотификација",
+      "params": {
+        "title": "string",
+        "text": "string"
+      },
+      "keywords_mk": [
+        "нотификација"
+      ],
+      "keywords_en": [
+        "notify"
+      ]
+    },
+    "fb_open": {
+      "name": "fb_open",
+      "category": "facebook",
+      "status": "real",
+      "implemented": true,
+      "description": "Отвори Facebook во твојот Chrome (со твојата најава)",
+      "params": {},
+      "keywords_mk": [
+        "отвори facebook",
+        "фејсбук"
+      ],
+      "keywords_en": [
+        "open facebook"
+      ]
+    },
+    "fb_feed_read": {
+      "name": "fb_feed_read",
+      "category": "facebook",
+      "status": "real",
+      "implemented": true,
+      "description": "Прочитај го Facebook фидот",
+      "params": {
+        "limit": "number"
+      },
+      "keywords_mk": [
+        "што има ново"
+      ],
+      "keywords_en": [
+        "facebook feed"
+      ]
+    },
+    "fb_write_post": {
+      "name": "fb_write_post",
+      "category": "facebook",
+      "status": "real",
+      "implemented": true,
+      "description": "Напиши Facebook пост (без објавување)",
+      "params": {
+        "text": "string"
+      },
+      "keywords_mk": [
+        "напиши пост"
+      ],
+      "keywords_en": [
+        "write post"
+      ]
+    },
+    "fb_publish": {
+      "name": "fb_publish",
+      "category": "facebook",
+      "status": "real",
+      "implemented": true,
+      "description": "Објави го напишаниот пост (со верификација)",
+      "params": {
+        "text": "string",
+        "confirm": "boolean"
+      },
+      "keywords_mk": [
+        "објави",
+        "објави пост"
+      ],
+      "keywords_en": [
+        "publish post"
+      ]
+    },
+    "fb_search": {
+      "name": "fb_search",
+      "category": "facebook",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај на Facebook",
+      "params": {
+        "query": "string"
+      },
+      "keywords_mk": [
+        "пребарај на facebook"
+      ],
+      "keywords_en": [
+        "search facebook"
+      ]
+    },
+    "yt_open": {
+      "name": "yt_open",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Отвори YouTube",
+      "params": {
+        "url": "string"
+      },
+      "keywords_mk": [
+        "отвори youtube"
+      ],
+      "keywords_en": [
+        "open youtube"
+      ]
+    },
+    "yt_search": {
+      "name": "yt_search",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Пребарај на YouTube",
+      "params": {
+        "query": "string"
+      },
+      "keywords_mk": [
+        "пребарај на youtube"
+      ],
+      "keywords_en": [
+        "search youtube"
+      ]
+    },
+    "yt_play": {
+      "name": "yt_play",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Пушти видео на YouTube",
+      "params": {
+        "query": "string",
+        "index": "number"
+      },
+      "keywords_mk": [
+        "пушти",
+        "пушти на youtube",
+        "отвори youtube и пушти"
+      ],
+      "keywords_en": [
+        "play"
+      ]
+    },
+    "yt_pause": {
+      "name": "yt_pause",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Паузирај YouTube",
+      "params": {},
+      "keywords_mk": [
+        "паузирај"
+      ],
+      "keywords_en": [
+        "pause"
+      ]
+    },
+    "yt_resume": {
+      "name": "yt_resume",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Продолжи YouTube",
+      "params": {},
+      "keywords_mk": [],
+      "keywords_en": []
+    },
+    "yt_next": {
+      "name": "yt_next",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Следно видео",
+      "params": {},
+      "keywords_mk": [
+        "следно видео"
+      ],
+      "keywords_en": [
+        "next video"
+      ]
+    },
+    "yt_volume": {
+      "name": "yt_volume",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Тон на YouTube (0-1)",
+      "params": {
+        "level": "number"
+      },
+      "keywords_mk": [
+        "тон на youtube"
+      ],
+      "keywords_en": [
+        "youtube volume"
+      ]
+    },
+    "yt_now_playing": {
+      "name": "yt_now_playing",
+      "category": "youtube",
+      "status": "real",
+      "implemented": true,
+      "description": "Што свири сега",
+      "params": {},
+      "keywords_mk": [
+        "што свири"
+      ],
+      "keywords_en": [
+        "now playing"
+      ]
+    }
+  }
+}

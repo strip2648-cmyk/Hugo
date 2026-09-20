@@ -1,0 +1,2178 @@
+{
+  "version": "7.0.0",
+  "generated_at": "2026-09-20T12:40:35.033Z",
+  "counts": {
+    "real": 156,
+    "browser": 0,
+    "planned": 134
+  },
+  "by_category": {
+    "image": {
+      "real": 0,
+      "browser": 0,
+      "planned": 10
+    },
+    "utils": {
+      "real": 17,
+      "browser": 0,
+      "planned": 7
+    },
+    "media": {
+      "real": 6,
+      "browser": 0,
+      "planned": 0
+    },
+    "crypto": {
+      "real": 11,
+      "browser": 0,
+      "planned": 16
+    },
+    "news": {
+      "real": 6,
+      "browser": 0,
+      "planned": 10
+    },
+    "weather": {
+      "real": 5,
+      "browser": 0,
+      "planned": 5
+    },
+    "geo": {
+      "real": 6,
+      "browser": 0,
+      "planned": 4
+    },
+    "social": {
+      "real": 0,
+      "browser": 0,
+      "planned": 13
+    },
+    "code": {
+      "real": 11,
+      "browser": 0,
+      "planned": 6
+    },
+    "text": {
+      "real": 11,
+      "browser": 0,
+      "planned": 6
+    },
+    "web": {
+      "real": 9,
+      "browser": 0,
+      "planned": 0
+    },
+    "productivity": {
+      "real": 8,
+      "browser": 0,
+      "planned": 11
+    },
+    "learning": {
+      "real": 0,
+      "browser": 0,
+      "planned": 8
+    },
+    "fun": {
+      "real": 6,
+      "browser": 0,
+      "planned": 6
+    },
+    "business": {
+      "real": 0,
+      "browser": 0,
+      "planned": 9
+    },
+    "system": {
+      "real": 7,
+      "browser": 0,
+      "planned": 5
+    },
+    "memory": {
+      "real": 0,
+      "browser": 0,
+      "planned": 3
+    },
+    "knowledge": {
+      "real": 4,
+      "browser": 0,
+      "planned": 0
+    },
+    "conversation": {
+      "real": 0,
+      "browser": 0,
+      "planned": 3
+    },
+    "automation": {
+      "real": 0,
+      "browser": 0,
+      "planned": 6
+    },
+    "analytics": {
+      "real": 0,
+      "browser": 0,
+      "planned": 3
+    },
+    "mcp": {
+      "real": 0,
+      "browser": 0,
+      "planned": 1
+    },
+    "jarvis": {
+      "real": 0,
+      "browser": 0,
+      "planned": 2
+    },
+    "files": {
+      "real": 14,
+      "browser": 0,
+      "planned": 0
+    },
+    "host": {
+      "real": 22,
+      "browser": 0,
+      "planned": 0
+    },
+    "facebook": {
+      "real": 5,
+      "browser": 0,
+      "planned": 0
+    },
+    "youtube": {
+      "real": 8,
+      "browser": 0,
+      "planned": 0
+    }
+  },
+  "tools": [
+    {
+      "id": "daily_digest",
+      "category": "analytics",
+      "name": "Daily digest",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "habit_check",
+      "category": "analytics",
+      "name": "Habit check",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "stats_dashboard",
+      "category": "analytics",
+      "name": "Stats dashboard",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "create_todo",
+      "category": "automation",
+      "name": "Create todo",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "open_url",
+      "category": "automation",
+      "name": "Open URL",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "save_note",
+      "category": "automation",
+      "name": "Save note",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "send_notification",
+      "category": "automation",
+      "name": "Send notification",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "set_reminder",
+      "category": "automation",
+      "name": "Set reminder",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "take_screenshot",
+      "category": "automation",
+      "name": "Screenshot",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "company_search",
+      "category": "business",
+      "name": "Company search",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "competitor_analysis",
+      "category": "business",
+      "name": "Competitor analysis",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "currency_exchange",
+      "category": "business",
+      "name": "Currency exchange",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "pitch_helper",
+      "category": "business",
+      "name": "Pitch helper",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "pricing_calc",
+      "category": "business",
+      "name": "Pricing calculator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "revenue_calc",
+      "category": "business",
+      "name": "Revenue calculator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "stock_chart",
+      "category": "business",
+      "name": "Stock chart",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "stock_quote",
+      "category": "business",
+      "name": "Stock quote",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "swot_analysis",
+      "category": "business",
+      "name": "SWOT analysis",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "base64_decode",
+      "category": "code",
+      "name": "Base64 decode",
+      "status": "real",
+      "description": "Base64 декодирање"
+    },
+    {
+      "id": "base64_encode",
+      "category": "code",
+      "name": "Base64 encode",
+      "status": "real",
+      "description": "Base64 енкодирање"
+    },
+    {
+      "id": "code_generate",
+      "category": "code",
+      "name": "Code generate",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "csv_tool",
+      "category": "code",
+      "name": "csv_tool",
+      "status": "real",
+      "description": "Парсирај CSV"
+    },
+    {
+      "id": "diff_check",
+      "category": "code",
+      "name": "Diff check",
+      "status": "real",
+      "description": "Спореди два текста"
+    },
+    {
+      "id": "execute_js",
+      "category": "code",
+      "name": "Execute JavaScript",
+      "status": "real",
+      "description": "Изврши JavaScript локално (песок)"
+    },
+    {
+      "id": "execute_python",
+      "category": "code",
+      "name": "Execute Python",
+      "status": "real",
+      "description": "Изврши Python локално"
+    },
+    {
+      "id": "hash_md5",
+      "category": "code",
+      "name": "MD5 hash",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "hash_sha256",
+      "category": "code",
+      "name": "SHA256 hash",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "hash_text",
+      "category": "code",
+      "name": "hash_text",
+      "status": "real",
+      "description": "MD5/SHA хеш"
+    },
+    {
+      "id": "json_format",
+      "category": "code",
+      "name": "JSON format",
+      "status": "real",
+      "description": "Форматирај JSON"
+    },
+    {
+      "id": "markdown_preview",
+      "category": "code",
+      "name": "Markdown preview",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "regex_test",
+      "category": "code",
+      "name": "Regex test",
+      "status": "real",
+      "description": "Тестирај регуларен израз"
+    },
+    {
+      "id": "sql_format",
+      "category": "code",
+      "name": "SQL format",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "url_decode",
+      "category": "code",
+      "name": "URL decode",
+      "status": "real",
+      "description": "URL декодирање"
+    },
+    {
+      "id": "url_encode",
+      "category": "code",
+      "name": "URL encode",
+      "status": "real",
+      "description": "URL енкодирање"
+    },
+    {
+      "id": "yaml_format",
+      "category": "code",
+      "name": "YAML format",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "chat_mode",
+      "category": "conversation",
+      "name": "Chat mode",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "expert_mode",
+      "category": "conversation",
+      "name": "Expert mode",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "tutor_mode",
+      "category": "conversation",
+      "name": "Tutor mode",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "address_balance",
+      "category": "crypto",
+      "name": "Address balance",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "airdrop_hunter",
+      "category": "crypto",
+      "name": "Airdrop hunter",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "block_height",
+      "category": "crypto",
+      "name": "Block height",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "bridge_volume",
+      "category": "crypto",
+      "name": "Bridge volume",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "btc_halving",
+      "category": "crypto",
+      "name": "BTC halving",
+      "status": "real",
+      "description": "Следен Bitcoin halving"
+    },
+    {
+      "id": "coin_chart",
+      "category": "crypto",
+      "name": "Coin chart",
+      "status": "real",
+      "description": "Историја на цена"
+    },
+    {
+      "id": "coin_price",
+      "category": "crypto",
+      "name": "Crypto price",
+      "status": "real",
+      "description": "Цена на крипто (без клуч)"
+    },
+    {
+      "id": "crypto_news",
+      "category": "crypto",
+      "name": "crypto_news",
+      "status": "real",
+      "description": "Крипто вести"
+    },
+    {
+      "id": "defi_tvl",
+      "category": "crypto",
+      "name": "DeFi TVL",
+      "status": "real",
+      "description": "Вкупен DeFi TVL"
+    },
+    {
+      "id": "defi_yields",
+      "category": "crypto",
+      "name": "DeFi yields",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "dex_volume",
+      "category": "crypto",
+      "name": "DEX volume",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "eth_burn",
+      "category": "crypto",
+      "name": "ETH burn",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "exchange_rates",
+      "category": "crypto",
+      "name": "Exchange rates",
+      "status": "real",
+      "description": "Курсеви валути (без клуч)"
+    },
+    {
+      "id": "fear_greed",
+      "category": "crypto",
+      "name": "Fear & Greed",
+      "status": "real",
+      "description": "Fear & Greed индекс"
+    },
+    {
+      "id": "funding_rates",
+      "category": "crypto",
+      "name": "Funding rates",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "gainers_losers",
+      "category": "crypto",
+      "name": "Gainers & Losers",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "gas_eth",
+      "category": "crypto",
+      "name": "ETH gas",
+      "status": "real",
+      "description": "Bitcoin/Ethereum мрежни такси (без клуч)"
+    },
+    {
+      "id": "mempool_fees",
+      "category": "crypto",
+      "name": "BTC mempool fees",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "nft_floor",
+      "category": "crypto",
+      "name": "NFT floor price",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "open_interest",
+      "category": "crypto",
+      "name": "Open interest",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "portfolio",
+      "category": "crypto",
+      "name": "portfolio",
+      "status": "real",
+      "description": "Вредност на портфолио"
+    },
+    {
+      "id": "stablecoin_rates",
+      "category": "crypto",
+      "name": "Stablecoin rates",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "token_info",
+      "category": "crypto",
+      "name": "Token info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "top_coins",
+      "category": "crypto",
+      "name": "Top coins",
+      "status": "real",
+      "description": "Топ крипто по капитализација"
+    },
+    {
+      "id": "trending_coins",
+      "category": "crypto",
+      "name": "Trending coins",
+      "status": "real",
+      "description": "Трендинг крипто (24ч)"
+    },
+    {
+      "id": "tx_lookup",
+      "category": "crypto",
+      "name": "Transaction lookup",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "whale_tracker",
+      "category": "crypto",
+      "name": "Whale tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "fb_feed_read",
+      "category": "facebook",
+      "name": "fb_feed_read",
+      "status": "real",
+      "description": "Прочитај го Facebook фидот"
+    },
+    {
+      "id": "fb_open",
+      "category": "facebook",
+      "name": "fb_open",
+      "status": "real",
+      "description": "Отвори Facebook во твојот Chrome (со твојата најава)"
+    },
+    {
+      "id": "fb_publish",
+      "category": "facebook",
+      "name": "fb_publish",
+      "status": "real",
+      "description": "Објави го напишаниот пост (со верификација)"
+    },
+    {
+      "id": "fb_search",
+      "category": "facebook",
+      "name": "fb_search",
+      "status": "real",
+      "description": "Пребарај на Facebook"
+    },
+    {
+      "id": "fb_write_post",
+      "category": "facebook",
+      "name": "fb_write_post",
+      "status": "real",
+      "description": "Напиши Facebook пост (без објавување)"
+    },
+    {
+      "id": "file_append",
+      "category": "files",
+      "name": "file_append",
+      "status": "real",
+      "description": "Додај во фајл"
+    },
+    {
+      "id": "file_copy",
+      "category": "files",
+      "name": "file_copy",
+      "status": "real",
+      "description": "Копирај фајл или папка"
+    },
+    {
+      "id": "file_delete",
+      "category": "files",
+      "name": "file_delete",
+      "status": "real",
+      "description": "Избриши (во корпа; трајно само со потврда)"
+    },
+    {
+      "id": "file_edit",
+      "category": "files",
+      "name": "file_edit",
+      "status": "real",
+      "description": "Замени дел од фајл"
+    },
+    {
+      "id": "file_hash",
+      "category": "files",
+      "name": "file_hash",
+      "status": "real",
+      "description": "SHA-256 на фајл"
+    },
+    {
+      "id": "file_list",
+      "category": "files",
+      "name": "file_list",
+      "status": "real",
+      "description": "Листа фајлови во папка"
+    },
+    {
+      "id": "file_mkdir",
+      "category": "files",
+      "name": "file_mkdir",
+      "status": "real",
+      "description": "Направи папка"
+    },
+    {
+      "id": "file_move",
+      "category": "files",
+      "name": "file_move",
+      "status": "real",
+      "description": "Премести фајл или папка"
+    },
+    {
+      "id": "file_read",
+      "category": "files",
+      "name": "file_read",
+      "status": "real",
+      "description": "Читај фајл"
+    },
+    {
+      "id": "file_search",
+      "category": "files",
+      "name": "file_search",
+      "status": "real",
+      "description": "Пребарај фајлови по име или содржина"
+    },
+    {
+      "id": "file_stat",
+      "category": "files",
+      "name": "file_stat",
+      "status": "real",
+      "description": "Информации за фајл"
+    },
+    {
+      "id": "file_tree",
+      "category": "files",
+      "name": "file_tree",
+      "status": "real",
+      "description": "Дрво на папка"
+    },
+    {
+      "id": "file_write",
+      "category": "files",
+      "name": "file_write",
+      "status": "real",
+      "description": "Направи или препиши фајл (со верификација)"
+    },
+    {
+      "id": "path_resolve",
+      "category": "files",
+      "name": "path_resolve",
+      "status": "real",
+      "description": "Како HUGO гледа на патеката (Windows/WSL)"
+    },
+    {
+      "id": "chaos_duck",
+      "category": "fun",
+      "name": "Chaos duck",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "fact_of_day",
+      "category": "fun",
+      "name": "Fact of the day",
+      "status": "real",
+      "description": "Факт на денот"
+    },
+    {
+      "id": "joke",
+      "category": "fun",
+      "name": "Joke",
+      "status": "real",
+      "description": "Шега"
+    },
+    {
+      "id": "magic_8_ball",
+      "category": "fun",
+      "name": "Magic 8 ball",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "math_solver",
+      "category": "fun",
+      "name": "Math solver",
+      "status": "real",
+      "description": "Калкулатор (безбедно, локално)"
+    },
+    {
+      "id": "meme_random",
+      "category": "fun",
+      "name": "Random meme",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "quote_gen",
+      "category": "fun",
+      "name": "Random quote",
+      "status": "real",
+      "description": "Цитат"
+    },
+    {
+      "id": "random_fact",
+      "category": "fun",
+      "name": "Random fact",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "riddle",
+      "category": "fun",
+      "name": "Riddle",
+      "status": "real",
+      "description": "Гаталка"
+    },
+    {
+      "id": "trivia",
+      "category": "fun",
+      "name": "Trivia",
+      "status": "real",
+      "description": "Тривија"
+    },
+    {
+      "id": "truth_or_dare",
+      "category": "fun",
+      "name": "Truth or dare",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "would_you_rather",
+      "category": "fun",
+      "name": "Would you rather",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "country_info",
+      "category": "geo",
+      "name": "Country info",
+      "status": "real",
+      "description": "Инфо за земја"
+    },
+    {
+      "id": "currency_convert",
+      "category": "geo",
+      "name": "Currency converter",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "distance_calc",
+      "category": "geo",
+      "name": "Distance calculator",
+      "status": "real",
+      "description": "Дистанца меѓу две точки (локална математика)"
+    },
+    {
+      "id": "earthquake_map",
+      "category": "geo",
+      "name": "Earthquake map",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "flight_tracker",
+      "category": "geo",
+      "name": "Flight tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "geocode",
+      "category": "geo",
+      "name": "Geocode",
+      "status": "real",
+      "description": "Град/адреса -> координати"
+    },
+    {
+      "id": "ip_location",
+      "category": "geo",
+      "name": "IP location",
+      "status": "real",
+      "description": "Локација на IP"
+    },
+    {
+      "id": "reverse_geocode",
+      "category": "geo",
+      "name": "Reverse geocode",
+      "status": "real",
+      "description": "Координати -> место"
+    },
+    {
+      "id": "sun_position",
+      "category": "geo",
+      "name": "Sun position",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "timezone",
+      "category": "geo",
+      "name": "Timezone info",
+      "status": "real",
+      "description": "Временска зона за локација"
+    },
+    {
+      "id": "app_open",
+      "category": "host",
+      "name": "app_open",
+      "status": "real",
+      "description": "Отвори апликација, папка или линк на компјутерот"
+    },
+    {
+      "id": "app_start",
+      "category": "host",
+      "name": "app_start",
+      "status": "real",
+      "description": "Стартувај апликација по име (notepad, calc...)"
+    },
+    {
+      "id": "clip_get",
+      "category": "host",
+      "name": "clip_get",
+      "status": "real",
+      "description": "Прочитај clipboard"
+    },
+    {
+      "id": "clip_set",
+      "category": "host",
+      "name": "clip_set",
+      "status": "real",
+      "description": "Стави во clipboard"
+    },
+    {
+      "id": "cmd_run",
+      "category": "host",
+      "name": "cmd_run",
+      "status": "real",
+      "description": "Изврши CMD команда (Windows)"
+    },
+    {
+      "id": "host_report",
+      "category": "host",
+      "name": "host_report",
+      "status": "real",
+      "description": "Што има на машината: Windows, WSL, Chrome, PowerShell"
+    },
+    {
+      "id": "media_key",
+      "category": "host",
+      "name": "media_key",
+      "status": "real",
+      "description": "Медиумски копчиња (playpause/next)"
+    },
+    {
+      "id": "notify",
+      "category": "host",
+      "name": "notify",
+      "status": "real",
+      "description": "Локална нотификација"
+    },
+    {
+      "id": "process_kill",
+      "category": "host",
+      "name": "process_kill",
+      "status": "real",
+      "description": "Затвори процес (со потврда)"
+    },
+    {
+      "id": "process_list",
+      "category": "host",
+      "name": "process_list",
+      "status": "real",
+      "description": "Листа процеси"
+    },
+    {
+      "id": "ps_run",
+      "category": "host",
+      "name": "ps_run",
+      "status": "real",
+      "description": "Изврши PowerShell"
+    },
+    {
+      "id": "say",
+      "category": "host",
+      "name": "say",
+      "status": "real",
+      "description": "Изговори текст локално (без клуч)"
+    },
+    {
+      "id": "screen_shot",
+      "category": "host",
+      "name": "screen_shot",
+      "status": "real",
+      "description": "Слика од целиот екран"
+    },
+    {
+      "id": "shell_run",
+      "category": "host",
+      "name": "shell_run",
+      "status": "real",
+      "description": "Изврши команда (bash/cmd) на компјутерот"
+    },
+    {
+      "id": "volume_control",
+      "category": "host",
+      "name": "volume_control",
+      "status": "real",
+      "description": "Тон на компјутерот: mute / up / down"
+    },
+    {
+      "id": "window_focus",
+      "category": "host",
+      "name": "window_focus",
+      "status": "real",
+      "description": "Донеси прозорец напред"
+    },
+    {
+      "id": "window_list",
+      "category": "host",
+      "name": "window_list",
+      "status": "real",
+      "description": "Отворени прозорци"
+    },
+    {
+      "id": "wsl_info",
+      "category": "host",
+      "name": "wsl_info",
+      "status": "real",
+      "description": "Информации за WSL"
+    },
+    {
+      "id": "wsl_list",
+      "category": "host",
+      "name": "wsl_list",
+      "status": "real",
+      "description": "Листа WSL дистрибуции"
+    },
+    {
+      "id": "wsl_read",
+      "category": "host",
+      "name": "wsl_read",
+      "status": "real",
+      "description": "Читај фајл во WSL"
+    },
+    {
+      "id": "wsl_run",
+      "category": "host",
+      "name": "wsl_run",
+      "status": "real",
+      "description": "Изврши команда во WSL"
+    },
+    {
+      "id": "wsl_write",
+      "category": "host",
+      "name": "wsl_write",
+      "status": "real",
+      "description": "Пиши фајл во WSL"
+    },
+    {
+      "id": "comic_gen",
+      "category": "image",
+      "name": "Comic generator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "generate_avatar",
+      "category": "image",
+      "name": "Generate avatar",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "generate_banner",
+      "category": "image",
+      "name": "Generate banner",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "generate_icon",
+      "category": "image",
+      "name": "Generate icon",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "generate_image",
+      "category": "image",
+      "name": "Generate image",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "generate_logo",
+      "category": "image",
+      "name": "Generate logo",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "meme_gen",
+      "category": "image",
+      "name": "Meme generator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "remove_bg",
+      "category": "image",
+      "name": "Remove background",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "upscale_image",
+      "category": "image",
+      "name": "Upscale image",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "wallpaper_gen",
+      "category": "image",
+      "name": "Wallpaper generator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "speak_text",
+      "category": "jarvis",
+      "name": "Speak text",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "voice_command",
+      "category": "jarvis",
+      "name": "Voice command",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "knowledge_search",
+      "category": "knowledge",
+      "name": "knowledge_search",
+      "status": "real",
+      "description": "Пребарај знаење (меморија + граф)"
+    },
+    {
+      "id": "learn_from_repo",
+      "category": "knowledge",
+      "name": "Learn from GitHub repo",
+      "status": "real",
+      "description": "Научи од GitHub репозиториум"
+    },
+    {
+      "id": "learn_from_url",
+      "category": "knowledge",
+      "name": "Learn from URL",
+      "status": "real",
+      "description": "Научи од страница и запамти"
+    },
+    {
+      "id": "self_upgrade",
+      "category": "knowledge",
+      "name": "Self upgrade",
+      "status": "real",
+      "description": "Ажурирај се од Git (без клуч)"
+    },
+    {
+      "id": "chemistry_helper",
+      "category": "learning",
+      "name": "Chemistry helper",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "history_today",
+      "category": "learning",
+      "name": "History today",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "language_tutor",
+      "category": "learning",
+      "name": "Language tutor",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "physics_helper",
+      "category": "learning",
+      "name": "Physics helper",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "quote_of_day",
+      "category": "learning",
+      "name": "Quote of the day",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "wiktionary",
+      "category": "learning",
+      "name": "Wiktionary",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "word_of_day",
+      "category": "learning",
+      "name": "Word of the day",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "word_origin",
+      "category": "learning",
+      "name": "Word origin",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "mcp_call",
+      "category": "mcp",
+      "name": "MCP call",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "image_search",
+      "category": "media",
+      "name": "Image search",
+      "status": "real",
+      "description": "Пребарај слики преку твојот браузер"
+    },
+    {
+      "id": "movie_search",
+      "category": "media",
+      "name": "movie_search",
+      "status": "real",
+      "description": "Пребарај филм/серија (Википедија)"
+    },
+    {
+      "id": "podcast_search",
+      "category": "media",
+      "name": "podcast_search",
+      "status": "real",
+      "description": "Пребарај подкасти (без клуч)"
+    },
+    {
+      "id": "reddit_hot",
+      "category": "media",
+      "name": "Reddit hot",
+      "status": "real",
+      "description": "Reddit топ постови (без клуч)"
+    },
+    {
+      "id": "youtube_info",
+      "category": "media",
+      "name": "YouTube info",
+      "status": "real",
+      "description": "Инфо за YouTube видео (без клуч)"
+    },
+    {
+      "id": "youtube_search",
+      "category": "media",
+      "name": "YouTube search",
+      "status": "real",
+      "description": "YouTube пребарување преку твојот браузер (YouTube не дава клучлес пребарување)"
+    },
+    {
+      "id": "forget",
+      "category": "memory",
+      "name": "Forget fact",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "recall",
+      "category": "memory",
+      "name": "Recall memory",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "remember",
+      "category": "memory",
+      "name": "Remember fact",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "arxiv_latest",
+      "category": "news",
+      "name": "arXiv latest",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "coindesk",
+      "category": "news",
+      "name": "CoinDesk",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "cointelegraph",
+      "category": "news",
+      "name": "Cointelegraph",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "devto_latest",
+      "category": "news",
+      "name": "Dev.to",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "hackernews",
+      "category": "news",
+      "name": "Hacker News",
+      "status": "real",
+      "description": "Hacker News топ вести"
+    },
+    {
+      "id": "indiehackers",
+      "category": "news",
+      "name": "Indie Hackers",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "lobsters",
+      "category": "news",
+      "name": "Lobsters",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "mkdnews",
+      "category": "news",
+      "name": "Македонски вести",
+      "status": "real",
+      "description": "Вести од Македонија"
+    },
+    {
+      "id": "news_bundle",
+      "category": "news",
+      "name": "news_bundle",
+      "status": "real",
+      "description": "Комбиниран преглед: МК + свет + тех"
+    },
+    {
+      "id": "producthunt",
+      "category": "news",
+      "name": "Product Hunt",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "reddit_search",
+      "category": "news",
+      "name": "Reddit search",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "rss_reader",
+      "category": "news",
+      "name": "RSS reader",
+      "status": "real",
+      "description": "Читај било кој RSS/Atom фид"
+    },
+    {
+      "id": "tech_news",
+      "category": "news",
+      "name": "tech_news",
+      "status": "real",
+      "description": "Технолошки вести"
+    },
+    {
+      "id": "techcrunch",
+      "category": "news",
+      "name": "TechCrunch",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "techmeme",
+      "category": "news",
+      "name": "Techmeme",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "world_news",
+      "category": "news",
+      "name": "World news",
+      "status": "real",
+      "description": "Светски вести"
+    },
+    {
+      "id": "calendar_events",
+      "category": "productivity",
+      "name": "Calendar events",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "eisenhower",
+      "category": "productivity",
+      "name": "Eisenhower matrix",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "goal_tracker",
+      "category": "productivity",
+      "name": "Goal tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "gratitude",
+      "category": "productivity",
+      "name": "Gratitude log",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "habit",
+      "category": "productivity",
+      "name": "habit",
+      "status": "real",
+      "description": "Навики и серии"
+    },
+    {
+      "id": "habits_tracker",
+      "category": "productivity",
+      "name": "Habits tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "journal",
+      "category": "productivity",
+      "name": "Journal",
+      "status": "real",
+      "description": "Дневник"
+    },
+    {
+      "id": "kanban",
+      "category": "productivity",
+      "name": "Kanban board",
+      "status": "real",
+      "description": "Канбан"
+    },
+    {
+      "id": "mood_tracker",
+      "category": "productivity",
+      "name": "Mood tracker",
+      "status": "real",
+      "description": "Следење на расположение"
+    },
+    {
+      "id": "note",
+      "category": "productivity",
+      "name": "note",
+      "status": "real",
+      "description": "Белешки"
+    },
+    {
+      "id": "notes",
+      "category": "productivity",
+      "name": "Notes",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "pomodoro",
+      "category": "productivity",
+      "name": "Pomodoro",
+      "status": "real",
+      "description": "Pomodoro тајмер"
+    },
+    {
+      "id": "reminder_add",
+      "category": "productivity",
+      "name": "reminder_add",
+      "status": "real",
+      "description": "Потсетник"
+    },
+    {
+      "id": "reminders",
+      "category": "productivity",
+      "name": "Reminders",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "sleep_tracker",
+      "category": "productivity",
+      "name": "Sleep tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "stopwatch",
+      "category": "productivity",
+      "name": "Stopwatch",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "todo",
+      "category": "productivity",
+      "name": "todo",
+      "status": "real",
+      "description": "Листа на задачи (локално)"
+    },
+    {
+      "id": "todo_list",
+      "category": "productivity",
+      "name": "Todo list",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "water_tracker",
+      "category": "productivity",
+      "name": "Water tracker",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "bluesky_info",
+      "category": "social",
+      "name": "Bluesky info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "discord_info",
+      "category": "social",
+      "name": "Discord info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "instagram_info",
+      "category": "social",
+      "name": "Instagram info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "linkedin_info",
+      "category": "social",
+      "name": "LinkedIn info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "mastodon_info",
+      "category": "social",
+      "name": "Mastodon info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "reddit_user",
+      "category": "social",
+      "name": "Reddit user",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "soundcloud_search",
+      "category": "social",
+      "name": "SoundCloud search",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "spotify_search",
+      "category": "social",
+      "name": "Spotify search",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "telegram_info",
+      "category": "social",
+      "name": "Telegram info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "threads_info",
+      "category": "social",
+      "name": "Threads info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "tiktok_info",
+      "category": "social",
+      "name": "TikTok info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "twitch_status",
+      "category": "social",
+      "name": "Twitch status",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "twitter_lookup",
+      "category": "social",
+      "name": "Twitter lookup",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "battery_status",
+      "category": "system",
+      "name": "Battery status",
+      "status": "real",
+      "description": "Батерија"
+    },
+    {
+      "id": "browser_info",
+      "category": "system",
+      "name": "Browser info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "browser_status",
+      "category": "system",
+      "name": "browser_status",
+      "status": "real",
+      "description": "Статус на браузерот"
+    },
+    {
+      "id": "clipboard_read",
+      "category": "system",
+      "name": "Clipboard read",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "current_date",
+      "category": "system",
+      "name": "Current date",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "current_time",
+      "category": "system",
+      "name": "Current time",
+      "status": "real",
+      "description": "Точно време"
+    },
+    {
+      "id": "geolocation",
+      "category": "system",
+      "name": "Geolocation",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "network_status",
+      "category": "system",
+      "name": "Network status",
+      "status": "real",
+      "description": "Дали интернетот работи"
+    },
+    {
+      "id": "notifications",
+      "category": "system",
+      "name": "Notifications",
+      "status": "real",
+      "description": "Локална нотификација"
+    },
+    {
+      "id": "screen_size",
+      "category": "system",
+      "name": "Screen size",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "self_check",
+      "category": "system",
+      "name": "self_check",
+      "status": "real",
+      "description": "Самопроверка"
+    },
+    {
+      "id": "system_info",
+      "category": "system",
+      "name": "System info",
+      "status": "real",
+      "description": "Инфо за компјутерот"
+    },
+    {
+      "id": "bullets",
+      "category": "text",
+      "name": "Bullet points",
+      "status": "real",
+      "description": "Претвори во булети"
+    },
+    {
+      "id": "char_count",
+      "category": "text",
+      "name": "Character count",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "detect_language",
+      "category": "text",
+      "name": "Detect language",
+      "status": "real",
+      "description": "Детектирај јазик"
+    },
+    {
+      "id": "expand",
+      "category": "text",
+      "name": "Expand text",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "keyword_extract",
+      "category": "text",
+      "name": "Keyword extraction",
+      "status": "real",
+      "description": "Клучни зборови"
+    },
+    {
+      "id": "named_entities",
+      "category": "text",
+      "name": "Named entities",
+      "status": "real",
+      "description": "Имиња, домени, меилови"
+    },
+    {
+      "id": "readability",
+      "category": "text",
+      "name": "readability",
+      "status": "real",
+      "description": "Читливост (Flesch)"
+    },
+    {
+      "id": "reading_time",
+      "category": "text",
+      "name": "Reading time",
+      "status": "real",
+      "description": "Време за читање"
+    },
+    {
+      "id": "rewrite",
+      "category": "text",
+      "name": "Rewrite text",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "sentiment",
+      "category": "text",
+      "name": "Sentiment analysis",
+      "status": "real",
+      "description": "Сентимент (локален лексикон)"
+    },
+    {
+      "id": "spell_check",
+      "category": "text",
+      "name": "Spell check",
+      "status": "real",
+      "description": "Правопис (без клуч)"
+    },
+    {
+      "id": "summarize",
+      "category": "text",
+      "name": "Summarize",
+      "status": "real",
+      "description": "Сумирај текст (локално)"
+    },
+    {
+      "id": "text_to_speech",
+      "category": "text",
+      "name": "Text to speech",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "tone_change",
+      "category": "text",
+      "name": "Change tone",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "translate",
+      "category": "text",
+      "name": "Translate",
+      "status": "real",
+      "description": "Преведи преку твојот браузер (без клуч)"
+    },
+    {
+      "id": "translate_multi",
+      "category": "text",
+      "name": "Multi-engine translate",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "word_count",
+      "category": "text",
+      "name": "Word count",
+      "status": "real",
+      "description": "Број зборови и знаци"
+    },
+    {
+      "id": "age_calc",
+      "category": "utils",
+      "name": "Age calculator",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "base64",
+      "category": "utils",
+      "name": "Base64 encode/decode",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "bmi_calc",
+      "category": "utils",
+      "name": "BMI calculator",
+      "status": "real",
+      "description": "BMI"
+    },
+    {
+      "id": "bmi_metric",
+      "category": "utils",
+      "name": "BMI metric",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "coin_flip",
+      "category": "utils",
+      "name": "Coin flip",
+      "status": "real",
+      "description": "Фрли паричка"
+    },
+    {
+      "id": "color_convert",
+      "category": "utils",
+      "name": "Color converter",
+      "status": "real",
+      "description": "Конвертирај бои (hex/rgb/hsl)"
+    },
+    {
+      "id": "date_diff",
+      "category": "utils",
+      "name": "Date difference",
+      "status": "real",
+      "description": "Разлика меѓу датуми"
+    },
+    {
+      "id": "dice_roll",
+      "category": "utils",
+      "name": "Dice roll",
+      "status": "real",
+      "description": "Фрли коцка"
+    },
+    {
+      "id": "loan_calc",
+      "category": "utils",
+      "name": "Loan calculator",
+      "status": "real",
+      "description": "Кредит: рата и вкупно"
+    },
+    {
+      "id": "password_gen",
+      "category": "utils",
+      "name": "Password generator",
+      "status": "real",
+      "description": "Генерирај лозинка (локално)"
+    },
+    {
+      "id": "password_strength",
+      "category": "utils",
+      "name": "password_strength",
+      "status": "real",
+      "description": "Сила на лозинка (локална процена)"
+    },
+    {
+      "id": "percent_calc",
+      "category": "utils",
+      "name": "Percent calculator",
+      "status": "real",
+      "description": "Проценти"
+    },
+    {
+      "id": "qr_code",
+      "category": "utils",
+      "name": "QR code",
+      "status": "real",
+      "description": "Направи QR код (вистински енкодер, локално)"
+    },
+    {
+      "id": "qr_generate",
+      "category": "utils",
+      "name": "QR generate",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "qr_svg",
+      "category": "utils",
+      "name": "qr_svg",
+      "status": "real",
+      "description": "QR како SVG"
+    },
+    {
+      "id": "random_choice",
+      "category": "utils",
+      "name": "Random choice",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "random_number",
+      "category": "utils",
+      "name": "Random number",
+      "status": "real",
+      "description": "Случаен број"
+    },
+    {
+      "id": "roi_calc",
+      "category": "utils",
+      "name": "ROI calculator",
+      "status": "real",
+      "description": "ROI и поврат"
+    },
+    {
+      "id": "shorten_url",
+      "category": "utils",
+      "name": "Shorten URL",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "shuffle",
+      "category": "utils",
+      "name": "Shuffle list",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "timestamp",
+      "category": "utils",
+      "name": "Timestamp convert",
+      "status": "real",
+      "description": "Сегашен таймстамп во видови"
+    },
+    {
+      "id": "tip_calc",
+      "category": "utils",
+      "name": "Tip calculator",
+      "status": "real",
+      "description": "Бакшиш и поделба"
+    },
+    {
+      "id": "unit_convert",
+      "category": "utils",
+      "name": "Unit converter",
+      "status": "real",
+      "description": "Конвертирај единици"
+    },
+    {
+      "id": "uuid_gen",
+      "category": "utils",
+      "name": "UUID generator",
+      "status": "real",
+      "description": "UUID v4"
+    },
+    {
+      "id": "air_quality",
+      "category": "weather",
+      "name": "Air quality",
+      "status": "real",
+      "description": "Квалитет на воздухот"
+    },
+    {
+      "id": "current_weather",
+      "category": "weather",
+      "name": "Current weather",
+      "status": "real",
+      "description": "Време сега (без клуч)"
+    },
+    {
+      "id": "earthquake",
+      "category": "weather",
+      "name": "Earthquake info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "moon_phase",
+      "category": "weather",
+      "name": "Moon phase",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "sunrise_sunset",
+      "category": "weather",
+      "name": "Sunrise / sunset",
+      "status": "real",
+      "description": "Изгрејување и залез"
+    },
+    {
+      "id": "tide_info",
+      "category": "weather",
+      "name": "Tide info",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "uv_index",
+      "category": "weather",
+      "name": "UV index",
+      "status": "real",
+      "description": "UV индекс"
+    },
+    {
+      "id": "weather_7day",
+      "category": "weather",
+      "name": "7-day weather",
+      "status": "real",
+      "description": "7-дневна прогноза"
+    },
+    {
+      "id": "weather_forecast",
+      "category": "weather",
+      "name": "Weather forecast",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "wildfire",
+      "category": "weather",
+      "name": "Wildfire alerts",
+      "status": "planned",
+      "description": ""
+    },
+    {
+      "id": "dictionary",
+      "category": "web",
+      "name": "Dictionary",
+      "status": "real",
+      "description": "Значење на збор (без клуч)"
+    },
+    {
+      "id": "dns_lookup",
+      "category": "web",
+      "name": "dns_lookup",
+      "status": "real",
+      "description": "DNS записи (без клуч)"
+    },
+    {
+      "id": "page_read",
+      "category": "web",
+      "name": "page_read",
+      "status": "real",
+      "description": "Читај страница и структура"
+    },
+    {
+      "id": "page_speed",
+      "category": "web",
+      "name": "page_speed",
+      "status": "real",
+      "description": "Измери брзина на страница (наше мерење)"
+    },
+    {
+      "id": "ping_url",
+      "category": "web",
+      "name": "ping_url",
+      "status": "real",
+      "description": "Провери дали URL одговара (и колку брзо)"
+    },
+    {
+      "id": "ssl_check",
+      "category": "web",
+      "name": "ssl_check",
+      "status": "real",
+      "description": "SSL сертификат (вистинска TLS врска)"
+    },
+    {
+      "id": "web_archive",
+      "category": "web",
+      "name": "web_archive",
+      "status": "real",
+      "description": "Wayback снимка на страница"
+    },
+    {
+      "id": "whois_lookup",
+      "category": "web",
+      "name": "whois_lookup",
+      "status": "real",
+      "description": "WHOIS/RDAP за домен (без клуч)"
+    },
+    {
+      "id": "wikipedia",
+      "category": "web",
+      "name": "wikipedia",
+      "status": "real",
+      "description": "Википедија за тема (без клуч)"
+    },
+    {
+      "id": "yt_next",
+      "category": "youtube",
+      "name": "yt_next",
+      "status": "real",
+      "description": "Следно видео"
+    },
+    {
+      "id": "yt_now_playing",
+      "category": "youtube",
+      "name": "yt_now_playing",
+      "status": "real",
+      "description": "Што свири сега"
+    },
+    {
+      "id": "yt_open",
+      "category": "youtube",
+      "name": "yt_open",
+      "status": "real",
+      "description": "Отвори YouTube"
+    },
+    {
+      "id": "yt_pause",
+      "category": "youtube",
+      "name": "yt_pause",
+      "status": "real",
+      "description": "Паузирај YouTube"
+    },
+    {
+      "id": "yt_play",
+      "category": "youtube",
+      "name": "yt_play",
+      "status": "real",
+      "description": "Пушти видео на YouTube"
+    },
+    {
+      "id": "yt_resume",
+      "category": "youtube",
+      "name": "yt_resume",
+      "status": "real",
+      "description": "Продолжи YouTube"
+    },
+    {
+      "id": "yt_search",
+      "category": "youtube",
+      "name": "yt_search",
+      "status": "real",
+      "description": "Пребарај на YouTube"
+    },
+    {
+      "id": "yt_volume",
+      "category": "youtube",
+      "name": "yt_volume",
+      "status": "real",
+      "description": "Тон на YouTube (0-1)"
+    }
+  ]
+}

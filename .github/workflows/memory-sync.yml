@@ -1,0 +1,14 @@
+name: HUGO memory sync
+on:
+  schedule: [{ cron: '*/30 * * * *' }]
+  workflow_dispatch:
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions: { contents: write }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm run memory:sync
+      - run: "git config user.email hugo@users.noreply.github.com && git config user.name 'Hugo Bot' && git add memory || true && git commit -m 'memory snapshot' || echo none && git push || echo push-skipped"

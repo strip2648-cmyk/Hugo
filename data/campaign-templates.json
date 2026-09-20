@@ -1,0 +1,25 @@
+{
+  "version": "6.0.0",
+  "templates": [
+    {
+      "id": "launch",
+      "name": "Product launch",
+      "steps": [
+        "define_audience",
+        "write_content",
+        "schedule",
+        "measure"
+      ]
+    },
+    {
+      "id": "retention",
+      "name": "Customer retention",
+      "steps": [
+        "segment",
+        "personalize",
+        "send",
+        "measure"
+      ]
+    }
+  ]
+}

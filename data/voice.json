@@ -1,0 +1,16 @@
+{
+  "version": "6.0.0",
+  "default_language": "mk-MK",
+  "languages": [
+    "mk-MK",
+    "en-US",
+    "sr-RS",
+    "bg-BG"
+  ],
+  "wake_words": [
+    "хјуго",
+    "hugo",
+    "jarvis"
+  ],
+  "engine": "browser-web-speech"
+}

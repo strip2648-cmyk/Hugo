@@ -1,0 +1,243 @@
+{
+  "version": "7.0.0",
+  "name": "HUGO",
+  "policy": {
+    "keys_required": false,
+    "cloud_ai_required": false,
+    "internet_allowed": true,
+    "bind_public": false
+  },
+  "repo": {
+    "url": "https://github.com/klikmarkettt-dotcom/hugo-core.git",
+    "branch": "main",
+    "remote": "origin"
+  },
+  "paths": {
+    "data": "data",
+    "memory": "memory",
+    "prompts": "prompts",
+    "docs": "docs",
+    "state": ".hugo",
+    "logs": "logs"
+  },
+  "memory": {
+    "facts": "memory/facts.jsonl",
+    "conversations": "memory/conversations.jsonl",
+    "learned": "memory/learned.jsonl",
+    "notes": "memory/notes.json",
+    "habits": "memory/habits.json",
+    "todos": "memory/todos.json",
+    "journal": "memory/journal.jsonl",
+    "graph": "memory/knowledge-graph.json",
+    "temporal": "memory/temporal-index.json",
+    "backlinks": {
+      "min_similarity": 0.55,
+      "max_links": 3
+    },
+    "embed_index": "memory/embed-index.json",
+    "schedules": "memory/schedules.json",
+    "state": "memory/state.json",
+    "recall": {
+      "keyword_weight": 0.35,
+      "vector_weight": 0.45,
+      "recency_weight": 0.2,
+      "min_score": 0.12,
+      "limit": 10,
+      "half_life_days": 45
+    },
+    "dedupe": {
+      "cosine": 0.92,
+      "jaccard": 0.8
+    },
+    "retention_days": 90
+  },
+  "cognition": {
+    "max_steps": 8,
+    "max_replans": 3,
+    "require_observation": true,
+    "reflect_after_task": true,
+    "reasoning": {
+      "provider": "local-rules",
+      "endpoint_env": "HUGO_LOCAL_AI_ENDPOINT",
+      "temperature": 0.2,
+      "model_env": "HUGO_LOCAL_AI_MODEL",
+      "model": "local-model"
+    }
+  },
+  "browser": {
+    "engine": "cdp",
+    "host": "127.0.0.1",
+    "port": 9222,
+    "bin": "auto",
+    "profile": ".hugo/chrome-profile",
+    "profile_mode": "copy",
+    "headless": false,
+    "timeout_ms": 30000,
+    "navigation_wait_ms": 1200,
+    "allow_private_networks": true,
+    "screenshot_dir": ".hugo/screenshots"
+  },
+  "voice": {
+    "default_language": "mk-MK",
+    "languages": [
+      "mk-MK",
+      "en-US",
+      "sr-RS",
+      "bg-BG"
+    ],
+    "wake_words": [
+      "хуго",
+      "hugo",
+      "xugo",
+      "jarvis"
+    ],
+    "engine": "browser-web-speech",
+    "continuous": true,
+    "tts": "auto"
+  },
+  "tools": {
+    "catalog": "data/tools-full.json",
+    "status_file": "data/tools-status.json",
+    "timeout_ms": 20000,
+    "retries": 1,
+    "browser_fallback": true
+  },
+  "automation": {
+    "timezone": "Europe/Skopje",
+    "max_concurrent": 4,
+    "tick_ms": 30000,
+    "reminder_interval_ms": 60000
+  },
+  "business": {
+    "currency": "MKD",
+    "crm": "memory/crm.jsonl",
+    "campaigns": "memory/campaigns.jsonl",
+    "publishing": {
+      "require_user_confirm": true,
+      "max_retries": 2
+    },
+    "crm_stages": [
+      "new",
+      "contacted",
+      "qualified",
+      "proposal",
+      "won",
+      "lost"
+    ]
+  },
+  "integrations": {
+    "registry": "data/integrations.json",
+    "adapters": "data/integration-adapters.json",
+    "mcp": "data/mcp-config.json"
+  },
+  "ui": {
+    "host": "127.0.0.1",
+    "port": 8765,
+    "token_env": "HUGO_DEVICE_TOKEN",
+    "title": "HUGO"
+  },
+  "gateway": {
+    "host": "127.0.0.1",
+    "port": 8787,
+    "token_env": "HUGO_DEVICE_TOKEN",
+    "never_bind_public_by_default": true,
+    "rate_limit": {
+      "window_ms": 60000,
+      "max": 240
+    }
+  },
+  "security": {
+    "scan_secrets_before_sync": true,
+    "allowed_hosts": [],
+    "deny_hosts": [
+      "169.254.169.254"
+    ]
+  },
+  "news": {
+    "mk_feeds": [
+      "https://meta.mk/feed/",
+      "https://sdk.mk/feed/",
+      "https://www.mkd.mk/rss.xml"
+    ],
+    "world_feeds": [
+      "http://feeds.bbci.co.uk/news/world/rss.xml"
+    ],
+    "tech_feeds": [
+      "https://feeds.arstechnica.com/arstechnica/index"
+    ]
+  },
+  "learning": {
+    "sources": [
+      "e2b-dev/awesome-ai-agents",
+      "punkpeye/awesome-mcp-servers",
+      "kyrolabs/awesome-langchain",
+      "steven2358/awesome-generative-ai",
+      "humanloop/awesome-llm-apps",
+      "Hannibal046/Awesome-LLM",
+      "eugeneyan/applied-ml",
+      "IshaanLabs/Awesome-AI-Agents"
+    ],
+    "max_items_per_repo": 60
+  },
+  "logging": {
+    "level": "info",
+    "file": "logs/hugo.log"
+  },
+  "vision": {
+    "endpoint_env": "HUGO_VISION_ENDPOINT",
+    "engine": "cdp+dom+ocr",
+    "capture_dir": ".hugo/screenshots"
+  },
+  "files": {
+    "base_dir": "auto",
+    "allow_roots": [
+      "~",
+      "/tmp",
+      "$TMPDIR",
+      "."
+    ],
+    "deny": [
+      "**/AppData/Local/Google/Chrome/User Data/**",
+      "**/.config/google-chrome/**",
+      "**/.ssh/**",
+      "**/id_rsa",
+      "**/.aws/credentials",
+      "/etc/shadow",
+      "C:/Windows/**"
+    ],
+    "max_read_bytes": 2000000,
+    "trash_dir": ".hugo/trash"
+  },
+  "host": {
+    "shell_timeout_ms": 60000,
+    "allow_destructive_shell": false
+  },
+  "sites": {
+    "facebook": {
+      "auto_confirm_publish": false,
+      "post_delay_ms": 4000
+    },
+    "youtube": {
+      "search_delay_ms": 3000,
+      "default_volume": 0.7
+    }
+  },
+  "confirm": {
+    "ttl_ms": 600000,
+    "require": [
+      "fb_publish",
+      "file_delete",
+      "process_kill",
+      "shell_run",
+      "wsl_run",
+      "ps_run",
+      "memory_sync"
+    ]
+  },
+  "jobs": {
+    "file": "memory/jobs.jsonl",
+    "max_attempts": 3,
+    "backoff_ms": 2000,
+    "max_concurrent": 4
+  }
+}

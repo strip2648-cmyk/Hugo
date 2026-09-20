@@ -1,0 +1,6612 @@
+{
+  "version": "7.0.0",
+  "total": 290,
+  "intents": [
+    {
+      "tool": "generate_image",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "направи слика",
+        "нацртај",
+        "генерирај слика",
+        "слика од опис",
+        "илустрација"
+      ],
+      "keywords_en": [
+        "generate image",
+        "draw",
+        "create picture",
+        "visualize",
+        "illustrate"
+      ],
+      "examples_mk": [
+        "Направи слика на куче",
+        "Кажи ми generate image",
+        "Дай ми generate image"
+      ],
+      "examples_en": [
+        "Create image of a dog",
+        "Show me generate image",
+        "Get generate image"
+      ]
+    },
+    {
+      "tool": "generate_logo",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "лого",
+        "логотип",
+        "бренд лого",
+        "направи лого",
+        "дизајн лого"
+      ],
+      "keywords_en": [
+        "logo",
+        "logo design",
+        "brand logo",
+        "make logo",
+        "logo generator"
+      ],
+      "examples_mk": [
+        "Направи лого за кафеана",
+        "Кажи ми generate logo",
+        "Дай ми generate logo"
+      ],
+      "examples_en": [
+        "Make logo for cafe",
+        "Show me generate logo",
+        "Get generate logo"
+      ]
+    },
+    {
+      "tool": "generate_icon",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "икона",
+        "икона апликација",
+        "иконка",
+        "направи икона",
+        "app icon"
+      ],
+      "keywords_en": [
+        "icon",
+        "app icon",
+        "make icon",
+        "icon design",
+        "favicon"
+      ],
+      "examples_mk": [
+        "Икона за апликација",
+        "Кажи ми generate icon",
+        "Дай ми generate icon"
+      ],
+      "examples_en": [
+        "App icon",
+        "Show me generate icon",
+        "Get generate icon"
+      ]
+    },
+    {
+      "tool": "generate_banner",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "банер",
+        "banner",
+        "header",
+        "насловна слика",
+        "хедер"
+      ],
+      "keywords_en": [
+        "banner",
+        "header",
+        "cover",
+        "banner image",
+        "hero image"
+      ],
+      "examples_mk": [
+        "Банер за сајт",
+        "Кажи ми generate banner",
+        "Дай ми generate banner"
+      ],
+      "examples_en": [
+        "Banner for site",
+        "Show me generate banner",
+        "Get generate banner"
+      ]
+    },
+    {
+      "tool": "generate_avatar",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "аватар",
+        "профилна",
+        "avatar",
+        "профил слика",
+        "лице"
+      ],
+      "keywords_en": [
+        "avatar",
+        "profile picture",
+        "pfp",
+        "profile",
+        "face"
+      ],
+      "examples_mk": [
+        "Аватар за профил",
+        "Кажи ми generate avatar",
+        "Дай ми generate avatar"
+      ],
+      "examples_en": [
+        "Avatar",
+        "Show me generate avatar",
+        "Get generate avatar"
+      ]
+    },
+    {
+      "tool": "qr_code",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "qr код",
+        "кјуар",
+        "qr",
+        "скенирачки код",
+        "баркод"
+      ],
+      "keywords_en": [
+        "qr code",
+        "qrcode",
+        "qr",
+        "scannable code",
+        "barcode"
+      ],
+      "examples_mk": [
+        "QR за https://example.com",
+        "Кажи ми qr code",
+        "Дай ми qr code"
+      ],
+      "examples_en": [
+        "QR for https://example.com",
+        "Show me qr code",
+        "Get qr code"
+      ]
+    },
+    {
+      "tool": "upscale_image",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "зголеми слика",
+        "upscale",
+        "подобри резолуција",
+        "hd",
+        "поголема слика"
+      ],
+      "keywords_en": [
+        "upscale",
+        "hd",
+        "enlarge",
+        "increase resolution",
+        "upscale image"
+      ],
+      "examples_mk": [
+        "Upscale слика",
+        "Кажи ми upscale image",
+        "Дай ми upscale image"
+      ],
+      "examples_en": [
+        "Upscale image",
+        "Show me upscale image",
+        "Get upscale image"
+      ]
+    },
+    {
+      "tool": "remove_bg",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "отстрани позадина",
+        "remove bg",
+        "без позадина",
+        "транспарентна",
+        "cutout"
+      ],
+      "keywords_en": [
+        "remove background",
+        "removebg",
+        "transparent",
+        "cutout",
+        "no bg"
+      ],
+      "examples_mk": [
+        "Отстрани позадина",
+        "Кажи ми remove background",
+        "Дай ми remove background"
+      ],
+      "examples_en": [
+        "Remove bg",
+        "Show me remove background",
+        "Get remove background"
+      ]
+    },
+    {
+      "tool": "image_search",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [
+        "пребарај слики",
+        "најди слика",
+        "image search",
+        "слики за",
+        "фотографии"
+      ],
+      "keywords_en": [
+        "image search",
+        "find image",
+        "pictures",
+        "photos",
+        "search images"
+      ],
+      "examples_mk": [
+        "Слики од планини",
+        "Кажи ми image search",
+        "Дай ми image search"
+      ],
+      "examples_en": [
+        "Images of mountains",
+        "Show me image search",
+        "Get image search"
+      ]
+    },
+    {
+      "tool": "meme_gen",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "меме",
+        "направи меме",
+        "meme",
+        "смешна слика",
+        "memes"
+      ],
+      "keywords_en": [
+        "meme",
+        "make meme",
+        "memes",
+        "funny picture",
+        "meme gen"
+      ],
+      "examples_mk": [
+        "Меме за понеделник",
+        "Кажи ми meme generator",
+        "Дай ми meme generator"
+      ],
+      "examples_en": [
+        "Monday meme",
+        "Show me meme generator",
+        "Get meme generator"
+      ]
+    },
+    {
+      "tool": "comic_gen",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "стрип",
+        "направи стрип",
+        "comic",
+        "карикатура",
+        "стрипче"
+      ],
+      "keywords_en": [
+        "comic",
+        "make comic",
+        "cartoon",
+        "comic strip",
+        "panel"
+      ],
+      "examples_mk": [
+        "Стрип за авантура",
+        "Кажи ми comic generator",
+        "Дай ми comic generator"
+      ],
+      "examples_en": [
+        "Adventure comic",
+        "Show me comic generator",
+        "Get comic generator"
+      ]
+    },
+    {
+      "tool": "wallpaper_gen",
+      "category": "image",
+      "implemented": false,
+      "keywords_mk": [
+        "позадина",
+        "wallpaper",
+        "шалтапер",
+        "десктоп позадина",
+        "мобилна позадина"
+      ],
+      "keywords_en": [
+        "wallpaper",
+        "background",
+        "desktop wallpaper",
+        "phone wallpaper",
+        "bg"
+      ],
+      "examples_mk": [
+        "Wallpaper со планина",
+        "Кажи ми wallpaper generator",
+        "Дай ми wallpaper generator"
+      ],
+      "examples_en": [
+        "Mountain wallpaper",
+        "Show me wallpaper generator",
+        "Get wallpaper generator"
+      ]
+    },
+    {
+      "tool": "coin_price",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "цена",
+        "крипто цена",
+        "биткоин цена",
+        "етер цена",
+        "курс"
+      ],
+      "keywords_en": [
+        "price",
+        "crypto price",
+        "bitcoin price",
+        "coin price",
+        "rate"
+      ],
+      "examples_mk": [
+        "Цена на BTC",
+        "Кажи ми crypto price",
+        "Дай ми crypto price"
+      ],
+      "examples_en": [
+        "BTC price",
+        "Show me crypto price",
+        "Get crypto price"
+      ]
+    },
+    {
+      "tool": "coin_chart",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "график крипто",
+        "историја цена",
+        "движење биткоин",
+        "график",
+        "price history"
+      ],
+      "keywords_en": [
+        "coin chart",
+        "price history",
+        "bitcoin chart",
+        "price movement",
+        "historical"
+      ],
+      "examples_mk": [
+        "График за BTC 30 дена",
+        "Кажи ми coin chart",
+        "Дай ми coin chart"
+      ],
+      "examples_en": [
+        "BTC chart 30 days",
+        "Show me coin chart",
+        "Get coin chart"
+      ]
+    },
+    {
+      "tool": "top_coins",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "топ монети",
+        "најголеми крипто",
+        "крипто ранг",
+        "топ крипто",
+        "market cap list"
+      ],
+      "keywords_en": [
+        "top coins",
+        "largest crypto",
+        "crypto ranking",
+        "top crypto",
+        "market cap"
+      ],
+      "examples_mk": [
+        "Топ 10 крипто",
+        "Кажи ми top coins",
+        "Дай ми top coins"
+      ],
+      "examples_en": [
+        "Top 10 crypto",
+        "Show me top coins",
+        "Get top coins"
+      ]
+    },
+    {
+      "tool": "trending_coins",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "трендинг крипто",
+        "популарни монети",
+        "жешки монети",
+        "крипто тренд",
+        "што расте"
+      ],
+      "keywords_en": [
+        "trending coins",
+        "popular coins",
+        "hot coins",
+        "crypto trend",
+        "what is trending"
+      ],
+      "examples_mk": [
+        "Кои се трендинг?",
+        "Кажи ми trending coins",
+        "Дай ми trending coins"
+      ],
+      "examples_en": [
+        "What's trending?",
+        "Show me trending coins",
+        "Get trending coins"
+      ]
+    },
+    {
+      "tool": "gainers_losers",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "добитници",
+        "губитници",
+        "gainers",
+        "losers",
+        "што скокна"
+      ],
+      "keywords_en": [
+        "gainers",
+        "losers",
+        "top movers",
+        "best performers",
+        "worst performers"
+      ],
+      "examples_mk": [
+        "Топ добитници",
+        "Кажи ми gainers & losers",
+        "Дай ми gainers & losers"
+      ],
+      "examples_en": [
+        "Top gainers",
+        "Show me gainers & losers",
+        "Get gainers & losers"
+      ]
+    },
+    {
+      "tool": "defi_tvl",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "дефи tvl",
+        "заклучена вредност",
+        "дефи протоколи",
+        "tvl",
+        "ликвидност"
+      ],
+      "keywords_en": [
+        "defi tvl",
+        "total value locked",
+        "defi protocols",
+        "liquidity",
+        "tvl"
+      ],
+      "examples_mk": [
+        "DeFi TVL",
+        "Кажи ми defi tvl",
+        "Дай ми defi tvl"
+      ],
+      "examples_en": [
+        "DeFi TVL",
+        "Show me defi tvl",
+        "Get defi tvl"
+      ]
+    },
+    {
+      "tool": "defi_yields",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "дефи приноси",
+        "apy",
+        "yield farming",
+        "каде да стејкувам",
+        "најдобар apy"
+      ],
+      "keywords_en": [
+        "defi yields",
+        "apy",
+        "yield farming",
+        "best yields",
+        "staking yields"
+      ],
+      "examples_mk": [
+        "Најдобри DeFi yields",
+        "Кажи ми defi yields",
+        "Дай ми defi yields"
+      ],
+      "examples_en": [
+        "Best DeFi yields",
+        "Show me defi yields",
+        "Get defi yields"
+      ]
+    },
+    {
+      "tool": "fear_greed",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "страв алчност",
+        "fear greed",
+        "индекс страв",
+        "пазарно расположение",
+        "crypto sentiment"
+      ],
+      "keywords_en": [
+        "fear greed",
+        "fear and greed",
+        "sentiment index",
+        "market mood",
+        "crypto sentiment"
+      ],
+      "examples_mk": [
+        "Fear & Greed индекс",
+        "Кажи ми fear & greed",
+        "Дай ми fear & greed"
+      ],
+      "examples_en": [
+        "Fear & Greed index",
+        "Show me fear & greed",
+        "Get fear & greed"
+      ]
+    },
+    {
+      "tool": "mempool_fees",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "btc такса",
+        "mempool",
+        "биткоин fee",
+        "мрежна такса",
+        "сатоши"
+      ],
+      "keywords_en": [
+        "btc fee",
+        "mempool",
+        "bitcoin fee",
+        "network fee",
+        "satoshi"
+      ],
+      "examples_mk": [
+        "BTC мрежна такса",
+        "Кажи ми btc mempool fees",
+        "Дай ми btc mempool fees"
+      ],
+      "examples_en": [
+        "BTC network fee",
+        "Show me btc mempool fees",
+        "Get btc mempool fees"
+      ]
+    },
+    {
+      "tool": "gas_eth",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "eth gas",
+        "гас цена",
+        "ethereum fee",
+        "gas tracker",
+        "трансакциска такса eth"
+      ],
+      "keywords_en": [
+        "eth gas",
+        "gas price",
+        "ethereum fee",
+        "gas tracker",
+        "gwei"
+      ],
+      "examples_mk": [
+        "ETH gas",
+        "Кажи ми eth gas",
+        "Дай ми eth gas"
+      ],
+      "examples_en": [
+        "ETH gas",
+        "Show me eth gas",
+        "Get eth gas"
+      ]
+    },
+    {
+      "tool": "btc_halving",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "btc halving",
+        "halving",
+        "преполовување",
+        "кога halving",
+        "next halving"
+      ],
+      "keywords_en": [
+        "btc halving",
+        "halving",
+        "next halving",
+        "halving countdown",
+        "block reward"
+      ],
+      "examples_mk": [
+        "Кога е следен halving?",
+        "Кажи ми btc halving",
+        "Дай ми btc halving"
+      ],
+      "examples_en": [
+        "When is next halving?",
+        "Show me btc halving",
+        "Get btc halving"
+      ]
+    },
+    {
+      "tool": "block_height",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "block height",
+        "најнов блок",
+        "btc блок",
+        "височина блок",
+        "blockchain height"
+      ],
+      "keywords_en": [
+        "block height",
+        "latest block",
+        "btc block",
+        "chain height",
+        "blockchain height"
+      ],
+      "examples_mk": [
+        "BTC блок",
+        "Кажи ми block height",
+        "Дай ми block height"
+      ],
+      "examples_en": [
+        "BTC block",
+        "Show me block height",
+        "Get block height"
+      ]
+    },
+    {
+      "tool": "eth_burn",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "eth burn",
+        "изгорени eth",
+        "burn rate",
+        "ultrasound",
+        "eth supply"
+      ],
+      "keywords_en": [
+        "eth burn",
+        "burned eth",
+        "burn rate",
+        "ultrasound money",
+        "eth supply"
+      ],
+      "examples_mk": [
+        "ETH burn",
+        "Кажи ми eth burn",
+        "Дай ми eth burn"
+      ],
+      "examples_en": [
+        "ETH burn",
+        "Show me eth burn",
+        "Get eth burn"
+      ]
+    },
+    {
+      "tool": "tx_lookup",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "трансакција",
+        "tx lookup",
+        "пребарај tx",
+        "провери трансакција",
+        "transaction hash"
+      ],
+      "keywords_en": [
+        "transaction",
+        "tx lookup",
+        "search tx",
+        "check tx",
+        "tx hash"
+      ],
+      "examples_mk": [
+        "Провери tx",
+        "Кажи ми transaction lookup",
+        "Дай ми transaction lookup"
+      ],
+      "examples_en": [
+        "Check tx",
+        "Show me transaction lookup",
+        "Get transaction lookup"
+      ]
+    },
+    {
+      "tool": "address_balance",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "салдо адреса",
+        "balance wallet",
+        "btc адреса",
+        "провери салдо",
+        "address balance"
+      ],
+      "keywords_en": [
+        "address balance",
+        "wallet balance",
+        "btc address",
+        "check balance",
+        "address funds"
+      ],
+      "examples_mk": [
+        "Салдо на адреса",
+        "Кажи ми address balance",
+        "Дай ми address balance"
+      ],
+      "examples_en": [
+        "Address balance",
+        "Show me address balance",
+        "Get address balance"
+      ]
+    },
+    {
+      "tool": "whale_tracker",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "китови",
+        "whale alert",
+        "големи трансакции",
+        "whale tracker",
+        "whales"
+      ],
+      "keywords_en": [
+        "whales",
+        "whale alert",
+        "large transactions",
+        "whale tracker",
+        "whale movement"
+      ],
+      "examples_mk": [
+        "Whale движења",
+        "Кажи ми whale tracker",
+        "Дай ми whale tracker"
+      ],
+      "examples_en": [
+        "Whale movements",
+        "Show me whale tracker",
+        "Get whale tracker"
+      ]
+    },
+    {
+      "tool": "exchange_rates",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [
+        "курс",
+        "exchange rate",
+        "fiat курс",
+        "валути",
+        "currency"
+      ],
+      "keywords_en": [
+        "exchange rates",
+        "rate",
+        "fiat",
+        "currencies",
+        "forex"
+      ],
+      "examples_mk": [
+        "Курсни листи",
+        "Кажи ми exchange rates",
+        "Дай ми exchange rates"
+      ],
+      "examples_en": [
+        "Exchange rates",
+        "Show me exchange rates",
+        "Get exchange rates"
+      ]
+    },
+    {
+      "tool": "funding_rates",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "funding rate",
+        "стапка финансирање",
+        "futures rate",
+        "perp rate",
+        "funding"
+      ],
+      "keywords_en": [
+        "funding rate",
+        "perpetual funding",
+        "futures rate",
+        "perp rate",
+        "funding"
+      ],
+      "examples_mk": [
+        "Funding rate BTC",
+        "Кажи ми funding rates",
+        "Дай ми funding rates"
+      ],
+      "examples_en": [
+        "BTC funding rate",
+        "Show me funding rates",
+        "Get funding rates"
+      ]
+    },
+    {
+      "tool": "open_interest",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "open interest",
+        "oi",
+        "отворен интерес",
+        "futures oi",
+        "oi crypto"
+      ],
+      "keywords_en": [
+        "open interest",
+        "oi",
+        "futures oi",
+        "open positions",
+        "oi crypto"
+      ],
+      "examples_mk": [
+        "BTC OI",
+        "Кажи ми open interest",
+        "Дай ми open interest"
+      ],
+      "examples_en": [
+        "BTC OI",
+        "Show me open interest",
+        "Get open interest"
+      ]
+    },
+    {
+      "tool": "stablecoin_rates",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "stablecoin",
+        "usdt",
+        "usdc",
+        "stablecoin rates",
+        "stables"
+      ],
+      "keywords_en": [
+        "stablecoin",
+        "usdt",
+        "usdc",
+        "stablecoin rates",
+        "stables"
+      ],
+      "examples_mk": [
+        "Stablecoin податоци",
+        "Кажи ми stablecoin rates",
+        "Дай ми stablecoin rates"
+      ],
+      "examples_en": [
+        "Stablecoin data",
+        "Show me stablecoin rates",
+        "Get stablecoin rates"
+      ]
+    },
+    {
+      "tool": "bridge_volume",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "bridge volume",
+        "cross-chain",
+        "bridge",
+        "bridges",
+        "crosschain"
+      ],
+      "keywords_en": [
+        "bridge volume",
+        "cross-chain",
+        "bridge",
+        "bridges",
+        "crosschain"
+      ],
+      "examples_mk": [
+        "Bridge волумен",
+        "Кажи ми bridge volume",
+        "Дай ми bridge volume"
+      ],
+      "examples_en": [
+        "Bridge volume",
+        "Show me bridge volume",
+        "Get bridge volume"
+      ]
+    },
+    {
+      "tool": "dex_volume",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "dex volume",
+        "dex",
+        "dexs",
+        "децентрализирани",
+        "dex activity"
+      ],
+      "keywords_en": [
+        "dex volume",
+        "dex",
+        "dexs",
+        "decentralized",
+        "dex activity"
+      ],
+      "examples_mk": [
+        "DEX волумен",
+        "Кажи ми dex volume",
+        "Дай ми dex volume"
+      ],
+      "examples_en": [
+        "DEX volume",
+        "Show me dex volume",
+        "Get dex volume"
+      ]
+    },
+    {
+      "tool": "nft_floor",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "nft floor",
+        "nft под",
+        "floor price",
+        "nft цена",
+        "collection floor"
+      ],
+      "keywords_en": [
+        "nft floor",
+        "floor price",
+        "nft collection",
+        "collection floor",
+        "nft price"
+      ],
+      "examples_mk": [
+        "NFT floor",
+        "Кажи ми nft floor price",
+        "Дай ми nft floor price"
+      ],
+      "examples_en": [
+        "NFT floor",
+        "Show me nft floor price",
+        "Get nft floor price"
+      ]
+    },
+    {
+      "tool": "token_info",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "token info",
+        "информации за token",
+        "token податоци",
+        "token contract",
+        "token metadata"
+      ],
+      "keywords_en": [
+        "token info",
+        "token data",
+        "token contract",
+        "token metadata",
+        "token details"
+      ],
+      "examples_mk": [
+        "Info за token",
+        "Кажи ми token info",
+        "Дай ми token info"
+      ],
+      "examples_en": [
+        "Token info",
+        "Show me token info",
+        "Get token info"
+      ]
+    },
+    {
+      "tool": "airdrop_hunter",
+      "category": "crypto",
+      "implemented": false,
+      "keywords_mk": [
+        "airdrop",
+        "airdrops",
+        "бесплатни token",
+        "airdrop checker",
+        "airdrop farming"
+      ],
+      "keywords_en": [
+        "airdrop",
+        "airdrops",
+        "free tokens",
+        "airdrop checker",
+        "airdrop farming"
+      ],
+      "examples_mk": [
+        "Airdrops",
+        "Кажи ми airdrop hunter",
+        "Дай ми airdrop hunter"
+      ],
+      "examples_en": [
+        "Airdrops",
+        "Show me airdrop hunter",
+        "Get airdrop hunter"
+      ]
+    },
+    {
+      "tool": "hackernews",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [
+        "хакер њуз",
+        "hn",
+        "техно вести",
+        "програмерски вести",
+        "tech news"
+      ],
+      "keywords_en": [
+        "hacker news",
+        "hn",
+        "tech news",
+        "developer news",
+        "startup news"
+      ],
+      "examples_mk": [
+        "HN топ",
+        "Кажи ми hacker news",
+        "Дай ми hacker news"
+      ],
+      "examples_en": [
+        "HN top",
+        "Show me hacker news",
+        "Get hacker news"
+      ]
+    },
+    {
+      "tool": "reddit_hot",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [
+        "reddit жешки",
+        "hot reddit",
+        "популарни reddit",
+        "subreddit",
+        "reddit top"
+      ],
+      "keywords_en": [
+        "reddit hot",
+        "hot reddit",
+        "popular reddit",
+        "subreddit",
+        "reddit top"
+      ],
+      "examples_mk": [
+        "r/technology hot",
+        "Кажи ми reddit hot",
+        "Дай ми reddit hot"
+      ],
+      "examples_en": [
+        "r/technology hot",
+        "Show me reddit hot",
+        "Get reddit hot"
+      ]
+    },
+    {
+      "tool": "reddit_search",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "пребарај reddit",
+        "reddit search",
+        "најди на reddit",
+        "reddit постови",
+        "reddit тема"
+      ],
+      "keywords_en": [
+        "reddit search",
+        "search reddit",
+        "find on reddit",
+        "reddit posts",
+        "reddit topic"
+      ],
+      "examples_mk": [
+        "Пребарај reddit",
+        "Кажи ми reddit search",
+        "Дай ми reddit search"
+      ],
+      "examples_en": [
+        "Search reddit",
+        "Show me reddit search",
+        "Get reddit search"
+      ]
+    },
+    {
+      "tool": "mkdnews",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [
+        "вести македонија",
+        "mkd вести",
+        "миа",
+        "вести денес",
+        "македонски новости"
+      ],
+      "keywords_en": [
+        "macedonian news",
+        "mkd news",
+        "mia",
+        "today news",
+        "macedonia news"
+      ],
+      "examples_mk": [
+        "Вести Македонија",
+        "Кажи ми македонски вести",
+        "Дай ми македонски вести"
+      ],
+      "examples_en": [
+        "Macedonian news",
+        "Show me македонски вести",
+        "Get македонски вести"
+      ]
+    },
+    {
+      "tool": "world_news",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [
+        "светски вести",
+        "world news",
+        "глобални вести",
+        "bbc",
+        "news world"
+      ],
+      "keywords_en": [
+        "world news",
+        "global news",
+        "bbc",
+        "international news",
+        "world"
+      ],
+      "examples_mk": [
+        "BBC world",
+        "Кажи ми world news",
+        "Дай ми world news"
+      ],
+      "examples_en": [
+        "BBC world",
+        "Show me world news",
+        "Get world news"
+      ]
+    },
+    {
+      "tool": "techcrunch",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "techcrunch",
+        "tech вести",
+        "startup news",
+        "сајт вести",
+        "tech news"
+      ],
+      "keywords_en": [
+        "techcrunch",
+        "tech news",
+        "startup news",
+        "technology news",
+        "tech"
+      ],
+      "examples_mk": [
+        "TechCrunch",
+        "Кажи ми techcrunch",
+        "Дай ми techcrunch"
+      ],
+      "examples_en": [
+        "TechCrunch",
+        "Show me techcrunch",
+        "Get techcrunch"
+      ]
+    },
+    {
+      "tool": "coindesk",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "coindesk",
+        "крипто вести",
+        "crypto news",
+        "btc вести",
+        "crypto"
+      ],
+      "keywords_en": [
+        "coindesk",
+        "crypto news",
+        "bitcoin news",
+        "crypto",
+        "btc news"
+      ],
+      "examples_mk": [
+        "CoinDesk",
+        "Кажи ми coindesk",
+        "Дай ми coindesk"
+      ],
+      "examples_en": [
+        "CoinDesk",
+        "Show me coindesk",
+        "Get coindesk"
+      ]
+    },
+    {
+      "tool": "cointelegraph",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "cointelegraph",
+        "крипто вести",
+        "altcoin news",
+        "crypto news",
+        "ct"
+      ],
+      "keywords_en": [
+        "cointelegraph",
+        "crypto news",
+        "altcoin news",
+        "crypto",
+        "ct"
+      ],
+      "examples_mk": [
+        "Cointelegraph",
+        "Кажи ми cointelegraph",
+        "Дай ми cointelegraph"
+      ],
+      "examples_en": [
+        "Cointelegraph",
+        "Show me cointelegraph",
+        "Get cointelegraph"
+      ]
+    },
+    {
+      "tool": "producthunt",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "product hunt",
+        "ph",
+        "нови производи",
+        "стартапи",
+        "new products"
+      ],
+      "keywords_en": [
+        "product hunt",
+        "ph",
+        "new products",
+        "startups",
+        "product launches"
+      ],
+      "examples_mk": [
+        "Product Hunt",
+        "Кажи ми product hunt",
+        "Дай ми product hunt"
+      ],
+      "examples_en": [
+        "Product Hunt",
+        "Show me product hunt",
+        "Get product hunt"
+      ]
+    },
+    {
+      "tool": "indiehackers",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "indie hackers",
+        "ih",
+        "инди хакери",
+        "соло founders",
+        "solo founders"
+      ],
+      "keywords_en": [
+        "indie hackers",
+        "ih",
+        "solo founders",
+        "bootstrappers",
+        "indie"
+      ],
+      "examples_mk": [
+        "Indie Hackers",
+        "Кажи ми indie hackers",
+        "Дай ми indie hackers"
+      ],
+      "examples_en": [
+        "Indie Hackers",
+        "Show me indie hackers",
+        "Get indie hackers"
+      ]
+    },
+    {
+      "tool": "arxiv_latest",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "arxiv",
+        "научни трудови",
+        "research papers",
+        "нови студии",
+        "papers"
+      ],
+      "keywords_en": [
+        "arxiv",
+        "research papers",
+        "new studies",
+        "papers",
+        "academic"
+      ],
+      "examples_mk": [
+        "arXiv AI",
+        "Кажи ми arxiv latest",
+        "Дай ми arxiv latest"
+      ],
+      "examples_en": [
+        "arXiv AI",
+        "Show me arxiv latest",
+        "Get arxiv latest"
+      ]
+    },
+    {
+      "tool": "devto_latest",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "devto",
+        "dev.to",
+        "dev вести",
+        "програмерски блог",
+        "dev"
+      ],
+      "keywords_en": [
+        "devto",
+        "dev.to",
+        "dev news",
+        "developer blog",
+        "dev"
+      ],
+      "examples_mk": [
+        "Dev.to",
+        "Кажи ми dev.to",
+        "Дай ми dev.to"
+      ],
+      "examples_en": [
+        "Dev.to",
+        "Show me dev.to",
+        "Get dev.to"
+      ]
+    },
+    {
+      "tool": "lobsters",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "lobsters",
+        "lobster",
+        "техно новости",
+        "hn alternative",
+        "tech"
+      ],
+      "keywords_en": [
+        "lobsters",
+        "tech news",
+        "hn alternative",
+        "dev news",
+        "tech"
+      ],
+      "examples_mk": [
+        "Lobsters",
+        "Кажи ми lobsters",
+        "Дай ми lobsters"
+      ],
+      "examples_en": [
+        "Lobsters",
+        "Show me lobsters",
+        "Get lobsters"
+      ]
+    },
+    {
+      "tool": "techmeme",
+      "category": "news",
+      "implemented": false,
+      "keywords_mk": [
+        "techmeme",
+        "техно aggregator",
+        "tech news",
+        "tech aggregator",
+        "techmeme"
+      ],
+      "keywords_en": [
+        "techmeme",
+        "tech aggregator",
+        "tech news",
+        "tech aggregation",
+        "techmeme"
+      ],
+      "examples_mk": [
+        "Techmeme",
+        "Кажи ми techmeme",
+        "Дай ми techmeme"
+      ],
+      "examples_en": [
+        "Techmeme",
+        "Show me techmeme",
+        "Get techmeme"
+      ]
+    },
+    {
+      "tool": "rss_reader",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [
+        "rss",
+        "читач rss",
+        "feed",
+        "feed reader",
+        "rss reader"
+      ],
+      "keywords_en": [
+        "rss",
+        "rss reader",
+        "feed",
+        "feed reader",
+        "rss feeds"
+      ],
+      "examples_mk": [
+        "Читај RSS",
+        "Кажи ми rss reader",
+        "Дай ми rss reader"
+      ],
+      "examples_en": [
+        "Read RSS",
+        "Show me rss reader",
+        "Get rss reader"
+      ]
+    },
+    {
+      "tool": "current_weather",
+      "category": "weather",
+      "implemented": true,
+      "keywords_mk": [
+        "време",
+        "температура",
+        "прогноза",
+        "врнежи",
+        "ветер"
+      ],
+      "keywords_en": [
+        "weather",
+        "temperature",
+        "forecast",
+        "rain",
+        "wind"
+      ],
+      "examples_mk": [
+        "Време во Скопје",
+        "Кажи ми current weather",
+        "Дай ми current weather"
+      ],
+      "examples_en": [
+        "Weather in Skopje",
+        "Show me current weather",
+        "Get current weather"
+      ]
+    },
+    {
+      "tool": "weather_7day",
+      "category": "weather",
+      "implemented": true,
+      "keywords_mk": [
+        "7 дена прогноза",
+        "неделна прогноза",
+        "седум дена",
+        "долга прогноза",
+        "недела време"
+      ],
+      "keywords_en": [
+        "7 day forecast",
+        "weekly weather",
+        "seven day",
+        "long forecast",
+        "week weather"
+      ],
+      "examples_mk": [
+        "7 дена прогноза",
+        "Кажи ми 7-day weather",
+        "Дай ми 7-day weather"
+      ],
+      "examples_en": [
+        "7 day forecast",
+        "Show me 7-day weather",
+        "Get 7-day weather"
+      ]
+    },
+    {
+      "tool": "air_quality",
+      "category": "weather",
+      "implemented": true,
+      "keywords_mk": [
+        "квалитет воздух",
+        "загадување",
+        "pm2.5",
+        "воздух",
+        "загаден воздух"
+      ],
+      "keywords_en": [
+        "air quality",
+        "pollution",
+        "pm2.5",
+        "air pollution",
+        "air quality index"
+      ],
+      "examples_mk": [
+        "Квалитет на воздух",
+        "Кажи ми air quality",
+        "Дай ми air quality"
+      ],
+      "examples_en": [
+        "Air quality",
+        "Show me air quality",
+        "Get air quality"
+      ]
+    },
+    {
+      "tool": "uv_index",
+      "category": "weather",
+      "implemented": true,
+      "keywords_mk": [
+        "uv индекс",
+        "uv",
+        "сончево зрачење",
+        "uv index",
+        "uv индекс"
+      ],
+      "keywords_en": [
+        "uv index",
+        "uv",
+        "sun exposure",
+        "uv radiation",
+        "uv index"
+      ],
+      "examples_mk": [
+        "UV индекс",
+        "Кажи ми uv index",
+        "Дай ми uv index"
+      ],
+      "examples_en": [
+        "UV index",
+        "Show me uv index",
+        "Get uv index"
+      ]
+    },
+    {
+      "tool": "sunrise_sunset",
+      "category": "weather",
+      "implemented": true,
+      "keywords_mk": [
+        "изгрејсонце",
+        "зајдисонце",
+        "sunrise",
+        "sunset",
+        "излез сонце"
+      ],
+      "keywords_en": [
+        "sunrise",
+        "sunset",
+        "sun times",
+        "day length",
+        "sun position"
+      ],
+      "examples_mk": [
+        "Изгрејсонце Скопје",
+        "Кажи ми sunrise / sunset",
+        "Дай ми sunrise / sunset"
+      ],
+      "examples_en": [
+        "Sunrise Skopje",
+        "Show me sunrise / sunset",
+        "Get sunrise / sunset"
+      ]
+    },
+    {
+      "tool": "moon_phase",
+      "category": "weather",
+      "implemented": false,
+      "keywords_mk": [
+        "месечева фаза",
+        "moon phase",
+        "месечина",
+        "фаза на месец",
+        "луна"
+      ],
+      "keywords_en": [
+        "moon phase",
+        "lunar phase",
+        "moon",
+        "lunar calendar",
+        "moon cycle"
+      ],
+      "examples_mk": [
+        "Месечева фаза",
+        "Кажи ми moon phase",
+        "Дай ми moon phase"
+      ],
+      "examples_en": [
+        "Moon phase",
+        "Show me moon phase",
+        "Get moon phase"
+      ]
+    },
+    {
+      "tool": "earthquake",
+      "category": "weather",
+      "implemented": false,
+      "keywords_mk": [
+        "земјотрес",
+        "earthquake",
+        "сеизмичка",
+        "трес",
+        "quake"
+      ],
+      "keywords_en": [
+        "earthquake",
+        "quake",
+        "seismic",
+        "earth tremor",
+        "earthquake info"
+      ],
+      "examples_mk": [
+        "Земјотреси денес",
+        "Кажи ми earthquake info",
+        "Дай ми earthquake info"
+      ],
+      "examples_en": [
+        "Earthquakes today",
+        "Show me earthquake info",
+        "Get earthquake info"
+      ]
+    },
+    {
+      "tool": "tide_info",
+      "category": "weather",
+      "implemented": false,
+      "keywords_mk": [
+        "плима",
+        "tide",
+        "tides",
+        "морски прилив",
+        "sea level"
+      ],
+      "keywords_en": [
+        "tide",
+        "tides",
+        "tidal",
+        "sea level",
+        "tide info"
+      ],
+      "examples_mk": [
+        "Плима",
+        "Кажи ми tide info",
+        "Дай ми tide info"
+      ],
+      "examples_en": [
+        "Tide info",
+        "Show me tide info",
+        "Get tide info"
+      ]
+    },
+    {
+      "tool": "wildfire",
+      "category": "weather",
+      "implemented": false,
+      "keywords_mk": [
+        "пожар",
+        "wildfire",
+        "шумски пожар",
+        "fire alert",
+        "пожари"
+      ],
+      "keywords_en": [
+        "wildfire",
+        "fire",
+        "fire alert",
+        "forest fire",
+        "wildfires"
+      ],
+      "examples_mk": [
+        "Пожари",
+        "Кажи ми wildfire alerts",
+        "Дай ми wildfire alerts"
+      ],
+      "examples_en": [
+        "Wildfires",
+        "Show me wildfire alerts",
+        "Get wildfire alerts"
+      ]
+    },
+    {
+      "tool": "weather_forecast",
+      "category": "weather",
+      "implemented": false,
+      "keywords_mk": [
+        "прогноза",
+        "forecast",
+        "временска прогноза",
+        "време",
+        "forecast"
+      ],
+      "keywords_en": [
+        "forecast",
+        "weather forecast",
+        "weather",
+        "conditions",
+        "weather"
+      ],
+      "examples_mk": [
+        "Прогноза Скопје",
+        "Кажи ми weather forecast",
+        "Дай ми weather forecast"
+      ],
+      "examples_en": [
+        "Forecast Skopje",
+        "Show me weather forecast",
+        "Get weather forecast"
+      ]
+    },
+    {
+      "tool": "geocode",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "координати",
+        "геокодирај",
+        "најди локација",
+        "адреса",
+        "географска ширина"
+      ],
+      "keywords_en": [
+        "geocode",
+        "coordinates",
+        "find location",
+        "address",
+        "latitude"
+      ],
+      "examples_mk": [
+        "Координати Скопје",
+        "Кажи ми geocode",
+        "Дай ми geocode"
+      ],
+      "examples_en": [
+        "Coordinates Skopje",
+        "Show me geocode",
+        "Get geocode"
+      ]
+    },
+    {
+      "tool": "reverse_geocode",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "адреса од координати",
+        "обратен геокод",
+        "gps адреса",
+        "координати",
+        "reverse geocode"
+      ],
+      "keywords_en": [
+        "reverse geocode",
+        "coordinates to address",
+        "gps address",
+        "address lookup",
+        "reverse"
+      ],
+      "examples_mk": [
+        "Адреса на координати",
+        "Кажи ми reverse geocode",
+        "Дай ми reverse geocode"
+      ],
+      "examples_en": [
+        "Address from coords",
+        "Show me reverse geocode",
+        "Get reverse geocode"
+      ]
+    },
+    {
+      "tool": "ip_location",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "ip локација",
+        "геолокација",
+        "провери ip",
+        "ip адреса",
+        "where is ip"
+      ],
+      "keywords_en": [
+        "ip location",
+        "ip geolocation",
+        "check ip",
+        "ip address",
+        "where is ip"
+      ],
+      "examples_mk": [
+        "Локација на IP",
+        "Кажи ми ip location",
+        "Дай ми ip location"
+      ],
+      "examples_en": [
+        "IP location",
+        "Show me ip location",
+        "Get ip location"
+      ]
+    },
+    {
+      "tool": "country_info",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "земја",
+        "country info",
+        "држава",
+        "info земја",
+        "country"
+      ],
+      "keywords_en": [
+        "country",
+        "country info",
+        "nation",
+        "state",
+        "country data"
+      ],
+      "examples_mk": [
+        "Info за Македонија",
+        "Кажи ми country info",
+        "Дай ми country info"
+      ],
+      "examples_en": [
+        "Info about Macedonia",
+        "Show me country info",
+        "Get country info"
+      ]
+    },
+    {
+      "tool": "currency_convert",
+      "category": "geo",
+      "implemented": false,
+      "keywords_mk": [
+        "конверзија валута",
+        "currency convert",
+        "курс",
+        "exchange",
+        "fx"
+      ],
+      "keywords_en": [
+        "currency convert",
+        "exchange rate",
+        "fx",
+        "convert currency",
+        "currency"
+      ],
+      "examples_mk": [
+        "100 USD во MKD",
+        "Кажи ми currency converter",
+        "Дай ми currency converter"
+      ],
+      "examples_en": [
+        "100 USD to MKD",
+        "Show me currency converter",
+        "Get currency converter"
+      ]
+    },
+    {
+      "tool": "distance_calc",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "растојание",
+        "distance",
+        "од до",
+        "distance calc",
+        "километри"
+      ],
+      "keywords_en": [
+        "distance",
+        "distance calc",
+        "km",
+        "miles",
+        "how far"
+      ],
+      "examples_mk": [
+        "Растојание Скопје-Белград",
+        "Кажи ми distance calculator",
+        "Дай ми distance calculator"
+      ],
+      "examples_en": [
+        "Skopje-Belgrade distance",
+        "Show me distance calculator",
+        "Get distance calculator"
+      ]
+    },
+    {
+      "tool": "timezone",
+      "category": "geo",
+      "implemented": true,
+      "keywords_mk": [
+        "часовна зона",
+        "timezone",
+        "временска зона",
+        "зона",
+        "zone"
+      ],
+      "keywords_en": [
+        "timezone",
+        "time zone",
+        "zone",
+        "tz",
+        "clock"
+      ],
+      "examples_mk": [
+        "Време во зона",
+        "Кажи ми timezone info",
+        "Дай ми timezone info"
+      ],
+      "examples_en": [
+        "Time in zone",
+        "Show me timezone info",
+        "Get timezone info"
+      ]
+    },
+    {
+      "tool": "flight_tracker",
+      "category": "geo",
+      "implemented": false,
+      "keywords_mk": [
+        "летови",
+        "flight tracker",
+        "авиони",
+        "track flight",
+        "лет"
+      ],
+      "keywords_en": [
+        "flight tracker",
+        "flights",
+        "airplanes",
+        "track flight",
+        "flight"
+      ],
+      "examples_mk": [
+        "Летови во живо",
+        "Кажи ми flight tracker",
+        "Дай ми flight tracker"
+      ],
+      "examples_en": [
+        "Live flights",
+        "Show me flight tracker",
+        "Get flight tracker"
+      ]
+    },
+    {
+      "tool": "earthquake_map",
+      "category": "geo",
+      "implemented": false,
+      "keywords_mk": [
+        "земјотрес мапа",
+        "earthquake map",
+        "сеизмичка мапа",
+        "quake map",
+        "earthquake"
+      ],
+      "keywords_en": [
+        "earthquake map",
+        "quake map",
+        "seismic map",
+        "earthquakes",
+        "earthquake"
+      ],
+      "examples_mk": [
+        "Земјотреси на мапа",
+        "Кажи ми earthquake map",
+        "Дай ми earthquake map"
+      ],
+      "examples_en": [
+        "Earthquakes map",
+        "Show me earthquake map",
+        "Get earthquake map"
+      ]
+    },
+    {
+      "tool": "sun_position",
+      "category": "geo",
+      "implemented": false,
+      "keywords_mk": [
+        "сонце позиција",
+        "sun position",
+        "каде е сонцето",
+        "sun angle",
+        "sun"
+      ],
+      "keywords_en": [
+        "sun position",
+        "sun angle",
+        "sun",
+        "solar position",
+        "sun tracker"
+      ],
+      "examples_mk": [
+        "Позиција на сонце",
+        "Кажи ми sun position",
+        "Дай ми sun position"
+      ],
+      "examples_en": [
+        "Sun position",
+        "Show me sun position",
+        "Get sun position"
+      ]
+    },
+    {
+      "tool": "youtube_search",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [
+        "youtube",
+        "пребарај youtube",
+        "видеа",
+        "најди видео",
+        "yt"
+      ],
+      "keywords_en": [
+        "youtube",
+        "search youtube",
+        "videos",
+        "find video",
+        "yt"
+      ],
+      "examples_mk": [
+        "YouTube Python",
+        "Кажи ми youtube search",
+        "Дай ми youtube search"
+      ],
+      "examples_en": [
+        "YouTube Python",
+        "Show me youtube search",
+        "Get youtube search"
+      ]
+    },
+    {
+      "tool": "youtube_info",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [
+        "youtube info",
+        "информации видео",
+        "video info",
+        "youtube податоци",
+        "video"
+      ],
+      "keywords_en": [
+        "youtube info",
+        "video info",
+        "youtube data",
+        "video details",
+        "video"
+      ],
+      "examples_mk": [
+        "Info за видео",
+        "Кажи ми youtube info",
+        "Дай ми youtube info"
+      ],
+      "examples_en": [
+        "Video info",
+        "Show me youtube info",
+        "Get youtube info"
+      ]
+    },
+    {
+      "tool": "reddit_user",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "reddit user",
+        "reddit профил",
+        "корисник reddit",
+        "reddit account",
+        "user reddit"
+      ],
+      "keywords_en": [
+        "reddit user",
+        "reddit profile",
+        "reddit account",
+        "user reddit",
+        "reddit"
+      ],
+      "examples_mk": [
+        "Reddit корисник",
+        "Кажи ми reddit user",
+        "Дай ми reddit user"
+      ],
+      "examples_en": [
+        "Reddit user",
+        "Show me reddit user",
+        "Get reddit user"
+      ]
+    },
+    {
+      "tool": "twitter_lookup",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "twitter",
+        "x",
+        "провери twitter",
+        "twitter акаунт",
+        "tweet"
+      ],
+      "keywords_en": [
+        "twitter",
+        "x",
+        "twitter lookup",
+        "twitter account",
+        "tweet"
+      ],
+      "examples_mk": [
+        "Twitter елон",
+        "Кажи ми twitter lookup",
+        "Дай ми twitter lookup"
+      ],
+      "examples_en": [
+        "Twitter elon",
+        "Show me twitter lookup",
+        "Get twitter lookup"
+      ]
+    },
+    {
+      "tool": "instagram_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "instagram",
+        "ig",
+        "профил instagram",
+        "ig корисник",
+        "instagram"
+      ],
+      "keywords_en": [
+        "instagram",
+        "ig",
+        "instagram profile",
+        "instagram user",
+        "instagram"
+      ],
+      "examples_mk": [
+        "Instagram NASA",
+        "Кажи ми instagram info",
+        "Дай ми instagram info"
+      ],
+      "examples_en": [
+        "Instagram NASA",
+        "Show me instagram info",
+        "Get instagram info"
+      ]
+    },
+    {
+      "tool": "tiktok_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "tiktok",
+        "tik tok",
+        "профил tiktok",
+        "tiktok инфо",
+        "tiktok"
+      ],
+      "keywords_en": [
+        "tiktok",
+        "tik tok",
+        "tiktok profile",
+        "tiktok info",
+        "tiktok"
+      ],
+      "examples_mk": [
+        "TikTok info",
+        "Кажи ми tiktok info",
+        "Дай ми tiktok info"
+      ],
+      "examples_en": [
+        "TikTok info",
+        "Show me tiktok info",
+        "Get tiktok info"
+      ]
+    },
+    {
+      "tool": "twitch_status",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "twitch",
+        "twitch статус",
+        "streamer",
+        "пребарај twitch",
+        "twitch"
+      ],
+      "keywords_en": [
+        "twitch",
+        "twitch status",
+        "streamer",
+        "twitch lookup",
+        "twitch"
+      ],
+      "examples_mk": [
+        "Twitch статус",
+        "Кажи ми twitch status",
+        "Дай ми twitch status"
+      ],
+      "examples_en": [
+        "Twitch status",
+        "Show me twitch status",
+        "Get twitch status"
+      ]
+    },
+    {
+      "tool": "spotify_search",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "spotify",
+        "музика",
+        "пребарај spotify",
+        "song",
+        "track"
+      ],
+      "keywords_en": [
+        "spotify",
+        "music",
+        "search spotify",
+        "song",
+        "track"
+      ],
+      "examples_mk": [
+        "Spotify пребарување",
+        "Кажи ми spotify search",
+        "Дай ми spotify search"
+      ],
+      "examples_en": [
+        "Spotify search",
+        "Show me spotify search",
+        "Get spotify search"
+      ]
+    },
+    {
+      "tool": "soundcloud_search",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "soundcloud",
+        "пребарај soundcloud",
+        "track",
+        "музика sc",
+        "soundcloud"
+      ],
+      "keywords_en": [
+        "soundcloud",
+        "search soundcloud",
+        "track",
+        "music",
+        "soundcloud"
+      ],
+      "examples_mk": [
+        "SoundCloud lofi",
+        "Кажи ми soundcloud search",
+        "Дай ми soundcloud search"
+      ],
+      "examples_en": [
+        "SoundCloud lofi",
+        "Show me soundcloud search",
+        "Get soundcloud search"
+      ]
+    },
+    {
+      "tool": "discord_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "discord",
+        "discord info",
+        "сервер",
+        "discord server",
+        "discord"
+      ],
+      "keywords_en": [
+        "discord",
+        "discord info",
+        "server",
+        "discord server",
+        "discord"
+      ],
+      "examples_mk": [
+        "Discord invite",
+        "Кажи ми discord info",
+        "Дай ми discord info"
+      ],
+      "examples_en": [
+        "Discord invite",
+        "Show me discord info",
+        "Get discord info"
+      ]
+    },
+    {
+      "tool": "telegram_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "telegram",
+        "tg",
+        "канал",
+        "channel",
+        "telegram"
+      ],
+      "keywords_en": [
+        "telegram",
+        "tg",
+        "channel",
+        "telegram channel",
+        "telegram"
+      ],
+      "examples_mk": [
+        "Telegram канал",
+        "Кажи ми telegram info",
+        "Дай ми telegram info"
+      ],
+      "examples_en": [
+        "Telegram channel",
+        "Show me telegram info",
+        "Get telegram info"
+      ]
+    },
+    {
+      "tool": "mastodon_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "mastodon",
+        "fediverse",
+        "mastodon профил",
+        "fediverse",
+        "mastodon"
+      ],
+      "keywords_en": [
+        "mastodon",
+        "fediverse",
+        "mastodon profile",
+        "fediverse",
+        "mastodon"
+      ],
+      "examples_mk": [
+        "Mastodon профил",
+        "Кажи ми mastodon info",
+        "Дай ми mastodon info"
+      ],
+      "examples_en": [
+        "Mastodon profile",
+        "Show me mastodon info",
+        "Get mastodon info"
+      ]
+    },
+    {
+      "tool": "bluesky_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "bluesky",
+        "bsky",
+        "bluesky профил",
+        "at protocol",
+        "bluesky"
+      ],
+      "keywords_en": [
+        "bluesky",
+        "bsky",
+        "bluesky profile",
+        "at protocol",
+        "bluesky"
+      ],
+      "examples_mk": [
+        "Bluesky профил",
+        "Кажи ми bluesky info",
+        "Дай ми bluesky info"
+      ],
+      "examples_en": [
+        "Bluesky profile",
+        "Show me bluesky info",
+        "Get bluesky info"
+      ]
+    },
+    {
+      "tool": "threads_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "threads",
+        "meta threads",
+        "профил threads",
+        "threads user",
+        "threads"
+      ],
+      "keywords_en": [
+        "threads",
+        "meta threads",
+        "threads profile",
+        "threads user",
+        "threads"
+      ],
+      "examples_mk": [
+        "Threads профил",
+        "Кажи ми threads info",
+        "Дай ми threads info"
+      ],
+      "examples_en": [
+        "Threads profile",
+        "Show me threads info",
+        "Get threads info"
+      ]
+    },
+    {
+      "tool": "linkedin_info",
+      "category": "social",
+      "implemented": false,
+      "keywords_mk": [
+        "linkedin",
+        "профил linkedin",
+        "linkedin user",
+        "linkedin",
+        "company"
+      ],
+      "keywords_en": [
+        "linkedin",
+        "linkedin profile",
+        "linkedin user",
+        "linkedin",
+        "company"
+      ],
+      "examples_mk": [
+        "LinkedIn профил",
+        "Кажи ми linkedin info",
+        "Дай ми linkedin info"
+      ],
+      "examples_en": [
+        "LinkedIn profile",
+        "Show me linkedin info",
+        "Get linkedin info"
+      ]
+    },
+    {
+      "tool": "execute_python",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "изврши python",
+        "python код",
+        "стартувај python",
+        "пресметај python",
+        "python"
+      ],
+      "keywords_en": [
+        "execute python",
+        "python code",
+        "run python",
+        "python calculation",
+        "python"
+      ],
+      "examples_mk": [
+        "Python код",
+        "Кажи ми execute python",
+        "Дай ми execute python"
+      ],
+      "examples_en": [
+        "Python code",
+        "Show me execute python",
+        "Get execute python"
+      ]
+    },
+    {
+      "tool": "execute_js",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "изврши js",
+        "javascript код",
+        "стартувај js",
+        "js код",
+        "javascript"
+      ],
+      "keywords_en": [
+        "execute js",
+        "javascript code",
+        "run js",
+        "js code",
+        "javascript"
+      ],
+      "examples_mk": [
+        "JS код",
+        "Кажи ми execute javascript",
+        "Дай ми execute javascript"
+      ],
+      "examples_en": [
+        "JS code",
+        "Show me execute javascript",
+        "Get execute javascript"
+      ]
+    },
+    {
+      "tool": "json_format",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "форматирај json",
+        "json",
+        "убав json",
+        "pretty json",
+        "json format"
+      ],
+      "keywords_en": [
+        "format json",
+        "json",
+        "pretty json",
+        "beautify json",
+        "json format"
+      ],
+      "examples_mk": [
+        "Форматирај JSON",
+        "Кажи ми json format",
+        "Дай ми json format"
+      ],
+      "examples_en": [
+        "Format JSON",
+        "Show me json format",
+        "Get json format"
+      ]
+    },
+    {
+      "tool": "base64_encode",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "base64 кодирај",
+        "encode base64",
+        "base64",
+        "кодирај",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64 encode",
+        "encode base64",
+        "base64",
+        "b64",
+        "encode"
+      ],
+      "examples_mk": [
+        "Encode base64",
+        "Кажи ми base64 encode",
+        "Дай ми base64 encode"
+      ],
+      "examples_en": [
+        "Encode base64",
+        "Show me base64 encode",
+        "Get base64 encode"
+      ]
+    },
+    {
+      "tool": "base64_decode",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "base64 декодирај",
+        "decode base64",
+        "base64",
+        "откодирај",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64 decode",
+        "decode base64",
+        "base64",
+        "b64",
+        "decode"
+      ],
+      "examples_mk": [
+        "Decode base64",
+        "Кажи ми base64 decode",
+        "Дай ми base64 decode"
+      ],
+      "examples_en": [
+        "Decode base64",
+        "Show me base64 decode",
+        "Get base64 decode"
+      ]
+    },
+    {
+      "tool": "url_encode",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "url encode",
+        "encode url",
+        "кодирај url",
+        "url",
+        "encode"
+      ],
+      "keywords_en": [
+        "url encode",
+        "encode url",
+        "url",
+        "uri encode",
+        "encode"
+      ],
+      "examples_mk": [
+        "Encode URL",
+        "Кажи ми url encode",
+        "Дай ми url encode"
+      ],
+      "examples_en": [
+        "Encode URL",
+        "Show me url encode",
+        "Get url encode"
+      ]
+    },
+    {
+      "tool": "url_decode",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "url decode",
+        "decode url",
+        "декодирај url",
+        "url decode",
+        "decode"
+      ],
+      "keywords_en": [
+        "url decode",
+        "decode url",
+        "url",
+        "uri decode",
+        "decode"
+      ],
+      "examples_mk": [
+        "Decode URL",
+        "Кажи ми url decode",
+        "Дай ми url decode"
+      ],
+      "examples_en": [
+        "Decode URL",
+        "Show me url decode",
+        "Get url decode"
+      ]
+    },
+    {
+      "tool": "hash_md5",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "md5",
+        "hash",
+        "хеш",
+        "md5 hash",
+        "хеширај"
+      ],
+      "keywords_en": [
+        "md5",
+        "hash",
+        "md5 hash",
+        "hash string",
+        "hash"
+      ],
+      "examples_mk": [
+        "MD5 hash",
+        "Кажи ми md5 hash",
+        "Дай ми md5 hash"
+      ],
+      "examples_en": [
+        "MD5 hash",
+        "Show me md5 hash",
+        "Get md5 hash"
+      ]
+    },
+    {
+      "tool": "hash_sha256",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "sha256",
+        "hash",
+        "хеш",
+        "sha256 hash",
+        "хеширај"
+      ],
+      "keywords_en": [
+        "sha256",
+        "hash",
+        "sha256 hash",
+        "hash string",
+        "hash"
+      ],
+      "examples_mk": [
+        "SHA256 hash",
+        "Кажи ми sha256 hash",
+        "Дай ми sha256 hash"
+      ],
+      "examples_en": [
+        "SHA256 hash",
+        "Show me sha256 hash",
+        "Get sha256 hash"
+      ]
+    },
+    {
+      "tool": "regex_test",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "regex",
+        "тест regex",
+        "regex pattern",
+        "регуларен израз",
+        "regex test"
+      ],
+      "keywords_en": [
+        "regex",
+        "regex test",
+        "regex pattern",
+        "regular expression",
+        "regex"
+      ],
+      "examples_mk": [
+        "Regex test",
+        "Кажи ми regex test",
+        "Дай ми regex test"
+      ],
+      "examples_en": [
+        "Regex test",
+        "Show me regex test",
+        "Get regex test"
+      ]
+    },
+    {
+      "tool": "diff_check",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [
+        "diff",
+        "спореди",
+        "compare text",
+        "diff check",
+        "разлика"
+      ],
+      "keywords_en": [
+        "diff",
+        "compare text",
+        "diff check",
+        "difference",
+        "compare"
+      ],
+      "examples_mk": [
+        "Diff текстови",
+        "Кажи ми diff check",
+        "Дай ми diff check"
+      ],
+      "examples_en": [
+        "Diff texts",
+        "Show me diff check",
+        "Get diff check"
+      ]
+    },
+    {
+      "tool": "yaml_format",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "форматирај yaml",
+        "yaml",
+        "yaml format",
+        "yaml",
+        "format yaml"
+      ],
+      "keywords_en": [
+        "format yaml",
+        "yaml",
+        "yaml format",
+        "beautify yaml",
+        "yaml"
+      ],
+      "examples_mk": [
+        "Форматирај YAML",
+        "Кажи ми yaml format",
+        "Дай ми yaml format"
+      ],
+      "examples_en": [
+        "Format YAML",
+        "Show me yaml format",
+        "Get yaml format"
+      ]
+    },
+    {
+      "tool": "sql_format",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "форматирај sql",
+        "sql",
+        "sql format",
+        "убав sql",
+        "sql format"
+      ],
+      "keywords_en": [
+        "format sql",
+        "sql",
+        "sql format",
+        "beautify sql",
+        "sql format"
+      ],
+      "examples_mk": [
+        "Форматирај SQL",
+        "Кажи ми sql format",
+        "Дай ми sql format"
+      ],
+      "examples_en": [
+        "Format SQL",
+        "Show me sql format",
+        "Get sql format"
+      ]
+    },
+    {
+      "tool": "markdown_preview",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "markdown",
+        "прегледај markdown",
+        "md preview",
+        "markdown preview",
+        "md"
+      ],
+      "keywords_en": [
+        "markdown",
+        "markdown preview",
+        "md preview",
+        "preview md",
+        "markdown"
+      ],
+      "examples_mk": [
+        "Markdown преглед",
+        "Кажи ми markdown preview",
+        "Дай ми markdown preview"
+      ],
+      "examples_en": [
+        "Markdown preview",
+        "Show me markdown preview",
+        "Get markdown preview"
+      ]
+    },
+    {
+      "tool": "code_generate",
+      "category": "code",
+      "implemented": false,
+      "keywords_mk": [
+        "генерирај код",
+        "code generate",
+        "code gen",
+        "помош код",
+        "code helper"
+      ],
+      "keywords_en": [
+        "generate code",
+        "code generate",
+        "code gen",
+        "code helper",
+        "write code"
+      ],
+      "examples_mk": [
+        "Генерирај код",
+        "Кажи ми code generate",
+        "Дай ми code generate"
+      ],
+      "examples_en": [
+        "Generate code",
+        "Show me code generate",
+        "Get code generate"
+      ]
+    },
+    {
+      "tool": "summarize",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "сумирај",
+        "резиме",
+        "скрати текст",
+        "суштина",
+        "кратко"
+      ],
+      "keywords_en": [
+        "summarize",
+        "summary",
+        "shorten text",
+        "main idea",
+        "brief"
+      ],
+      "examples_mk": [
+        "Сумирај текст",
+        "Кажи ми summarize",
+        "Дай ми summarize"
+      ],
+      "examples_en": [
+        "Summarize text",
+        "Show me summarize",
+        "Get summarize"
+      ]
+    },
+    {
+      "tool": "translate",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "преведи",
+        "превод",
+        "превод на",
+        "translate",
+        "преведи"
+      ],
+      "keywords_en": [
+        "translate",
+        "translation",
+        "convert language",
+        "translate",
+        "interpret"
+      ],
+      "examples_mk": [
+        "Преведи hello",
+        "Кажи ми translate",
+        "Дай ми translate"
+      ],
+      "examples_en": [
+        "Translate hello",
+        "Show me translate",
+        "Get translate"
+      ]
+    },
+    {
+      "tool": "dictionary",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [
+        "речник",
+        "значење",
+        "дефиниција",
+        "што значи",
+        "збор"
+      ],
+      "keywords_en": [
+        "dictionary",
+        "meaning",
+        "definition",
+        "define",
+        "word"
+      ],
+      "examples_mk": [
+        "Значење на hello",
+        "Кажи ми dictionary",
+        "Дай ми dictionary"
+      ],
+      "examples_en": [
+        "Meaning of hello",
+        "Show me dictionary",
+        "Get dictionary"
+      ]
+    },
+    {
+      "tool": "spell_check",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "правопис",
+        "провери текст",
+        "граматика",
+        "грешки",
+        "лектура"
+      ],
+      "keywords_en": [
+        "spell check",
+        "check text",
+        "grammar",
+        "errors",
+        "proofread"
+      ],
+      "examples_mk": [
+        "Провери правопис",
+        "Кажи ми spell check",
+        "Дай ми spell check"
+      ],
+      "examples_en": [
+        "Check spelling",
+        "Show me spell check",
+        "Get spell check"
+      ]
+    },
+    {
+      "tool": "word_count",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "број зборови",
+        "изброј зборови",
+        "должина текст",
+        "колку зборови",
+        "words"
+      ],
+      "keywords_en": [
+        "word count",
+        "count words",
+        "text length",
+        "how many words",
+        "words"
+      ],
+      "examples_mk": [
+        "Изброј зборови",
+        "Кажи ми word count",
+        "Дай ми word count"
+      ],
+      "examples_en": [
+        "Count words",
+        "Show me word count",
+        "Get word count"
+      ]
+    },
+    {
+      "tool": "char_count",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [
+        "број карактери",
+        "chars",
+        "знаци",
+        "колку карактери",
+        "char count"
+      ],
+      "keywords_en": [
+        "character count",
+        "chars",
+        "characters",
+        "how many chars",
+        "char count"
+      ],
+      "examples_mk": [
+        "Број карактери",
+        "Кажи ми character count",
+        "Дай ми character count"
+      ],
+      "examples_en": [
+        "Char count",
+        "Show me character count",
+        "Get character count"
+      ]
+    },
+    {
+      "tool": "reading_time",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "време читање",
+        "колку се чита",
+        "минути читање",
+        "читање време",
+        "reading time"
+      ],
+      "keywords_en": [
+        "reading time",
+        "time to read",
+        "minutes",
+        "reading minutes",
+        "reading time"
+      ],
+      "examples_mk": [
+        "Време за читање",
+        "Кажи ми reading time",
+        "Дай ми reading time"
+      ],
+      "examples_en": [
+        "Reading time",
+        "Show me reading time",
+        "Get reading time"
+      ]
+    },
+    {
+      "tool": "text_to_speech",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [
+        "text to speech",
+        "tts",
+        "кажи текст",
+        "зборувај текст",
+        "speak"
+      ],
+      "keywords_en": [
+        "text to speech",
+        "tts",
+        "speak text",
+        "say text",
+        "speak"
+      ],
+      "examples_mk": [
+        "Кажи текст",
+        "Кажи ми text to speech",
+        "Дай ми text to speech"
+      ],
+      "examples_en": [
+        "Speak text",
+        "Show me text to speech",
+        "Get text to speech"
+      ]
+    },
+    {
+      "tool": "sentiment",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "сентимент",
+        "sentiment",
+        "расположение текст",
+        "позитивно негативно",
+        "tone"
+      ],
+      "keywords_en": [
+        "sentiment",
+        "sentiment analysis",
+        "tone",
+        "feeling",
+        "mood"
+      ],
+      "examples_mk": [
+        "Сентимент текст",
+        "Кажи ми sentiment analysis",
+        "Дай ми sentiment analysis"
+      ],
+      "examples_en": [
+        "Sentiment text",
+        "Show me sentiment analysis",
+        "Get sentiment analysis"
+      ]
+    },
+    {
+      "tool": "keyword_extract",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "клучни зборови",
+        "keywords",
+        "извади клучни",
+        "keywords",
+        "extract"
+      ],
+      "keywords_en": [
+        "keywords",
+        "keyword extraction",
+        "extract keywords",
+        "key terms",
+        "keywords"
+      ],
+      "examples_mk": [
+        "Клучни зборови",
+        "Кажи ми keyword extraction",
+        "Дай ми keyword extraction"
+      ],
+      "examples_en": [
+        "Keywords",
+        "Show me keyword extraction",
+        "Get keyword extraction"
+      ]
+    },
+    {
+      "tool": "named_entities",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "именувани ентитети",
+        "ner",
+        "named entities",
+        "extract entities",
+        "entities"
+      ],
+      "keywords_en": [
+        "named entities",
+        "ner",
+        "extract entities",
+        "entities",
+        "ner"
+      ],
+      "examples_mk": [
+        "Ентитети",
+        "Кажи ми named entities",
+        "Дай ми named entities"
+      ],
+      "examples_en": [
+        "Entities",
+        "Show me named entities",
+        "Get named entities"
+      ]
+    },
+    {
+      "tool": "rewrite",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [
+        "препиши",
+        "rewrite",
+        "rewrite текст",
+        "парафразирај",
+        "rewrite"
+      ],
+      "keywords_en": [
+        "rewrite",
+        "rephrase",
+        "paraphrase",
+        "rewrite text",
+        "rephrase"
+      ],
+      "examples_mk": [
+        "Препиши текст",
+        "Кажи ми rewrite text",
+        "Дай ми rewrite text"
+      ],
+      "examples_en": [
+        "Rewrite text",
+        "Show me rewrite text",
+        "Get rewrite text"
+      ]
+    },
+    {
+      "tool": "expand",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [
+        "прошири текст",
+        "expand",
+        "додади детали",
+        "продолжи текст",
+        "expand"
+      ],
+      "keywords_en": [
+        "expand text",
+        "expand",
+        "add details",
+        "longer version",
+        "expand"
+      ],
+      "examples_mk": [
+        "Прошири текст",
+        "Кажи ми expand text",
+        "Дай ми expand text"
+      ],
+      "examples_en": [
+        "Expand text",
+        "Show me expand text",
+        "Get expand text"
+      ]
+    },
+    {
+      "tool": "tone_change",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [
+        "промени тон",
+        "tone",
+        "смени стил",
+        "tone change",
+        "tone"
+      ],
+      "keywords_en": [
+        "change tone",
+        "tone",
+        "change style",
+        "tone change",
+        "rewrite tone"
+      ],
+      "examples_mk": [
+        "Промени тон",
+        "Кажи ми change tone",
+        "Дай ми change tone"
+      ],
+      "examples_en": [
+        "Change tone",
+        "Show me change tone",
+        "Get change tone"
+      ]
+    },
+    {
+      "tool": "bullets",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [
+        "bullet points",
+        "листа точки",
+        "bullets",
+        "bullet list",
+        "пунктови"
+      ],
+      "keywords_en": [
+        "bullet points",
+        "bullets",
+        "bullet list",
+        "bulleted list",
+        "bullets"
+      ],
+      "examples_mk": [
+        "Bullet points",
+        "Кажи ми bullet points",
+        "Дай ми bullet points"
+      ],
+      "examples_en": [
+        "Bullet points",
+        "Show me bullet points",
+        "Get bullet points"
+      ]
+    },
+    {
+      "tool": "password_gen",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "лозинка",
+        "генерирај лозинка",
+        "password",
+        "silna lozinka",
+        "pass"
+      ],
+      "keywords_en": [
+        "password",
+        "generate password",
+        "strong password",
+        "random password",
+        "passphrase"
+      ],
+      "examples_mk": [
+        "Генерирај лозинка",
+        "Кажи ми password generator",
+        "Дай ми password generator"
+      ],
+      "examples_en": [
+        "Generate password",
+        "Show me password generator",
+        "Get password generator"
+      ]
+    },
+    {
+      "tool": "uuid_gen",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "uuid",
+        "id",
+        "идентификатор",
+        "нов id",
+        "id gen"
+      ],
+      "keywords_en": [
+        "uuid",
+        "id",
+        "identifier",
+        "new id",
+        "uuid gen"
+      ],
+      "examples_mk": [
+        "UUID",
+        "Кажи ми uuid generator",
+        "Дай ми uuid generator"
+      ],
+      "examples_en": [
+        "UUID",
+        "Show me uuid generator",
+        "Get uuid generator"
+      ]
+    },
+    {
+      "tool": "random_number",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "случаен број",
+        "random",
+        "random number",
+        "random broj",
+        "random"
+      ],
+      "keywords_en": [
+        "random number",
+        "random",
+        "random",
+        "number",
+        "dice"
+      ],
+      "examples_mk": [
+        "Случаен број 1-100",
+        "Кажи ми random number",
+        "Дай ми random number"
+      ],
+      "examples_en": [
+        "Random 1-100",
+        "Show me random number",
+        "Get random number"
+      ]
+    },
+    {
+      "tool": "coin_flip",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "фрли паричка",
+        "coin flip",
+        "flip coin",
+        "паричка",
+        "coin"
+      ],
+      "keywords_en": [
+        "coin flip",
+        "flip coin",
+        "heads tails",
+        "coin toss",
+        "coin"
+      ],
+      "examples_mk": [
+        "Фрли паричка",
+        "Кажи ми coin flip",
+        "Дай ми coin flip"
+      ],
+      "examples_en": [
+        "Flip coin",
+        "Show me coin flip",
+        "Get coin flip"
+      ]
+    },
+    {
+      "tool": "dice_roll",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "фрли коцка",
+        "dice roll",
+        "roll dice",
+        "коцка",
+        "dice"
+      ],
+      "keywords_en": [
+        "dice roll",
+        "roll dice",
+        "d6",
+        "dice",
+        "roll"
+      ],
+      "examples_mk": [
+        "Фрли коцка",
+        "Кажи ми dice roll",
+        "Дай ми dice roll"
+      ],
+      "examples_en": [
+        "Roll dice",
+        "Show me dice roll",
+        "Get dice roll"
+      ]
+    },
+    {
+      "tool": "base64",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "base64",
+        "кодирај base64",
+        "decode base64",
+        "base64",
+        "b64"
+      ],
+      "keywords_en": [
+        "base64",
+        "encode base64",
+        "decode base64",
+        "base64",
+        "b64"
+      ],
+      "examples_mk": [
+        "Base64",
+        "Кажи ми base64 encode/decode",
+        "Дай ми base64 encode/decode"
+      ],
+      "examples_en": [
+        "Base64",
+        "Show me base64 encode/decode",
+        "Get base64 encode/decode"
+      ]
+    },
+    {
+      "tool": "color_convert",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "боја конверзија",
+        "color convert",
+        "hex rgb",
+        "боја",
+        "color"
+      ],
+      "keywords_en": [
+        "color convert",
+        "hex to rgb",
+        "rgb to hex",
+        "color",
+        "color converter"
+      ],
+      "examples_mk": [
+        "Конвертирај боја",
+        "Кажи ми color converter",
+        "Дай ми color converter"
+      ],
+      "examples_en": [
+        "Convert color",
+        "Show me color converter",
+        "Get color converter"
+      ]
+    },
+    {
+      "tool": "unit_convert",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "конверзија единици",
+        "unit convert",
+        "мерки",
+        "convert units",
+        "units"
+      ],
+      "keywords_en": [
+        "unit convert",
+        "convert units",
+        "metric",
+        "imperial",
+        "units"
+      ],
+      "examples_mk": [
+        "100 км во милји",
+        "Кажи ми unit converter",
+        "Дай ми unit converter"
+      ],
+      "examples_en": [
+        "100 km to mi",
+        "Show me unit converter",
+        "Get unit converter"
+      ]
+    },
+    {
+      "tool": "timestamp",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "timestamp",
+        "време stamp",
+        "convert timestamp",
+        "timestamp",
+        "unix time"
+      ],
+      "keywords_en": [
+        "timestamp",
+        "unix time",
+        "convert timestamp",
+        "time stamp",
+        "unix"
+      ],
+      "examples_mk": [
+        "Timestamp 1700000000",
+        "Кажи ми timestamp convert",
+        "Дай ми timestamp convert"
+      ],
+      "examples_en": [
+        "Timestamp 1700000000",
+        "Show me timestamp convert",
+        "Get timestamp convert"
+      ]
+    },
+    {
+      "tool": "date_diff",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "разлика датуми",
+        "date diff",
+        "помеѓу датуми",
+        "date difference",
+        "days between"
+      ],
+      "keywords_en": [
+        "date diff",
+        "days between",
+        "date difference",
+        "dates",
+        "diff"
+      ],
+      "examples_mk": [
+        "Денови помеѓу датуми",
+        "Кажи ми date difference",
+        "Дай ми date difference"
+      ],
+      "examples_en": [
+        "Days between",
+        "Show me date difference",
+        "Get date difference"
+      ]
+    },
+    {
+      "tool": "age_calc",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "возраст",
+        "age calc",
+        "колку години",
+        "age calculator",
+        "age"
+      ],
+      "keywords_en": [
+        "age",
+        "age calc",
+        "how old",
+        "age calculator",
+        "years old"
+      ],
+      "examples_mk": [
+        "Возраст од 1990",
+        "Кажи ми age calculator",
+        "Дай ми age calculator"
+      ],
+      "examples_en": [
+        "Age from 1990",
+        "Show me age calculator",
+        "Get age calculator"
+      ]
+    },
+    {
+      "tool": "bmi_calc",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "bmi",
+        "bmi calculator",
+        "индекс маса",
+        "body mass index",
+        "bmi"
+      ],
+      "keywords_en": [
+        "bmi",
+        "bmi calculator",
+        "body mass index",
+        "bmi calc",
+        "bmi"
+      ],
+      "examples_mk": [
+        "BMI 70kg 175cm",
+        "Кажи ми bmi calculator",
+        "Дай ми bmi calculator"
+      ],
+      "examples_en": [
+        "BMI 70kg 175cm",
+        "Show me bmi calculator",
+        "Get bmi calculator"
+      ]
+    },
+    {
+      "tool": "tip_calc",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "бакшиш",
+        "tip calc",
+        "tip",
+        "бакшиш калкулатор",
+        "tip"
+      ],
+      "keywords_en": [
+        "tip",
+        "tip calculator",
+        "tip calc",
+        "gratuity",
+        "tip"
+      ],
+      "examples_mk": [
+        "Бакшиш 10%",
+        "Кажи ми tip calculator",
+        "Дай ми tip calculator"
+      ],
+      "examples_en": [
+        "Tip 10%",
+        "Show me tip calculator",
+        "Get tip calculator"
+      ]
+    },
+    {
+      "tool": "percent_calc",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "процент",
+        "percent",
+        "percent calc",
+        "проценти",
+        "percent"
+      ],
+      "keywords_en": [
+        "percent",
+        "percent calc",
+        "percentage",
+        "percent",
+        "calc"
+      ],
+      "examples_mk": [
+        "15% од 100",
+        "Кажи ми percent calculator",
+        "Дай ми percent calculator"
+      ],
+      "examples_en": [
+        "15% of 100",
+        "Show me percent calculator",
+        "Get percent calculator"
+      ]
+    },
+    {
+      "tool": "loan_calc",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "кредит",
+        "loan calc",
+        "loan calculator",
+        "заем",
+        "loan"
+      ],
+      "keywords_en": [
+        "loan",
+        "loan calc",
+        "loan calculator",
+        "mortgage",
+        "loan"
+      ],
+      "examples_mk": [
+        "Кредит 100k",
+        "Кажи ми loan calculator",
+        "Дай ми loan calculator"
+      ],
+      "examples_en": [
+        "Loan 100k",
+        "Show me loan calculator",
+        "Get loan calculator"
+      ]
+    },
+    {
+      "tool": "bmi_metric",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "bmi metric",
+        "bmi",
+        "индекс маса метрички",
+        "bmi metric",
+        "bmi"
+      ],
+      "keywords_en": [
+        "bmi metric",
+        "bmi",
+        "body mass index metric",
+        "bmi metric",
+        "bmi"
+      ],
+      "examples_mk": [
+        "BMI метрички",
+        "Кажи ми bmi metric",
+        "Дай ми bmi metric"
+      ],
+      "examples_en": [
+        "BMI metric",
+        "Show me bmi metric",
+        "Get bmi metric"
+      ]
+    },
+    {
+      "tool": "random_choice",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "избери случајно",
+        "random choice",
+        "pick random",
+        "случајно",
+        "random pick"
+      ],
+      "keywords_en": [
+        "random choice",
+        "pick random",
+        "random pick",
+        "choose",
+        "random"
+      ],
+      "examples_mk": [
+        "Избери од листа",
+        "Кажи ми random choice",
+        "Дай ми random choice"
+      ],
+      "examples_en": [
+        "Pick from list",
+        "Show me random choice",
+        "Get random choice"
+      ]
+    },
+    {
+      "tool": "shuffle",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "измешај",
+        "shuffle",
+        "измешај листа",
+        "shuffle list",
+        "shuffle"
+      ],
+      "keywords_en": [
+        "shuffle",
+        "shuffle list",
+        "randomize list",
+        "mix list",
+        "shuffle"
+      ],
+      "examples_mk": [
+        "Измешај листа",
+        "Кажи ми shuffle list",
+        "Дай ми shuffle list"
+      ],
+      "examples_en": [
+        "Shuffle list",
+        "Show me shuffle list",
+        "Get shuffle list"
+      ]
+    },
+    {
+      "tool": "qr_generate",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "qr генерирај",
+        "qr generate",
+        "qr код",
+        "qr",
+        "qr"
+      ],
+      "keywords_en": [
+        "qr generate",
+        "qr code",
+        "qr",
+        "qr code",
+        "qrcode"
+      ],
+      "examples_mk": [
+        "QR код",
+        "Кажи ми qr generate",
+        "Дай ми qr generate"
+      ],
+      "examples_en": [
+        "QR code",
+        "Show me qr generate",
+        "Get qr generate"
+      ]
+    },
+    {
+      "tool": "shorten_url",
+      "category": "utils",
+      "implemented": false,
+      "keywords_mk": [
+        "скрати url",
+        "shorten url",
+        "краток линк",
+        "short url",
+        "shorten"
+      ],
+      "keywords_en": [
+        "shorten url",
+        "short url",
+        "url shortener",
+        "short link",
+        "shorten"
+      ],
+      "examples_mk": [
+        "Скрати URL",
+        "Кажи ми shorten url",
+        "Дай ми shorten url"
+      ],
+      "examples_en": [
+        "Shorten URL",
+        "Show me shorten url",
+        "Get shorten url"
+      ]
+    },
+    {
+      "tool": "todo_list",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "задачи",
+        "todo",
+        "листа",
+        "што треба",
+        "tasks"
+      ],
+      "keywords_en": [
+        "todo",
+        "tasks",
+        "to do list",
+        "checklist",
+        "what to do"
+      ],
+      "examples_mk": [
+        "Додај задача",
+        "Кажи ми todo list",
+        "Дай ми todo list"
+      ],
+      "examples_en": [
+        "Add task",
+        "Show me todo list",
+        "Get todo list"
+      ]
+    },
+    {
+      "tool": "notes",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "белешка",
+        "notes",
+        "запиши",
+        "notes",
+        "белешки"
+      ],
+      "keywords_en": [
+        "notes",
+        "note",
+        "write down",
+        "memo",
+        "notebook"
+      ],
+      "examples_mk": [
+        "Запиши белешка",
+        "Кажи ми notes",
+        "Дай ми notes"
+      ],
+      "examples_en": [
+        "Write note",
+        "Show me notes",
+        "Get notes"
+      ]
+    },
+    {
+      "tool": "reminders",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "потсетник",
+        "reminder",
+        "reminders",
+        "потсети ме",
+        "reminders"
+      ],
+      "keywords_en": [
+        "reminder",
+        "reminders",
+        "remind me",
+        "alarm",
+        "reminders"
+      ],
+      "examples_mk": [
+        "Потсети ме",
+        "Кажи ми reminders",
+        "Дай ми reminders"
+      ],
+      "examples_en": [
+        "Remind me",
+        "Show me reminders",
+        "Get reminders"
+      ]
+    },
+    {
+      "tool": "habits_tracker",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "навики",
+        "habits",
+        "track навики",
+        "habit tracker",
+        "habits"
+      ],
+      "keywords_en": [
+        "habits",
+        "habit tracker",
+        "track habits",
+        "daily habits",
+        "habits"
+      ],
+      "examples_mk": [
+        "Навика вежбање",
+        "Кажи ми habits tracker",
+        "Дай ми habits tracker"
+      ],
+      "examples_en": [
+        "Habit exercise",
+        "Show me habits tracker",
+        "Get habits tracker"
+      ]
+    },
+    {
+      "tool": "pomodoro",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [
+        "помодоро",
+        "pomodoro",
+        "фокус тајмер",
+        "pomodoro",
+        "focus"
+      ],
+      "keywords_en": [
+        "pomodoro",
+        "focus timer",
+        "pomodoro",
+        "focus",
+        "timer"
+      ],
+      "examples_mk": [
+        "Помодоро 25",
+        "Кажи ми pomodoro",
+        "Дай ми pomodoro"
+      ],
+      "examples_en": [
+        "Pomodoro 25",
+        "Show me pomodoro",
+        "Get pomodoro"
+      ]
+    },
+    {
+      "tool": "stopwatch",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "стоперица",
+        "stopwatch",
+        "мерење време",
+        "stopwatch",
+        "timer"
+      ],
+      "keywords_en": [
+        "stopwatch",
+        "timer",
+        "measure time",
+        "stopwatch",
+        "timer"
+      ],
+      "examples_mk": [
+        "Стартувај стоперица",
+        "Кажи ми stopwatch",
+        "Дай ми stopwatch"
+      ],
+      "examples_en": [
+        "Start stopwatch",
+        "Show me stopwatch",
+        "Get stopwatch"
+      ]
+    },
+    {
+      "tool": "calendar_events",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "календар",
+        "calendar",
+        "настани",
+        "events",
+        "calendar"
+      ],
+      "keywords_en": [
+        "calendar",
+        "events",
+        "schedule",
+        "calendar",
+        "dates"
+      ],
+      "examples_mk": [
+        "Календар настан",
+        "Кажи ми calendar events",
+        "Дай ми calendar events"
+      ],
+      "examples_en": [
+        "Calendar event",
+        "Show me calendar events",
+        "Get calendar events"
+      ]
+    },
+    {
+      "tool": "journal",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [
+        "дневник",
+        "journal",
+        "запиши ден",
+        "journal",
+        "diary"
+      ],
+      "keywords_en": [
+        "journal",
+        "diary",
+        "write journal",
+        "journal",
+        "log"
+      ],
+      "examples_mk": [
+        "Запиши дневник",
+        "Кажи ми journal",
+        "Дай ми journal"
+      ],
+      "examples_en": [
+        "Write journal",
+        "Show me journal",
+        "Get journal"
+      ]
+    },
+    {
+      "tool": "goal_tracker",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "цели",
+        "goals",
+        "цели tracker",
+        "goal tracking",
+        "goals"
+      ],
+      "keywords_en": [
+        "goals",
+        "goal tracker",
+        "goals tracking",
+        "goals",
+        "goals"
+      ],
+      "examples_mk": [
+        "Цел python",
+        "Кажи ми goal tracker",
+        "Дай ми goal tracker"
+      ],
+      "examples_en": [
+        "Goal python",
+        "Show me goal tracker",
+        "Get goal tracker"
+      ]
+    },
+    {
+      "tool": "kanban",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [
+        "kanban",
+        "канбан",
+        "табла",
+        "kanban",
+        "board"
+      ],
+      "keywords_en": [
+        "kanban",
+        "kanban board",
+        "board",
+        "kanban",
+        "tasks"
+      ],
+      "examples_mk": [
+        "Kanban задача",
+        "Кажи ми kanban board",
+        "Дай ми kanban board"
+      ],
+      "examples_en": [
+        "Kanban task",
+        "Show me kanban board",
+        "Get kanban board"
+      ]
+    },
+    {
+      "tool": "eisenhower",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "eisenhower",
+        "матрица",
+        "приоритети",
+        "eisenhower",
+        "matrix"
+      ],
+      "keywords_en": [
+        "eisenhower",
+        "matrix",
+        "priorities",
+        "eisenhower",
+        "priority matrix"
+      ],
+      "examples_mk": [
+        "Eisenhower задача",
+        "Кажи ми eisenhower matrix",
+        "Дай ми eisenhower matrix"
+      ],
+      "examples_en": [
+        "Eisenhower task",
+        "Show me eisenhower matrix",
+        "Get eisenhower matrix"
+      ]
+    },
+    {
+      "tool": "mood_tracker",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [
+        "расположение",
+        "mood",
+        "mood tracker",
+        "какво е расположение",
+        "mood"
+      ],
+      "keywords_en": [
+        "mood",
+        "mood tracker",
+        "mood tracking",
+        "feelings",
+        "mood"
+      ],
+      "examples_mk": [
+        "Расположение",
+        "Кажи ми mood tracker",
+        "Дай ми mood tracker"
+      ],
+      "examples_en": [
+        "Mood",
+        "Show me mood tracker",
+        "Get mood tracker"
+      ]
+    },
+    {
+      "tool": "gratitude",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "благодарност",
+        "gratitude",
+        "благодарен",
+        "gratitude",
+        "thankful"
+      ],
+      "keywords_en": [
+        "gratitude",
+        "gratitude log",
+        "thankful",
+        "gratitude",
+        "thanks"
+      ],
+      "examples_mk": [
+        "Благодарност",
+        "Кажи ми gratitude log",
+        "Дай ми gratitude log"
+      ],
+      "examples_en": [
+        "Gratitude",
+        "Show me gratitude log",
+        "Get gratitude log"
+      ]
+    },
+    {
+      "tool": "water_tracker",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "вода",
+        "water",
+        "water tracker",
+        "вода tracker",
+        "water"
+      ],
+      "keywords_en": [
+        "water",
+        "water tracker",
+        "water intake",
+        "water",
+        "hydration"
+      ],
+      "examples_mk": [
+        "Вода 250ml",
+        "Кажи ми water tracker",
+        "Дай ми water tracker"
+      ],
+      "examples_en": [
+        "Water 250ml",
+        "Show me water tracker",
+        "Get water tracker"
+      ]
+    },
+    {
+      "tool": "sleep_tracker",
+      "category": "productivity",
+      "implemented": false,
+      "keywords_mk": [
+        "спиење",
+        "sleep",
+        "sleep tracker",
+        "kako spiev",
+        "sleep"
+      ],
+      "keywords_en": [
+        "sleep",
+        "sleep tracker",
+        "sleep tracking",
+        "sleep",
+        "rest"
+      ],
+      "examples_mk": [
+        "Спиење 8h",
+        "Кажи ми sleep tracker",
+        "Дай ми sleep tracker"
+      ],
+      "examples_en": [
+        "Sleep 8h",
+        "Show me sleep tracker",
+        "Get sleep tracker"
+      ]
+    },
+    {
+      "tool": "wiktionary",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "речник",
+        "wiktionary",
+        "дефиниција",
+        "wiktionary",
+        "dictionary"
+      ],
+      "keywords_en": [
+        "wiktionary",
+        "dictionary",
+        "definition",
+        "wiktionary",
+        "words"
+      ],
+      "examples_mk": [
+        "Wiktionary hello",
+        "Кажи ми wiktionary",
+        "Дай ми wiktionary"
+      ],
+      "examples_en": [
+        "Wiktionary hello",
+        "Show me wiktionary",
+        "Get wiktionary"
+      ]
+    },
+    {
+      "tool": "word_of_day",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "word of the day",
+        "збор на ден",
+        "word",
+        "daily word",
+        "wotd"
+      ],
+      "keywords_en": [
+        "word of the day",
+        "wotd",
+        "daily word",
+        "word",
+        "word"
+      ],
+      "examples_mk": [
+        "Збор на ден",
+        "Кажи ми word of the day",
+        "Дай ми word of the day"
+      ],
+      "examples_en": [
+        "Word of day",
+        "Show me word of the day",
+        "Get word of the day"
+      ]
+    },
+    {
+      "tool": "quote_of_day",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "цитат",
+        "quote",
+        "quote на ден",
+        "цитат ден",
+        "quote"
+      ],
+      "keywords_en": [
+        "quote",
+        "quote of the day",
+        "daily quote",
+        "quote",
+        "quotes"
+      ],
+      "examples_mk": [
+        "Цитат ден",
+        "Кажи ми quote of the day",
+        "Дай ми quote of the day"
+      ],
+      "examples_en": [
+        "Quote day",
+        "Show me quote of the day",
+        "Get quote of the day"
+      ]
+    },
+    {
+      "tool": "fact_of_day",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "факт",
+        "fact",
+        "fact на ден",
+        "интересен факт",
+        "fact"
+      ],
+      "keywords_en": [
+        "fact",
+        "fact of the day",
+        "daily fact",
+        "fact",
+        "facts"
+      ],
+      "examples_mk": [
+        "Факт ден",
+        "Кажи ми fact of the day",
+        "Дай ми fact of the day"
+      ],
+      "examples_en": [
+        "Fact day",
+        "Show me fact of the day",
+        "Get fact of the day"
+      ]
+    },
+    {
+      "tool": "history_today",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "историја денес",
+        "history today",
+        "on this day",
+        "history",
+        "historia"
+      ],
+      "keywords_en": [
+        "history today",
+        "on this day",
+        "history",
+        "today in history",
+        "history"
+      ],
+      "examples_mk": [
+        "History денес",
+        "Кажи ми history today",
+        "Дай ми history today"
+      ],
+      "examples_en": [
+        "History today",
+        "Show me history today",
+        "Get history today"
+      ]
+    },
+    {
+      "tool": "word_origin",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "etymology",
+        "origin збор",
+        "word origin",
+        "потекло",
+        "origin"
+      ],
+      "keywords_en": [
+        "etymology",
+        "word origin",
+        "origin",
+        "word history",
+        "etymology"
+      ],
+      "examples_mk": [
+        "Потекло на hello",
+        "Кажи ми word origin",
+        "Дай ми word origin"
+      ],
+      "examples_en": [
+        "Origin of hello",
+        "Show me word origin",
+        "Get word origin"
+      ]
+    },
+    {
+      "tool": "math_solver",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "математика",
+        "math",
+        "math solver",
+        "реши математика",
+        "math"
+      ],
+      "keywords_en": [
+        "math",
+        "math solver",
+        "math problem",
+        "solve math",
+        "math"
+      ],
+      "examples_mk": [
+        "Реши 2x+5=15",
+        "Кажи ми math solver",
+        "Дай ми math solver"
+      ],
+      "examples_en": [
+        "Solve 2x+5=15",
+        "Show me math solver",
+        "Get math solver"
+      ]
+    },
+    {
+      "tool": "physics_helper",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "физика",
+        "physics",
+        "physics helper",
+        "физика помощ",
+        "physics"
+      ],
+      "keywords_en": [
+        "physics",
+        "physics helper",
+        "physics problems",
+        "physics",
+        "physics"
+      ],
+      "examples_mk": [
+        "Физика помош",
+        "Кажи ми physics helper",
+        "Дай ми physics helper"
+      ],
+      "examples_en": [
+        "Physics help",
+        "Show me physics helper",
+        "Get physics helper"
+      ]
+    },
+    {
+      "tool": "chemistry_helper",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "хемија",
+        "chemistry",
+        "chemistry helper",
+        "хемија помощ",
+        "chemistry"
+      ],
+      "keywords_en": [
+        "chemistry",
+        "chemistry helper",
+        "chemistry problems",
+        "chemistry",
+        "chemistry"
+      ],
+      "examples_mk": [
+        "Хемија помош",
+        "Кажи ми chemistry helper",
+        "Дай ми chemistry helper"
+      ],
+      "examples_en": [
+        "Chemistry help",
+        "Show me chemistry helper",
+        "Get chemistry helper"
+      ]
+    },
+    {
+      "tool": "language_tutor",
+      "category": "learning",
+      "implemented": false,
+      "keywords_mk": [
+        "јазик учител",
+        "language tutor",
+        "учи јазик",
+        "language",
+        "tutor"
+      ],
+      "keywords_en": [
+        "language tutor",
+        "tutor",
+        "learn language",
+        "language",
+        "teacher"
+      ],
+      "examples_mk": [
+        "Учи шпански",
+        "Кажи ми language tutor",
+        "Дай ми language tutor"
+      ],
+      "examples_en": [
+        "Learn Spanish",
+        "Show me language tutor",
+        "Get language tutor"
+      ]
+    },
+    {
+      "tool": "joke",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "виц",
+        "шега",
+        "joke",
+        "смешно",
+        "humor"
+      ],
+      "keywords_en": [
+        "joke",
+        "funny",
+        "make me laugh",
+        "humor",
+        "jokes"
+      ],
+      "examples_mk": [
+        "Кажи виц",
+        "Кажи ми joke",
+        "Дай ми joke"
+      ],
+      "examples_en": [
+        "Tell a joke",
+        "Show me joke",
+        "Get joke"
+      ]
+    },
+    {
+      "tool": "quote_gen",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "цитат",
+        "quote",
+        "random quote",
+        "цитат",
+        "quotes"
+      ],
+      "keywords_en": [
+        "quote",
+        "random quote",
+        "quote generator",
+        "quotes",
+        "quote"
+      ],
+      "examples_mk": [
+        "Случаен цитат",
+        "Кажи ми random quote",
+        "Дай ми random quote"
+      ],
+      "examples_en": [
+        "Random quote",
+        "Show me random quote",
+        "Get random quote"
+      ]
+    },
+    {
+      "tool": "riddle",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "гатанка",
+        "riddle",
+        "riddles",
+        "гатанка",
+        "puzzle"
+      ],
+      "keywords_en": [
+        "riddle",
+        "riddles",
+        "puzzle",
+        "riddles",
+        "puzzle"
+      ],
+      "examples_mk": [
+        "Гатанка",
+        "Кажи ми riddle",
+        "Дай ми riddle"
+      ],
+      "examples_en": [
+        "Riddle",
+        "Show me riddle",
+        "Get riddle"
+      ]
+    },
+    {
+      "tool": "trivia",
+      "category": "fun",
+      "implemented": true,
+      "keywords_mk": [
+        "квиз",
+        "trivia",
+        "quiz",
+        "trivia",
+        "prashanje"
+      ],
+      "keywords_en": [
+        "trivia",
+        "quiz",
+        "knowledge question",
+        "trivia",
+        "quiz"
+      ],
+      "examples_mk": [
+        "Trivia прашање",
+        "Кажи ми trivia",
+        "Дай ми trivia"
+      ],
+      "examples_en": [
+        "Trivia question",
+        "Show me trivia",
+        "Get trivia"
+      ]
+    },
+    {
+      "tool": "would_you_rather",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "would you rather",
+        "што би",
+        "wyr",
+        "what would you",
+        "wyr"
+      ],
+      "keywords_en": [
+        "would you rather",
+        "wyr",
+        "dilemma",
+        "would you",
+        "wyr"
+      ],
+      "examples_mk": [
+        "WYR прашање",
+        "Кажи ми would you rather",
+        "Дай ми would you rather"
+      ],
+      "examples_en": [
+        "WYR question",
+        "Show me would you rather",
+        "Get would you rather"
+      ]
+    },
+    {
+      "tool": "truth_or_dare",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "вистина или предизвик",
+        "truth or dare",
+        "tod",
+        "truth dare",
+        "tod"
+      ],
+      "keywords_en": [
+        "truth or dare",
+        "tod",
+        "truth",
+        "dare",
+        "truth or dare"
+      ],
+      "examples_mk": [
+        "Truth or dare",
+        "Кажи ми truth or dare",
+        "Дай ми truth or dare"
+      ],
+      "examples_en": [
+        "Truth or dare",
+        "Show me truth or dare",
+        "Get truth or dare"
+      ]
+    },
+    {
+      "tool": "magic_8_ball",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "магична топка",
+        "magic 8 ball",
+        "8 ball",
+        "magic ball",
+        "8 ball"
+      ],
+      "keywords_en": [
+        "magic 8 ball",
+        "8 ball",
+        "magic ball",
+        "answer",
+        "8 ball"
+      ],
+      "examples_mk": [
+        "Magic 8 ball",
+        "Кажи ми magic 8 ball",
+        "Дай ми magic 8 ball"
+      ],
+      "examples_en": [
+        "Magic 8 ball",
+        "Show me magic 8 ball",
+        "Get magic 8 ball"
+      ]
+    },
+    {
+      "tool": "random_fact",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "случаен факт",
+        "random fact",
+        "fact",
+        "факт",
+        "fact"
+      ],
+      "keywords_en": [
+        "random fact",
+        "fact",
+        "fun fact",
+        "fact",
+        "facts"
+      ],
+      "examples_mk": [
+        "Случаен факт",
+        "Кажи ми random fact",
+        "Дай ми random fact"
+      ],
+      "examples_en": [
+        "Random fact",
+        "Show me random fact",
+        "Get random fact"
+      ]
+    },
+    {
+      "tool": "meme_random",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "случаен меме",
+        "random meme",
+        "meme",
+        "меме",
+        "meme"
+      ],
+      "keywords_en": [
+        "random meme",
+        "meme",
+        "memes",
+        "meme",
+        "memes"
+      ],
+      "examples_mk": [
+        "Случаен меме",
+        "Кажи ми random meme",
+        "Дай ми random meme"
+      ],
+      "examples_en": [
+        "Random meme",
+        "Show me random meme",
+        "Get random meme"
+      ]
+    },
+    {
+      "tool": "chaos_duck",
+      "category": "fun",
+      "implemented": false,
+      "keywords_mk": [
+        "chaos",
+        "хаос",
+        "random",
+        "random idea",
+        "chaos"
+      ],
+      "keywords_en": [
+        "chaos",
+        "random",
+        "chaos mode",
+        "random",
+        "chaos"
+      ],
+      "examples_mk": [
+        "Chaos идеја",
+        "Кажи ми chaos duck",
+        "Дай ми chaos duck"
+      ],
+      "examples_en": [
+        "Chaos idea",
+        "Show me chaos duck",
+        "Get chaos duck"
+      ]
+    },
+    {
+      "tool": "stock_quote",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "акција цена",
+        "stock",
+        "stock price",
+        "ценa акција",
+        "stock"
+      ],
+      "keywords_en": [
+        "stock",
+        "stock quote",
+        "stock price",
+        "share price",
+        "stock"
+      ],
+      "examples_mk": [
+        "Цена AAPL",
+        "Кажи ми stock quote",
+        "Дай ми stock quote"
+      ],
+      "examples_en": [
+        "AAPL price",
+        "Show me stock quote",
+        "Get stock quote"
+      ]
+    },
+    {
+      "tool": "stock_chart",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "stock chart",
+        "stock график",
+        "акција график",
+        "chart stock",
+        "stock"
+      ],
+      "keywords_en": [
+        "stock chart",
+        "stock graph",
+        "chart",
+        "stock",
+        "stock"
+      ],
+      "examples_mk": [
+        "AAPL график",
+        "Кажи ми stock chart",
+        "Дай ми stock chart"
+      ],
+      "examples_en": [
+        "AAPL chart",
+        "Show me stock chart",
+        "Get stock chart"
+      ]
+    },
+    {
+      "tool": "company_search",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "компанија",
+        "company",
+        "company search",
+        "фирма",
+        "company"
+      ],
+      "keywords_en": [
+        "company",
+        "company search",
+        "find company",
+        "company",
+        "business"
+      ],
+      "examples_mk": [
+        "Пребарај Tesla",
+        "Кажи ми company search",
+        "Дай ми company search"
+      ],
+      "examples_en": [
+        "Search Tesla",
+        "Show me company search",
+        "Get company search"
+      ]
+    },
+    {
+      "tool": "currency_exchange",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "валута",
+        "currency",
+        "exchange",
+        "курс",
+        "currency"
+      ],
+      "keywords_en": [
+        "currency",
+        "exchange",
+        "currency exchange",
+        "fx",
+        "currency"
+      ],
+      "examples_mk": [
+        "Курсна листа",
+        "Кажи ми currency exchange",
+        "Дай ми currency exchange"
+      ],
+      "examples_en": [
+        "Exchange rates",
+        "Show me currency exchange",
+        "Get currency exchange"
+      ]
+    },
+    {
+      "tool": "swot_analysis",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "swot",
+        "swot анализа",
+        "strengths weaknesses",
+        "swot",
+        "analysis"
+      ],
+      "keywords_en": [
+        "swot",
+        "swot analysis",
+        "swot",
+        "strengths",
+        "analysis"
+      ],
+      "examples_mk": [
+        "SWOT за компанија",
+        "Кажи ми swot analysis",
+        "Дай ми swot analysis"
+      ],
+      "examples_en": [
+        "SWOT for company",
+        "Show me swot analysis",
+        "Get swot analysis"
+      ]
+    },
+    {
+      "tool": "competitor_analysis",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "competitor",
+        "конкуренција",
+        "competitor analysis",
+        "competitive",
+        "competitor"
+      ],
+      "keywords_en": [
+        "competitor",
+        "competitor analysis",
+        "competition",
+        "competitive",
+        "competitor"
+      ],
+      "examples_mk": [
+        "Конкуренција",
+        "Кажи ми competitor analysis",
+        "Дай ми competitor analysis"
+      ],
+      "examples_en": [
+        "Competitors",
+        "Show me competitor analysis",
+        "Get competitor analysis"
+      ]
+    },
+    {
+      "tool": "pitch_helper",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "pitch",
+        "pitch deck",
+        "pitch helper",
+        "презентација",
+        "pitch"
+      ],
+      "keywords_en": [
+        "pitch",
+        "pitch deck",
+        "pitch helper",
+        "presentation",
+        "pitch"
+      ],
+      "examples_mk": [
+        "Pitch помош",
+        "Кажи ми pitch helper",
+        "Дай ми pitch helper"
+      ],
+      "examples_en": [
+        "Pitch help",
+        "Show me pitch helper",
+        "Get pitch helper"
+      ]
+    },
+    {
+      "tool": "revenue_calc",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "приход",
+        "revenue",
+        "revenue calc",
+        "revenue",
+        "prihod"
+      ],
+      "keywords_en": [
+        "revenue",
+        "revenue calc",
+        "revenue calculator",
+        "revenue",
+        "income"
+      ],
+      "examples_mk": [
+        "Приход 100x50",
+        "Кажи ми revenue calculator",
+        "Дай ми revenue calculator"
+      ],
+      "examples_en": [
+        "Revenue 100x50",
+        "Show me revenue calculator",
+        "Get revenue calculator"
+      ]
+    },
+    {
+      "tool": "pricing_calc",
+      "category": "business",
+      "implemented": false,
+      "keywords_mk": [
+        "цена",
+        "pricing",
+        "pricing calc",
+        "цена калкулација",
+        "pricing"
+      ],
+      "keywords_en": [
+        "pricing",
+        "pricing calc",
+        "price calc",
+        "pricing",
+        "price"
+      ],
+      "examples_mk": [
+        "Цена со маржа",
+        "Кажи ми pricing calculator",
+        "Дай ми pricing calculator"
+      ],
+      "examples_en": [
+        "Price with margin",
+        "Show me pricing calculator",
+        "Get pricing calculator"
+      ]
+    },
+    {
+      "tool": "roi_calc",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [
+        "roi",
+        "roi calc",
+        "return investment",
+        "roi",
+        "return"
+      ],
+      "keywords_en": [
+        "roi",
+        "roi calc",
+        "return on investment",
+        "roi",
+        "return"
+      ],
+      "examples_mk": [
+        "ROI 1000→1500",
+        "Кажи ми roi calculator",
+        "Дай ми roi calculator"
+      ],
+      "examples_en": [
+        "ROI 1000→1500",
+        "Show me roi calculator",
+        "Get roi calculator"
+      ]
+    },
+    {
+      "tool": "current_time",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [
+        "колку е часот",
+        "време",
+        "time",
+        "час",
+        "clock"
+      ],
+      "keywords_en": [
+        "current time",
+        "time",
+        "what time",
+        "clock",
+        "time"
+      ],
+      "examples_mk": [
+        "Колку е часот?",
+        "Кажи ми current time",
+        "Дай ми current time"
+      ],
+      "examples_en": [
+        "What time is it?",
+        "Show me current time",
+        "Get current time"
+      ]
+    },
+    {
+      "tool": "current_date",
+      "category": "system",
+      "implemented": false,
+      "keywords_mk": [
+        "датум",
+        "date",
+        "ден денес",
+        "today",
+        "date"
+      ],
+      "keywords_en": [
+        "date",
+        "current date",
+        "today",
+        "date",
+        "calendar"
+      ],
+      "examples_mk": [
+        "Денес е?",
+        "Кажи ми current date",
+        "Дай ми current date"
+      ],
+      "examples_en": [
+        "What is today?",
+        "Show me current date",
+        "Get current date"
+      ]
+    },
+    {
+      "tool": "browser_info",
+      "category": "system",
+      "implemented": false,
+      "keywords_mk": [
+        "браузер",
+        "browser",
+        "browser info",
+        "info",
+        "browser"
+      ],
+      "keywords_en": [
+        "browser",
+        "browser info",
+        "browser details",
+        "browser",
+        "user agent"
+      ],
+      "examples_mk": [
+        "Браузер info",
+        "Кажи ми browser info",
+        "Дай ми browser info"
+      ],
+      "examples_en": [
+        "Browser info",
+        "Show me browser info",
+        "Get browser info"
+      ]
+    },
+    {
+      "tool": "screen_size",
+      "category": "system",
+      "implemented": false,
+      "keywords_mk": [
+        "екран",
+        "screen",
+        "screen size",
+        "екран резолуција",
+        "screen"
+      ],
+      "keywords_en": [
+        "screen",
+        "screen size",
+        "resolution",
+        "screen",
+        "display"
+      ],
+      "examples_mk": [
+        "Екран големина",
+        "Кажи ми screen size",
+        "Дай ми screen size"
+      ],
+      "examples_en": [
+        "Screen size",
+        "Show me screen size",
+        "Get screen size"
+      ]
+    },
+    {
+      "tool": "battery_status",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [
+        "батерија",
+        "battery",
+        "battery level",
+        "батерија статус",
+        "battery"
+      ],
+      "keywords_en": [
+        "battery",
+        "battery status",
+        "battery level",
+        "battery",
+        "power"
+      ],
+      "examples_mk": [
+        "Батерија",
+        "Кажи ми battery status",
+        "Дай ми battery status"
+      ],
+      "examples_en": [
+        "Battery",
+        "Show me battery status",
+        "Get battery status"
+      ]
+    },
+    {
+      "tool": "network_status",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [
+        "мрежа",
+        "network",
+        "network status",
+        "мрежа статус",
+        "network"
+      ],
+      "keywords_en": [
+        "network",
+        "network status",
+        "connection",
+        "network",
+        "online"
+      ],
+      "examples_mk": [
+        "Мрежа статус",
+        "Кажи ми network status",
+        "Дай ми network status"
+      ],
+      "examples_en": [
+        "Network status",
+        "Show me network status",
+        "Get network status"
+      ]
+    },
+    {
+      "tool": "geolocation",
+      "category": "system",
+      "implemented": false,
+      "keywords_mk": [
+        "локација",
+        "geolocation",
+        "gps",
+        "локација",
+        "location"
+      ],
+      "keywords_en": [
+        "location",
+        "geolocation",
+        "gps",
+        "location",
+        "position"
+      ],
+      "examples_mk": [
+        "Моја локација",
+        "Кажи ми geolocation",
+        "Дай ми geolocation"
+      ],
+      "examples_en": [
+        "My location",
+        "Show me geolocation",
+        "Get geolocation"
+      ]
+    },
+    {
+      "tool": "clipboard_read",
+      "category": "system",
+      "implemented": false,
+      "keywords_mk": [
+        "прочитај clipboard",
+        "clipboard",
+        "копирано",
+        "clipboard",
+        "read"
+      ],
+      "keywords_en": [
+        "clipboard read",
+        "read clipboard",
+        "paste",
+        "clipboard",
+        "read"
+      ],
+      "examples_mk": [
+        "Прочитај clipboard",
+        "Кажи ми clipboard read",
+        "Дай ми clipboard read"
+      ],
+      "examples_en": [
+        "Read clipboard",
+        "Show me clipboard read",
+        "Get clipboard read"
+      ]
+    },
+    {
+      "tool": "notifications",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [
+        "нотификации",
+        "notifications",
+        "известувања",
+        "notify",
+        "notification"
+      ],
+      "keywords_en": [
+        "notifications",
+        "notify",
+        "push",
+        "notifications",
+        "alerts"
+      ],
+      "examples_mk": [
+        "Нотификација",
+        "Кажи ми notifications",
+        "Дай ми notifications"
+      ],
+      "examples_en": [
+        "Notification",
+        "Show me notifications",
+        "Get notifications"
+      ]
+    },
+    {
+      "tool": "system_info",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [
+        "систем",
+        "system",
+        "system info",
+        "info систем",
+        "system"
+      ],
+      "keywords_en": [
+        "system info",
+        "system",
+        "system information",
+        "system",
+        "info"
+      ],
+      "examples_mk": [
+        "System info",
+        "Кажи ми system info",
+        "Дай ми system info"
+      ],
+      "examples_en": [
+        "System info",
+        "Show me system info",
+        "Get system info"
+      ]
+    },
+    {
+      "tool": "remember",
+      "category": "memory",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "recall",
+      "category": "memory",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "forget",
+      "category": "memory",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "learn_from_repo",
+      "category": "knowledge",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "learn_from_url",
+      "category": "knowledge",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "self_upgrade",
+      "category": "knowledge",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "translate_multi",
+      "category": "text",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "detect_language",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "chat_mode",
+      "category": "conversation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "expert_mode",
+      "category": "conversation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "tutor_mode",
+      "category": "conversation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "open_url",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "take_screenshot",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "send_notification",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "set_reminder",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "create_todo",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "save_note",
+      "category": "automation",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "daily_digest",
+      "category": "analytics",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "stats_dashboard",
+      "category": "analytics",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "habit_check",
+      "category": "analytics",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "mcp_call",
+      "category": "mcp",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "voice_command",
+      "category": "jarvis",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "speak_text",
+      "category": "jarvis",
+      "implemented": false,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "crypto_news",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "portfolio",
+      "category": "crypto",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "tech_news",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "news_bundle",
+      "category": "news",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wikipedia",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "whois_lookup",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "dns_lookup",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "ssl_check",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "ping_url",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "web_archive",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "page_speed",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "page_read",
+      "category": "web",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "podcast_search",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "movie_search",
+      "category": "media",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "hash_text",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "csv_tool",
+      "category": "code",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "readability",
+      "category": "text",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "qr_svg",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "password_strength",
+      "category": "utils",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "todo",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "note",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "reminder_add",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "habit",
+      "category": "productivity",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "browser_status",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "self_check",
+      "category": "system",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "knowledge_search",
+      "category": "knowledge",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_write",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "направи фајл",
+        "направи датотека",
+        "креирај фајл",
+        "запиши фајл",
+        "направи test.txt со hello"
+      ],
+      "keywords_en": [
+        "create file",
+        "write file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_read",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "прочитај фајл",
+        "покажи фајл"
+      ],
+      "keywords_en": [
+        "read file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_append",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "додај во фајл"
+      ],
+      "keywords_en": [
+        "append file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_edit",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "замени во фајл",
+        "измени фајл"
+      ],
+      "keywords_en": [
+        "edit file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_list",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "листај фајлови"
+      ],
+      "keywords_en": [
+        "list files"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_tree",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "дрво на папка"
+      ],
+      "keywords_en": [
+        "folder tree"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_search",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "пребарај фајлови",
+        "најди фајл"
+      ],
+      "keywords_en": [
+        "search files"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_mkdir",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_copy",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "копирај фајл"
+      ],
+      "keywords_en": [
+        "copy file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_move",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "премести фајл"
+      ],
+      "keywords_en": [
+        "move file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_delete",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [
+        "избриши фајл"
+      ],
+      "keywords_en": [
+        "delete file"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_stat",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "file_hash",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "path_resolve",
+      "category": "files",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "host_report",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "што има на компјутерот",
+        "детектирај систем"
+      ],
+      "keywords_en": [
+        "host report"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "ps_run",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "powershell"
+      ],
+      "keywords_en": [
+        "powershell"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "cmd_run",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "shell_run",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wsl_list",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "wsl дистрибуции"
+      ],
+      "keywords_en": [
+        "wsl distros"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wsl_info",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wsl_run",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "wsl команда"
+      ],
+      "keywords_en": [
+        "wsl command"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wsl_read",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "wsl_write",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "process_list",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "процеси"
+      ],
+      "keywords_en": [
+        "processes"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "process_kill",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "затвори процес"
+      ],
+      "keywords_en": [
+        "kill process"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "app_open",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "отвори апликација",
+        "отвори папка"
+      ],
+      "keywords_en": [
+        "open app"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "app_start",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "отвори notepad"
+      ],
+      "keywords_en": [
+        "start notepad"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "window_list",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "window_focus",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "clip_get",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "clipboard"
+      ],
+      "keywords_en": [
+        "clipboard"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "clip_set",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "стави во clipboard"
+      ],
+      "keywords_en": [
+        "set clipboard"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "screen_shot",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "слика од екран"
+      ],
+      "keywords_en": [
+        "screenshot"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "volume_control",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "media_key",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "say",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "кажи",
+        "изговори"
+      ],
+      "keywords_en": [
+        "say"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "notify",
+      "category": "host",
+      "implemented": true,
+      "keywords_mk": [
+        "нотификација"
+      ],
+      "keywords_en": [
+        "notify"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "fb_open",
+      "category": "facebook",
+      "implemented": true,
+      "keywords_mk": [
+        "отвори facebook",
+        "фејсбук"
+      ],
+      "keywords_en": [
+        "open facebook"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "fb_feed_read",
+      "category": "facebook",
+      "implemented": true,
+      "keywords_mk": [
+        "што има ново"
+      ],
+      "keywords_en": [
+        "facebook feed"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "fb_write_post",
+      "category": "facebook",
+      "implemented": true,
+      "keywords_mk": [
+        "напиши пост"
+      ],
+      "keywords_en": [
+        "write post"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "fb_publish",
+      "category": "facebook",
+      "implemented": true,
+      "keywords_mk": [
+        "објави",
+        "објави пост"
+      ],
+      "keywords_en": [
+        "publish post"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "fb_search",
+      "category": "facebook",
+      "implemented": true,
+      "keywords_mk": [
+        "пребарај на facebook"
+      ],
+      "keywords_en": [
+        "search facebook"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_open",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "отвори youtube"
+      ],
+      "keywords_en": [
+        "open youtube"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_search",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "пребарај на youtube"
+      ],
+      "keywords_en": [
+        "search youtube"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_play",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "пушти",
+        "пушти на youtube",
+        "отвори youtube и пушти"
+      ],
+      "keywords_en": [
+        "play"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_pause",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "паузирај"
+      ],
+      "keywords_en": [
+        "pause"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_resume",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [],
+      "keywords_en": [],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_next",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "следно видео"
+      ],
+      "keywords_en": [
+        "next video"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_volume",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "тон на youtube"
+      ],
+      "keywords_en": [
+        "youtube volume"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    },
+    {
+      "tool": "yt_now_playing",
+      "category": "youtube",
+      "implemented": true,
+      "keywords_mk": [
+        "што свири"
+      ],
+      "keywords_en": [
+        "now playing"
+      ],
+      "examples_mk": [],
+      "examples_en": []
+    }
+  ],
+  "generated": "2026-09-20T12:25:06.207Z"
+}
