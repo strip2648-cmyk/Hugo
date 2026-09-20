@@ -129,7 +129,7 @@ cp .env.example .env
 | `HUGO_TZ` | `Europe/Skopje` | временска зона |
 | `HUGO_LOG_LEVEL` | `info` | `error`, `warn`, `info` или `debug` |
 
-Подетален список има во [ENV.md](ENV.md), а архитектурата и модулите се опишани во [ARCHITECTURE.md](ARCHITECTURE.md) и [MODULES.md](MODULES.md).
+Подетален список има во [docs/ENV.md](docs/ENV.md), а архитектурата и модулите се опишани во [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) и [docs/MODULES.md](docs/MODULES.md).
 
 ## Ollama (опционален бесплатен локален AI)
 
