@@ -32,17 +32,13 @@ function listenInstructions() {
 }
 async function transcript(text, options = {}) {
   const woken = wakeWord(text);
-  const command = parse(woken.woken && woken.command ? woken.command : text);
   const runtime = require('../core/runtime');
-  if (command.intent === 'chat') {
-    const result = await runtime.chat(String(text || ''), options);
-    const speech = await speak(result.reply, options).catch((error) => ({ spoken: false, error: error.message }));
-    return { heard: truncate(String(text || ''), 200), wake_word: woken.woken ? woken.word : null, command, reply: result.reply, speech };
-  }
-  const execution = await runtime.run(command.action, command.args, options);
-  const reply = execution.ok ? '\u0418\u0437\u0432\u0440\u0448\u0435\u043d\u043e: ' + command.intent + '.' : '\u041d\u0435 \u0443\u0441\u043f\u0435\u0430: ' + execution.error.message;
+  const commandText = woken.woken && woken.command ? woken.command : text;
+  const command = parse(commandText);
+  const result = await runtime.chat(String(text || ''), options);
+  const reply = result.reply;
   const speech = await speak(reply, options).catch((error) => ({ spoken: false, error: error.message }));
-  return { heard: truncate(String(text || ''), 200), wake_word: woken.woken ? woken.word : null, command, result: execution.result, reply, speech };
+  return { heard: truncate(String(text || ''), 200), wake_word: woken.woken ? woken.word : null, command, result: result.result, action: result.action, reply, speech };
 }
 async function run(action, args = {}) {
   if (action === 'voice_transcript') return transcript(args.text, args);

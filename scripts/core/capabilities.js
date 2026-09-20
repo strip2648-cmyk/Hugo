@@ -12,9 +12,11 @@ function report() {
   const memory = store ? store.stats() : null;
   add('memory', Boolean(memory), memory ? `${memory.facts} \u0444\u0430\u043a\u0442\u0438, ${memory.graph.entities} \u0435\u043d\u0442\u0438\u0442\u0435\u0442\u0438, ${memory.embeddings.vectors} \u0432\u0435\u043a\u0442\u043e\u0440\u0438` : '\u043c\u0435\u043c\u043e\u0440\u0438\u0458\u0430\u0442\u0430 \u043d\u0435 \u0435 \u0434\u043e\u0441\u0442\u0430\u043f\u043d\u0430');
 
+  const ollamaEndpoint = process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST;
+  const ollamaModel = process.env.OLLAMA_MODEL;
   const endpoint = process.env[config.cognition.reasoning.endpoint_env];
   const model = process.env[config.cognition.reasoning.model_env] || config.cognition.reasoning.model || 'local-model';
-  add('reasoning', true, endpoint ? `\u043b\u043e\u043a\u0430\u043b\u0435\u043d AI: ${model} @ ${endpoint}` : `\u043b\u043e\u043a\u0430\u043b\u043d\u0438 \u043f\u0440\u0430\u0432\u0438\u043b\u0430; AI \u043c\u043e\u0434\u0435\u043b: ${model}`);
+  add('reasoning', true, ollamaModel || ollamaEndpoint ? `Ollama: ${ollamaModel || 'llama3.2'} @ ${ollamaEndpoint || 'http://127.0.0.1:11434'}` : endpoint ? `локален AI: ${model} @ ${endpoint}` : `локални правила; AI модел: ${model}`);
 
   const chrome = optional('../eyes/chrome');
   let chromeState = { reachable: false };

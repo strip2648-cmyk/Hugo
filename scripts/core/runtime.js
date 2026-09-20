@@ -24,7 +24,7 @@ async function run(action, input = {}, options = {}) {
 function composeReply(text, analysis, memoryContext) {
   const parts = [];
   if (memoryContext && memoryContext.text) parts.push(memoryContext.text);
-  parts.push(analysis.conclusion);
+  parts.push(analysis.content || analysis.conclusion);
   if (analysis.next_actions && analysis.next_actions.length && analysis.kind !== 'knowledge') parts.push(`\u041c\u043e\u0436\u0430\u043c \u0434\u0430 \u0433\u043e \u0438\u0437\u0432\u0440\u0448\u0430\u043c: ${analysis.next_actions.join(' | ')}`);
   if (analysis.assumptions && analysis.assumptions.length) parts.push(`\u041f\u0440\u0435\u0442\u043f\u043e\u0441\u0442\u0430\u0432\u043a\u0438: ${analysis.assumptions.join(' ')}`);
   return parts.join('\n');
@@ -96,6 +96,8 @@ async function chat(text, options = {}) {
   if (typeof text !== 'string' || !text.trim()) throw new Error('chat needs text');
   const session = options.session || shortId('session');
   conversations.append({ type: 'message', role: 'user', text, session });
+  const store = require('../memory/store');
+  const memoryContext = store.context(text, { limit: 4 });
   const { parse, wake } = require('../cognition/commands');
   const woken = wake(text);
   const command = parse(woken.woken && woken.command ? woken.command : text);
@@ -112,9 +114,25 @@ async function chat(text, options = {}) {
     actionResult = await run(command.action, command.args, { session });
     reply = formatActionReply(actionResult, command);
   } else {
-    const { reason, classify } = require('../cognition/reasoner');
-    const store = require('../memory/store');
-    const memoryContext = store.context(text, { limit: 4 });
+    const { reason, classify, routeWithOllama } = require('../cognition/reasoner');
+    const direct = require('../cognition/router').routeStep(text);
+    const directEntry = direct && actions().find(direct.action);
+    if (directEntry) {
+      actionResult = await run(direct.action, direct.args, { session });
+      reply = formatActionReply(actionResult, { intent: direct.action, args: direct.args });
+    }
+    let modelRoute = null;
+    try { if (!directEntry) modelRoute = await routeWithOllama(text, {}); } catch {}
+    if (modelRoute) {
+      actionResult = await run(modelRoute.tool, modelRoute.params, { session });
+      reply = formatActionReply(actionResult, { intent: modelRoute.tool, args: modelRoute.params });
+      conversations.append({ type: 'tool_route', role: 'system', text: `${text} -> ${modelRoute.tool}`, route: modelRoute });
+    }
+    if (directEntry || modelRoute) {
+      const ingest = await conversations.ingest({ maxLines: 50 }).catch(() => null);
+      conversations.append({ type: 'message', role: 'assistant', text: reply, session });
+      return { reply, session, action: directEntry ? direct.action : modelRoute.tool, result: actionResult, plan: null, learned: ingest ? ingest.learned + ingest.updated : 0 };
+    }
     const analysis = await reason(text, { memory: memoryContext }, {});
     const kind = classify(text).kind;
     if (options.forceGoal || kind === 'plan' || kind === 'action') {

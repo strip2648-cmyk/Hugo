@@ -4,9 +4,14 @@ const { clauses } = require('./planner');
 function alternatives(failedStep, triedActions = []) {
   let registry = null;
   try { registry = require('../tools/registry'); } catch { registry = null; }
+  const coreActions = require('../core/actions');
   return routeIntent(failedStep.description, { limit: 12 })
     .filter((hit) => !triedActions.includes(hit.tool))
-    .filter((hit) => !registry || Boolean(registry.get(hit.tool) && typeof registry.get(hit.tool).run === 'function'));
+    .filter((hit) => {
+      const entry = registry && registry.get(hit.tool);
+      if (entry) return registry.statusOf(entry) === 'real' || registry.statusOf(entry) === 'browser';
+      return Boolean(coreActions.find(hit.tool));
+    });
 }
 function replan(context = {}) {
   const { plan: planDocument, observations = [], attempt = 1, tried = [] } = context;

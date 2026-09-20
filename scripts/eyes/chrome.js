@@ -154,6 +154,7 @@ async function attach(options = {}) {
     if (!pages.length) throw new NetworkError('no browser page available');
   }
   let page = pages[0];
+  if (options.tab_id) { const selected = pages.find((target) => target.id === options.tab_id); if (selected) page = selected; }
   if (options.tab_index !== undefined && pages[options.tab_index]) page = pages[options.tab_index];
   if (options.url_match) { const match = pages.find((target) => String(target.url).includes(options.url_match)); if (match) page = match; }
   const client = await connectWebSocket(page.webSocketDebuggerUrl);
@@ -192,14 +193,15 @@ async function evaluate(expression, options = {}) {
   } finally { session.close(); }
 }
 async function navigate(url, options = {}) {
-  const session = await attach(options);
+  const created = await newTab(url);
+  if (!created.ok || !created.tab || !created.tab.id) throw new NetworkError('could not create a new browser tab');
+  const session = await attach({ ...options, tab_id: created.tab.id });
   try {
-    await session.send('Page.navigate', { url });
     await new Promise((resolve) => setTimeout(resolve, options.wait_ms === undefined ? config.browser.navigation_wait_ms : options.wait_ms));
     const info = await session.send('Runtime.evaluate', { expression: 'JSON.stringify({title: document.title, url: location.href})', returnByValue: true });
     let meta = { title: '', url };
     try { meta = JSON.parse(info.result.value); } catch { /* ignore */ }
-    return meta;
+    return { ...meta, tab_id: created.tab.id, new_tab: true };
   } finally { session.close(); }
 }
 async function screenshot(url, options = {}) {

@@ -8,6 +8,16 @@ HUGO е локален, автономен асистент за мемориј�
 - npm
 - Chrome/Chromium само ако се користат browser функциите
 
+## Брзо стартување
+
+Откако репото е клонирано и Ollama е инсталирана, изврши ја единствената setup команда од коренот на проектот:
+
+```bash
+chmod +x setup.sh && ./setup.sh
+```
+
+Script-от проверува Node.js 20+, инсталира npm dependencies, креира `.env` со default вредности, проверува дали работи `ollama serve`, го презема моделот од `HUGO_LOCAL_AI_MODEL`, стартува Chrome/Chromium во background и на крај го стартува HUGO. Ако Ollama не работи, ќе испише: `Ollama не работи. Стартувај 'ollama serve' во посебен терминал`.
+
 Провери ја верзијата:
 
 ```bash
@@ -120,6 +130,40 @@ cp .env.example .env
 | `HUGO_LOG_LEVEL` | `info` | `error`, `warn`, `info` или `debug` |
 
 Подетален список има во [ENV.md](ENV.md), а архитектурата и модулите се опишани во [ARCHITECTURE.md](ARCHITECTURE.md) и [MODULES.md](MODULES.md).
+
+## Ollama (опционален бесплатен локален AI)
+
+На Linux инсталирај го Ollama и стартувај го локалниот runtime:
+
+```bash
+curl -fsSL https://ollama.com/install.sh | sh
+ollama serve
+```
+
+Во втор терминал преземи го моделот и активирај ја конфигурацијата:
+
+```bash
+ollama pull llama3.2
+cp .env.example .env
+npm run doctor
+npm start
+```
+
+`.env.example` го поставува `OLLAMA_MODEL=llama3.2`. Endpoint-от по default е `http://127.0.0.1:11434`. Ако Ollama не работи, HUGO автоматски се враќа на постоечкото локално rule-based reasoning и не паѓа.
+
+## Пет проверки
+
+Изврши ги од коренот на репото:
+
+```bash
+npm run test:all
+node -e "const r=require('./scripts/cognition/router'); for (const [q,a] of [['отвори fb','fb_open'],['отвори yt','yt_open'],['отвори google','browser_open']]) { const h=r.routeStep(q); if (!h || h.action !== a) throw Error(q + ' -> ' + (h && h.action)); } console.log('routing aliases: PASS')"
+node -e "const p=require('./scripts/cognition/planner').decompose('generate avatar'); if (p.steps.some(s => s.action === 'generate_avatar')) throw Error('planned tool selected'); console.log('planned-tool guard: PASS')"
+npm run chat -- "објасни кратко што е локален AI модел"
+npm run capabilities
+```
+
+Првата команда ги извршува сите automated tests. Четвртата треба да врати одговор од Ollama кога `ollama serve` работи; петтата ќе го прикаже активниот модел и endpoint во capabilities report.
 
 ## Тестирање и registry
 

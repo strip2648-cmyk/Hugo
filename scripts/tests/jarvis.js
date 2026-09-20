@@ -71,6 +71,17 @@ add('path_resolve reports windows + wsl mapping', async () => { const r = await 
 
 add('router: "Направи test.txt со Hello"', () => { const hit = router.routeStep('Направи test.txt со Hello'); assert.equal(hit.action, 'file_write'); assert.equal(hit.args.path, 'test.txt'); assert.equal(hit.args.content, 'Hello'); });
 add('router: "Отвори Facebook"', () => assert.equal(router.routeStep('Отвори Facebook').action, 'fb_open'));
+add('router: short site aliases choose real/browser actions', () => {
+  assert.equal(router.routeStep('отвори fb').action, 'fb_open');
+  assert.equal(router.routeStep('отвори yt').action, 'yt_open');
+  assert.deepEqual(router.routeStep('отвори google').args, { url: 'https://www.google.com/' });
+});
+add('planner: open-site commands keep their routed action', () => {
+  for (const [goal, action] of [['отвори facebook', 'fb_open'], ['отвори fb', 'fb_open'], ['отвори google', 'browser_open'], ['отвори youtube', 'yt_open']]) {
+    const step = planner.decompose(goal, { withMemory: false }).steps[0];
+    assert.equal(step.action, action, `${goal} -> ${step.action || step.kind}`);
+  }
+});
 add('router: "Објави"', () => { const hit = router.routeStep('Објави'); assert.equal(hit.action, 'fb_publish'); assert.equal(hit.args.confirm, true); });
 add('router: "Отвори YouTube и пушти Imagine Dragons"', () => { const hit = router.routeStep('Отвори YouTube и пушти Imagine Dragons'); assert.equal(hit.action, 'yt_play'); assert.equal(hit.args.query, 'Imagine Dragons'); });
 add('router: "Паузирај"', () => assert.equal(router.routeStep('Паузирај').action, 'yt_pause'));
@@ -78,6 +89,7 @@ add('router: sequence splits "A па B"', () => { const steps = router.route('Н
 add('router: unknown step is blocked, not fake success', () => { const steps = router.route('сканирај го универзумот'); assert.equal(steps[0].kind, 'blocked'); });
 add('planner routes real tools', () => { const plan = planner.decompose('Направи jarvis-plan.txt со План'); const step = plan.steps.find((s) => s.kind === 'tool'); assert.equal(step.action, 'file_write'); });
 add('planner marks unknown steps blocked', () => { const plan = planner.decompose('измисли непозната работа'); assert.ok(!plan.steps.some((s) => s.kind === 'reason')); });
+add('planner never selects planned tools', () => { const plan = planner.decompose('generate avatar'); assert.ok(!plan.steps.some((s) => s.action === 'generate_avatar')); });
 add('registry exposes v7 tools', () => { for (const id of ['file_write', 'file_read', 'file_search', 'host_report', 'ps_run', 'wsl_run', 'app_open', 'fb_open', 'fb_write_post', 'fb_publish', 'yt_play', 'yt_pause']) assert.ok(registry.get(id), 'missing ' + id); });
 add('audit counts include files/host/sites', () => { const audit = registry.audit(); assert.ok(audit.counts.real >= 150); assert.ok(audit.by_category.files); });
 add('catalog + intents are in sync with implementations', () => { sync.sync(); const report = sync.check(); assert.equal(report.ok, true, JSON.stringify(report.problems.slice(0, 5))); });
@@ -89,6 +101,22 @@ add('loop: unknown goal is NOT a success (no false success)', async () => { cons
 add('loop: offline Chrome is reported as failure, not success', async () => { const result = await loop.runGoal('Отвори Facebook', { maxReplans: 0 }); assert.equal(result.success, false); assert.ok(result.observations.some((o) => !o.ok)); });
 add('voice has local fallback', () => { assert.equal(typeof voice.speakLocal, 'function'); assert.ok(voice.stt().engine); });
 add('capabilities report lists host + files', () => { const caps = require('../core/capabilities').report(); assert.ok(caps.actions.total >= 200); assert.ok(caps.items.some((i) => i.name === 'tools')); });
+add('UI has one conversation composer', () => {
+  const page = require('../ui/server').page();
+  for (const label of ['Прати', 'Слушај', 'Спроведи цел', 'Статус', 'Алатки']) assert.ok(!page.includes('>' + label + '<'), 'old UI control remains: ' + label);
+  assert.match(page, /id="q"/);
+  assert.match(page, /addEventListener\('keydown'/);
+  assert.match(page, /\/api\/voice/);
+});
+add('long-running goals use existing todo and scheduler', async () => {
+  const result = await loop.runGoal('следи ја задачата отвори facebook', { maxReplans: 0, session: 'tracking-test' });
+  const todoTool = require('../tools/impl/productivity').tools.todo;
+  const todos = await todoTool.run({ action: 'list' });
+  const tracked = todos.open.find((item) => item.text === 'следи ја задачата отвори facebook');
+  assert.ok(tracked);
+  assert.ok(require('../automation/scheduler').list().some((job) => job.id === 'hugo-task-' + tracked.id));
+  assert.equal(result.tracking.pending, true);
+});
 
 async function run() {
   let passed = 0; let failed = 0;

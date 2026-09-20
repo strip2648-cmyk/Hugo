@@ -9,7 +9,12 @@ const CONNECTORS = /\s*(?:;|,?\s*(?:\u043f\u043e\u0442\u043e\u0430|\u0438 \u043f
 function clauses(goal) { return String(goal).split(CONNECTORS).map((part) => part.trim()).filter((part) => part.length > 2); }
 function safeStore() { try { return require('../memory/store'); } catch { return null; } }
 function isExecutable(tool) {
-  try { const entry = require('../tools/registry').get(tool); return Boolean(entry && typeof entry.run === 'function'); }
+  try {
+    const registry = require('../tools/registry');
+    const entry = registry.get(tool);
+    if (entry && (registry.statusOf(entry) === 'real' || registry.statusOf(entry) === 'browser')) return true;
+    return Boolean(require('../core/actions').find(tool));
+  }
   catch { return false; }
 }
 function memoryStep(goal) {

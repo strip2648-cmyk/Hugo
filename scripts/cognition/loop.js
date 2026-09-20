@@ -8,12 +8,33 @@ const config = require('../lib/config').load();
 const { shortId } = require('../lib/ids');
 const logger = require('../lib/logger').createLogger('loop');
 const conversations = require('../memory/conversations');
+function needsTracking(goal, planDocument) {
+  const actionable = (planDocument.steps || []).filter((step) => step.kind !== 'memory');
+  return actionable.length > 1 || /(кампањ|campaign|продолж|следи|додека|while|until|постојано|ongoing)/iu.test(goal);
+}
+async function trackGoal(goal, planDocument, options = {}) {
+  if (!needsTracking(goal, planDocument)) return null;
+  const productivity = require('../tools/impl/productivity');
+  const listed = await productivity.tools.todo.run({ action: 'list' });
+  let item = listed.open.find((entry) => entry.id === options.task_id || entry.text === goal);
+  if (!item) item = (await productivity.tools.todo.run({ action: 'add', text: goal })).added;
+  const jobId = options.job_id || `hugo-task-${item.id}`;
+  const scheduler = require('../automation/scheduler');
+  if (!scheduler.list().some((job) => job.id === jobId)) scheduler.schedule({ id: jobId, action: 'goal', args: { goal, task_id: item.id, job_id: jobId, max_replans: 1 }, every_ms: 60000, label: goal });
+  return { itemId: item.id, jobId };
+}
+async function finishTrackedGoal(tracking, success) {
+  if (!tracking || !success) return;
+  await require('../tools/impl/productivity').tools.todo.run({ action: 'done', id: tracking.itemId });
+  require('../automation/scheduler').cancel(tracking.jobId);
+}
 async function runGoal(goal, options = {}) {
   if (!goal || typeof goal !== 'string') throw new Error('loop.runGoal needs a goal');
   const started = Date.now();
   const session = options.session || shortId('session');
   const maxReplans = options.maxReplans === undefined ? config.cognition.max_replans : options.maxReplans;
   let planDocument = planner.plan(goal, { session, maxSteps: options.maxSteps, argsFor: options.argsFor, minScore: options.minScore });
+  const tracking = await trackGoal(goal, planDocument, options);
   const observations = [];
   const attempts = [];
   const tried = [];
@@ -43,6 +64,8 @@ async function runGoal(goal, options = {}) {
     goal, session, plan_id: planDocument.id, steps: planDocument.steps, observations, attempts, replans, reflection,
     success: observations.length > 0 && !observations.some((item) => !item.ok), ms: Date.now() - started,
   };
+  await finishTrackedGoal(tracking, result.success);
+  result.tracking = tracking ? { ...tracking, pending: !result.success } : null;
   conversations.append({ type: 'goal_result', role: 'assistant', text: `\u0426\u0435\u043b: ${goal} \u2014 ${result.success ? '\u0443\u0441\u043f\u0435\u0448\u043d\u043e' : '\u0441\u043e \u0433\u0440\u0435\u0448\u043a\u0438'}`, session });
   return result;
 }

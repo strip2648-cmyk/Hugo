@@ -154,6 +154,8 @@ function describeEnv() {
   return [
     { name: 'HUGO_LOCAL_AI_ENDPOINT', effect: 'адреса на локалниот AI; без него HUGO користи локални правила', set: Boolean(process.env.HUGO_LOCAL_AI_ENDPOINT) },
     { name: 'HUGO_LOCAL_AI_MODEL', effect: 'име на локалниот AI модел', set: Boolean(process.env.HUGO_LOCAL_AI_MODEL) },
+    { name: 'OLLAMA_ENDPOINT', effect: 'локален Ollama endpoint (стандардно http://127.0.0.1:11434)', set: Boolean(process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST) },
+    { name: 'OLLAMA_MODEL', effect: 'име на локалниот Ollama модел', set: Boolean(process.env.OLLAMA_MODEL) },
     { name: 'HUGO_VISION_ENDPOINT', effect: 'опционален локален сервис за слики/вид', set: Boolean(process.env.HUGO_VISION_ENDPOINT) },
     { name: 'HUGO_CHROME_PORT', effect: `port of your browser debug endpoint (default ${config.browser.port})`, set: Boolean(process.env.HUGO_CHROME_PORT) },
     { name: 'HUGO_CHROME_BIN', effect: 'path to Chrome/Chromium (auto-detected when empty)', set: Boolean(process.env.HUGO_CHROME_BIN) },

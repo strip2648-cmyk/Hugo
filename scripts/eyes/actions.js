@@ -44,7 +44,7 @@ async function run(action, args = {}) {
   if (action === 'browser_tabs') return { tabs: (await chrome.targets()).filter((target) => target.type === 'page').map((target) => ({ id: target.id, title: target.title, url: target.url })) };
   if (action === 'browser_open') {
     if (!args.url) throw new InputError('url is required');
-    return chrome.navigate(args.url, args);
+    return chrome.navigate(args.url, { ...args, new_tab: true });
   }
   if (action === 'browser_read') {
     const page = await read(args.url, args);
