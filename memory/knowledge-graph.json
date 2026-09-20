@@ -1,5 +1,5065 @@
 {
   "version": "1.0.0",
-  "entities": {},
-  "relationships": []
+  "entities": {
+    "e2b-dev-awesome-ai-agents": {
+      "id": "e2b-dev-awesome-ai-agents",
+      "label": "e2b-dev/awesome-ai-agents",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:13.468Z",
+      "updated_at": "2026-09-20T18:14:13.468Z",
+      "source_facts": [
+        "github:e2b-dev/awesome-ai-agents"
+      ]
+    },
+    "connect": {
+      "id": "connect",
+      "label": "Connect",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:13.996Z",
+      "updated_at": "2026-09-20T18:14:13.996Z",
+      "source_facts": [
+        "9e7897bfe511301d"
+      ]
+    },
+    "mindsdb": {
+      "id": "mindsdb",
+      "label": "MindsDB",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:13.996Z",
+      "updated_at": "2026-09-20T18:14:13.996Z",
+      "source_facts": [
+        "9e7897bfe511301d"
+      ]
+    },
+    "mcp": {
+      "id": "mcp",
+      "label": "MCP",
+      "type": "proper-noun",
+      "mentions": 11,
+      "first_seen": "2026-09-20T18:14:13.996Z",
+      "updated_at": "2026-09-20T18:14:30.378Z",
+      "source_facts": [
+        "9e7897bfe511301d",
+        "dfa6682f79363b2a",
+        "53143dddbc209d0e",
+        "dade263a39de480a",
+        "c7abeddb7ccb08aa",
+        "f246453a213f60d0",
+        "b09a1978f052368d",
+        "cb85d91547f0a25c",
+        "2c6b12112c12c843",
+        "e752e9acf6856bb8",
+        "90763d6bb99664a5"
+      ]
+    },
+    "docs-mindsdb-com": {
+      "id": "docs-mindsdb-com",
+      "label": "docs.mindsdb.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:13.997Z",
+      "updated_at": "2026-09-20T18:14:13.997Z",
+      "source_facts": [
+        "9e7897bfe511301d"
+      ]
+    },
+    "github-com": {
+      "id": "github-com",
+      "label": "github.com",
+      "type": "domain",
+      "mentions": 53,
+      "first_seen": "2026-09-20T18:14:13.997Z",
+      "updated_at": "2026-09-20T18:14:23.838Z",
+      "source_facts": [
+        "9e7897bfe511301d",
+        "dfa6682f79363b2a",
+        "53143dddbc209d0e",
+        "c3ea579173e7aeeb",
+        "519b360f70898e97",
+        "27f086675f9e3aff",
+        "dade263a39de480a",
+        "79e857020c9b63d3",
+        "c7abeddb7ccb08aa",
+        "f246453a213f60d0",
+        "ed94e94d8029b252",
+        "b09a1978f052368d",
+        "81af9116c82db68a",
+        "cb85d91547f0a25c",
+        "f0d84986c4e4f96e",
+        "05b753c3422a9453",
+        "c1291c39b3c96dd8",
+        "0b21058152a068e1",
+        "2c6b12112c12c843",
+        "e752e9acf6856bb8",
+        "a0c8595280928620",
+        "b39c428a0b3a1be5",
+        "2bf7e99dcfea48e4",
+        "bc959b283e83d7e5",
+        "87a427446e858453",
+        "53bf5d93347d3c5e",
+        "cb8b1b8a9d22d752",
+        "75c344552b065540",
+        "34b74e7764e4db01",
+        "d0318300242e9a57",
+        "7b8989bedb086066",
+        "678b6deec1b5fde6",
+        "762fecba3fc4a089",
+        "f0011fb8b1c251f9",
+        "8d88985daac2a11a",
+        "8e94d1c24b3f7ac6",
+        "44418c42aba7b93e",
+        "095a6c541ae48732",
+        "fa17173382a242df",
+        "61cfcb4be060cb76",
+        "e500e8694b8b4841",
+        "fb9d3b1c2c4a5af9",
+        "d638a8263210736d",
+        "c9ae50e5e0f26271",
+        "60a6e35f1c779338",
+        "29e76f577d0d570b",
+        "278c0399bb8964dd",
+        "3d4b82a97bce5c88",
+        "0749dfd3d9f78e91",
+        "f8c9b359976b291a",
+        "b15b40fc045e2aba",
+        "32160481caa933d1",
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "mindsdb-mindsdb": {
+      "id": "mindsdb-mindsdb",
+      "label": "mindsdb/mindsdb",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.000Z",
+      "updated_at": "2026-09-20T18:14:14.000Z",
+      "source_facts": [
+        "9e7897bfe511301d"
+      ]
+    },
+    "mcp-bundles": {
+      "id": "mcp-bundles",
+      "label": "MCP Bundles",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.002Z",
+      "updated_at": "2026-09-20T18:14:14.002Z",
+      "source_facts": [
+        "dfa6682f79363b2a"
+      ]
+    },
+    "create": {
+      "id": "create",
+      "label": "Create",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.003Z",
+      "updated_at": "2026-09-20T18:14:14.187Z",
+      "source_facts": [
+        "dfa6682f79363b2a",
+        "e752e9acf6856bb8"
+      ]
+    },
+    "oauth": {
+      "id": "oauth",
+      "label": "OAuth",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.003Z",
+      "updated_at": "2026-09-20T18:14:14.003Z",
+      "source_facts": [
+        "dfa6682f79363b2a"
+      ]
+    },
+    "api": {
+      "id": "api",
+      "label": "API",
+      "type": "proper-noun",
+      "mentions": 3,
+      "first_seen": "2026-09-20T18:14:14.003Z",
+      "updated_at": "2026-09-20T18:14:17.358Z",
+      "source_facts": [
+        "dfa6682f79363b2a",
+        "762fecba3fc4a089",
+        "1a2e99ada8c65b53"
+      ]
+    },
+    "use": {
+      "id": "use",
+      "label": "Use",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.003Z",
+      "updated_at": "2026-09-20T18:14:14.003Z",
+      "source_facts": [
+        "dfa6682f79363b2a"
+      ]
+    },
+    "thinkchainai-mcpbundles": {
+      "id": "thinkchainai-mcpbundles",
+      "label": "thinkchainai/mcpbundles",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.009Z",
+      "updated_at": "2026-09-20T18:14:14.009Z",
+      "source_facts": [
+        "dfa6682f79363b2a"
+      ]
+    },
+    "official-microsoft-playwright": {
+      "id": "official-microsoft-playwright",
+      "label": "Official Microsoft Playwright",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.011Z",
+      "updated_at": "2026-09-20T18:14:14.011Z",
+      "source_facts": [
+        "53143dddbc209d0e"
+      ]
+    },
+    "llms": {
+      "id": "llms",
+      "label": "LLMs",
+      "type": "proper-noun",
+      "mentions": 6,
+      "first_seen": "2026-09-20T18:14:14.011Z",
+      "updated_at": "2026-09-20T18:14:21.766Z",
+      "source_facts": [
+        "53143dddbc209d0e",
+        "762fecba3fc4a089",
+        "8e94d1c24b3f7ac6",
+        "d638a8263210736d",
+        "c9ae50e5e0f26271",
+        "3d4b82a97bce5c88"
+      ]
+    },
+    "microsoft-playwright-mcp": {
+      "id": "microsoft-playwright-mcp",
+      "label": "microsoft/playwright-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.014Z",
+      "updated_at": "2026-09-20T18:14:14.014Z",
+      "source_facts": [
+        "53143dddbc209d0e"
+      ]
+    },
+    "terraform-mcp-server": {
+      "id": "terraform-mcp-server",
+      "label": "Terraform MCP Server",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.015Z",
+      "updated_at": "2026-09-20T18:14:14.015Z",
+      "source_facts": [
+        "c3ea579173e7aeeb"
+      ]
+    },
+    "terraform": {
+      "id": "terraform",
+      "label": "Terraform",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.016Z",
+      "updated_at": "2026-09-20T18:14:14.030Z",
+      "source_facts": [
+        "c3ea579173e7aeeb",
+        "27f086675f9e3aff"
+      ]
+    },
+    "registry-api": {
+      "id": "registry-api",
+      "label": "Registry API",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.016Z",
+      "updated_at": "2026-09-20T18:14:14.016Z",
+      "source_facts": [
+        "c3ea579173e7aeeb"
+      ]
+    },
+    "infrastr": {
+      "id": "infrastr",
+      "label": "Infrastr",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.016Z",
+      "updated_at": "2026-09-20T18:14:14.016Z",
+      "source_facts": [
+        "c3ea579173e7aeeb"
+      ]
+    },
+    "hashicorp-terraform-mcp-server": {
+      "id": "hashicorp-terraform-mcp-server",
+      "label": "hashicorp/terraform-mcp-server",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.019Z",
+      "updated_at": "2026-09-20T18:14:14.019Z",
+      "source_facts": [
+        "c3ea579173e7aeeb"
+      ]
+    },
+    "azure-cli": {
+      "id": "azure-cli",
+      "label": "Azure CLI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.022Z",
+      "updated_at": "2026-09-20T18:14:14.022Z",
+      "source_facts": [
+        "519b360f70898e97"
+      ]
+    },
+    "azure": {
+      "id": "azure",
+      "label": "Azure",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.022Z",
+      "updated_at": "2026-09-20T18:14:14.022Z",
+      "source_facts": [
+        "519b360f70898e97"
+      ]
+    },
+    "jdubois-azure-cli-mcp": {
+      "id": "jdubois-azure-cli-mcp",
+      "label": "jdubois/azure-cli-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.026Z",
+      "updated_at": "2026-09-20T18:14:14.026Z",
+      "source_facts": [
+        "519b360f70898e97"
+      ]
+    },
+    "terraform-mcp": {
+      "id": "terraform-mcp",
+      "label": "Terraform MCP",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.029Z",
+      "updated_at": "2026-09-20T18:14:14.029Z",
+      "source_facts": [
+        "27f086675f9e3aff"
+      ]
+    },
+    "nwiizo-tfmcp": {
+      "id": "nwiizo-tfmcp",
+      "label": "nwiizo/tfmcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.032Z",
+      "updated_at": "2026-09-20T18:14:14.032Z",
+      "source_facts": [
+        "27f086675f9e3aff"
+      ]
+    },
+    "cisco": {
+      "id": "cisco",
+      "label": "Cisco",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.038Z",
+      "updated_at": "2026-09-20T18:14:14.038Z",
+      "source_facts": [
+        "dade263a39de480a"
+      ]
+    },
+    "automateyournetwork-pyats-mcp": {
+      "id": "automateyournetwork-pyats-mcp",
+      "label": "automateyournetwork/pyATS_MCP",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.040Z",
+      "updated_at": "2026-09-20T18:14:14.040Z",
+      "source_facts": [
+        "dade263a39de480a"
+      ]
+    },
+    "safe-python": {
+      "id": "safe-python",
+      "label": "Safe Python",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.043Z",
+      "updated_at": "2026-09-20T18:14:14.043Z",
+      "source_facts": [
+        "79e857020c9b63d3"
+      ]
+    },
+    "smolagents": {
+      "id": "smolagents",
+      "label": "Smolagents",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.043Z",
+      "updated_at": "2026-09-20T18:14:14.043Z",
+      "source_facts": [
+        "79e857020c9b63d3"
+      ]
+    },
+    "localpythonexecutor": {
+      "id": "localpythonexecutor",
+      "label": "LocalPythonExecutor",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.043Z",
+      "updated_at": "2026-09-20T18:14:14.043Z",
+      "source_facts": [
+        "79e857020c9b63d3"
+      ]
+    },
+    "maxim-saplin-mcp-safe-local-python-executor": {
+      "id": "maxim-saplin-mcp-safe-local-python-executor",
+      "label": "maxim-saplin/mcp_safe_local_python_executor",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.046Z",
+      "updated_at": "2026-09-20T18:14:14.046Z",
+      "source_facts": [
+        "79e857020c9b63d3"
+      ]
+    },
+    "give": {
+      "id": "give",
+      "label": "Give",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.050Z",
+      "updated_at": "2026-09-20T18:14:14.050Z",
+      "source_facts": [
+        "c7abeddb7ccb08aa"
+      ]
+    },
+    "sonirico-mcp-shell": {
+      "id": "sonirico-mcp-shell",
+      "label": "sonirico/mcp-shell",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.052Z",
+      "updated_at": "2026-09-20T18:14:14.052Z",
+      "source_facts": [
+        "c7abeddb7ccb08aa"
+      ]
+    },
+    "model-context-protocol": {
+      "id": "model-context-protocol",
+      "label": "Model Context Protocol",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.056Z",
+      "updated_at": "2026-09-20T18:14:14.056Z",
+      "source_facts": [
+        "f246453a213f60d0"
+      ]
+    },
+    "tumf-mcp-shell-server": {
+      "id": "tumf-mcp-shell-server",
+      "label": "tumf/mcp-shell-server",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.058Z",
+      "updated_at": "2026-09-20T18:14:14.058Z",
+      "source_facts": [
+        "f246453a213f60d0"
+      ]
+    },
+    "tsgram": {
+      "id": "tsgram",
+      "label": "TSgram",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.063Z",
+      "updated_at": "2026-09-20T18:14:14.063Z",
+      "source_facts": [
+        "ed94e94d8029b252"
+      ]
+    },
+    "telegram": {
+      "id": "telegram",
+      "label": "Telegram",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.063Z",
+      "updated_at": "2026-09-20T18:14:14.063Z",
+      "source_facts": [
+        "ed94e94d8029b252"
+      ]
+    },
+    "claude": {
+      "id": "claude",
+      "label": "Claude",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.063Z",
+      "updated_at": "2026-09-20T18:14:14.063Z",
+      "source_facts": [
+        "ed94e94d8029b252"
+      ]
+    },
+    "read": {
+      "id": "read",
+      "label": "Read",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.063Z",
+      "updated_at": "2026-09-20T18:14:14.063Z",
+      "source_facts": [
+        "ed94e94d8029b252"
+      ]
+    },
+    "areweai-tsgram-mcp": {
+      "id": "areweai-tsgram-mcp",
+      "label": "areweai/tsgram-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.068Z",
+      "updated_at": "2026-09-20T18:14:14.068Z",
+      "source_facts": [
+        "ed94e94d8029b252"
+      ]
+    },
+    "vrchat-api": {
+      "id": "vrchat-api",
+      "label": "VRChat API",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.073Z",
+      "updated_at": "2026-09-20T18:14:14.073Z",
+      "source_facts": [
+        "b09a1978f052368d"
+      ]
+    },
+    "you": {
+      "id": "you",
+      "label": "You",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.074Z",
+      "updated_at": "2026-09-20T18:14:14.074Z",
+      "source_facts": [
+        "b09a1978f052368d"
+      ]
+    },
+    "vrchat": {
+      "id": "vrchat",
+      "label": "VRChat",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.074Z",
+      "updated_at": "2026-09-20T18:14:14.074Z",
+      "source_facts": [
+        "b09a1978f052368d"
+      ]
+    },
+    "sawa-zen-vrchat-mcp": {
+      "id": "sawa-zen-vrchat-mcp",
+      "label": "sawa-zen/vrchat-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.078Z",
+      "updated_at": "2026-09-20T18:14:14.078Z",
+      "source_facts": [
+        "b09a1978f052368d"
+      ]
+    },
+    "the-mcp": {
+      "id": "the-mcp",
+      "label": "The MCP",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.084Z",
+      "updated_at": "2026-09-20T18:14:14.084Z",
+      "source_facts": [
+        "81af9116c82db68a"
+      ]
+    },
+    "teddyzxcv-ntfy-mcp": {
+      "id": "teddyzxcv-ntfy-mcp",
+      "label": "teddyzxcv/ntfy-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.086Z",
+      "updated_at": "2026-09-20T18:14:14.086Z",
+      "source_facts": [
+        "81af9116c82db68a"
+      ]
+    },
+    "google-search-console": {
+      "id": "google-search-console",
+      "label": "Google Search Console",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.091Z",
+      "updated_at": "2026-09-20T18:14:14.091Z",
+      "source_facts": [
+        "cb85d91547f0a25c"
+      ]
+    },
+    "bing-webmasters": {
+      "id": "bing-webmasters",
+      "label": "Bing Webmasters",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.092Z",
+      "updated_at": "2026-09-20T18:14:14.092Z",
+      "source_facts": [
+        "cb85d91547f0a25c"
+      ]
+    },
+    "saurabhsharma2u-search-console-mcp": {
+      "id": "saurabhsharma2u-search-console-mcp",
+      "label": "saurabhsharma2u/search-console-mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.095Z",
+      "updated_at": "2026-09-20T18:14:14.095Z",
+      "source_facts": [
+        "cb85d91547f0a25c"
+      ]
+    },
+    "aiven": {
+      "id": "aiven",
+      "label": "Aiven",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.101Z",
+      "updated_at": "2026-09-20T18:14:14.101Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "open": {
+      "id": "open",
+      "label": "Open",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.102Z",
+      "updated_at": "2026-09-20T18:14:14.102Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "navigate": {
+      "id": "navigate",
+      "label": "Navigate",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.102Z",
+      "updated_at": "2026-09-20T18:14:14.102Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "postgresql": {
+      "id": "postgresql",
+      "label": "PostgreSQL",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.102Z",
+      "updated_at": "2026-09-20T18:14:14.102Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "apache-kafka": {
+      "id": "apache-kafka",
+      "label": "Apache Kafka",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.103Z",
+      "updated_at": "2026-09-20T18:14:14.103Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "clickhouse": {
+      "id": "clickhouse",
+      "label": "ClickHouse",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.103Z",
+      "updated_at": "2026-09-20T18:14:14.103Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "opensearch": {
+      "id": "opensearch",
+      "label": "OpenSearch",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.103Z",
+      "updated_at": "2026-09-20T18:14:14.103Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "go-aiven-io": {
+      "id": "go-aiven-io",
+      "label": "go.aiven.io",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.103Z",
+      "updated_at": "2026-09-20T18:14:14.103Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "aiven-open-mcp-aiven": {
+      "id": "aiven-open-mcp-aiven",
+      "label": "Aiven-Open/mcp-aiven",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.116Z",
+      "updated_at": "2026-09-20T18:14:14.116Z",
+      "source_facts": [
+        "f0d84986c4e4f96e"
+      ]
+    },
+    "supabase-mcp-server": {
+      "id": "supabase-mcp-server",
+      "label": "Supabase MCP Server",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.124Z",
+      "updated_at": "2026-09-20T18:14:14.145Z",
+      "source_facts": [
+        "05b753c3422a9453",
+        "0b21058152a068e1"
+      ]
+    },
+    "sql": {
+      "id": "sql",
+      "label": "SQL",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.124Z",
+      "updated_at": "2026-09-20T18:14:30.088Z",
+      "source_facts": [
+        "05b753c3422a9453",
+        "d1044cb56b901c1e"
+      ]
+    },
+    "alexanderzuev-supabase-mcp-server": {
+      "id": "alexanderzuev-supabase-mcp-server",
+      "label": "alexanderzuev/supabase-mcp-server",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.128Z",
+      "updated_at": "2026-09-20T18:14:14.128Z",
+      "source_facts": [
+        "05b753c3422a9453"
+      ]
+    },
+    "baserow": {
+      "id": "baserow",
+      "label": "Baserow",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.135Z",
+      "updated_at": "2026-09-20T18:14:14.135Z",
+      "source_facts": [
+        "c1291c39b3c96dd8"
+      ]
+    },
+    "bram2w-baserow": {
+      "id": "bram2w-baserow",
+      "label": "bram2w/baserow",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.137Z",
+      "updated_at": "2026-09-20T18:14:14.137Z",
+      "source_facts": [
+        "c1291c39b3c96dd8"
+      ]
+    },
+    "supabase": {
+      "id": "supabase",
+      "label": "Supabase",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.145Z",
+      "updated_at": "2026-09-20T18:14:14.145Z",
+      "source_facts": [
+        "0b21058152a068e1"
+      ]
+    },
+    "joshuarileydev-supabase-mcp-server": {
+      "id": "joshuarileydev-supabase-mcp-server",
+      "label": "joshuarileydev/supabase-mcp-server",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.148Z",
+      "updated_at": "2026-09-20T18:14:14.148Z",
+      "source_facts": [
+        "0b21058152a068e1"
+      ]
+    },
+    "the-planetscale-cli": {
+      "id": "the-planetscale-cli",
+      "label": "The PlanetScale CLI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.157Z",
+      "updated_at": "2026-09-20T18:14:14.157Z",
+      "source_facts": [
+        "2c6b12112c12c843"
+      ]
+    },
+    "planetscale": {
+      "id": "planetscale",
+      "label": "PlanetScale",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.174Z",
+      "updated_at": "2026-09-20T18:14:14.174Z",
+      "source_facts": [
+        "2c6b12112c12c843"
+      ]
+    },
+    "planetscale-mcp": {
+      "id": "planetscale-mcp",
+      "label": "planetscale/mcp",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.177Z",
+      "updated_at": "2026-09-20T18:14:14.177Z",
+      "source_facts": [
+        "2c6b12112c12c843"
+      ]
+    },
+    "magic": {
+      "id": "magic",
+      "label": "Magic",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.186Z",
+      "updated_at": "2026-09-20T18:14:14.186Z",
+      "source_facts": [
+        "e752e9acf6856bb8"
+      ]
+    },
+    "21st-dev": {
+      "id": "21st-dev",
+      "label": "21st.dev",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.187Z",
+      "updated_at": "2026-09-20T18:14:14.187Z",
+      "source_facts": [
+        "e752e9acf6856bb8"
+      ]
+    },
+    "21st-dev-magic-mcp": {
+      "id": "21st-dev-magic-mcp",
+      "label": "21st-dev/Magic-MCP",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.195Z",
+      "updated_at": "2026-09-20T18:14:14.195Z",
+      "source_facts": [
+        "e752e9acf6856bb8"
+      ]
+    },
+    "punkpeye-awesome-mcp-servers": {
+      "id": "punkpeye-awesome-mcp-servers",
+      "label": "punkpeye/awesome-mcp-servers",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.195Z",
+      "updated_at": "2026-09-20T18:14:14.195Z",
+      "source_facts": [
+        "github:punkpeye/awesome-mcp-servers"
+      ]
+    },
+    "langchain": {
+      "id": "langchain",
+      "label": "LangChain",
+      "type": "proper-noun",
+      "mentions": 12,
+      "first_seen": "2026-09-20T18:14:14.517Z",
+      "updated_at": "2026-09-20T18:14:15.252Z",
+      "source_facts": [
+        "a0c8595280928620",
+        "b39c428a0b3a1be5",
+        "758835785f46f247",
+        "2bf7e99dcfea48e4",
+        "87a427446e858453",
+        "cb8b1b8a9d22d752",
+        "75c344552b065540",
+        "34b74e7764e4db01",
+        "f0011fb8b1c251f9",
+        "8d88985daac2a11a"
+      ]
+    },
+    "github-repo": {
+      "id": "github-repo",
+      "label": "GitHub Repo",
+      "type": "proper-noun",
+      "mentions": 16,
+      "first_seen": "2026-09-20T18:14:14.517Z",
+      "updated_at": "2026-09-20T18:14:15.299Z",
+      "source_facts": [
+        "a0c8595280928620",
+        "b39c428a0b3a1be5",
+        "2bf7e99dcfea48e4",
+        "bc959b283e83d7e5",
+        "87a427446e858453",
+        "53bf5d93347d3c5e",
+        "cb8b1b8a9d22d752",
+        "75c344552b065540",
+        "34b74e7764e4db01",
+        "d0318300242e9a57",
+        "7b8989bedb086066",
+        "678b6deec1b5fde6",
+        "762fecba3fc4a089",
+        "f0011fb8b1c251f9",
+        "8d88985daac2a11a",
+        "8e94d1c24b3f7ac6"
+      ]
+    },
+    "img-shields-io": {
+      "id": "img-shields-io",
+      "label": "img.shields.io",
+      "type": "domain",
+      "mentions": 16,
+      "first_seen": "2026-09-20T18:14:14.518Z",
+      "updated_at": "2026-09-20T18:14:15.300Z",
+      "source_facts": [
+        "a0c8595280928620",
+        "b39c428a0b3a1be5",
+        "2bf7e99dcfea48e4",
+        "bc959b283e83d7e5",
+        "87a427446e858453",
+        "53bf5d93347d3c5e",
+        "cb8b1b8a9d22d752",
+        "75c344552b065540",
+        "34b74e7764e4db01",
+        "d0318300242e9a57",
+        "7b8989bedb086066",
+        "678b6deec1b5fde6",
+        "762fecba3fc4a089",
+        "f0011fb8b1c251f9",
+        "8d88985daac2a11a",
+        "8e94d1c24b3f7ac6"
+      ]
+    },
+    "langchain-js": {
+      "id": "langchain-js",
+      "label": "LangChain.js",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.540Z",
+      "updated_at": "2026-09-20T18:14:14.540Z",
+      "source_facts": [
+        "b39c428a0b3a1be5"
+      ]
+    },
+    "concepts": {
+      "id": "concepts",
+      "label": "Concepts",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.555Z",
+      "updated_at": "2026-09-20T18:14:14.558Z",
+      "source_facts": [
+        "758835785f46f247"
+      ]
+    },
+    "docs-langchain-com": {
+      "id": "docs-langchain-com",
+      "label": "docs.langchain.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.555Z",
+      "updated_at": "2026-09-20T18:14:14.555Z",
+      "source_facts": [
+        "758835785f46f247"
+      ]
+    },
+    "twitter": {
+      "id": "twitter",
+      "label": "Twitter",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.572Z",
+      "updated_at": "2026-09-20T18:14:14.572Z",
+      "source_facts": [
+        "89a0ca39e32925b2"
+      ]
+    },
+    "langchainai": {
+      "id": "langchainai",
+      "label": "LangChainAI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.572Z",
+      "updated_at": "2026-09-20T18:14:14.572Z",
+      "source_facts": [
+        "89a0ca39e32925b2"
+      ]
+    },
+    "x-com": {
+      "id": "x-com",
+      "label": "x.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.572Z",
+      "updated_at": "2026-09-20T18:14:14.572Z",
+      "source_facts": [
+        "89a0ca39e32925b2"
+      ]
+    },
+    "twitter-account": {
+      "id": "twitter-account",
+      "label": "Twitter account",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.665Z",
+      "updated_at": "2026-09-20T18:14:14.665Z",
+      "source_facts": [
+        "89a0ca39e32925b2"
+      ]
+    },
+    "langchain-blog": {
+      "id": "langchain-blog",
+      "label": "Langchain Blog",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.679Z",
+      "updated_at": "2026-09-20T18:14:14.687Z",
+      "source_facts": [
+        "11687d3a2882451d"
+      ]
+    },
+    "the-official-langchain": {
+      "id": "the-official-langchain",
+      "label": "The Official Langchain",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.680Z",
+      "updated_at": "2026-09-20T18:14:14.680Z",
+      "source_facts": [
+        "11687d3a2882451d"
+      ]
+    },
+    "blog-langchain-dev": {
+      "id": "blog-langchain-dev",
+      "label": "blog.langchain.dev",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.683Z",
+      "updated_at": "2026-09-20T18:14:14.683Z",
+      "source_facts": [
+        "11687d3a2882451d"
+      ]
+    },
+    "golang-langchain": {
+      "id": "golang-langchain",
+      "label": "Golang Langchain",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.702Z",
+      "updated_at": "2026-09-20T18:14:14.702Z",
+      "source_facts": [
+        "2bf7e99dcfea48e4"
+      ]
+    },
+    "langchain-go": {
+      "id": "langchain-go",
+      "label": "Langchain Go",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.710Z",
+      "updated_at": "2026-09-20T18:14:14.710Z",
+      "source_facts": [
+        "2bf7e99dcfea48e4"
+      ]
+    },
+    "langchainrb": {
+      "id": "langchainrb",
+      "label": "LangchainRb",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.727Z",
+      "updated_at": "2026-09-20T18:14:14.744Z",
+      "source_facts": [
+        "bc959b283e83d7e5"
+      ]
+    },
+    "ruby-langchain": {
+      "id": "ruby-langchain",
+      "label": "Ruby Langchain",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.728Z",
+      "updated_at": "2026-09-20T18:14:14.728Z",
+      "source_facts": [
+        "bc959b283e83d7e5"
+      ]
+    },
+    "langchain4j": {
+      "id": "langchain4j",
+      "label": "LangChain4j",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.763Z",
+      "updated_at": "2026-09-20T18:14:14.778Z",
+      "source_facts": [
+        "87a427446e858453"
+      ]
+    },
+    "java": {
+      "id": "java",
+      "label": "Java",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.764Z",
+      "updated_at": "2026-09-20T18:14:14.764Z",
+      "source_facts": [
+        "87a427446e858453"
+      ]
+    },
+    "langchaindart": {
+      "id": "langchaindart",
+      "label": "LangChainDart",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:14.797Z",
+      "updated_at": "2026-09-20T18:14:14.814Z",
+      "source_facts": [
+        "53bf5d93347d3c5e"
+      ]
+    },
+    "build": {
+      "id": "build",
+      "label": "Build",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.797Z",
+      "updated_at": "2026-09-20T18:14:14.797Z",
+      "source_facts": [
+        "53bf5d93347d3c5e"
+      ]
+    },
+    "llm": {
+      "id": "llm",
+      "label": "LLM",
+      "type": "proper-noun",
+      "mentions": 22,
+      "first_seen": "2026-09-20T18:14:14.797Z",
+      "updated_at": "2026-09-20T18:14:24.836Z",
+      "source_facts": [
+        "53bf5d93347d3c5e",
+        "d0318300242e9a57",
+        "44418c42aba7b93e",
+        "095a6c541ae48732",
+        "fa17173382a242df",
+        "f13a316bf0c57796",
+        "88f451625feccced",
+        "61cfcb4be060cb76",
+        "e500e8694b8b4841",
+        "fb9d3b1c2c4a5af9",
+        "d638a8263210736d",
+        "c9ae50e5e0f26271",
+        "60a6e35f1c779338",
+        "29e76f577d0d570b",
+        "278c0399bb8964dd",
+        "3d4b82a97bce5c88",
+        "0749dfd3d9f78e91",
+        "f8c9b359976b291a",
+        "b15b40fc045e2aba",
+        "32160481caa933d1",
+        "bbdc6df600fc7c87",
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "dart": {
+      "id": "dart",
+      "label": "Dart",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.798Z",
+      "updated_at": "2026-09-20T18:14:14.798Z",
+      "source_facts": [
+        "53bf5d93347d3c5e"
+      ]
+    },
+    "flutter": {
+      "id": "flutter",
+      "label": "Flutter",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.799Z",
+      "updated_at": "2026-09-20T18:14:14.799Z",
+      "source_facts": [
+        "53bf5d93347d3c5e"
+      ]
+    },
+    "haskell": {
+      "id": "haskell",
+      "label": "Haskell",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.834Z",
+      "updated_at": "2026-09-20T18:14:14.834Z",
+      "source_facts": [
+        "cb8b1b8a9d22d752"
+      ]
+    },
+    "langchain-hs": {
+      "id": "langchain-hs",
+      "label": "Langchain-hs",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.933Z",
+      "updated_at": "2026-09-20T18:14:14.933Z",
+      "source_facts": [
+        "cb8b1b8a9d22d752"
+      ]
+    },
+    "elixir": {
+      "id": "elixir",
+      "label": "Elixir",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.955Z",
+      "updated_at": "2026-09-20T18:14:14.955Z",
+      "source_facts": [
+        "75c344552b065540"
+      ]
+    },
+    "rust": {
+      "id": "rust",
+      "label": "Rust",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.988Z",
+      "updated_at": "2026-09-20T18:14:14.988Z",
+      "source_facts": [
+        "34b74e7764e4db01"
+      ]
+    },
+    "abraxas": {
+      "id": "abraxas",
+      "label": "Abraxas",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.989Z",
+      "updated_at": "2026-09-20T18:14:14.989Z",
+      "source_facts": [
+        "34b74e7764e4db01"
+      ]
+    },
+    "langchain-rust": {
+      "id": "langchain-rust",
+      "label": "Langchain-rust",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:14.998Z",
+      "updated_at": "2026-09-20T18:14:14.998Z",
+      "source_facts": [
+        "34b74e7764e4db01"
+      ]
+    },
+    "flowise": {
+      "id": "flowise",
+      "label": "Flowise",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.021Z",
+      "updated_at": "2026-09-20T18:14:15.036Z",
+      "source_facts": [
+        "d0318300242e9a57"
+      ]
+    },
+    "drag": {
+      "id": "drag",
+      "label": "Drag",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.022Z",
+      "updated_at": "2026-09-20T18:14:15.022Z",
+      "source_facts": [
+        "d0318300242e9a57"
+      ]
+    },
+    "langchainjs": {
+      "id": "langchainjs",
+      "label": "LangchainJS",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.023Z",
+      "updated_at": "2026-09-20T18:14:15.023Z",
+      "source_facts": [
+        "d0318300242e9a57"
+      ]
+    },
+    "flowiseai": {
+      "id": "flowiseai",
+      "label": "FlowiseAI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.023Z",
+      "updated_at": "2026-09-20T18:14:15.023Z",
+      "source_facts": [
+        "d0318300242e9a57"
+      ]
+    },
+    "langflow": {
+      "id": "langflow",
+      "label": "Langflow",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.061Z",
+      "updated_at": "2026-09-20T18:14:15.061Z",
+      "source_facts": [
+        "a0c8595280928620"
+      ]
+    },
+    "flock": {
+      "id": "flock",
+      "label": "Flock",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.088Z",
+      "updated_at": "2026-09-20T18:14:15.100Z",
+      "source_facts": [
+        "7b8989bedb086066"
+      ]
+    },
+    "rag": {
+      "id": "rag",
+      "label": "RAG",
+      "type": "proper-noun",
+      "mentions": 4,
+      "first_seen": "2026-09-20T18:14:15.089Z",
+      "updated_at": "2026-09-20T18:14:28.862Z",
+      "source_facts": [
+        "7b8989bedb086066",
+        "336a7b6e78cebc77",
+        "d939565e24468e73",
+        "57a36f10eff239c5"
+      ]
+    },
+    "onelevenvy": {
+      "id": "onelevenvy",
+      "label": "Onelevenvy",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.089Z",
+      "updated_at": "2026-09-20T18:14:15.089Z",
+      "source_facts": [
+        "7b8989bedb086066"
+      ]
+    },
+    "gptcache": {
+      "id": "gptcache",
+      "label": "GPTCache",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.127Z",
+      "updated_at": "2026-09-20T18:14:15.139Z",
+      "source_facts": [
+        "678b6deec1b5fde6"
+      ]
+    },
+    "library": {
+      "id": "library",
+      "label": "Library",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.127Z",
+      "updated_at": "2026-09-20T18:14:15.127Z",
+      "source_facts": [
+        "678b6deec1b5fde6"
+      ]
+    },
+    "creating-semantic-cache": {
+      "id": "creating-semantic-cache",
+      "label": "Creating Semantic Cache",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.127Z",
+      "updated_at": "2026-09-20T18:14:15.127Z",
+      "source_facts": [
+        "678b6deec1b5fde6"
+      ]
+    },
+    "llm-queries": {
+      "id": "llm-queries",
+      "label": "LLM Queries",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.128Z",
+      "updated_at": "2026-09-20T18:14:15.128Z",
+      "source_facts": [
+        "678b6deec1b5fde6"
+      ]
+    },
+    "gorilla": {
+      "id": "gorilla",
+      "label": "Gorilla",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.167Z",
+      "updated_at": "2026-09-20T18:14:15.181Z",
+      "source_facts": [
+        "762fecba3fc4a089"
+      ]
+    },
+    "shishirpatil": {
+      "id": "shishirpatil",
+      "label": "ShishirPatil",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.169Z",
+      "updated_at": "2026-09-20T18:14:15.169Z",
+      "source_facts": [
+        "762fecba3fc4a089"
+      ]
+    },
+    "auto": {
+      "id": "auto",
+      "label": "Auto",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.211Z",
+      "updated_at": "2026-09-20T18:14:15.211Z",
+      "source_facts": [
+        "f0011fb8b1c251f9"
+      ]
+    },
+    "auto-evaluator": {
+      "id": "auto-evaluator",
+      "label": "Auto-evaluator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.220Z",
+      "updated_at": "2026-09-20T18:14:15.220Z",
+      "source_facts": [
+        "f0011fb8b1c251f9"
+      ]
+    },
+    "langchain-visualizer": {
+      "id": "langchain-visualizer",
+      "label": "Langchain visualizer",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.262Z",
+      "updated_at": "2026-09-20T18:14:15.262Z",
+      "source_facts": [
+        "8d88985daac2a11a"
+      ]
+    },
+    "llm-strategy": {
+      "id": "llm-strategy",
+      "label": "LLM Strategy",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.298Z",
+      "updated_at": "2026-09-20T18:14:15.316Z",
+      "source_facts": [
+        "8e94d1c24b3f7ac6"
+      ]
+    },
+    "strategy-pattern": {
+      "id": "strategy-pattern",
+      "label": "Strategy Pattern",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.298Z",
+      "updated_at": "2026-09-20T18:14:15.298Z",
+      "source_facts": [
+        "8e94d1c24b3f7ac6"
+      ]
+    },
+    "blackhc": {
+      "id": "blackhc",
+      "label": "BlackHC",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.300Z",
+      "updated_at": "2026-09-20T18:14:15.300Z",
+      "source_facts": [
+        "8e94d1c24b3f7ac6"
+      ]
+    },
+    "kyrolabs-awesome-langchain": {
+      "id": "kyrolabs-awesome-langchain",
+      "label": "kyrolabs/awesome-langchain",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.316Z",
+      "updated_at": "2026-09-20T18:14:15.316Z",
+      "source_facts": [
+        "github:kyrolabs/awesome-langchain"
+      ]
+    },
+    "how-large-language": {
+      "id": "how-large-language",
+      "label": "How Large Language",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.646Z",
+      "updated_at": "2026-09-20T18:14:15.646Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "models-will-transform": {
+      "id": "models-will-transform",
+      "label": "Models Will Transform",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.646Z",
+      "updated_at": "2026-09-20T18:14:15.646Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "science": {
+      "id": "science",
+      "label": "Science",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.647Z",
+      "updated_at": "2026-09-20T18:14:15.647Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "society": {
+      "id": "society",
+      "label": "Society",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.647Z",
+      "updated_at": "2026-09-20T18:14:15.648Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "article": {
+      "id": "article",
+      "label": "Article",
+      "type": "proper-noun",
+      "mentions": 3,
+      "first_seen": "2026-09-20T18:14:15.648Z",
+      "updated_at": "2026-09-20T18:14:15.865Z",
+      "source_facts": [
+        "364fd675615cf76c",
+        "983fa4abdfaaa659",
+        "10643623a6e0ab21"
+      ]
+    },
+    "gpt": {
+      "id": "gpt",
+      "label": "GPT",
+      "type": "proper-noun",
+      "mentions": 9,
+      "first_seen": "2026-09-20T18:14:15.648Z",
+      "updated_at": "2026-09-20T18:14:23.832Z",
+      "source_facts": [
+        "364fd675615cf76c",
+        "78df0f523182b44f",
+        "5308f48a5d01f97c",
+        "1f3423e416d88e7c",
+        "1a2e99ada8c65b53",
+        "cfb12170ee58390e",
+        "61cfcb4be060cb76",
+        "29e76f577d0d570b",
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "alex-tamkin": {
+      "id": "alex-tamkin",
+      "label": "Alex Tamkin",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.649Z",
+      "updated_at": "2026-09-20T18:14:15.649Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "deep-ganguli": {
+      "id": "deep-ganguli",
+      "label": "Deep Ganguli",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.649Z",
+      "updated_at": "2026-09-20T18:14:15.649Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "february": {
+      "id": "february",
+      "label": "February",
+      "type": "proper-noun",
+      "mentions": 5,
+      "first_seen": "2026-09-20T18:14:15.650Z",
+      "updated_at": "2026-09-20T18:14:17.207Z",
+      "source_facts": [
+        "364fd675615cf76c",
+        "6a959b274f459cc3",
+        "f6a8e63b67625df3",
+        "2ada16239b08d5aa",
+        "a01e9b11fa0fa7f2"
+      ]
+    },
+    "hai-stanford-edu": {
+      "id": "hai-stanford-edu",
+      "label": "hai.stanford.edu",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.650Z",
+      "updated_at": "2026-09-20T18:14:15.650Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "how-large-language-models-will-transform-science-society-and": {
+      "id": "how-large-language-models-will-transform-science-society-and",
+      "label": "How Large Language Models Will Transform Science, Society, and AI",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.681Z",
+      "updated_at": "2026-09-20T18:14:15.681Z",
+      "source_facts": [
+        "364fd675615cf76c"
+      ]
+    },
+    "generative": {
+      "id": "generative",
+      "label": "Generative",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.722Z",
+      "updated_at": "2026-09-20T18:14:15.785Z",
+      "source_facts": [
+        "78df0f523182b44f",
+        "983fa4abdfaaa659"
+      ]
+    },
+    "creative-new-world": {
+      "id": "creative-new-world",
+      "label": "Creative New World",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.722Z",
+      "updated_at": "2026-09-20T18:14:15.722Z",
+      "source_facts": [
+        "78df0f523182b44f"
+      ]
+    },
+    "sonya-huang": {
+      "id": "sonya-huang",
+      "label": "Sonya Huang",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.722Z",
+      "updated_at": "2026-09-20T18:14:15.722Z",
+      "source_facts": [
+        "78df0f523182b44f"
+      ]
+    },
+    "pat-grady": {
+      "id": "pat-grady",
+      "label": "Pat Grady",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.723Z",
+      "updated_at": "2026-09-20T18:14:15.723Z",
+      "source_facts": [
+        "78df0f523182b44f"
+      ]
+    },
+    "september": {
+      "id": "september",
+      "label": "September",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.724Z",
+      "updated_at": "2026-09-20T18:14:17.114Z",
+      "source_facts": [
+        "78df0f523182b44f",
+        "f1b32e0d0eccb04f"
+      ]
+    },
+    "www-sequoiacap-com": {
+      "id": "www-sequoiacap-com",
+      "label": "www.sequoiacap.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.724Z",
+      "updated_at": "2026-09-20T18:14:15.724Z",
+      "source_facts": [
+        "78df0f523182b44f"
+      ]
+    },
+    "generative-ai-a-creative-new-world": {
+      "id": "generative-ai-a-creative-new-world",
+      "label": "Generative AI: A Creative New World",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.746Z",
+      "updated_at": "2026-09-20T18:14:15.746Z",
+      "source_facts": [
+        "78df0f523182b44f"
+      ]
+    },
+    "coming": {
+      "id": "coming",
+      "label": "Coming",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.783Z",
+      "updated_at": "2026-09-20T18:14:15.783Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "out-party": {
+      "id": "out-party",
+      "label": "Out Party",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.784Z",
+      "updated_at": "2026-09-20T18:14:15.784Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "silicon-valley": {
+      "id": "silicon-valley",
+      "label": "Silicon Valley",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.785Z",
+      "updated_at": "2026-09-20T18:14:15.785Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "new-craze": {
+      "id": "new-craze",
+      "label": "New Craze",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.786Z",
+      "updated_at": "2026-09-20T18:14:15.786Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "stable-diffusion": {
+      "id": "stable-diffusion",
+      "label": "Stable Diffusion",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.786Z",
+      "updated_at": "2026-09-20T18:14:16.568Z",
+      "source_facts": [
+        "983fa4abdfaaa659",
+        "6f60f6ca346e5429"
+      ]
+    },
+    "new-york-times": {
+      "id": "new-york-times",
+      "label": "New York Times",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.787Z",
+      "updated_at": "2026-09-20T18:14:15.787Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "october": {
+      "id": "october",
+      "label": "October",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:15.787Z",
+      "updated_at": "2026-09-20T18:14:16.160Z",
+      "source_facts": [
+        "983fa4abdfaaa659",
+        "10643623a6e0ab21"
+      ]
+    },
+    "www-nytimes-com": {
+      "id": "www-nytimes-com",
+      "label": "www.nytimes.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.788Z",
+      "updated_at": "2026-09-20T18:14:15.788Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "a-coming-out-party-for-generative-a-i-silicon-valley-s-new-c": {
+      "id": "a-coming-out-party-for-generative-a-i-silicon-valley-s-new-c",
+      "label": "A Coming-Out Party for Generative A.I., Silicon Valley's New Craze",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.821Z",
+      "updated_at": "2026-09-20T18:14:15.821Z",
+      "source_facts": [
+        "983fa4abdfaaa659"
+      ]
+    },
+    "new-creative-streak": {
+      "id": "new-creative-streak",
+      "label": "New Creative Streak",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.863Z",
+      "updated_at": "2026-09-20T18:14:15.863Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "sparks": {
+      "id": "sparks",
+      "label": "Sparks",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.863Z",
+      "updated_at": "2026-09-20T18:14:15.863Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "silicon-valley-gold": {
+      "id": "silicon-valley-gold",
+      "label": "Silicon Valley Gold",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.864Z",
+      "updated_at": "2026-09-20T18:14:15.864Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "rush": {
+      "id": "rush",
+      "label": "Rush",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.864Z",
+      "updated_at": "2026-09-20T18:14:15.864Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "wired": {
+      "id": "wired",
+      "label": "Wired",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:15.865Z",
+      "updated_at": "2026-09-20T18:14:15.865Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "www-wired-com": {
+      "id": "www-wired-com",
+      "label": "www.wired.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.161Z",
+      "updated_at": "2026-09-20T18:14:16.161Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "ai-s-new-creative-streak-sparks-a-silicon-valley-gold-rush": {
+      "id": "ai-s-new-creative-streak-sparks-a-silicon-valley-gold-rush",
+      "label": "AI's New Creative Streak Sparks a Silicon Valley Gold Rush",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.181Z",
+      "updated_at": "2026-09-20T18:14:16.181Z",
+      "source_facts": [
+        "10643623a6e0ab21"
+      ]
+    },
+    "chatgpt-heralds": {
+      "id": "chatgpt-heralds",
+      "label": "ChatGPT Heralds",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.224Z",
+      "updated_at": "2026-09-20T18:14:16.224Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "intellectual-revolution": {
+      "id": "intellectual-revolution",
+      "label": "Intellectual Revolution",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.225Z",
+      "updated_at": "2026-09-20T18:14:16.225Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "henry-kissinger": {
+      "id": "henry-kissinger",
+      "label": "Henry Kissinger",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.225Z",
+      "updated_at": "2026-09-20T18:14:16.225Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "eric-schmidt": {
+      "id": "eric-schmidt",
+      "label": "Eric Schmidt",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.225Z",
+      "updated_at": "2026-09-20T18:14:16.225Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "daniel-huttenlocher": {
+      "id": "daniel-huttenlocher",
+      "label": "Daniel Huttenlocher",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.226Z",
+      "updated_at": "2026-09-20T18:14:16.226Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "wall-street-journal": {
+      "id": "wall-street-journal",
+      "label": "Wall Street Journal",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.226Z",
+      "updated_at": "2026-09-20T18:14:16.226Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "www-wsj-com": {
+      "id": "www-wsj-com",
+      "label": "www.wsj.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.227Z",
+      "updated_at": "2026-09-20T18:14:16.227Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "chatgpt-heralds-an-intellectual-revolution": {
+      "id": "chatgpt-heralds-an-intellectual-revolution",
+      "label": "ChatGPT Heralds an Intellectual Revolution",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.248Z",
+      "updated_at": "2026-09-20T18:14:16.248Z",
+      "source_facts": [
+        "6a959b274f459cc3"
+      ]
+    },
+    "openai-api": {
+      "id": "openai-api",
+      "label": "OpenAI API",
+      "type": "tool",
+      "mentions": 4,
+      "first_seen": "2026-09-20T18:14:16.295Z",
+      "updated_at": "2026-09-20T18:14:17.402Z",
+      "source_facts": [
+        "5308f48a5d01f97c",
+        "1a2e99ada8c65b53"
+      ]
+    },
+    "announcement": {
+      "id": "announcement",
+      "label": "Announcement",
+      "type": "proper-noun",
+      "mentions": 8,
+      "first_seen": "2026-09-20T18:14:16.296Z",
+      "updated_at": "2026-09-20T18:14:17.569Z",
+      "source_facts": [
+        "5308f48a5d01f97c",
+        "9c11991f7906a34d",
+        "23b6a0bd12af66b1",
+        "6f60f6ca346e5429",
+        "8fb38b0583b65a32",
+        "1f3423e416d88e7c",
+        "f1b32e0d0eccb04f",
+        "18f577689ad51cdb"
+      ]
+    },
+    "openai": {
+      "id": "openai",
+      "label": "OpenAI",
+      "type": "proper-noun",
+      "mentions": 11,
+      "first_seen": "2026-09-20T18:14:16.297Z",
+      "updated_at": "2026-09-20T18:14:23.834Z",
+      "source_facts": [
+        "5308f48a5d01f97c",
+        "23b6a0bd12af66b1",
+        "8fb38b0583b65a32",
+        "f6a8e63b67625df3",
+        "1f3423e416d88e7c",
+        "f1b32e0d0eccb04f",
+        "a01e9b11fa0fa7f2",
+        "1a2e99ada8c65b53",
+        "88f451625feccced",
+        "29e76f577d0d570b",
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "june": {
+      "id": "june",
+      "label": "June",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.328Z",
+      "updated_at": "2026-09-20T18:14:16.391Z",
+      "source_facts": [
+        "5308f48a5d01f97c",
+        "9c11991f7906a34d"
+      ]
+    },
+    "openai-com": {
+      "id": "openai-com",
+      "label": "openai.com",
+      "type": "domain",
+      "mentions": 8,
+      "first_seen": "2026-09-20T18:14:16.329Z",
+      "updated_at": "2026-09-20T18:14:19.587Z",
+      "source_facts": [
+        "5308f48a5d01f97c",
+        "23b6a0bd12af66b1",
+        "8fb38b0583b65a32",
+        "1f3423e416d88e7c",
+        "f1b32e0d0eccb04f",
+        "a01e9b11fa0fa7f2",
+        "1a2e99ada8c65b53",
+        "88f451625feccced"
+      ]
+    },
+    "github-copilot": {
+      "id": "github-copilot",
+      "label": "GitHub Copilot",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.389Z",
+      "updated_at": "2026-09-20T18:14:16.455Z",
+      "source_facts": [
+        "9c11991f7906a34d"
+      ]
+    },
+    "copilot": {
+      "id": "copilot",
+      "label": "Copilot",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.390Z",
+      "updated_at": "2026-09-20T18:14:16.390Z",
+      "source_facts": [
+        "9c11991f7906a34d"
+      ]
+    },
+    "github": {
+      "id": "github",
+      "label": "GitHub",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.391Z",
+      "updated_at": "2026-09-20T18:14:16.391Z",
+      "source_facts": [
+        "9c11991f7906a34d"
+      ]
+    },
+    "dall": {
+      "id": "dall",
+      "label": "DALL",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.503Z",
+      "updated_at": "2026-09-20T18:14:17.106Z",
+      "source_facts": [
+        "23b6a0bd12af66b1",
+        "f1b32e0d0eccb04f"
+      ]
+    },
+    "april": {
+      "id": "april",
+      "label": "April",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.504Z",
+      "updated_at": "2026-09-20T18:14:16.504Z",
+      "source_facts": [
+        "23b6a0bd12af66b1"
+      ]
+    },
+    "dall-e-2": {
+      "id": "dall-e-2",
+      "label": "DALL·E 2",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.515Z",
+      "updated_at": "2026-09-20T18:14:16.515Z",
+      "source_facts": [
+        "23b6a0bd12af66b1"
+      ]
+    },
+    "stable-diffusion-public": {
+      "id": "stable-diffusion-public",
+      "label": "Stable Diffusion Public",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.566Z",
+      "updated_at": "2026-09-20T18:14:16.566Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "release": {
+      "id": "release",
+      "label": "Release",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.566Z",
+      "updated_at": "2026-09-20T18:14:16.566Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "creative": {
+      "id": "creative",
+      "label": "Creative",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.568Z",
+      "updated_at": "2026-09-20T18:14:16.568Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "openrail": {
+      "id": "openrail",
+      "label": "OpenRAIL",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.569Z",
+      "updated_at": "2026-09-20T18:14:16.569Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "stability-ai": {
+      "id": "stability-ai",
+      "label": "stability.ai",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.569Z",
+      "updated_at": "2026-09-20T18:14:16.569Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "stable-diffusion-public-release": {
+      "id": "stable-diffusion-public-release",
+      "label": "Stable Diffusion Public Release",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.723Z",
+      "updated_at": "2026-09-20T18:14:16.723Z",
+      "source_facts": [
+        "6f60f6ca346e5429"
+      ]
+    },
+    "chatgpt": {
+      "id": "chatgpt",
+      "label": "ChatGPT",
+      "type": "proper-noun",
+      "mentions": 5,
+      "first_seen": "2026-09-20T18:14:16.775Z",
+      "updated_at": "2026-09-20T18:14:23.833Z",
+      "source_facts": [
+        "8fb38b0583b65a32",
+        "60a6e35f1c779338",
+        "29e76f577d0d570b",
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "november": {
+      "id": "november",
+      "label": "November",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.777Z",
+      "updated_at": "2026-09-20T18:14:16.777Z",
+      "source_facts": [
+        "8fb38b0583b65a32"
+      ]
+    },
+    "bing-search": {
+      "id": "bing-search",
+      "label": "Bing Search",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.847Z",
+      "updated_at": "2026-09-20T18:14:16.867Z",
+      "source_facts": [
+        "f6a8e63b67625df3"
+      ]
+    },
+    "microsoft": {
+      "id": "microsoft",
+      "label": "Microsoft",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.847Z",
+      "updated_at": "2026-09-20T18:14:16.847Z",
+      "source_facts": [
+        "f6a8e63b67625df3"
+      ]
+    },
+    "bing": {
+      "id": "bing",
+      "label": "Bing",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.848Z",
+      "updated_at": "2026-09-20T18:14:16.848Z",
+      "source_facts": [
+        "f6a8e63b67625df3"
+      ]
+    },
+    "blogs-microsoft-com": {
+      "id": "blogs-microsoft-com",
+      "label": "blogs.microsoft.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.850Z",
+      "updated_at": "2026-09-20T18:14:16.850Z",
+      "source_facts": [
+        "f6a8e63b67625df3"
+      ]
+    },
+    "llama": {
+      "id": "llama",
+      "label": "Llama",
+      "type": "tool",
+      "mentions": 4,
+      "first_seen": "2026-09-20T18:14:16.924Z",
+      "updated_at": "2026-09-20T18:14:17.997Z",
+      "source_facts": [
+        "2ada16239b08d5aa",
+        "a5144a1f89671949"
+      ]
+    },
+    "llama-llm": {
+      "id": "llama-llm",
+      "label": "Llama LLM",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.925Z",
+      "updated_at": "2026-09-20T18:14:16.925Z",
+      "source_facts": [
+        "2ada16239b08d5aa"
+      ]
+    },
+    "meta": {
+      "id": "meta",
+      "label": "Meta",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.925Z",
+      "updated_at": "2026-09-20T18:14:17.987Z",
+      "source_facts": [
+        "2ada16239b08d5aa",
+        "a5144a1f89671949"
+      ]
+    },
+    "ai-meta-com": {
+      "id": "ai-meta-com",
+      "label": "ai.meta.com",
+      "type": "domain",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:16.927Z",
+      "updated_at": "2026-09-20T18:14:17.570Z",
+      "source_facts": [
+        "2ada16239b08d5aa",
+        "18f577689ad51cdb"
+      ]
+    },
+    "march": {
+      "id": "march",
+      "label": "March",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:16.998Z",
+      "updated_at": "2026-09-20T18:14:16.998Z",
+      "source_facts": [
+        "1f3423e416d88e7c"
+      ]
+    },
+    "gpt-4": {
+      "id": "gpt-4",
+      "label": "GPT-4",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.041Z",
+      "updated_at": "2026-09-20T18:14:17.041Z",
+      "source_facts": [
+        "1f3423e416d88e7c"
+      ]
+    },
+    "dall-e-3": {
+      "id": "dall-e-3",
+      "label": "DALL·E 3",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.142Z",
+      "updated_at": "2026-09-20T18:14:17.142Z",
+      "source_facts": [
+        "f1b32e0d0eccb04f"
+      ]
+    },
+    "sora": {
+      "id": "sora",
+      "label": "Sora",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:17.205Z",
+      "updated_at": "2026-09-20T18:14:17.285Z",
+      "source_facts": [
+        "a01e9b11fa0fa7f2"
+      ]
+    },
+    "presentation": {
+      "id": "presentation",
+      "label": "Presentation",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.205Z",
+      "updated_at": "2026-09-20T18:14:17.205Z",
+      "source_facts": [
+        "a01e9b11fa0fa7f2"
+      ]
+    },
+    "gopher": {
+      "id": "gopher",
+      "label": "Gopher",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:17.471Z",
+      "updated_at": "2026-09-20T18:14:17.477Z",
+      "source_facts": [
+        "b24c158e47be695f"
+      ]
+    },
+    "deepmind": {
+      "id": "deepmind",
+      "label": "DeepMind",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.472Z",
+      "updated_at": "2026-09-20T18:14:17.472Z",
+      "source_facts": [
+        "b24c158e47be695f"
+      ]
+    },
+    "opt": {
+      "id": "opt",
+      "label": "OPT",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:17.567Z",
+      "updated_at": "2026-09-20T18:14:17.826Z",
+      "source_facts": [
+        "18f577689ad51cdb"
+      ]
+    },
+    "open-pretrained-transformers": {
+      "id": "open-pretrained-transformers",
+      "label": "Open Pretrained Transformers",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.568Z",
+      "updated_at": "2026-09-20T18:14:17.568Z",
+      "source_facts": [
+        "18f577689ad51cdb"
+      ]
+    },
+    "facebook": {
+      "id": "facebook",
+      "label": "Facebook",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.569Z",
+      "updated_at": "2026-09-20T18:14:17.569Z",
+      "source_facts": [
+        "18f577689ad51cdb"
+      ]
+    },
+    "bloom": {
+      "id": "bloom",
+      "label": "Bloom",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:17.902Z",
+      "updated_at": "2026-09-20T18:14:17.911Z",
+      "source_facts": [
+        "cfb12170ee58390e"
+      ]
+    },
+    "hugging-face": {
+      "id": "hugging-face",
+      "label": "Hugging Face",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.903Z",
+      "updated_at": "2026-09-20T18:14:17.903Z",
+      "source_facts": [
+        "cfb12170ee58390e"
+      ]
+    },
+    "www-llama-com": {
+      "id": "www-llama-com",
+      "label": "www.llama.com",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.988Z",
+      "updated_at": "2026-09-20T18:14:17.988Z",
+      "source_facts": [
+        "a5144a1f89671949"
+      ]
+    },
+    "steven2358-awesome-generative-ai": {
+      "id": "steven2358-awesome-generative-ai",
+      "label": "steven2358/awesome-generative-ai",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:17.997Z",
+      "updated_at": "2026-09-20T18:14:17.997Z",
+      "source_facts": [
+        "github:steven2358/awesome-generative-ai"
+      ]
+    },
+    "tinyzero": {
+      "id": "tinyzero",
+      "label": "TinyZero",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:18.538Z",
+      "updated_at": "2026-09-20T18:14:18.611Z",
+      "source_facts": [
+        "44418c42aba7b93e"
+      ]
+    },
+    "clean": {
+      "id": "clean",
+      "label": "Clean",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.539Z",
+      "updated_at": "2026-09-20T18:14:18.539Z",
+      "source_facts": [
+        "44418c42aba7b93e"
+      ]
+    },
+    "deepseek": {
+      "id": "deepseek",
+      "label": "DeepSeek",
+      "type": "proper-noun",
+      "mentions": 4,
+      "first_seen": "2026-09-20T18:14:18.539Z",
+      "updated_at": "2026-09-20T18:14:19.697Z",
+      "source_facts": [
+        "44418c42aba7b93e",
+        "095a6c541ae48732",
+        "fa17173382a242df",
+        "61cfcb4be060cb76"
+      ]
+    },
+    "zero": {
+      "id": "zero",
+      "label": "Zero",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.540Z",
+      "updated_at": "2026-09-20T18:14:18.540Z",
+      "source_facts": [
+        "44418c42aba7b93e"
+      ]
+    },
+    "hannibal046": {
+      "id": "hannibal046",
+      "label": "Hannibal046",
+      "type": "proper-noun",
+      "mentions": 19,
+      "first_seen": "2026-09-20T18:14:18.559Z",
+      "updated_at": "2026-09-20T18:14:23.836Z",
+      "source_facts": [
+        "44418c42aba7b93e",
+        "095a6c541ae48732",
+        "fa17173382a242df",
+        "f13a316bf0c57796",
+        "88f451625feccced",
+        "61cfcb4be060cb76",
+        "e500e8694b8b4841",
+        "fb9d3b1c2c4a5af9",
+        "d638a8263210736d",
+        "c9ae50e5e0f26271",
+        "60a6e35f1c779338",
+        "29e76f577d0d570b",
+        "278c0399bb8964dd",
+        "3d4b82a97bce5c88",
+        "0749dfd3d9f78e91",
+        "f8c9b359976b291a",
+        "b15b40fc045e2aba",
+        "32160481caa933d1",
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "awesome": {
+      "id": "awesome",
+      "label": "Awesome",
+      "type": "proper-noun",
+      "mentions": 39,
+      "first_seen": "2026-09-20T18:14:18.560Z",
+      "updated_at": "2026-09-20T18:14:30.972Z",
+      "source_facts": [
+        "44418c42aba7b93e",
+        "095a6c541ae48732",
+        "fa17173382a242df",
+        "f13a316bf0c57796",
+        "88f451625feccced",
+        "61cfcb4be060cb76",
+        "e500e8694b8b4841",
+        "fb9d3b1c2c4a5af9",
+        "d638a8263210736d",
+        "c9ae50e5e0f26271",
+        "60a6e35f1c779338",
+        "29e76f577d0d570b",
+        "278c0399bb8964dd",
+        "3d4b82a97bce5c88",
+        "0749dfd3d9f78e91",
+        "f8c9b359976b291a",
+        "b15b40fc045e2aba",
+        "32160481caa933d1",
+        "bbdc6df600fc7c87",
+        "f1c6001be70f0ced",
+        "37e29e5dc3ec2a4e",
+        "2ded3940f00530d8",
+        "1da9e01d59522c59",
+        "c5d50999cd119002",
+        "ca7c6f3a4bac3956",
+        "9681ccdb712b96ba",
+        "fd296686c59c56af",
+        "e9201a0dca647c4f",
+        "3f31a1eafb16fb8d",
+        "36016ea57e2c072b",
+        "336a7b6e78cebc77",
+        "2c73423647ea4d09",
+        "f70791f83ad480d4",
+        "d939565e24468e73",
+        "57a36f10eff239c5",
+        "befb20c44433f711",
+        "d1044cb56b901c1e",
+        "90763d6bb99664a5",
+        "83f9b1232145d970"
+      ]
+    },
+    "jiayi": {
+      "id": "jiayi",
+      "label": "Jiayi",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.562Z",
+      "updated_at": "2026-09-20T18:14:18.562Z",
+      "source_facts": [
+        "44418c42aba7b93e"
+      ]
+    },
+    "pan": {
+      "id": "pan",
+      "label": "Pan",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.563Z",
+      "updated_at": "2026-09-20T18:14:18.563Z",
+      "source_facts": [
+        "44418c42aba7b93e"
+      ]
+    },
+    "fully": {
+      "id": "fully",
+      "label": "Fully",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.692Z",
+      "updated_at": "2026-09-20T18:14:18.692Z",
+      "source_facts": [
+        "095a6c541ae48732"
+      ]
+    },
+    "open-r1": {
+      "id": "open-r1",
+      "label": "open-r1",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.802Z",
+      "updated_at": "2026-09-20T18:14:18.802Z",
+      "source_facts": [
+        "095a6c541ae48732"
+      ]
+    },
+    "first": {
+      "id": "first",
+      "label": "First",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:18.887Z",
+      "updated_at": "2026-09-20T18:14:19.698Z",
+      "source_facts": [
+        "fa17173382a242df",
+        "61cfcb4be060cb76"
+      ]
+    },
+    "deepseek-r1": {
+      "id": "deepseek-r1",
+      "label": "DeepSeek-R1",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.910Z",
+      "updated_at": "2026-09-20T18:14:18.910Z",
+      "source_facts": [
+        "fa17173382a242df"
+      ]
+    },
+    "qwen2": {
+      "id": "qwen2",
+      "label": "Qwen2",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.997Z",
+      "updated_at": "2026-09-20T18:14:18.997Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "max": {
+      "id": "max",
+      "label": "Max",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.997Z",
+      "updated_at": "2026-09-20T18:14:18.997Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "exploring": {
+      "id": "exploring",
+      "label": "Exploring",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.998Z",
+      "updated_at": "2026-09-20T18:14:18.998Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "intelligence": {
+      "id": "intelligence",
+      "label": "Intelligence",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:18.999Z",
+      "updated_at": "2026-09-20T18:14:18.999Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "large": {
+      "id": "large",
+      "label": "Large",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.007Z",
+      "updated_at": "2026-09-20T18:14:19.007Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "moe-model": {
+      "id": "moe-model",
+      "label": "MoE Model",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.008Z",
+      "updated_at": "2026-09-20T18:14:19.008Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "qwenlm-github-io": {
+      "id": "qwenlm-github-io",
+      "label": "qwenlm.github.io",
+      "type": "domain",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.442Z",
+      "updated_at": "2026-09-20T18:14:19.442Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "qwen2-5-max": {
+      "id": "qwen2-5-max",
+      "label": "Qwen2.5-Max",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.496Z",
+      "updated_at": "2026-09-20T18:14:19.496Z",
+      "source_facts": [
+        "f13a316bf0c57796"
+      ]
+    },
+    "pushing": {
+      "id": "pushing",
+      "label": "Pushing",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.584Z",
+      "updated_at": "2026-09-20T18:14:19.584Z",
+      "source_facts": [
+        "88f451625feccced"
+      ]
+    },
+    "openai-o3-mini": {
+      "id": "openai-o3-mini",
+      "label": "OpenAI o3-mini",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.607Z",
+      "updated_at": "2026-09-20T18:14:19.607Z",
+      "source_facts": [
+        "88f451625feccced"
+      ]
+    },
+    "deepseek-v3": {
+      "id": "deepseek-v3",
+      "label": "DeepSeek-V3",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.727Z",
+      "updated_at": "2026-09-20T18:14:19.727Z",
+      "source_facts": [
+        "61cfcb4be060cb76"
+      ]
+    },
+    "kimi": {
+      "id": "kimi",
+      "label": "Kimi",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.821Z",
+      "updated_at": "2026-09-20T18:14:19.821Z",
+      "source_facts": [
+        "e500e8694b8b4841"
+      ]
+    },
+    "moe": {
+      "id": "moe",
+      "label": "MoE",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.822Z",
+      "updated_at": "2026-09-20T18:14:19.822Z",
+      "source_facts": [
+        "e500e8694b8b4841"
+      ]
+    },
+    "moonshotai": {
+      "id": "moonshotai",
+      "label": "MoonshotAI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.825Z",
+      "updated_at": "2026-09-20T18:14:19.825Z",
+      "source_facts": [
+        "e500e8694b8b4841"
+      ]
+    },
+    "kimi-k2": {
+      "id": "kimi-k2",
+      "label": "Kimi-K2",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:19.928Z",
+      "updated_at": "2026-09-20T18:14:19.928Z",
+      "source_facts": [
+        "e500e8694b8b4841"
+      ]
+    },
+    "luckyyysta": {
+      "id": "luckyyysta",
+      "label": "LuckyyySTA",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.030Z",
+      "updated_at": "2026-09-20T18:14:20.030Z",
+      "source_facts": [
+        "fb9d3b1c2c4a5af9"
+      ]
+    },
+    "awesome-llm-hallucination": {
+      "id": "awesome-llm-hallucination",
+      "label": "Awesome-LLM-hallucination",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.073Z",
+      "updated_at": "2026-09-20T18:14:20.073Z",
+      "source_facts": [
+        "fb9d3b1c2c4a5af9"
+      ]
+    },
+    "list": {
+      "id": "list",
+      "label": "List",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.176Z",
+      "updated_at": "2026-09-20T18:14:20.176Z",
+      "source_facts": [
+        "d638a8263210736d"
+      ]
+    },
+    "edinburghnlp": {
+      "id": "edinburghnlp",
+      "label": "EdinburghNLP",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.180Z",
+      "updated_at": "2026-09-20T18:14:20.180Z",
+      "source_facts": [
+        "d638a8263210736d"
+      ]
+    },
+    "awesome-hallucination-detection": {
+      "id": "awesome-hallucination-detection",
+      "label": "awesome-hallucination-detection",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.363Z",
+      "updated_at": "2026-09-20T18:14:20.363Z",
+      "source_facts": [
+        "d638a8263210736d"
+      ]
+    },
+    "llmspracticalguide": {
+      "id": "llmspracticalguide",
+      "label": "LLMsPracticalGuide",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:20.465Z",
+      "updated_at": "2026-09-20T18:14:20.573Z",
+      "source_facts": [
+        "c9ae50e5e0f26271"
+      ]
+    },
+    "mooler0410": {
+      "id": "mooler0410",
+      "label": "Mooler0410",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.542Z",
+      "updated_at": "2026-09-20T18:14:20.542Z",
+      "source_facts": [
+        "c9ae50e5e0f26271"
+      ]
+    },
+    "awesome-chatgpt-prompts": {
+      "id": "awesome-chatgpt-prompts",
+      "label": "Awesome ChatGPT Prompts",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:20.675Z",
+      "updated_at": "2026-09-20T18:14:20.705Z",
+      "source_facts": [
+        "60a6e35f1c779338"
+      ]
+    },
+    "awesome-chatgpt-prompts-zh": {
+      "id": "awesome-chatgpt-prompts-zh",
+      "label": "awesome-chatgpt-prompts-zh",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.808Z",
+      "updated_at": "2026-09-20T18:14:20.808Z",
+      "source_facts": [
+        "60a6e35f1c779338"
+      ]
+    },
+    "awesome-chatgpt": {
+      "id": "awesome-chatgpt",
+      "label": "Awesome ChatGPT",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:20.911Z",
+      "updated_at": "2026-09-20T18:14:21.124Z",
+      "source_facts": [
+        "29e76f577d0d570b"
+      ]
+    },
+    "curated": {
+      "id": "curated",
+      "label": "Curated",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:20.912Z",
+      "updated_at": "2026-09-20T18:14:20.912Z",
+      "source_facts": [
+        "29e76f577d0d570b"
+      ]
+    },
+    "chain": {
+      "id": "chain",
+      "label": "Chain",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:21.235Z",
+      "updated_at": "2026-09-20T18:14:23.654Z",
+      "source_facts": [
+        "278c0399bb8964dd",
+        "32160481caa933d1"
+      ]
+    },
+    "thoughts-papers": {
+      "id": "thoughts-papers",
+      "label": "Thoughts Papers",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.236Z",
+      "updated_at": "2026-09-20T18:14:21.236Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "thought-prompting-elicits": {
+      "id": "thought-prompting-elicits",
+      "label": "Thought Prompting Elicits",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.237Z",
+      "updated_at": "2026-09-20T18:14:21.237Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "reasoning": {
+      "id": "reasoning",
+      "label": "Reasoning",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:21.237Z",
+      "updated_at": "2026-09-20T18:14:22.871Z",
+      "source_facts": [
+        "278c0399bb8964dd",
+        "b15b40fc045e2aba"
+      ]
+    },
+    "large-language-models": {
+      "id": "large-language-models",
+      "label": "Large Language Models",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.296Z",
+      "updated_at": "2026-09-20T18:14:21.296Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "timothyxxx": {
+      "id": "timothyxxx",
+      "label": "Timothyxxx",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.299Z",
+      "updated_at": "2026-09-20T18:14:21.299Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "thoughtspapers": {
+      "id": "thoughtspapers",
+      "label": "ThoughtsPapers",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.300Z",
+      "updated_at": "2026-09-20T18:14:21.300Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "chain-of-thoughts-papers": {
+      "id": "chain-of-thoughts-papers",
+      "label": "Chain-of-Thoughts Papers",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.640Z",
+      "updated_at": "2026-09-20T18:14:21.640Z",
+      "source_facts": [
+        "278c0399bb8964dd"
+      ]
+    },
+    "awesome-deliberative-prompting": {
+      "id": "awesome-deliberative-prompting",
+      "label": "Awesome Deliberative Prompting",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:21.749Z",
+      "updated_at": "2026-09-20T18:14:21.802Z",
+      "source_facts": [
+        "3d4b82a97bce5c88"
+      ]
+    },
+    "how": {
+      "id": "how",
+      "label": "How",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.750Z",
+      "updated_at": "2026-09-20T18:14:21.750Z",
+      "source_facts": [
+        "3d4b82a97bce5c88"
+      ]
+    },
+    "instruction": {
+      "id": "instruction",
+      "label": "Instruction",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.915Z",
+      "updated_at": "2026-09-20T18:14:21.915Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "tuning": {
+      "id": "tuning",
+      "label": "Tuning",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.915Z",
+      "updated_at": "2026-09-20T18:14:21.915Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "papers": {
+      "id": "papers",
+      "label": "Papers",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:21.916Z",
+      "updated_at": "2026-09-20T18:14:22.947Z",
+      "source_facts": [
+        "0749dfd3d9f78e91",
+        "b15b40fc045e2aba"
+      ]
+    },
+    "natrural": {
+      "id": "natrural",
+      "label": "Natrural",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.917Z",
+      "updated_at": "2026-09-20T18:14:21.917Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "acl": {
+      "id": "acl",
+      "label": "ACL",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.918Z",
+      "updated_at": "2026-09-20T18:14:21.918Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "flan": {
+      "id": "flan",
+      "label": "FLAN",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:21.919Z",
+      "updated_at": "2026-09-20T18:14:21.919Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "iclr": {
+      "id": "iclr",
+      "label": "ICLR",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.002Z",
+      "updated_at": "2026-09-20T18:14:22.002Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "sinclaircoder": {
+      "id": "sinclaircoder",
+      "label": "SinclairCoder",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.006Z",
+      "updated_at": "2026-09-20T18:14:22.006Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "instruction-tuning-papers": {
+      "id": "instruction-tuning-papers",
+      "label": "Instruction-Tuning-Papers",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.244Z",
+      "updated_at": "2026-09-20T18:14:22.244Z",
+      "source_facts": [
+        "0749dfd3d9f78e91"
+      ]
+    },
+    "llm-reading-list": {
+      "id": "llm-reading-list",
+      "label": "LLM Reading List",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:22.368Z",
+      "updated_at": "2026-09-20T18:14:22.753Z",
+      "source_facts": [
+        "f8c9b359976b291a"
+      ]
+    },
+    "reading": {
+      "id": "reading",
+      "label": "Reading",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.408Z",
+      "updated_at": "2026-09-20T18:14:22.408Z",
+      "source_facts": [
+        "f8c9b359976b291a"
+      ]
+    },
+    "language-models": {
+      "id": "language-models",
+      "label": "Language Models",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.872Z",
+      "updated_at": "2026-09-20T18:14:22.872Z",
+      "source_facts": [
+        "b15b40fc045e2aba"
+      ]
+    },
+    "collection": {
+      "id": "collection",
+      "label": "Collection",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:22.873Z",
+      "updated_at": "2026-09-20T18:14:22.873Z",
+      "source_facts": [
+        "b15b40fc045e2aba"
+      ]
+    },
+    "reasoning-using-language-models": {
+      "id": "reasoning-using-language-models",
+      "label": "Reasoning using Language Models",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.533Z",
+      "updated_at": "2026-09-20T18:14:23.533Z",
+      "source_facts": [
+        "b15b40fc045e2aba"
+      ]
+    },
+    "thought-hub": {
+      "id": "thought-hub",
+      "label": "Thought Hub",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.655Z",
+      "updated_at": "2026-09-20T18:14:23.655Z",
+      "source_facts": [
+        "32160481caa933d1"
+      ]
+    },
+    "measuring-llms": {
+      "id": "measuring-llms",
+      "label": "Measuring LLMs",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.657Z",
+      "updated_at": "2026-09-20T18:14:23.657Z",
+      "source_facts": [
+        "32160481caa933d1"
+      ]
+    },
+    "reasoning-performance": {
+      "id": "reasoning-performance",
+      "label": "Reasoning Performance",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.658Z",
+      "updated_at": "2026-09-20T18:14:23.658Z",
+      "source_facts": [
+        "32160481caa933d1"
+      ]
+    },
+    "franxyao": {
+      "id": "franxyao",
+      "label": "FranxYao",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.661Z",
+      "updated_at": "2026-09-20T18:14:23.661Z",
+      "source_facts": [
+        "32160481caa933d1"
+      ]
+    },
+    "chain-of-thought-hub": {
+      "id": "chain-of-thought-hub",
+      "label": "Chain-of-Thought Hub",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.712Z",
+      "updated_at": "2026-09-20T18:14:23.712Z",
+      "source_facts": [
+        "32160481caa933d1"
+      ]
+    },
+    "awesome-gpt": {
+      "id": "awesome-gpt",
+      "label": "Awesome GPT",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:23.831Z",
+      "updated_at": "2026-09-20T18:14:23.877Z",
+      "source_facts": [
+        "bbdc6df600fc7c87"
+      ]
+    },
+    "hannibal046-awesome-llm": {
+      "id": "hannibal046-awesome-llm",
+      "label": "Hannibal046/Awesome-LLM",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:23.878Z",
+      "updated_at": "2026-09-20T18:14:23.878Z",
+      "source_facts": [
+        "github:Hannibal046/Awesome-LLM"
+      ]
+    },
+    "eugeneyan-applied-ml": {
+      "id": "eugeneyan-applied-ml",
+      "label": "eugeneyan/applied-ml",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.202Z",
+      "updated_at": "2026-09-20T18:14:24.202Z",
+      "source_facts": [
+        "github:eugeneyan/applied-ml"
+      ]
+    },
+    "email-generator": {
+      "id": "email-generator",
+      "label": "Email Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.677Z",
+      "updated_at": "2026-09-20T18:14:24.677Z",
+      "source_facts": [
+        "f1c6001be70f0ced"
+      ]
+    },
+    "describe": {
+      "id": "describe",
+      "label": "Describe",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.678Z",
+      "updated_at": "2026-09-20T18:14:24.678Z",
+      "source_facts": [
+        "f1c6001be70f0ced"
+      ]
+    },
+    "ishaanlabs": {
+      "id": "ishaanlabs",
+      "label": "IshaanLabs",
+      "type": "proper-noun",
+      "mentions": 20,
+      "first_seen": "2026-09-20T18:14:24.679Z",
+      "updated_at": "2026-09-20T18:14:30.970Z",
+      "source_facts": [
+        "f1c6001be70f0ced",
+        "37e29e5dc3ec2a4e",
+        "2ded3940f00530d8",
+        "1da9e01d59522c59",
+        "c5d50999cd119002",
+        "ca7c6f3a4bac3956",
+        "9681ccdb712b96ba",
+        "fd296686c59c56af",
+        "e9201a0dca647c4f",
+        "3f31a1eafb16fb8d",
+        "36016ea57e2c072b",
+        "336a7b6e78cebc77",
+        "2c73423647ea4d09",
+        "f70791f83ad480d4",
+        "d939565e24468e73",
+        "57a36f10eff239c5",
+        "befb20c44433f711",
+        "d1044cb56b901c1e",
+        "90763d6bb99664a5",
+        "83f9b1232145d970"
+      ]
+    },
+    "agents": {
+      "id": "agents",
+      "label": "Agents",
+      "type": "proper-noun",
+      "mentions": 20,
+      "first_seen": "2026-09-20T18:14:24.682Z",
+      "updated_at": "2026-09-20T18:14:30.998Z",
+      "source_facts": [
+        "f1c6001be70f0ced",
+        "37e29e5dc3ec2a4e",
+        "2ded3940f00530d8",
+        "1da9e01d59522c59",
+        "c5d50999cd119002",
+        "ca7c6f3a4bac3956",
+        "9681ccdb712b96ba",
+        "fd296686c59c56af",
+        "e9201a0dca647c4f",
+        "3f31a1eafb16fb8d",
+        "36016ea57e2c072b",
+        "336a7b6e78cebc77",
+        "2c73423647ea4d09",
+        "f70791f83ad480d4",
+        "d939565e24468e73",
+        "57a36f10eff239c5",
+        "befb20c44433f711",
+        "d1044cb56b901c1e",
+        "90763d6bb99664a5",
+        "83f9b1232145d970"
+      ]
+    },
+    "ai-email-generator": {
+      "id": "ai-email-generator",
+      "label": "✉️ AI Email Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.701Z",
+      "updated_at": "2026-09-20T18:14:24.701Z",
+      "source_facts": [
+        "f1c6001be70f0ced"
+      ]
+    },
+    "linkedin-post-generator": {
+      "id": "linkedin-post-generator",
+      "label": "LinkedIn Post Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.831Z",
+      "updated_at": "2026-09-20T18:14:24.831Z",
+      "source_facts": [
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "keyword": {
+      "id": "keyword",
+      "label": "Keyword",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.832Z",
+      "updated_at": "2026-09-20T18:14:24.832Z",
+      "source_facts": [
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "linkedin": {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.834Z",
+      "updated_at": "2026-09-20T18:14:24.834Z",
+      "source_facts": [
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "exa": {
+      "id": "exa",
+      "label": "Exa",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.835Z",
+      "updated_at": "2026-09-20T18:14:24.835Z",
+      "source_facts": [
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "ai-linkedin-post-generator": {
+      "id": "ai-linkedin-post-generator",
+      "label": "💼 AI LinkedIn Post Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:24.914Z",
+      "updated_at": "2026-09-20T18:14:24.914Z",
+      "source_facts": [
+        "37e29e5dc3ec2a4e"
+      ]
+    },
+    "tweet-generator": {
+      "id": "tweet-generator",
+      "label": "Tweet Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.053Z",
+      "updated_at": "2026-09-20T18:14:25.053Z",
+      "source_facts": [
+        "2ded3940f00530d8"
+      ]
+    },
+    "extract": {
+      "id": "extract",
+      "label": "Extract",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.054Z",
+      "updated_at": "2026-09-20T18:14:25.054Z",
+      "source_facts": [
+        "2ded3940f00530d8"
+      ]
+    },
+    "tavily": {
+      "id": "tavily",
+      "label": "Tavily",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.055Z",
+      "updated_at": "2026-09-20T18:14:25.055Z",
+      "source_facts": [
+        "2ded3940f00530d8"
+      ]
+    },
+    "ai-tweet-generator": {
+      "id": "ai-tweet-generator",
+      "label": "🐦 AI Tweet Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.248Z",
+      "updated_at": "2026-09-20T18:14:25.248Z",
+      "source_facts": [
+        "2ded3940f00530d8"
+      ]
+    },
+    "grammar-checker": {
+      "id": "grammar-checker",
+      "label": "Grammar Checker",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.383Z",
+      "updated_at": "2026-09-20T18:14:25.383Z",
+      "source_facts": [
+        "1da9e01d59522c59"
+      ]
+    },
+    "fix": {
+      "id": "fix",
+      "label": "Fix",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.384Z",
+      "updated_at": "2026-09-20T18:14:25.384Z",
+      "source_facts": [
+        "1da9e01d59522c59"
+      ]
+    },
+    "ai-grammar-checker": {
+      "id": "ai-grammar-checker",
+      "label": "📝 AI Grammar Checker",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.418Z",
+      "updated_at": "2026-09-20T18:14:25.418Z",
+      "source_facts": [
+        "1da9e01d59522c59"
+      ]
+    },
+    "cover-letter-generator": {
+      "id": "cover-letter-generator",
+      "label": "Cover Letter Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.557Z",
+      "updated_at": "2026-09-20T18:14:25.557Z",
+      "source_facts": [
+        "c5d50999cd119002"
+      ]
+    },
+    "resume-pdf": {
+      "id": "resume-pdf",
+      "label": "Resume PDF",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.558Z",
+      "updated_at": "2026-09-20T18:14:25.558Z",
+      "source_facts": [
+        "c5d50999cd119002"
+      ]
+    },
+    "coverletter": {
+      "id": "coverletter",
+      "label": "Coverletter",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.632Z",
+      "updated_at": "2026-09-20T18:14:25.632Z",
+      "source_facts": [
+        "c5d50999cd119002"
+      ]
+    },
+    "generator": {
+      "id": "generator",
+      "label": "Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:25.633Z",
+      "updated_at": "2026-09-20T18:14:25.633Z",
+      "source_facts": [
+        "c5d50999cd119002"
+      ]
+    },
+    "ai-cover-letter-generator": {
+      "id": "ai-cover-letter-generator",
+      "label": "📄 AI Cover Letter Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.064Z",
+      "updated_at": "2026-09-20T18:14:26.064Z",
+      "source_facts": [
+        "c5d50999cd119002"
+      ]
+    },
+    "news-generator": {
+      "id": "news-generator",
+      "label": "News Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.210Z",
+      "updated_at": "2026-09-20T18:14:26.210Z",
+      "source_facts": [
+        "ca7c6f3a4bac3956"
+      ]
+    },
+    "ai-news-generator": {
+      "id": "ai-news-generator",
+      "label": "📰 AI News Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.232Z",
+      "updated_at": "2026-09-20T18:14:26.232Z",
+      "source_facts": [
+        "ca7c6f3a4bac3956"
+      ]
+    },
+    "readme-generator": {
+      "id": "readme-generator",
+      "label": "README Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.383Z",
+      "updated_at": "2026-09-20T18:14:26.383Z",
+      "source_facts": [
+        "9681ccdb712b96ba"
+      ]
+    },
+    "scan": {
+      "id": "scan",
+      "label": "Scan",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.384Z",
+      "updated_at": "2026-09-20T18:14:26.384Z",
+      "source_facts": [
+        "9681ccdb712b96ba"
+      ]
+    },
+    "readme": {
+      "id": "readme",
+      "label": "README",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.385Z",
+      "updated_at": "2026-09-20T18:14:26.385Z",
+      "source_facts": [
+        "9681ccdb712b96ba"
+      ]
+    },
+    "cli": {
+      "id": "cli",
+      "label": "CLI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.386Z",
+      "updated_at": "2026-09-20T18:14:26.386Z",
+      "source_facts": [
+        "9681ccdb712b96ba"
+      ]
+    },
+    "ai-readme-generator": {
+      "id": "ai-readme-generator",
+      "label": "📘 AI README Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.439Z",
+      "updated_at": "2026-09-20T18:14:26.439Z",
+      "source_facts": [
+        "9681ccdb712b96ba"
+      ]
+    },
+    "flashcard-generator": {
+      "id": "flashcard-generator",
+      "label": "Flashcard Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.588Z",
+      "updated_at": "2026-09-20T18:14:26.588Z",
+      "source_facts": [
+        "fd296686c59c56af"
+      ]
+    },
+    "pdf": {
+      "id": "pdf",
+      "label": "PDF",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.589Z",
+      "updated_at": "2026-09-20T18:14:26.589Z",
+      "source_facts": [
+        "fd296686c59c56af"
+      ]
+    },
+    "txt": {
+      "id": "txt",
+      "label": "TXT",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.590Z",
+      "updated_at": "2026-09-20T18:14:26.590Z",
+      "source_facts": [
+        "fd296686c59c56af"
+      ]
+    },
+    "csv": {
+      "id": "csv",
+      "label": "CSV",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.591Z",
+      "updated_at": "2026-09-20T18:14:26.591Z",
+      "source_facts": [
+        "fd296686c59c56af"
+      ]
+    },
+    "ai-flashcard-generator": {
+      "id": "ai-flashcard-generator",
+      "label": "🃏 AI Flashcard Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.667Z",
+      "updated_at": "2026-09-20T18:14:26.667Z",
+      "source_facts": [
+        "fd296686c59c56af"
+      ]
+    },
+    "quiz-generator": {
+      "id": "quiz-generator",
+      "label": "Quiz Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.813Z",
+      "updated_at": "2026-09-20T18:14:26.813Z",
+      "source_facts": [
+        "e9201a0dca647c4f"
+      ]
+    },
+    "interactive": {
+      "id": "interactive",
+      "label": "Interactive",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.815Z",
+      "updated_at": "2026-09-20T18:14:26.815Z",
+      "source_facts": [
+        "e9201a0dca647c4f"
+      ]
+    },
+    "ai-quiz-generator": {
+      "id": "ai-quiz-generator",
+      "label": "❓ AI Quiz Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:26.857Z",
+      "updated_at": "2026-09-20T18:14:26.857Z",
+      "source_facts": [
+        "e9201a0dca647c4f"
+      ]
+    },
+    "notes-summarizer": {
+      "id": "notes-summarizer",
+      "label": "Notes Summarizer",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.010Z",
+      "updated_at": "2026-09-20T18:14:27.010Z",
+      "source_facts": [
+        "3f31a1eafb16fb8d"
+      ]
+    },
+    "long": {
+      "id": "long",
+      "label": "Long",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.011Z",
+      "updated_at": "2026-09-20T18:14:27.011Z",
+      "source_facts": [
+        "3f31a1eafb16fb8d"
+      ]
+    },
+    "ai-notes-summarizer": {
+      "id": "ai-notes-summarizer",
+      "label": "📌 AI Notes Summarizer",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.040Z",
+      "updated_at": "2026-09-20T18:14:27.040Z",
+      "source_facts": [
+        "3f31a1eafb16fb8d"
+      ]
+    },
+    "meeting-minutes-generator": {
+      "id": "meeting-minutes-generator",
+      "label": "Meeting Minutes Generator",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.200Z",
+      "updated_at": "2026-09-20T18:14:27.200Z",
+      "source_facts": [
+        "36016ea57e2c072b"
+      ]
+    },
+    "raw": {
+      "id": "raw",
+      "label": "Raw",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.201Z",
+      "updated_at": "2026-09-20T18:14:27.201Z",
+      "source_facts": [
+        "36016ea57e2c072b"
+      ]
+    },
+    "minutes": {
+      "id": "minutes",
+      "label": "Minutes",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.202Z",
+      "updated_at": "2026-09-20T18:14:27.202Z",
+      "source_facts": [
+        "36016ea57e2c072b"
+      ]
+    },
+    "meeting": {
+      "id": "meeting",
+      "label": "Meeting",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.203Z",
+      "updated_at": "2026-09-20T18:14:27.203Z",
+      "source_facts": [
+        "36016ea57e2c072b"
+      ]
+    },
+    "ai-meeting-minutes-generator": {
+      "id": "ai-meeting-minutes-generator",
+      "label": "📋 AI Meeting Minutes Generator",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.246Z",
+      "updated_at": "2026-09-20T18:14:27.246Z",
+      "source_facts": [
+        "36016ea57e2c072b"
+      ]
+    },
+    "voice2tasks": {
+      "id": "voice2tasks",
+      "label": "🎤 Voice2Tasks",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:27.411Z",
+      "updated_at": "2026-09-20T18:14:27.489Z",
+      "source_facts": [
+        "336a7b6e78cebc77"
+      ]
+    },
+    "voice": {
+      "id": "voice",
+      "label": "Voice",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.412Z",
+      "updated_at": "2026-09-20T18:14:27.412Z",
+      "source_facts": [
+        "336a7b6e78cebc77"
+      ]
+    },
+    "kanban": {
+      "id": "kanban",
+      "label": "Kanban",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.413Z",
+      "updated_at": "2026-09-20T18:14:27.413Z",
+      "source_facts": [
+        "336a7b6e78cebc77"
+      ]
+    },
+    "simple": {
+      "id": "simple",
+      "label": "Simple",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.658Z",
+      "updated_at": "2026-09-20T18:14:27.658Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "assistant": {
+      "id": "assistant",
+      "label": "Assistant",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.659Z",
+      "updated_at": "2026-09-20T18:14:27.659Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "local-chatgpt": {
+      "id": "local-chatgpt",
+      "label": "Local ChatGPT",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.680Z",
+      "updated_at": "2026-09-20T18:14:27.680Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "fastapi": {
+      "id": "fastapi",
+      "label": "FastAPI",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.681Z",
+      "updated_at": "2026-09-20T18:14:27.681Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "html": {
+      "id": "html",
+      "label": "HTML",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.682Z",
+      "updated_at": "2026-09-20T18:14:27.682Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "simple-ai-assistant": {
+      "id": "simple-ai-assistant",
+      "label": "💬 Simple AI Assistant",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.753Z",
+      "updated_at": "2026-09-20T18:14:27.753Z",
+      "source_facts": [
+        "2c73423647ea4d09"
+      ]
+    },
+    "webpage-summarizer": {
+      "id": "webpage-summarizer",
+      "label": "Webpage Summarizer",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.922Z",
+      "updated_at": "2026-09-20T18:14:27.922Z",
+      "source_facts": [
+        "f70791f83ad480d4"
+      ]
+    },
+    "paste": {
+      "id": "paste",
+      "label": "Paste",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.923Z",
+      "updated_at": "2026-09-20T18:14:27.923Z",
+      "source_facts": [
+        "f70791f83ad480d4"
+      ]
+    },
+    "url": {
+      "id": "url",
+      "label": "URL",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.925Z",
+      "updated_at": "2026-09-20T18:14:27.925Z",
+      "source_facts": [
+        "f70791f83ad480d4"
+      ]
+    },
+    "ai-webpage-summarizer": {
+      "id": "ai-webpage-summarizer",
+      "label": "🌐 AI Webpage Summarizer",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:27.977Z",
+      "updated_at": "2026-09-20T18:14:27.977Z",
+      "source_facts": [
+        "f70791f83ad480d4"
+      ]
+    },
+    "pdf-chat": {
+      "id": "pdf-chat",
+      "label": "PDF Chat",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.145Z",
+      "updated_at": "2026-09-20T18:14:28.145Z",
+      "source_facts": [
+        "d939565e24468e73"
+      ]
+    },
+    "upload-pdfs": {
+      "id": "upload-pdfs",
+      "label": "Upload PDFs",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.146Z",
+      "updated_at": "2026-09-20T18:14:28.146Z",
+      "source_facts": [
+        "d939565e24468e73"
+      ]
+    },
+    "ai-pdf-chat": {
+      "id": "ai-pdf-chat",
+      "label": "📚 AI PDF Chat",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.676Z",
+      "updated_at": "2026-09-20T18:14:28.676Z",
+      "source_facts": [
+        "d939565e24468e73"
+      ]
+    },
+    "chat": {
+      "id": "chat",
+      "label": "Chat",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.855Z",
+      "updated_at": "2026-09-20T18:14:28.855Z",
+      "source_facts": [
+        "57a36f10eff239c5"
+      ]
+    },
+    "audio": {
+      "id": "audio",
+      "label": "Audio",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.856Z",
+      "updated_at": "2026-09-20T18:14:28.856Z",
+      "source_facts": [
+        "57a36f10eff239c5"
+      ]
+    },
+    "transcribe": {
+      "id": "transcribe",
+      "label": "Transcribe",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:28.859Z",
+      "updated_at": "2026-09-20T18:14:28.859Z",
+      "source_facts": [
+        "57a36f10eff239c5"
+      ]
+    },
+    "whisper": {
+      "id": "whisper",
+      "label": "Whisper",
+      "type": "proper-noun",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:28.860Z",
+      "updated_at": "2026-09-20T18:14:29.568Z",
+      "source_facts": [
+        "57a36f10eff239c5",
+        "befb20c44433f711"
+      ]
+    },
+    "chat-with-audio": {
+      "id": "chat-with-audio",
+      "label": "🎧 Chat with Audio",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.391Z",
+      "updated_at": "2026-09-20T18:14:29.391Z",
+      "source_facts": [
+        "57a36f10eff239c5"
+      ]
+    },
+    "youtube-video-summarizer": {
+      "id": "youtube-video-summarizer",
+      "label": "▶️ YouTube Video Summarizer",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:29.565Z",
+      "updated_at": "2026-09-20T18:14:29.856Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "youtube-url": {
+      "id": "youtube-url",
+      "label": "YouTube URL",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.566Z",
+      "updated_at": "2026-09-20T18:14:29.566Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "youtube": {
+      "id": "youtube",
+      "label": "YouTube",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.590Z",
+      "updated_at": "2026-09-20T18:14:29.590Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "video": {
+      "id": "video",
+      "label": "Video",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.591Z",
+      "updated_at": "2026-09-20T18:14:29.591Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "summarization": {
+      "id": "summarization",
+      "label": "Summarization",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.613Z",
+      "updated_at": "2026-09-20T18:14:29.613Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "application": {
+      "id": "application",
+      "label": "Application",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:29.614Z",
+      "updated_at": "2026-09-20T18:14:29.614Z",
+      "source_facts": [
+        "befb20c44433f711"
+      ]
+    },
+    "data-analysis-agent": {
+      "id": "data-analysis-agent",
+      "label": "Data Analysis Agent",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.044Z",
+      "updated_at": "2026-09-20T18:14:30.044Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "upload-csv": {
+      "id": "upload-csv",
+      "label": "Upload CSV",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.045Z",
+      "updated_at": "2026-09-20T18:14:30.045Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "excel": {
+      "id": "excel",
+      "label": "Excel",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.068Z",
+      "updated_at": "2026-09-20T18:14:30.068Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "python": {
+      "id": "python",
+      "label": "Python",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.089Z",
+      "updated_at": "2026-09-20T18:14:30.089Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "duckdb": {
+      "id": "duckdb",
+      "label": "DuckDB",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.091Z",
+      "updated_at": "2026-09-20T18:14:30.091Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "ai-data-analysis-agent": {
+      "id": "ai-data-analysis-agent",
+      "label": "📈 AI Data Analysis Agent",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.183Z",
+      "updated_at": "2026-09-20T18:14:30.183Z",
+      "source_facts": [
+        "d1044cb56b901c1e"
+      ]
+    },
+    "dataops-agent": {
+      "id": "dataops-agent",
+      "label": "🗄️ DataOps Agent",
+      "type": "tool",
+      "mentions": 2,
+      "first_seen": "2026-09-20T18:14:30.374Z",
+      "updated_at": "2026-09-20T18:14:30.771Z",
+      "source_facts": [
+        "90763d6bb99664a5"
+      ]
+    },
+    "natural": {
+      "id": "natural",
+      "label": "Natural",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.375Z",
+      "updated_at": "2026-09-20T18:14:30.375Z",
+      "source_facts": [
+        "90763d6bb99664a5"
+      ]
+    },
+    "dataops": {
+      "id": "dataops",
+      "label": "DataOps",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.514Z",
+      "updated_at": "2026-09-20T18:14:30.514Z",
+      "source_facts": [
+        "90763d6bb99664a5"
+      ]
+    },
+    "agent": {
+      "id": "agent",
+      "label": "Agent",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.515Z",
+      "updated_at": "2026-09-20T18:14:30.515Z",
+      "source_facts": [
+        "90763d6bb99664a5"
+      ]
+    },
+    "breakup-recovery": {
+      "id": "breakup-recovery",
+      "label": "Breakup Recovery",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.968Z",
+      "updated_at": "2026-09-20T18:14:30.968Z",
+      "source_facts": [
+        "83f9b1232145d970"
+      ]
+    },
+    "langgraph": {
+      "id": "langgraph",
+      "label": "LangGraph",
+      "type": "proper-noun",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:30.969Z",
+      "updated_at": "2026-09-20T18:14:30.969Z",
+      "source_facts": [
+        "83f9b1232145d970"
+      ]
+    },
+    "breakup-recovery-ai": {
+      "id": "breakup-recovery-ai",
+      "label": "💚 Breakup Recovery AI",
+      "type": "tool",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:31.024Z",
+      "updated_at": "2026-09-20T18:14:31.024Z",
+      "source_facts": [
+        "83f9b1232145d970"
+      ]
+    },
+    "ishaanlabs-awesome-ai-agents": {
+      "id": "ishaanlabs-awesome-ai-agents",
+      "label": "IshaanLabs/Awesome-AI-Agents",
+      "type": "source",
+      "mentions": 1,
+      "first_seen": "2026-09-20T18:14:31.025Z",
+      "updated_at": "2026-09-20T18:14:31.025Z",
+      "source_facts": [
+        "github:IshaanLabs/Awesome-AI-Agents"
+      ]
+    }
+  },
+  "relationships": [],
+  "facts": {
+    "9e7897bfe511301d": [
+      "connect",
+      "mindsdb",
+      "mcp",
+      "docs-mindsdb-com",
+      "github-com"
+    ],
+    "dfa6682f79363b2a": [
+      "mcp-bundles",
+      "create",
+      "oauth",
+      "api",
+      "use",
+      "mcp",
+      "github-com"
+    ],
+    "53143dddbc209d0e": [
+      "official-microsoft-playwright",
+      "mcp",
+      "llms",
+      "github-com"
+    ],
+    "c3ea579173e7aeeb": [
+      "terraform-mcp-server",
+      "terraform",
+      "registry-api",
+      "infrastr",
+      "github-com"
+    ],
+    "519b360f70898e97": [
+      "azure-cli",
+      "azure",
+      "github-com"
+    ],
+    "27f086675f9e3aff": [
+      "terraform-mcp",
+      "terraform",
+      "github-com"
+    ],
+    "dade263a39de480a": [
+      "mcp",
+      "cisco",
+      "github-com"
+    ],
+    "79e857020c9b63d3": [
+      "safe-python",
+      "smolagents",
+      "localpythonexecutor",
+      "github-com"
+    ],
+    "c7abeddb7ccb08aa": [
+      "give",
+      "mcp",
+      "github-com"
+    ],
+    "f246453a213f60d0": [
+      "model-context-protocol",
+      "mcp",
+      "github-com"
+    ],
+    "ed94e94d8029b252": [
+      "tsgram",
+      "telegram",
+      "claude",
+      "read",
+      "github-com"
+    ],
+    "b09a1978f052368d": [
+      "mcp",
+      "vrchat-api",
+      "you",
+      "vrchat",
+      "github-com"
+    ],
+    "81af9116c82db68a": [
+      "the-mcp",
+      "github-com"
+    ],
+    "cb85d91547f0a25c": [
+      "mcp",
+      "google-search-console",
+      "bing-webmasters",
+      "github-com"
+    ],
+    "f0d84986c4e4f96e": [
+      "aiven",
+      "open",
+      "navigate",
+      "postgresql",
+      "apache-kafka",
+      "clickhouse",
+      "opensearch",
+      "go-aiven-io",
+      "github-com"
+    ],
+    "05b753c3422a9453": [
+      "supabase-mcp-server",
+      "sql",
+      "github-com"
+    ],
+    "c1291c39b3c96dd8": [
+      "baserow",
+      "github-com"
+    ],
+    "0b21058152a068e1": [
+      "supabase-mcp-server",
+      "supabase",
+      "github-com"
+    ],
+    "2c6b12112c12c843": [
+      "the-planetscale-cli",
+      "mcp",
+      "planetscale",
+      "github-com"
+    ],
+    "e752e9acf6856bb8": [
+      "magic",
+      "mcp",
+      "create",
+      "21st-dev",
+      "github-com"
+    ],
+    "a0c8595280928620": [
+      "langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "b39c428a0b3a1be5": [
+      "langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "758835785f46f247": [
+      "concepts",
+      "langchain",
+      "docs-langchain-com"
+    ],
+    "89a0ca39e32925b2": [
+      "twitter",
+      "langchainai",
+      "x-com"
+    ],
+    "11687d3a2882451d": [
+      "langchain-blog",
+      "the-official-langchain",
+      "blog-langchain-dev"
+    ],
+    "2bf7e99dcfea48e4": [
+      "langchain",
+      "golang-langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "bc959b283e83d7e5": [
+      "langchainrb",
+      "ruby-langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "87a427446e858453": [
+      "langchain4j",
+      "langchain",
+      "java",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "53bf5d93347d3c5e": [
+      "langchaindart",
+      "build",
+      "llm",
+      "dart",
+      "flutter",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "cb8b1b8a9d22d752": [
+      "langchain",
+      "haskell",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "75c344552b065540": [
+      "langchain",
+      "elixir",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "34b74e7764e4db01": [
+      "langchain",
+      "rust",
+      "github-repo",
+      "abraxas",
+      "img-shields-io",
+      "github-com"
+    ],
+    "d0318300242e9a57": [
+      "flowise",
+      "drag",
+      "llm",
+      "langchainjs",
+      "github-repo",
+      "flowiseai",
+      "img-shields-io",
+      "github-com"
+    ],
+    "7b8989bedb086066": [
+      "flock",
+      "rag",
+      "github-repo",
+      "onelevenvy",
+      "img-shields-io",
+      "github-com"
+    ],
+    "678b6deec1b5fde6": [
+      "gptcache",
+      "library",
+      "creating-semantic-cache",
+      "llm-queries",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "762fecba3fc4a089": [
+      "gorilla",
+      "api",
+      "llms",
+      "github-repo",
+      "shishirpatil",
+      "img-shields-io",
+      "github-com"
+    ],
+    "f0011fb8b1c251f9": [
+      "auto",
+      "langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "8d88985daac2a11a": [
+      "langchain",
+      "github-repo",
+      "img-shields-io",
+      "github-com"
+    ],
+    "8e94d1c24b3f7ac6": [
+      "llm-strategy",
+      "strategy-pattern",
+      "llms",
+      "github-repo",
+      "blackhc",
+      "img-shields-io",
+      "github-com"
+    ],
+    "364fd675615cf76c": [
+      "how-large-language",
+      "models-will-transform",
+      "science",
+      "society",
+      "article",
+      "gpt",
+      "alex-tamkin",
+      "deep-ganguli",
+      "february",
+      "hai-stanford-edu"
+    ],
+    "78df0f523182b44f": [
+      "generative",
+      "creative-new-world",
+      "sonya-huang",
+      "pat-grady",
+      "gpt",
+      "september",
+      "www-sequoiacap-com"
+    ],
+    "983fa4abdfaaa659": [
+      "coming",
+      "out-party",
+      "generative",
+      "silicon-valley",
+      "new-craze",
+      "article",
+      "stable-diffusion",
+      "new-york-times",
+      "october",
+      "www-nytimes-com"
+    ],
+    "10643623a6e0ab21": [
+      "new-creative-streak",
+      "sparks",
+      "silicon-valley-gold",
+      "rush",
+      "article",
+      "wired",
+      "october",
+      "www-wired-com"
+    ],
+    "6a959b274f459cc3": [
+      "chatgpt-heralds",
+      "intellectual-revolution",
+      "henry-kissinger",
+      "eric-schmidt",
+      "daniel-huttenlocher",
+      "wall-street-journal",
+      "february",
+      "www-wsj-com"
+    ],
+    "5308f48a5d01f97c": [
+      "openai-api",
+      "announcement",
+      "gpt",
+      "openai",
+      "june",
+      "openai-com"
+    ],
+    "9c11991f7906a34d": [
+      "github-copilot",
+      "announcement",
+      "copilot",
+      "github",
+      "june"
+    ],
+    "23b6a0bd12af66b1": [
+      "dall",
+      "announcement",
+      "openai",
+      "april",
+      "openai-com"
+    ],
+    "6f60f6ca346e5429": [
+      "stable-diffusion-public",
+      "release",
+      "announcement",
+      "stable-diffusion",
+      "creative",
+      "openrail",
+      "stability-ai"
+    ],
+    "8fb38b0583b65a32": [
+      "chatgpt",
+      "announcement",
+      "openai",
+      "november",
+      "openai-com"
+    ],
+    "f6a8e63b67625df3": [
+      "bing-search",
+      "microsoft",
+      "bing",
+      "openai",
+      "february",
+      "blogs-microsoft-com"
+    ],
+    "2ada16239b08d5aa": [
+      "llama",
+      "llama-llm",
+      "meta",
+      "february",
+      "ai-meta-com"
+    ],
+    "1f3423e416d88e7c": [
+      "gpt",
+      "announcement",
+      "openai",
+      "march",
+      "openai-com"
+    ],
+    "f1b32e0d0eccb04f": [
+      "dall",
+      "announcement",
+      "openai",
+      "september",
+      "openai-com"
+    ],
+    "a01e9b11fa0fa7f2": [
+      "sora",
+      "presentation",
+      "openai",
+      "february",
+      "openai-com"
+    ],
+    "1a2e99ada8c65b53": [
+      "openai-api",
+      "openai",
+      "api",
+      "gpt",
+      "openai-com"
+    ],
+    "b24c158e47be695f": [
+      "gopher",
+      "deepmind"
+    ],
+    "18f577689ad51cdb": [
+      "opt",
+      "open-pretrained-transformers",
+      "facebook",
+      "announcement",
+      "ai-meta-com"
+    ],
+    "cfb12170ee58390e": [
+      "bloom",
+      "hugging-face",
+      "gpt"
+    ],
+    "a5144a1f89671949": [
+      "llama",
+      "meta",
+      "www-llama-com"
+    ],
+    "44418c42aba7b93e": [
+      "tinyzero",
+      "clean",
+      "deepseek",
+      "zero",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "jiayi",
+      "pan",
+      "github-com"
+    ],
+    "095a6c541ae48732": [
+      "fully",
+      "deepseek",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "fa17173382a242df": [
+      "deepseek",
+      "first",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "f13a316bf0c57796": [
+      "qwen2",
+      "max",
+      "exploring",
+      "intelligence",
+      "large",
+      "moe-model",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "qwenlm-github-io"
+    ],
+    "88f451625feccced": [
+      "openai",
+      "pushing",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "openai-com"
+    ],
+    "61cfcb4be060cb76": [
+      "deepseek",
+      "first",
+      "gpt",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "e500e8694b8b4841": [
+      "kimi",
+      "moe",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "moonshotai",
+      "github-com"
+    ],
+    "fb9d3b1c2c4a5af9": [
+      "awesome",
+      "llm",
+      "hannibal046",
+      "luckyyysta",
+      "github-com"
+    ],
+    "d638a8263210736d": [
+      "list",
+      "llms",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "edinburghnlp",
+      "github-com"
+    ],
+    "c9ae50e5e0f26271": [
+      "llmspracticalguide",
+      "llms",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "mooler0410",
+      "github-com"
+    ],
+    "60a6e35f1c779338": [
+      "awesome-chatgpt-prompts",
+      "chatgpt",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "29e76f577d0d570b": [
+      "awesome-chatgpt",
+      "curated",
+      "chatgpt",
+      "gpt",
+      "openai",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "278c0399bb8964dd": [
+      "chain",
+      "thoughts-papers",
+      "thought-prompting-elicits",
+      "reasoning",
+      "large-language-models",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "timothyxxx",
+      "thoughtspapers",
+      "github-com"
+    ],
+    "3d4b82a97bce5c88": [
+      "awesome-deliberative-prompting",
+      "how",
+      "llms",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "github-com"
+    ],
+    "0749dfd3d9f78e91": [
+      "instruction",
+      "tuning",
+      "papers",
+      "natrural",
+      "acl",
+      "flan",
+      "iclr",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "sinclaircoder",
+      "github-com"
+    ],
+    "f8c9b359976b291a": [
+      "llm-reading-list",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "reading",
+      "github-com"
+    ],
+    "b15b40fc045e2aba": [
+      "reasoning",
+      "language-models",
+      "collection",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "papers",
+      "github-com"
+    ],
+    "32160481caa933d1": [
+      "chain",
+      "thought-hub",
+      "measuring-llms",
+      "reasoning-performance",
+      "hannibal046",
+      "awesome",
+      "llm",
+      "franxyao",
+      "github-com"
+    ],
+    "bbdc6df600fc7c87": [
+      "awesome-gpt",
+      "gpt",
+      "chatgpt",
+      "openai",
+      "llm",
+      "hannibal046",
+      "awesome",
+      "github-com"
+    ],
+    "f1c6001be70f0ced": [
+      "email-generator",
+      "describe",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "37e29e5dc3ec2a4e": [
+      "linkedin-post-generator",
+      "keyword",
+      "linkedin",
+      "exa",
+      "llm",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "2ded3940f00530d8": [
+      "tweet-generator",
+      "extract",
+      "tavily",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "1da9e01d59522c59": [
+      "grammar-checker",
+      "fix",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "c5d50999cd119002": [
+      "cover-letter-generator",
+      "resume-pdf",
+      "ishaanlabs",
+      "awesome",
+      "agents",
+      "coverletter",
+      "generator"
+    ],
+    "ca7c6f3a4bac3956": [
+      "news-generator",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "9681ccdb712b96ba": [
+      "readme-generator",
+      "scan",
+      "readme",
+      "cli",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "fd296686c59c56af": [
+      "flashcard-generator",
+      "pdf",
+      "txt",
+      "csv",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "e9201a0dca647c4f": [
+      "quiz-generator",
+      "interactive",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "3f31a1eafb16fb8d": [
+      "notes-summarizer",
+      "long",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "36016ea57e2c072b": [
+      "meeting-minutes-generator",
+      "raw",
+      "minutes",
+      "meeting",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "336a7b6e78cebc77": [
+      "voice2tasks",
+      "voice",
+      "kanban",
+      "rag",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "2c73423647ea4d09": [
+      "simple",
+      "assistant",
+      "local-chatgpt",
+      "fastapi",
+      "html",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "f70791f83ad480d4": [
+      "webpage-summarizer",
+      "paste",
+      "url",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "d939565e24468e73": [
+      "pdf-chat",
+      "upload-pdfs",
+      "rag",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "57a36f10eff239c5": [
+      "chat",
+      "audio",
+      "transcribe",
+      "whisper",
+      "rag",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "befb20c44433f711": [
+      "youtube-video-summarizer",
+      "youtube-url",
+      "whisper",
+      "ishaanlabs",
+      "awesome",
+      "agents",
+      "youtube",
+      "video",
+      "summarization",
+      "application"
+    ],
+    "d1044cb56b901c1e": [
+      "data-analysis-agent",
+      "upload-csv",
+      "excel",
+      "sql",
+      "python",
+      "duckdb",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ],
+    "90763d6bb99664a5": [
+      "dataops-agent",
+      "natural",
+      "mcp",
+      "ishaanlabs",
+      "awesome",
+      "agents",
+      "dataops",
+      "agent"
+    ],
+    "83f9b1232145d970": [
+      "breakup-recovery",
+      "langgraph",
+      "ishaanlabs",
+      "awesome",
+      "agents"
+    ]
+  },
+  "updated_at": "2026-09-20T18:14:31.025Z"
 }
