@@ -13,6 +13,11 @@ async function run(action, input = {}, options = {}) {
   }
   try {
     const result = await entry.handler(input || {}, options);
+    if (result && result.ok === false) {
+      const error = { code: result.error?.code || 'HUGO_ACTION_FAILED', message: result.error?.message || result.reason || 'action reported failure', details: result };
+      if (options.log !== false) conversations.append({ type: 'action_error', role: 'system', text: `${action} failed: ${error.message}`, action, session: options.session });
+      return { ok: false, action, category: entry.category, error, result, ms: Date.now() - started, at: new Date().toISOString() };
+    }
     if (options.log !== false) conversations.append({ type: 'action', role: 'system', text: `${action} ok`, action, session: options.session });
     return { ok: true, action, category: entry.category, result, ms: Date.now() - started, at: new Date().toISOString() };
   } catch (error) {
@@ -36,7 +41,7 @@ function summarizeGoal(result) {
   return [head, ...lines, result.replans ? `\u041f\u0440\u0435\u0438\u0441\u043f\u0438\u0442\u0430\u0432 ${result.replans} \u043f\u0430\u0442\u0438.` : ''].filter(Boolean).join('\n');
 }
 function formatActionReply(actionResult, command) {
-  if (!actionResult || !actionResult.ok) return `Не успеа: ${actionResult?.error?.message || 'непозната грешка'}`;
+  if (!actionResult || !actionResult.ok) return `Не успеа: ${actionResult?.error?.message || actionResult?.result?.reason || 'непозната грешка'}`;
   const data = actionResult.result;
   const intent = command?.intent || actionResult.action || '';
   if (intent === 'remember') {
@@ -122,7 +127,8 @@ async function chat(text, options = {}) {
       reply = formatActionReply(actionResult, { intent: direct.action, args: direct.args });
     }
     let modelRoute = null;
-    try { if (!directEntry) modelRoute = await routeWithOllama(text, {}); } catch {}
+    let routeFailed = false;
+    try { if (!directEntry) modelRoute = await routeWithOllama(text, {}); } catch { routeFailed = true; }
     if (modelRoute) {
       actionResult = await run(modelRoute.tool, modelRoute.params, { session });
       reply = formatActionReply(actionResult, { intent: modelRoute.tool, args: modelRoute.params });
@@ -133,7 +139,7 @@ async function chat(text, options = {}) {
       conversations.append({ type: 'message', role: 'assistant', text: reply, session });
       return { reply, session, action: directEntry ? direct.action : modelRoute.tool, result: actionResult, plan: null, learned: ingest ? ingest.learned + ingest.updated : 0 };
     }
-    const analysis = await reason(text, { memory: memoryContext }, {});
+    const analysis = await reason(text, { memory: memoryContext }, routeFailed ? { local_only: true } : {});
     const kind = classify(text).kind;
     if (options.forceGoal || kind === 'plan' || kind === 'action') {
       planResult = await run('goal', { goal: text }, { session });

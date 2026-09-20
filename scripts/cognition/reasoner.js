@@ -133,7 +133,7 @@ async function routeWithOllama(problem, options = {}) {
       stream: false,
       options: { temperature: 0 },
     }),
-    signal: AbortSignal.timeout(options.timeout_ms || 30000),
+    signal: AbortSignal.timeout(options.timeout_ms || 120000),
   });
   if (!response.ok) throw new Error(`Ollama HTTP ${response.status}`);
   const data = await response.json();
@@ -167,6 +167,7 @@ async function reason(problem, context = {}, options = {}) {
   if (!problem || typeof problem !== 'string' || !problem.trim()) throw new Error('reason needs a problem statement');
   const memory = options.memory === false ? { hits: [] } : (context.memory || safeRecall(problem, options));
   const analysis = analyzeLocal(problem, { memory });
+  if (options.local_only) return { provider: 'local-rules', ...analysis, memory_used: (memory.hits || []).length };
   const configuredEndpoint = options.endpoint || process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || process.env[config.cognition.reasoning.endpoint_env];
   const ollamaConfigured = options.provider === 'ollama' || Boolean(process.env.OLLAMA_ENDPOINT || process.env.OLLAMA_HOST || process.env.OLLAMA_MODEL) || isOllamaEndpoint(configuredEndpoint);
   if (ollamaConfigured) {

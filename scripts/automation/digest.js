@@ -9,10 +9,12 @@ function collect() {
   const due = todos.filter((item) => !item.done && item.due_at && Date.parse(item.due_at) <= Date.now());
   const conversations = readJsonlSync(config.file.conversations, 40);
   const openTodos = todos.filter((item) => !item.done);
+  const today = new Date().toISOString().slice(0, 10);
+  const completedToday = todos.filter((item) => item.done && item.done_at && String(item.done_at).slice(0, 10) === today);
   const campaigns = (() => { try { return require('../business/campaigns').list(); } catch { return []; } })();
   const pipeline = (() => { try { return require('../business/crm').pipeline(); } catch { return null; } })();
   const recentFacts = store.list({ limit: 8 });
-  return { stats, openTodos, due, campaigns, pipeline, recentFacts, conversations };
+  return { stats, openTodos, due, completedToday, campaigns, pipeline, recentFacts, conversations };
 }
 function digest(options = {}) {
   const data = collect();
@@ -38,9 +40,8 @@ function morningBrief() {
 function eveningReview() {
   const data = collect();
   const today = new Date().toISOString().slice(0, 10);
-  const doneToday = data.openTodos.length ? [] : [];
   const lines = ['\u041a\u0440\u0430\u0458 \u043d\u0430 \u0434\u0435\u043d\u043e\u0442 \u2014 ' + today];
-  lines.push('\u0417\u0430\u0432\u0440\u0448\u0435\u043d\u0438 \u0437\u0430\u0434\u0430\u0447\u0438 \u0434\u0435\u043d\u0435\u0441: ' + (data.stats.facts ? '' : '') + doneToday.length);
+  lines.push('\u0417\u0430\u0432\u0440\u0448\u0435\u043d\u0438 \u0437\u0430\u0434\u0430\u0447\u0438 \u0434\u0435\u043d\u0435\u0441: ' + data.completedToday.length);
   lines.push('\u041d\u043e\u0432\u0438 \u0444\u0430\u043a\u0442\u0438: ' + data.recentFacts.length);
   const reflections = readJsonlSync(config.file.learned, 5).filter((row) => row.type === 'reflection');
   if (reflections.length) lines.push('\u041d\u0430\u0443\u0447\u0435\u043d\u043e: ' + reflections.map((row) => (row.lessons || [])[0] || '').filter(Boolean).slice(0, 2).join(' | '));

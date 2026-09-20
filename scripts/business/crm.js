@@ -4,7 +4,11 @@ const { uuid } = require('../lib/ids');
 const { InputError } = require('../lib/errors');
 const config = require('../lib/config').load();
 function rows() { return readJsonlSync(config.file.crm); }
-function listContacts() { return rows().filter((row) => row.type === 'contact'); }
+function listContacts() {
+  const latest = new Map();
+  for (const row of rows()) if (row.type === 'contact' && row.id) latest.set(row.id, row);
+  return [...latest.values()];
+}
 function events(contactId) { return rows().filter((row) => row.type === 'event' && (!contactId || row.contact_id === contactId)); }
 async function addContact(input = {}) {
   if (!input.name) throw new InputError('contact name is required');

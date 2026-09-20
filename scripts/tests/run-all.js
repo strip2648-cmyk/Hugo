@@ -178,6 +178,7 @@ add('autolearn sources available', () => { const r = require('../automation/auto
 add('integration summary works', () => assert.ok(integrations.summary().total >= 10));
 add('MCP list works', () => assert.ok(Array.isArray(mcp.list())));
 add('CRM pipeline works', () => assert.ok(business.pipeline().by_stage && business.pipeline().events !== undefined));
+add('CRM contact updates are deduplicated', async () => { const email = 'HUGO_TEST_CRM_DEDUPE@example.invalid'; await business.addContact({ name: 'HUGO CRM Test', email }); await business.addContact({ name: 'HUGO CRM Test Updated', email }); const matches = business.listContacts().filter((contact) => contact.email === email); assert.equal(matches.length, 1); assert.equal(matches[0].name, 'HUGO CRM Test Updated'); });
 add('campaign list works', () => assert.ok(Array.isArray(campaigns.list())));
 
 add('reasoner works without local AI', async () => { const r = await reasoner.reason('што е транспорт'); assert.ok(r.provider === 'local-rules' || r.provider === 'local-model'); });
@@ -194,6 +195,7 @@ add('runtime chat recall works', async () => { const r = await runtime.chat('ш�
 add('runtime chat todo works', async () => { const r = await runtime.chat('задача HUGO_TEST_CHAT_TODO'); assert.equal(r.result.ok, true); assert.match(r.reply, /HUGO_TEST_CHAT_TODO/); });
 add('runtime chat note works', async () => { const r = await runtime.chat('белешка HUGO_TEST_CHAT_NOTE'); assert.equal(r.result.ok, true); assert.match(r.reply, /HUGO_TEST_CHAT_NOTE/); });
 add('runtime chat reminder works', async () => { const r = await runtime.chat('потсети ме утре во 10 HUGO_TEST_CHAT_REMINDER'); assert.equal(r.result.ok, true); assert.equal(r.result.result.reminder.due_at !== null, true); assert.match(r.reply, /HUGO_TEST_CHAT_REMINDER/); });
+add('evening review counts completed todos today', async () => { const task = await productivity.tools.todo.run({ action: 'add', text: 'HUGO_TEST_EVENING_DONE' }); await productivity.tools.todo.run({ action: 'done', id: task.added.id }); assert.match(digest.eveningReview().text, /Завршени задачи денес: 1/); });
 add('voice languages work', () => assert.ok(voice.languages().includes('mk-MK')));
 add('voice wake helper works', () => assert.equal(voice.wakeWord('hugo help').woken, true));
 add('browser detect is safe', () => assert.doesNotThrow(() => chrome.detect()));
