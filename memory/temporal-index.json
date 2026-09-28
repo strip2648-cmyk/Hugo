@@ -45,17 +45,17 @@
     },
     "dade263a39de480a": {
       "learned_at": "2026-09-20T18:14:14.032Z",
-      "updated_at": "2026-09-28T06:19:27.347Z",
+      "updated_at": "2026-09-28T12:18:27.167Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 31
+      "revision": 32
     },
     "79e857020c9b63d3": {
       "learned_at": "2026-09-20T18:14:14.040Z",
-      "updated_at": "2026-09-28T06:19:27.908Z",
+      "updated_at": "2026-09-28T12:18:27.476Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 31
+      "revision": 32
     },
     "c7abeddb7ccb08aa": {
       "learned_at": "2026-09-20T18:14:14.046Z",
@@ -73,10 +73,10 @@
     },
     "ed94e94d8029b252": {
       "learned_at": "2026-09-20T18:14:14.058Z",
-      "updated_at": "2026-09-28T06:19:28.460Z",
+      "updated_at": "2026-09-28T12:18:27.786Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 31
+      "revision": 32
     },
     "b09a1978f052368d": {
       "learned_at": "2026-09-20T18:14:14.068Z",
@@ -136,668 +136,668 @@
     },
     "e752e9acf6856bb8": {
       "learned_at": "2026-09-20T18:14:14.178Z",
-      "updated_at": "2026-09-28T06:19:30.661Z",
+      "updated_at": "2026-09-28T12:18:29.031Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 31
+      "revision": 32
     },
     "a0c8595280928620": {
       "learned_at": "2026-09-20T18:14:14.504Z",
-      "updated_at": "2026-09-28T06:19:36.641Z",
+      "updated_at": "2026-09-28T12:18:32.541Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 62
+      "revision": 64
     },
     "b39c428a0b3a1be5": {
       "learned_at": "2026-09-20T18:14:14.522Z",
-      "updated_at": "2026-09-28T06:19:33.360Z",
+      "updated_at": "2026-09-28T12:18:30.686Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "758835785f46f247": {
       "learned_at": "2026-09-20T18:14:14.541Z",
-      "updated_at": "2026-09-28T06:19:33.630Z",
+      "updated_at": "2026-09-28T12:18:30.840Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "89a0ca39e32925b2": {
       "learned_at": "2026-09-20T18:14:14.558Z",
-      "updated_at": "2026-09-28T06:19:33.904Z",
+      "updated_at": "2026-09-28T12:18:30.991Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "11687d3a2882451d": {
       "learned_at": "2026-09-20T18:14:14.666Z",
-      "updated_at": "2026-09-28T06:19:34.176Z",
+      "updated_at": "2026-09-28T12:18:31.143Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "2bf7e99dcfea48e4": {
       "learned_at": "2026-09-20T18:14:14.687Z",
-      "updated_at": "2026-09-28T06:19:34.453Z",
+      "updated_at": "2026-09-28T12:18:31.295Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "bc959b283e83d7e5": {
       "learned_at": "2026-09-20T18:14:14.710Z",
-      "updated_at": "2026-09-28T06:19:34.726Z",
+      "updated_at": "2026-09-28T12:18:31.447Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "87a427446e858453": {
       "learned_at": "2026-09-20T18:14:14.744Z",
-      "updated_at": "2026-09-28T06:19:35.000Z",
+      "updated_at": "2026-09-28T12:18:31.616Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "53bf5d93347d3c5e": {
       "learned_at": "2026-09-20T18:14:14.778Z",
-      "updated_at": "2026-09-28T06:19:35.270Z",
+      "updated_at": "2026-09-28T12:18:31.774Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "cb8b1b8a9d22d752": {
       "learned_at": "2026-09-20T18:14:14.814Z",
-      "updated_at": "2026-09-28T06:19:35.542Z",
+      "updated_at": "2026-09-28T12:18:31.928Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "75c344552b065540": {
       "learned_at": "2026-09-20T18:14:14.933Z",
-      "updated_at": "2026-09-28T06:19:35.817Z",
+      "updated_at": "2026-09-28T12:18:32.080Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "34b74e7764e4db01": {
       "learned_at": "2026-09-20T18:14:14.966Z",
-      "updated_at": "2026-09-28T06:19:36.095Z",
+      "updated_at": "2026-09-28T12:18:32.232Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "d0318300242e9a57": {
       "learned_at": "2026-09-20T18:14:14.999Z",
-      "updated_at": "2026-09-28T06:19:36.369Z",
+      "updated_at": "2026-09-28T12:18:32.385Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "7b8989bedb086066": {
       "learned_at": "2026-09-20T18:14:15.061Z",
-      "updated_at": "2026-09-28T06:19:36.924Z",
+      "updated_at": "2026-09-28T12:18:32.693Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "678b6deec1b5fde6": {
       "learned_at": "2026-09-20T18:14:15.100Z",
-      "updated_at": "2026-09-28T06:19:37.196Z",
+      "updated_at": "2026-09-28T12:18:32.847Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "762fecba3fc4a089": {
       "learned_at": "2026-09-20T18:14:15.139Z",
-      "updated_at": "2026-09-28T06:19:37.466Z",
+      "updated_at": "2026-09-28T12:18:33.002Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "f0011fb8b1c251f9": {
       "learned_at": "2026-09-20T18:14:15.182Z",
-      "updated_at": "2026-09-28T06:19:37.737Z",
+      "updated_at": "2026-09-28T12:18:33.155Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "8d88985daac2a11a": {
       "learned_at": "2026-09-20T18:14:15.221Z",
-      "updated_at": "2026-09-28T06:19:38.018Z",
+      "updated_at": "2026-09-28T12:18:33.310Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "8e94d1c24b3f7ac6": {
       "learned_at": "2026-09-20T18:14:15.263Z",
-      "updated_at": "2026-09-28T06:19:38.302Z",
+      "updated_at": "2026-09-28T12:18:33.520Z",
       "supersedes": null,
       "source": "github:kyrolabs/awesome-langchain",
-      "revision": 31
+      "revision": 32
     },
     "364fd675615cf76c": {
       "learned_at": "2026-09-20T18:14:15.608Z",
-      "updated_at": "2026-09-28T06:19:38.763Z",
+      "updated_at": "2026-09-28T12:18:36.227Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "78df0f523182b44f": {
       "learned_at": "2026-09-20T18:14:15.682Z",
-      "updated_at": "2026-09-28T06:19:39.039Z",
+      "updated_at": "2026-09-28T12:18:36.452Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "983fa4abdfaaa659": {
       "learned_at": "2026-09-20T18:14:15.746Z",
-      "updated_at": "2026-09-28T06:19:39.319Z",
+      "updated_at": "2026-09-28T12:18:36.732Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "10643623a6e0ab21": {
       "learned_at": "2026-09-20T18:14:15.821Z",
-      "updated_at": "2026-09-28T06:19:39.597Z",
+      "updated_at": "2026-09-28T12:18:36.887Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "6a959b274f459cc3": {
       "learned_at": "2026-09-20T18:14:16.182Z",
-      "updated_at": "2026-09-28T06:19:39.872Z",
+      "updated_at": "2026-09-28T12:18:37.041Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "5308f48a5d01f97c": {
       "learned_at": "2026-09-20T18:14:16.249Z",
-      "updated_at": "2026-09-28T06:19:40.148Z",
+      "updated_at": "2026-09-28T12:18:37.195Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "9c11991f7906a34d": {
       "learned_at": "2026-09-20T18:14:16.344Z",
-      "updated_at": "2026-09-28T06:19:40.423Z",
+      "updated_at": "2026-09-28T12:18:37.358Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "23b6a0bd12af66b1": {
       "learned_at": "2026-09-20T18:14:16.456Z",
-      "updated_at": "2026-09-28T06:19:40.700Z",
+      "updated_at": "2026-09-28T12:18:37.510Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "6f60f6ca346e5429": {
       "learned_at": "2026-09-20T18:14:16.516Z",
-      "updated_at": "2026-09-28T06:19:40.974Z",
+      "updated_at": "2026-09-28T12:18:37.664Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "8fb38b0583b65a32": {
       "learned_at": "2026-09-20T18:14:16.724Z",
-      "updated_at": "2026-09-28T06:19:41.248Z",
+      "updated_at": "2026-09-28T12:18:37.816Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "f6a8e63b67625df3": {
       "learned_at": "2026-09-20T18:14:16.795Z",
-      "updated_at": "2026-09-28T06:19:41.519Z",
+      "updated_at": "2026-09-28T12:18:37.970Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "2ada16239b08d5aa": {
       "learned_at": "2026-09-20T18:14:16.868Z",
-      "updated_at": "2026-09-28T06:19:41.792Z",
+      "updated_at": "2026-09-28T12:18:38.121Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "1f3423e416d88e7c": {
       "learned_at": "2026-09-20T18:14:16.938Z",
-      "updated_at": "2026-09-28T06:19:42.073Z",
+      "updated_at": "2026-09-28T12:18:38.273Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "f1b32e0d0eccb04f": {
       "learned_at": "2026-09-20T18:14:17.042Z",
-      "updated_at": "2026-09-28T06:19:42.345Z",
+      "updated_at": "2026-09-28T12:18:38.426Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "a01e9b11fa0fa7f2": {
       "learned_at": "2026-09-20T18:14:17.143Z",
-      "updated_at": "2026-09-28T06:19:42.616Z",
+      "updated_at": "2026-09-28T12:18:38.578Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "1a2e99ada8c65b53": {
       "learned_at": "2026-09-20T18:14:17.286Z",
-      "updated_at": "2026-09-28T06:19:42.890Z",
+      "updated_at": "2026-09-28T12:18:38.730Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "b24c158e47be695f": {
       "learned_at": "2026-09-20T18:14:17.403Z",
-      "updated_at": "2026-09-28T06:19:43.162Z",
+      "updated_at": "2026-09-28T12:18:38.882Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "18f577689ad51cdb": {
       "learned_at": "2026-09-20T18:14:17.497Z",
-      "updated_at": "2026-09-28T06:19:43.435Z",
+      "updated_at": "2026-09-28T12:18:39.034Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "cfb12170ee58390e": {
       "learned_at": "2026-09-20T18:14:17.827Z",
-      "updated_at": "2026-09-28T06:19:43.706Z",
+      "updated_at": "2026-09-28T12:18:39.187Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "a5144a1f89671949": {
       "learned_at": "2026-09-20T18:14:17.911Z",
-      "updated_at": "2026-09-28T06:19:43.982Z",
+      "updated_at": "2026-09-28T12:18:39.342Z",
       "supersedes": null,
       "source": "github:steven2358/awesome-generative-ai",
-      "revision": 31
+      "revision": 32
     },
     "44418c42aba7b93e": {
       "learned_at": "2026-09-20T18:14:18.449Z",
-      "updated_at": "2026-09-28T06:19:44.533Z",
+      "updated_at": "2026-09-28T12:18:39.977Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "095a6c541ae48732": {
       "learned_at": "2026-09-20T18:14:18.612Z",
-      "updated_at": "2026-09-28T06:19:44.803Z",
+      "updated_at": "2026-09-28T12:18:40.130Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "fa17173382a242df": {
       "learned_at": "2026-09-20T18:14:18.803Z",
-      "updated_at": "2026-09-28T06:19:45.076Z",
+      "updated_at": "2026-09-28T12:18:40.283Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "f13a316bf0c57796": {
       "learned_at": "2026-09-20T18:14:18.911Z",
-      "updated_at": "2026-09-28T06:19:45.346Z",
+      "updated_at": "2026-09-28T12:18:40.436Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "88f451625feccced": {
       "learned_at": "2026-09-20T18:14:19.497Z",
-      "updated_at": "2026-09-28T06:19:45.615Z",
+      "updated_at": "2026-09-28T12:18:40.594Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "61cfcb4be060cb76": {
       "learned_at": "2026-09-20T18:14:19.607Z",
-      "updated_at": "2026-09-28T06:19:45.884Z",
+      "updated_at": "2026-09-28T12:18:40.747Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "e500e8694b8b4841": {
       "learned_at": "2026-09-20T18:14:19.728Z",
-      "updated_at": "2026-09-28T06:19:46.152Z",
+      "updated_at": "2026-09-28T12:18:40.900Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "fb9d3b1c2c4a5af9": {
       "learned_at": "2026-09-20T18:14:19.928Z",
-      "updated_at": "2026-09-28T06:19:46.420Z",
+      "updated_at": "2026-09-28T12:18:41.055Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "d638a8263210736d": {
       "learned_at": "2026-09-20T18:14:20.073Z",
-      "updated_at": "2026-09-28T06:19:46.685Z",
+      "updated_at": "2026-09-28T12:18:41.209Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "c9ae50e5e0f26271": {
       "learned_at": "2026-09-20T18:14:20.363Z",
-      "updated_at": "2026-09-28T06:19:46.951Z",
+      "updated_at": "2026-09-28T12:18:41.430Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "60a6e35f1c779338": {
       "learned_at": "2026-09-20T18:14:20.573Z",
-      "updated_at": "2026-09-28T06:19:47.484Z",
+      "updated_at": "2026-09-28T12:18:41.739Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 62
+      "revision": 64
     },
     "29e76f577d0d570b": {
       "learned_at": "2026-09-20T18:14:20.808Z",
-      "updated_at": "2026-09-28T06:19:47.750Z",
+      "updated_at": "2026-09-28T12:18:41.893Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "278c0399bb8964dd": {
       "learned_at": "2026-09-20T18:14:21.124Z",
-      "updated_at": "2026-09-28T06:19:48.025Z",
+      "updated_at": "2026-09-28T12:18:42.047Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "3d4b82a97bce5c88": {
       "learned_at": "2026-09-20T18:14:21.640Z",
-      "updated_at": "2026-09-28T06:19:48.292Z",
+      "updated_at": "2026-09-28T12:18:42.200Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "0749dfd3d9f78e91": {
       "learned_at": "2026-09-20T18:14:21.802Z",
-      "updated_at": "2026-09-28T06:19:48.559Z",
+      "updated_at": "2026-09-28T12:18:42.421Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "f8c9b359976b291a": {
       "learned_at": "2026-09-20T18:14:22.244Z",
-      "updated_at": "2026-09-28T06:19:48.826Z",
+      "updated_at": "2026-09-28T12:18:42.655Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "b15b40fc045e2aba": {
       "learned_at": "2026-09-20T18:14:22.754Z",
-      "updated_at": "2026-09-28T06:19:49.094Z",
+      "updated_at": "2026-09-28T12:18:43.107Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "32160481caa933d1": {
       "learned_at": "2026-09-20T18:14:23.534Z",
-      "updated_at": "2026-09-28T06:19:49.366Z",
+      "updated_at": "2026-09-28T12:18:43.426Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "bbdc6df600fc7c87": {
       "learned_at": "2026-09-20T18:14:23.712Z",
-      "updated_at": "2026-09-28T06:19:49.632Z",
+      "updated_at": "2026-09-28T12:18:43.765Z",
       "supersedes": null,
       "source": "github:Hannibal046/Awesome-LLM",
-      "revision": 31
+      "revision": 32
     },
     "f1c6001be70f0ced": {
       "learned_at": "2026-09-20T18:14:24.547Z",
-      "updated_at": "2026-09-28T06:19:50.489Z",
+      "updated_at": "2026-09-28T12:18:45.148Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "37e29e5dc3ec2a4e": {
       "learned_at": "2026-09-20T18:14:24.702Z",
-      "updated_at": "2026-09-28T06:19:50.766Z",
+      "updated_at": "2026-09-28T12:18:45.568Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "2ded3940f00530d8": {
       "learned_at": "2026-09-20T18:14:24.915Z",
-      "updated_at": "2026-09-28T06:19:51.039Z",
+      "updated_at": "2026-09-28T12:18:45.775Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "1da9e01d59522c59": {
       "learned_at": "2026-09-20T18:14:25.249Z",
-      "updated_at": "2026-09-28T06:19:51.313Z",
+      "updated_at": "2026-09-28T12:18:45.927Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "c5d50999cd119002": {
       "learned_at": "2026-09-20T18:14:25.418Z",
-      "updated_at": "2026-09-28T06:19:51.589Z",
+      "updated_at": "2026-09-28T12:18:46.078Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "ca7c6f3a4bac3956": {
       "learned_at": "2026-09-20T18:14:26.064Z",
-      "updated_at": "2026-09-28T06:19:51.866Z",
+      "updated_at": "2026-09-28T12:18:46.229Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "9681ccdb712b96ba": {
       "learned_at": "2026-09-20T18:14:26.232Z",
-      "updated_at": "2026-09-28T06:19:52.138Z",
+      "updated_at": "2026-09-28T12:18:46.380Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "fd296686c59c56af": {
       "learned_at": "2026-09-20T18:14:26.440Z",
-      "updated_at": "2026-09-28T06:19:52.411Z",
+      "updated_at": "2026-09-28T12:18:46.562Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "e9201a0dca647c4f": {
       "learned_at": "2026-09-20T18:14:26.668Z",
-      "updated_at": "2026-09-28T06:19:52.684Z",
+      "updated_at": "2026-09-28T12:18:46.716Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "3f31a1eafb16fb8d": {
       "learned_at": "2026-09-20T18:14:26.857Z",
-      "updated_at": "2026-09-28T06:19:52.971Z",
+      "updated_at": "2026-09-28T12:18:46.869Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "36016ea57e2c072b": {
       "learned_at": "2026-09-20T18:14:27.040Z",
-      "updated_at": "2026-09-28T06:19:53.243Z",
+      "updated_at": "2026-09-28T12:18:47.021Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "336a7b6e78cebc77": {
       "learned_at": "2026-09-20T18:14:27.247Z",
-      "updated_at": "2026-09-28T06:19:53.517Z",
+      "updated_at": "2026-09-28T12:18:47.174Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "2c73423647ea4d09": {
       "learned_at": "2026-09-20T18:14:27.490Z",
-      "updated_at": "2026-09-28T06:19:53.791Z",
+      "updated_at": "2026-09-28T12:18:47.325Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "f70791f83ad480d4": {
       "learned_at": "2026-09-20T18:14:27.754Z",
-      "updated_at": "2026-09-28T06:19:54.064Z",
+      "updated_at": "2026-09-28T12:18:47.478Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "d939565e24468e73": {
       "learned_at": "2026-09-20T18:14:27.978Z",
-      "updated_at": "2026-09-28T06:19:54.339Z",
+      "updated_at": "2026-09-28T12:18:47.635Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "57a36f10eff239c5": {
       "learned_at": "2026-09-20T18:14:28.676Z",
-      "updated_at": "2026-09-28T06:19:54.609Z",
+      "updated_at": "2026-09-28T12:18:47.789Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "befb20c44433f711": {
       "learned_at": "2026-09-20T18:14:29.392Z",
-      "updated_at": "2026-09-28T06:19:54.879Z",
+      "updated_at": "2026-09-28T12:18:47.950Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "d1044cb56b901c1e": {
       "learned_at": "2026-09-20T18:14:29.857Z",
-      "updated_at": "2026-09-28T06:19:55.150Z",
+      "updated_at": "2026-09-28T12:18:48.109Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "90763d6bb99664a5": {
       "learned_at": "2026-09-20T18:14:30.184Z",
-      "updated_at": "2026-09-28T06:19:55.421Z",
+      "updated_at": "2026-09-28T12:18:48.263Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "83f9b1232145d970": {
       "learned_at": "2026-09-20T18:14:30.772Z",
-      "updated_at": "2026-09-28T06:19:55.692Z",
+      "updated_at": "2026-09-28T12:18:48.416Z",
       "supersedes": null,
       "source": "github:IshaanLabs/Awesome-AI-Agents",
-      "revision": 31
+      "revision": 32
     },
     "9280c30e01acaa4f": {
       "learned_at": "2026-09-27T06:17:27.838Z",
-      "updated_at": "2026-09-28T06:19:26.784Z",
+      "updated_at": "2026-09-28T12:18:26.845Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "35bf2edba84b5a57": {
       "learned_at": "2026-09-27T06:17:28.126Z",
-      "updated_at": "2026-09-28T06:19:27.069Z",
+      "updated_at": "2026-09-28T12:18:27.008Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "dd7a3368be9654a0": {
       "learned_at": "2026-09-27T06:17:28.608Z",
-      "updated_at": "2026-09-28T06:19:27.628Z",
+      "updated_at": "2026-09-28T12:18:27.322Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "618135fc242dc0b6": {
       "learned_at": "2026-09-27T06:17:29.093Z",
-      "updated_at": "2026-09-28T06:19:28.184Z",
+      "updated_at": "2026-09-28T12:18:27.631Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "1e124ee8422469e8": {
       "learned_at": "2026-09-27T06:17:29.582Z",
-      "updated_at": "2026-09-28T06:19:28.737Z",
+      "updated_at": "2026-09-28T12:18:27.941Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "167e1807589a25d1": {
       "learned_at": "2026-09-27T06:17:29.835Z",
-      "updated_at": "2026-09-28T06:19:29.014Z",
+      "updated_at": "2026-09-28T12:18:28.098Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "05cac1e5436d525e": {
       "learned_at": "2026-09-27T06:17:30.111Z",
-      "updated_at": "2026-09-28T06:19:29.289Z",
+      "updated_at": "2026-09-28T12:18:28.254Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "7f877b2f94338665": {
       "learned_at": "2026-09-27T06:17:30.383Z",
-      "updated_at": "2026-09-28T06:19:29.566Z",
+      "updated_at": "2026-09-28T12:18:28.409Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "317adb780805b417": {
       "learned_at": "2026-09-27T06:17:30.649Z",
-      "updated_at": "2026-09-28T06:19:29.843Z",
+      "updated_at": "2026-09-28T12:18:28.563Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "c0021e5caf390954": {
       "learned_at": "2026-09-27T06:17:30.929Z",
-      "updated_at": "2026-09-28T06:19:30.119Z",
+      "updated_at": "2026-09-28T12:18:28.719Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "d62626cddbbe4046": {
       "learned_at": "2026-09-27T06:17:31.208Z",
-      "updated_at": "2026-09-28T06:19:30.390Z",
+      "updated_at": "2026-09-28T12:18:28.873Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "6ca4b0f974d98158": {
       "learned_at": "2026-09-27T06:17:31.783Z",
-      "updated_at": "2026-09-28T06:19:30.930Z",
+      "updated_at": "2026-09-28T12:18:29.186Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "e72c5b86473e85d3": {
       "learned_at": "2026-09-27T06:17:32.089Z",
-      "updated_at": "2026-09-28T06:19:31.199Z",
+      "updated_at": "2026-09-28T12:18:29.339Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "0ae5cd95ec1eb6cc": {
       "learned_at": "2026-09-27T06:17:32.379Z",
-      "updated_at": "2026-09-28T06:19:31.467Z",
+      "updated_at": "2026-09-28T12:18:29.547Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "4289bf9964cdd9cb": {
       "learned_at": "2026-09-27T06:17:32.688Z",
-      "updated_at": "2026-09-28T06:19:31.747Z",
+      "updated_at": "2026-09-28T12:18:29.711Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     },
     "6fcc99cbe1fb8959": {
       "learned_at": "2026-09-27T06:17:33.010Z",
-      "updated_at": "2026-09-28T06:19:32.394Z",
+      "updated_at": "2026-09-28T12:18:29.866Z",
       "supersedes": null,
       "source": "github:punkpeye/awesome-mcp-servers",
-      "revision": 5
+      "revision": 6
     }
   }
 }
