@@ -5,9 +5,9 @@
       "id": "e2b-dev-awesome-ai-agents",
       "label": "e2b-dev/awesome-ai-agents",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:13.468Z",
-      "updated_at": "2026-09-30T12:19:23.669Z",
+      "updated_at": "2026-09-30T18:16:20.351Z",
       "source_facts": [
         "github:e2b-dev/awesome-ai-agents"
       ]
@@ -224,9 +224,9 @@
       "id": "thinkchainai-mcpbundles",
       "label": "thinkchainai/mcpbundles",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.009Z",
-      "updated_at": "2026-09-30T12:19:24.196Z",
+      "updated_at": "2026-09-30T18:16:21.112Z",
       "source_facts": [
         "dfa6682f79363b2a",
         "9280c30e01acaa4f"
@@ -263,9 +263,9 @@
       "id": "microsoft-playwright-mcp",
       "label": "microsoft/playwright-mcp",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.014Z",
-      "updated_at": "2026-09-30T12:19:24.487Z",
+      "updated_at": "2026-09-30T18:16:21.337Z",
       "source_facts": [
         "53143dddbc209d0e",
         "35bf2edba84b5a57"
@@ -397,9 +397,9 @@
       "id": "automateyournetwork-pyats-mcp",
       "label": "automateyournetwork/pyATS_MCP",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.040Z",
-      "updated_at": "2026-09-30T12:19:24.777Z",
+      "updated_at": "2026-09-30T18:16:21.563Z",
       "source_facts": [
         "dade263a39de480a"
       ]
@@ -441,9 +441,9 @@
       "id": "maxim-saplin-mcp-safe-local-python-executor",
       "label": "maxim-saplin/mcp_safe_local_python_executor",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.046Z",
-      "updated_at": "2026-09-30T12:19:25.363Z",
+      "updated_at": "2026-09-30T18:16:22.016Z",
       "source_facts": [
         "79e857020c9b63d3"
       ]
@@ -485,9 +485,9 @@
       "id": "tumf-mcp-shell-server",
       "label": "tumf/mcp-shell-server",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.058Z",
-      "updated_at": "2026-09-30T12:19:25.653Z",
+      "updated_at": "2026-09-30T18:16:22.239Z",
       "source_facts": [
         "f246453a213f60d0",
         "618135fc242dc0b6"
@@ -541,9 +541,9 @@
       "id": "areweai-tsgram-mcp",
       "label": "areweai/tsgram-mcp",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.068Z",
-      "updated_at": "2026-09-30T12:19:25.943Z",
+      "updated_at": "2026-09-30T18:16:22.462Z",
       "source_facts": [
         "ed94e94d8029b252"
       ]
@@ -607,9 +607,9 @@
       "id": "teddyzxcv-ntfy-mcp",
       "label": "teddyzxcv/ntfy-mcp",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.086Z",
-      "updated_at": "2026-09-30T12:19:26.231Z",
+      "updated_at": "2026-09-30T18:16:22.685Z",
       "source_facts": [
         "81af9116c82db68a",
         "1e124ee8422469e8"
@@ -642,9 +642,9 @@
       "id": "saurabhsharma2u-search-console-mcp",
       "label": "saurabhsharma2u/search-console-mcp",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.095Z",
-      "updated_at": "2026-09-30T12:19:26.519Z",
+      "updated_at": "2026-09-30T18:16:22.911Z",
       "source_facts": [
         "cb85d91547f0a25c",
         "167e1807589a25d1"
@@ -777,9 +777,9 @@
       "id": "alexanderzuev-supabase-mcp-server",
       "label": "alexanderzuev/supabase-mcp-server",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.128Z",
-      "updated_at": "2026-09-30T12:19:26.808Z",
+      "updated_at": "2026-09-30T18:16:23.139Z",
       "source_facts": [
         "05b753c3422a9453",
         "05cac1e5436d525e"
@@ -801,9 +801,9 @@
       "id": "bram2w-baserow",
       "label": "bram2w/baserow",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.137Z",
-      "updated_at": "2026-09-30T12:19:27.098Z",
+      "updated_at": "2026-09-30T18:16:23.369Z",
       "source_facts": [
         "c1291c39b3c96dd8",
         "7f877b2f94338665"
@@ -826,9 +826,9 @@
       "id": "joshuarileydev-supabase-mcp-server",
       "label": "joshuarileydev/supabase-mcp-server",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.148Z",
-      "updated_at": "2026-09-30T12:19:27.397Z",
+      "updated_at": "2026-09-30T18:16:23.592Z",
       "source_facts": [
         "0b21058152a068e1",
         "317adb780805b417"
@@ -861,9 +861,9 @@
       "id": "planetscale-mcp",
       "label": "planetscale/mcp",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.177Z",
-      "updated_at": "2026-09-30T12:19:27.984Z",
+      "updated_at": "2026-09-30T18:16:24.057Z",
       "source_facts": [
         "2c6b12112c12c843",
         "d62626cddbbe4046"
@@ -895,9 +895,9 @@
       "id": "21st-dev-magic-mcp",
       "label": "21st-dev/Magic-MCP",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.195Z",
-      "updated_at": "2026-09-30T12:19:28.277Z",
+      "updated_at": "2026-09-30T18:16:24.299Z",
       "source_facts": [
         "e752e9acf6856bb8"
       ]
@@ -906,9 +906,9 @@
       "id": "punkpeye-awesome-mcp-servers",
       "label": "punkpeye/awesome-mcp-servers",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.195Z",
-      "updated_at": "2026-09-30T12:19:30.374Z",
+      "updated_at": "2026-09-30T18:16:25.434Z",
       "source_facts": [
         "github:punkpeye/awesome-mcp-servers"
       ]
@@ -917,9 +917,9 @@
       "id": "langchain",
       "label": "Langchain",
       "type": "tool",
-      "mentions": 90,
+      "mentions": 92,
       "first_seen": "2026-09-20T18:14:14.517Z",
-      "updated_at": "2026-09-30T12:19:33.799Z",
+      "updated_at": "2026-09-30T18:16:28.208Z",
       "source_facts": [
         "a0c8595280928620",
         "b39c428a0b3a1be5",
@@ -989,9 +989,9 @@
       "id": "langchain-js",
       "label": "LangChain.js",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.540Z",
-      "updated_at": "2026-09-30T12:19:31.206Z",
+      "updated_at": "2026-09-30T18:16:26.237Z",
       "source_facts": [
         "b39c428a0b3a1be5"
       ]
@@ -1000,9 +1000,9 @@
       "id": "concepts",
       "label": "Concepts",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:14.555Z",
-      "updated_at": "2026-09-30T12:19:31.496Z",
+      "updated_at": "2026-09-30T18:16:26.456Z",
       "source_facts": [
         "758835785f46f247"
       ]
@@ -1055,9 +1055,9 @@
       "id": "twitter-account",
       "label": "Twitter account",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.665Z",
-      "updated_at": "2026-09-30T12:19:31.783Z",
+      "updated_at": "2026-09-30T18:16:26.675Z",
       "source_facts": [
         "89a0ca39e32925b2"
       ]
@@ -1066,9 +1066,9 @@
       "id": "langchain-blog",
       "label": "Langchain Blog",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:14.679Z",
-      "updated_at": "2026-09-30T12:19:32.076Z",
+      "updated_at": "2026-09-30T18:16:26.892Z",
       "source_facts": [
         "11687d3a2882451d"
       ]
@@ -1110,9 +1110,9 @@
       "id": "langchain-go",
       "label": "Langchain Go",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.710Z",
-      "updated_at": "2026-09-30T12:19:32.367Z",
+      "updated_at": "2026-09-30T18:16:27.109Z",
       "source_facts": [
         "2bf7e99dcfea48e4"
       ]
@@ -1121,9 +1121,9 @@
       "id": "langchainrb",
       "label": "LangchainRb",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:14.727Z",
-      "updated_at": "2026-09-30T12:19:32.653Z",
+      "updated_at": "2026-09-30T18:16:27.328Z",
       "source_facts": [
         "bc959b283e83d7e5"
       ]
@@ -1143,9 +1143,9 @@
       "id": "langchain4j",
       "label": "LangChain4j",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:14.763Z",
-      "updated_at": "2026-09-30T12:19:32.939Z",
+      "updated_at": "2026-09-30T18:16:27.545Z",
       "source_facts": [
         "87a427446e858453"
       ]
@@ -1165,9 +1165,9 @@
       "id": "langchaindart",
       "label": "LangChainDart",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:14.797Z",
-      "updated_at": "2026-09-30T12:19:33.225Z",
+      "updated_at": "2026-09-30T18:16:27.767Z",
       "source_facts": [
         "53bf5d93347d3c5e"
       ]
@@ -1252,9 +1252,9 @@
       "id": "langchain-hs",
       "label": "Langchain-hs",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.933Z",
-      "updated_at": "2026-09-30T12:19:33.511Z",
+      "updated_at": "2026-09-30T18:16:27.987Z",
       "source_facts": [
         "cb8b1b8a9d22d752"
       ]
@@ -1296,9 +1296,9 @@
       "id": "langchain-rust",
       "label": "Langchain-rust",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:14.998Z",
-      "updated_at": "2026-09-30T12:19:34.108Z",
+      "updated_at": "2026-09-30T18:16:28.430Z",
       "source_facts": [
         "34b74e7764e4db01"
       ]
@@ -1307,9 +1307,9 @@
       "id": "flowise",
       "label": "Flowise",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:15.021Z",
-      "updated_at": "2026-09-30T12:19:34.400Z",
+      "updated_at": "2026-09-30T18:16:28.653Z",
       "source_facts": [
         "d0318300242e9a57"
       ]
@@ -1351,9 +1351,9 @@
       "id": "langflow",
       "label": "Langflow",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.061Z",
-      "updated_at": "2026-09-30T12:19:34.709Z",
+      "updated_at": "2026-09-30T18:16:28.872Z",
       "source_facts": [
         "a0c8595280928620"
       ]
@@ -1362,9 +1362,9 @@
       "id": "flock",
       "label": "Flock",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:15.088Z",
-      "updated_at": "2026-09-30T12:19:35.020Z",
+      "updated_at": "2026-09-30T18:16:29.091Z",
       "source_facts": [
         "7b8989bedb086066"
       ]
@@ -1398,9 +1398,9 @@
       "id": "gptcache",
       "label": "GPTCache",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:15.127Z",
-      "updated_at": "2026-09-30T12:19:35.306Z",
+      "updated_at": "2026-09-30T18:16:29.309Z",
       "source_facts": [
         "678b6deec1b5fde6"
       ]
@@ -1442,9 +1442,9 @@
       "id": "gorilla",
       "label": "Gorilla",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:15.167Z",
-      "updated_at": "2026-09-30T12:19:35.591Z",
+      "updated_at": "2026-09-30T18:16:29.527Z",
       "source_facts": [
         "762fecba3fc4a089"
       ]
@@ -1475,9 +1475,9 @@
       "id": "auto-evaluator",
       "label": "Auto-evaluator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.220Z",
-      "updated_at": "2026-09-30T12:19:35.875Z",
+      "updated_at": "2026-09-30T18:16:29.746Z",
       "source_facts": [
         "f0011fb8b1c251f9"
       ]
@@ -1486,9 +1486,9 @@
       "id": "langchain-visualizer",
       "label": "Langchain visualizer",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.262Z",
-      "updated_at": "2026-09-30T12:19:36.159Z",
+      "updated_at": "2026-09-30T18:16:29.966Z",
       "source_facts": [
         "8d88985daac2a11a"
       ]
@@ -1497,9 +1497,9 @@
       "id": "llm-strategy",
       "label": "LLM Strategy",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:15.298Z",
-      "updated_at": "2026-09-30T12:19:36.443Z",
+      "updated_at": "2026-09-30T18:16:30.189Z",
       "source_facts": [
         "8e94d1c24b3f7ac6"
       ]
@@ -1530,9 +1530,9 @@
       "id": "kyrolabs-awesome-langchain",
       "label": "kyrolabs/awesome-langchain",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.316Z",
-      "updated_at": "2026-09-30T12:19:36.444Z",
+      "updated_at": "2026-09-30T18:16:30.190Z",
       "source_facts": [
         "github:kyrolabs/awesome-langchain"
       ]
@@ -1665,9 +1665,9 @@
       "id": "how-large-language-models-will-transform-science-society-and",
       "label": "How Large Language Models Will Transform Science, Society, and AI",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.681Z",
-      "updated_at": "2026-09-30T12:19:36.954Z",
+      "updated_at": "2026-09-30T18:16:30.924Z",
       "source_facts": [
         "364fd675615cf76c"
       ]
@@ -1744,9 +1744,9 @@
       "id": "generative-ai-a-creative-new-world",
       "label": "Generative AI: A Creative New World",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.746Z",
-      "updated_at": "2026-09-30T12:19:37.224Z",
+      "updated_at": "2026-09-30T18:16:31.152Z",
       "source_facts": [
         "78df0f523182b44f"
       ]
@@ -1845,9 +1845,9 @@
       "id": "a-coming-out-party-for-generative-a-i-silicon-valley-s-new-c",
       "label": "A Coming-Out Party for Generative A.I., Silicon Valley's New Craze",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:15.821Z",
-      "updated_at": "2026-09-30T12:19:37.494Z",
+      "updated_at": "2026-09-30T18:16:31.414Z",
       "source_facts": [
         "983fa4abdfaaa659"
       ]
@@ -1922,9 +1922,9 @@
       "id": "ai-s-new-creative-streak-sparks-a-silicon-valley-gold-rush",
       "label": "AI's New Creative Streak Sparks a Silicon Valley Gold Rush",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:16.181Z",
-      "updated_at": "2026-09-30T12:19:37.761Z",
+      "updated_at": "2026-09-30T18:16:31.661Z",
       "source_facts": [
         "10643623a6e0ab21"
       ]
@@ -2010,9 +2010,9 @@
       "id": "chatgpt-heralds-an-intellectual-revolution",
       "label": "ChatGPT Heralds an Intellectual Revolution",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:16.248Z",
-      "updated_at": "2026-09-30T12:19:38.028Z",
+      "updated_at": "2026-09-30T18:16:31.906Z",
       "source_facts": [
         "6a959b274f459cc3"
       ]
@@ -2021,9 +2021,9 @@
       "id": "openai-api",
       "label": "OpenAI API",
       "type": "tool",
-      "mentions": 82,
+      "mentions": 84,
       "first_seen": "2026-09-20T18:14:16.295Z",
-      "updated_at": "2026-09-30T12:19:40.976Z",
+      "updated_at": "2026-09-30T18:16:34.363Z",
       "source_facts": [
         "5308f48a5d01f97c",
         "1a2e99ada8c65b53"
@@ -2102,9 +2102,9 @@
       "id": "github-copilot",
       "label": "GitHub Copilot",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:16.389Z",
-      "updated_at": "2026-09-30T12:19:38.564Z",
+      "updated_at": "2026-09-30T18:16:32.353Z",
       "source_facts": [
         "9c11991f7906a34d"
       ]
@@ -2159,9 +2159,9 @@
       "id": "dall-e-2",
       "label": "DALL·E 2",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:16.515Z",
-      "updated_at": "2026-09-30T12:19:38.831Z",
+      "updated_at": "2026-09-30T18:16:32.575Z",
       "source_facts": [
         "23b6a0bd12af66b1"
       ]
@@ -2225,9 +2225,9 @@
       "id": "stable-diffusion-public-release",
       "label": "Stable Diffusion Public Release",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:16.723Z",
-      "updated_at": "2026-09-30T12:19:39.102Z",
+      "updated_at": "2026-09-30T18:16:32.798Z",
       "source_facts": [
         "6f60f6ca346e5429"
       ]
@@ -2236,9 +2236,9 @@
       "id": "chatgpt",
       "label": "ChatGPT",
       "type": "tool",
-      "mentions": 44,
+      "mentions": 45,
       "first_seen": "2026-09-20T18:14:16.775Z",
-      "updated_at": "2026-09-30T12:19:39.370Z",
+      "updated_at": "2026-09-30T18:16:33.024Z",
       "source_facts": [
         "8fb38b0583b65a32",
         "60a6e35f1c779338",
@@ -2261,9 +2261,9 @@
       "id": "bing-search",
       "label": "Bing Search",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:16.847Z",
-      "updated_at": "2026-09-30T12:19:39.638Z",
+      "updated_at": "2026-09-30T18:16:33.246Z",
       "source_facts": [
         "f6a8e63b67625df3"
       ]
@@ -2305,9 +2305,9 @@
       "id": "llama",
       "label": "Llama",
       "type": "tool",
-      "mentions": 82,
+      "mentions": 84,
       "first_seen": "2026-09-20T18:14:16.924Z",
-      "updated_at": "2026-09-30T12:19:42.043Z",
+      "updated_at": "2026-09-30T18:16:35.247Z",
       "source_facts": [
         "2ada16239b08d5aa",
         "a5144a1f89671949"
@@ -2363,9 +2363,9 @@
       "id": "gpt-4",
       "label": "GPT-4",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:17.041Z",
-      "updated_at": "2026-09-30T12:19:40.174Z",
+      "updated_at": "2026-09-30T18:16:33.686Z",
       "source_facts": [
         "1f3423e416d88e7c"
       ]
@@ -2374,9 +2374,9 @@
       "id": "dall-e-3",
       "label": "DALL·E 3",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:17.142Z",
-      "updated_at": "2026-09-30T12:19:40.446Z",
+      "updated_at": "2026-09-30T18:16:33.921Z",
       "source_facts": [
         "f1b32e0d0eccb04f"
       ]
@@ -2385,9 +2385,9 @@
       "id": "sora",
       "label": "Sora",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:17.205Z",
-      "updated_at": "2026-09-30T12:19:40.711Z",
+      "updated_at": "2026-09-30T18:16:34.143Z",
       "source_facts": [
         "a01e9b11fa0fa7f2"
       ]
@@ -2407,9 +2407,9 @@
       "id": "gopher",
       "label": "Gopher",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:17.471Z",
-      "updated_at": "2026-09-30T12:19:41.243Z",
+      "updated_at": "2026-09-30T18:16:34.584Z",
       "source_facts": [
         "b24c158e47be695f"
       ]
@@ -2429,9 +2429,9 @@
       "id": "opt",
       "label": "OPT",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:17.567Z",
-      "updated_at": "2026-09-30T12:19:41.508Z",
+      "updated_at": "2026-09-30T18:16:34.806Z",
       "source_facts": [
         "18f577689ad51cdb"
       ]
@@ -2462,9 +2462,9 @@
       "id": "bloom",
       "label": "Bloom",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:17.902Z",
-      "updated_at": "2026-09-30T12:19:41.775Z",
+      "updated_at": "2026-09-30T18:16:35.027Z",
       "source_facts": [
         "cfb12170ee58390e"
       ]
@@ -2495,9 +2495,9 @@
       "id": "steven2358-awesome-generative-ai",
       "label": "steven2358/awesome-generative-ai",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:17.997Z",
-      "updated_at": "2026-09-30T12:19:42.045Z",
+      "updated_at": "2026-09-30T18:16:35.249Z",
       "source_facts": [
         "github:steven2358/awesome-generative-ai"
       ]
@@ -2506,9 +2506,9 @@
       "id": "tinyzero",
       "label": "TinyZero",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:18.538Z",
-      "updated_at": "2026-09-30T12:19:42.628Z",
+      "updated_at": "2026-09-30T18:16:36.268Z",
       "source_facts": [
         "44418c42aba7b93e"
       ]
@@ -2664,9 +2664,9 @@
       "id": "open-r1",
       "label": "open-r1",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:18.802Z",
-      "updated_at": "2026-09-30T12:19:42.894Z",
+      "updated_at": "2026-09-30T18:16:36.489Z",
       "source_facts": [
         "095a6c541ae48732"
       ]
@@ -2687,9 +2687,9 @@
       "id": "deepseek-r1",
       "label": "DeepSeek-R1",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:18.910Z",
-      "updated_at": "2026-09-30T12:19:43.160Z",
+      "updated_at": "2026-09-30T18:16:36.710Z",
       "source_facts": [
         "fa17173382a242df"
       ]
@@ -2775,9 +2775,9 @@
       "id": "qwen2-5-max",
       "label": "Qwen2.5-Max",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:19.496Z",
-      "updated_at": "2026-09-30T12:19:43.428Z",
+      "updated_at": "2026-09-30T18:16:36.932Z",
       "source_facts": [
         "f13a316bf0c57796"
       ]
@@ -2797,9 +2797,9 @@
       "id": "openai-o3-mini",
       "label": "OpenAI o3-mini",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:19.607Z",
-      "updated_at": "2026-09-30T12:19:43.695Z",
+      "updated_at": "2026-09-30T18:16:37.151Z",
       "source_facts": [
         "88f451625feccced"
       ]
@@ -2808,9 +2808,9 @@
       "id": "deepseek-v3",
       "label": "DeepSeek-V3",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:19.727Z",
-      "updated_at": "2026-09-30T12:19:43.960Z",
+      "updated_at": "2026-09-30T18:16:37.372Z",
       "source_facts": [
         "61cfcb4be060cb76"
       ]
@@ -2852,9 +2852,9 @@
       "id": "kimi-k2",
       "label": "Kimi-K2",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:19.928Z",
-      "updated_at": "2026-09-30T12:19:44.225Z",
+      "updated_at": "2026-09-30T18:16:37.591Z",
       "source_facts": [
         "e500e8694b8b4841"
       ]
@@ -2874,9 +2874,9 @@
       "id": "awesome-llm-hallucination",
       "label": "Awesome-LLM-hallucination",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:20.073Z",
-      "updated_at": "2026-09-30T12:19:44.490Z",
+      "updated_at": "2026-09-30T18:16:37.809Z",
       "source_facts": [
         "fb9d3b1c2c4a5af9"
       ]
@@ -2907,9 +2907,9 @@
       "id": "awesome-hallucination-detection",
       "label": "awesome-hallucination-detection",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:20.363Z",
-      "updated_at": "2026-09-30T12:19:44.755Z",
+      "updated_at": "2026-09-30T18:16:38.029Z",
       "source_facts": [
         "d638a8263210736d"
       ]
@@ -2918,9 +2918,9 @@
       "id": "llmspracticalguide",
       "label": "LLMsPracticalGuide",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:20.465Z",
-      "updated_at": "2026-09-30T12:19:45.022Z",
+      "updated_at": "2026-09-30T18:16:38.250Z",
       "source_facts": [
         "c9ae50e5e0f26271"
       ]
@@ -2940,9 +2940,9 @@
       "id": "awesome-chatgpt-prompts",
       "label": "Awesome ChatGPT Prompts",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:20.675Z",
-      "updated_at": "2026-09-30T12:19:45.294Z",
+      "updated_at": "2026-09-30T18:16:38.470Z",
       "source_facts": [
         "60a6e35f1c779338"
       ]
@@ -2951,9 +2951,9 @@
       "id": "awesome-chatgpt-prompts-zh",
       "label": "awesome-chatgpt-prompts-zh",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:20.808Z",
-      "updated_at": "2026-09-30T12:19:45.561Z",
+      "updated_at": "2026-09-30T18:16:38.690Z",
       "source_facts": [
         "60a6e35f1c779338"
       ]
@@ -2962,9 +2962,9 @@
       "id": "awesome-chatgpt",
       "label": "Awesome ChatGPT",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:20.911Z",
-      "updated_at": "2026-09-30T12:19:45.827Z",
+      "updated_at": "2026-09-30T18:16:38.910Z",
       "source_facts": [
         "29e76f577d0d570b"
       ]
@@ -3063,9 +3063,9 @@
       "id": "chain-of-thoughts-papers",
       "label": "Chain-of-Thoughts Papers",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:21.640Z",
-      "updated_at": "2026-09-30T12:19:46.094Z",
+      "updated_at": "2026-09-30T18:16:39.129Z",
       "source_facts": [
         "278c0399bb8964dd"
       ]
@@ -3074,9 +3074,9 @@
       "id": "awesome-deliberative-prompting",
       "label": "Awesome Deliberative Prompting",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:21.749Z",
-      "updated_at": "2026-09-30T12:19:46.360Z",
+      "updated_at": "2026-09-30T18:16:39.350Z",
       "source_facts": [
         "3d4b82a97bce5c88"
       ]
@@ -3185,9 +3185,9 @@
       "id": "instruction-tuning-papers",
       "label": "Instruction-Tuning-Papers",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:22.244Z",
-      "updated_at": "2026-09-30T12:19:46.626Z",
+      "updated_at": "2026-09-30T18:16:39.570Z",
       "source_facts": [
         "0749dfd3d9f78e91"
       ]
@@ -3196,9 +3196,9 @@
       "id": "llm-reading-list",
       "label": "LLM Reading List",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:22.368Z",
-      "updated_at": "2026-09-30T12:19:46.892Z",
+      "updated_at": "2026-09-30T18:16:39.789Z",
       "source_facts": [
         "f8c9b359976b291a"
       ]
@@ -3240,9 +3240,9 @@
       "id": "reasoning-using-language-models",
       "label": "Reasoning using Language Models",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:23.533Z",
-      "updated_at": "2026-09-30T12:19:47.159Z",
+      "updated_at": "2026-09-30T18:16:40.009Z",
       "source_facts": [
         "b15b40fc045e2aba"
       ]
@@ -3295,9 +3295,9 @@
       "id": "chain-of-thought-hub",
       "label": "Chain-of-Thought Hub",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:23.712Z",
-      "updated_at": "2026-09-30T12:19:47.427Z",
+      "updated_at": "2026-09-30T18:16:40.230Z",
       "source_facts": [
         "32160481caa933d1"
       ]
@@ -3306,9 +3306,9 @@
       "id": "awesome-gpt",
       "label": "Awesome GPT",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:23.831Z",
-      "updated_at": "2026-09-30T12:19:47.698Z",
+      "updated_at": "2026-09-30T18:16:40.449Z",
       "source_facts": [
         "bbdc6df600fc7c87"
       ]
@@ -3317,9 +3317,9 @@
       "id": "hannibal046-awesome-llm",
       "label": "Hannibal046/Awesome-LLM",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:23.878Z",
-      "updated_at": "2026-09-30T12:19:47.700Z",
+      "updated_at": "2026-09-30T18:16:40.450Z",
       "source_facts": [
         "github:Hannibal046/Awesome-LLM"
       ]
@@ -3328,9 +3328,9 @@
       "id": "eugeneyan-applied-ml",
       "label": "eugeneyan/applied-ml",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:24.202Z",
-      "updated_at": "2026-09-30T12:19:48.420Z",
+      "updated_at": "2026-09-30T18:16:40.805Z",
       "source_facts": [
         "github:eugeneyan/applied-ml"
       ]
@@ -3421,9 +3421,9 @@
       "id": "ai-email-generator",
       "label": "✉️ AI Email Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:24.701Z",
-      "updated_at": "2026-09-30T12:19:49.079Z",
+      "updated_at": "2026-09-30T18:16:41.441Z",
       "source_facts": [
         "f1c6001be70f0ced"
       ]
@@ -3476,9 +3476,9 @@
       "id": "ai-linkedin-post-generator",
       "label": "💼 AI LinkedIn Post Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:24.914Z",
-      "updated_at": "2026-09-30T12:19:49.346Z",
+      "updated_at": "2026-09-30T18:16:41.664Z",
       "source_facts": [
         "37e29e5dc3ec2a4e"
       ]
@@ -3520,9 +3520,9 @@
       "id": "ai-tweet-generator",
       "label": "🐦 AI Tweet Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:25.248Z",
-      "updated_at": "2026-09-30T12:19:49.612Z",
+      "updated_at": "2026-09-30T18:16:41.884Z",
       "source_facts": [
         "2ded3940f00530d8"
       ]
@@ -3553,9 +3553,9 @@
       "id": "ai-grammar-checker",
       "label": "📝 AI Grammar Checker",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:25.418Z",
-      "updated_at": "2026-09-30T12:19:49.877Z",
+      "updated_at": "2026-09-30T18:16:42.105Z",
       "source_facts": [
         "1da9e01d59522c59"
       ]
@@ -3608,9 +3608,9 @@
       "id": "ai-cover-letter-generator",
       "label": "📄 AI Cover Letter Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:26.064Z",
-      "updated_at": "2026-09-30T12:19:50.143Z",
+      "updated_at": "2026-09-30T18:16:42.326Z",
       "source_facts": [
         "c5d50999cd119002"
       ]
@@ -3630,9 +3630,9 @@
       "id": "ai-news-generator",
       "label": "📰 AI News Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:26.232Z",
-      "updated_at": "2026-09-30T12:19:50.410Z",
+      "updated_at": "2026-09-30T18:16:42.546Z",
       "source_facts": [
         "ca7c6f3a4bac3956"
       ]
@@ -3685,9 +3685,9 @@
       "id": "ai-readme-generator",
       "label": "📘 AI README Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:26.439Z",
-      "updated_at": "2026-09-30T12:19:50.678Z",
+      "updated_at": "2026-09-30T18:16:42.769Z",
       "source_facts": [
         "9681ccdb712b96ba"
       ]
@@ -3742,9 +3742,9 @@
       "id": "ai-flashcard-generator",
       "label": "🃏 AI Flashcard Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:26.667Z",
-      "updated_at": "2026-09-30T12:19:50.945Z",
+      "updated_at": "2026-09-30T18:16:42.994Z",
       "source_facts": [
         "fd296686c59c56af"
       ]
@@ -3775,9 +3775,9 @@
       "id": "ai-quiz-generator",
       "label": "❓ AI Quiz Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:26.857Z",
-      "updated_at": "2026-09-30T12:19:51.212Z",
+      "updated_at": "2026-09-30T18:16:43.215Z",
       "source_facts": [
         "e9201a0dca647c4f"
       ]
@@ -3808,9 +3808,9 @@
       "id": "ai-notes-summarizer",
       "label": "📌 AI Notes Summarizer",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:27.040Z",
-      "updated_at": "2026-09-30T12:19:51.482Z",
+      "updated_at": "2026-09-30T18:16:43.495Z",
       "source_facts": [
         "3f31a1eafb16fb8d"
       ]
@@ -3863,9 +3863,9 @@
       "id": "ai-meeting-minutes-generator",
       "label": "📋 AI Meeting Minutes Generator",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:27.246Z",
-      "updated_at": "2026-09-30T12:19:51.755Z",
+      "updated_at": "2026-09-30T18:16:43.717Z",
       "source_facts": [
         "36016ea57e2c072b"
       ]
@@ -3874,9 +3874,9 @@
       "id": "voice2tasks",
       "label": "🎤 Voice2Tasks",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:27.411Z",
-      "updated_at": "2026-09-30T12:19:52.020Z",
+      "updated_at": "2026-09-30T18:16:43.937Z",
       "source_facts": [
         "336a7b6e78cebc77"
       ]
@@ -3963,9 +3963,9 @@
       "id": "simple-ai-assistant",
       "label": "💬 Simple AI Assistant",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:27.753Z",
-      "updated_at": "2026-09-30T12:19:52.284Z",
+      "updated_at": "2026-09-30T18:16:44.162Z",
       "source_facts": [
         "2c73423647ea4d09"
       ]
@@ -4007,9 +4007,9 @@
       "id": "ai-webpage-summarizer",
       "label": "🌐 AI Webpage Summarizer",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:27.977Z",
-      "updated_at": "2026-09-30T12:19:52.548Z",
+      "updated_at": "2026-09-30T18:16:44.388Z",
       "source_facts": [
         "f70791f83ad480d4"
       ]
@@ -4040,9 +4040,9 @@
       "id": "ai-pdf-chat",
       "label": "📚 AI PDF Chat",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:28.676Z",
-      "updated_at": "2026-09-30T12:19:52.822Z",
+      "updated_at": "2026-09-30T18:16:44.609Z",
       "source_facts": [
         "d939565e24468e73"
       ]
@@ -4096,9 +4096,9 @@
       "id": "chat-with-audio",
       "label": "🎧 Chat with Audio",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:29.391Z",
-      "updated_at": "2026-09-30T12:19:53.085Z",
+      "updated_at": "2026-09-30T18:16:44.862Z",
       "source_facts": [
         "57a36f10eff239c5"
       ]
@@ -4107,9 +4107,9 @@
       "id": "youtube-video-summarizer",
       "label": "▶️ YouTube Video Summarizer",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:29.565Z",
-      "updated_at": "2026-09-30T12:19:53.350Z",
+      "updated_at": "2026-09-30T18:16:45.093Z",
       "source_facts": [
         "befb20c44433f711"
       ]
@@ -4228,9 +4228,9 @@
       "id": "ai-data-analysis-agent",
       "label": "📈 AI Data Analysis Agent",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:30.183Z",
-      "updated_at": "2026-09-30T12:19:53.620Z",
+      "updated_at": "2026-09-30T18:16:45.313Z",
       "source_facts": [
         "d1044cb56b901c1e"
       ]
@@ -4239,9 +4239,9 @@
       "id": "dataops-agent",
       "label": "🗄️ DataOps Agent",
       "type": "tool",
-      "mentions": 41,
+      "mentions": 42,
       "first_seen": "2026-09-20T18:14:30.374Z",
-      "updated_at": "2026-09-30T12:19:53.886Z",
+      "updated_at": "2026-09-30T18:16:45.619Z",
       "source_facts": [
         "90763d6bb99664a5"
       ]
@@ -4305,9 +4305,9 @@
       "id": "breakup-recovery-ai",
       "label": "💚 Breakup Recovery AI",
       "type": "tool",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:31.024Z",
-      "updated_at": "2026-09-30T12:19:54.151Z",
+      "updated_at": "2026-09-30T18:16:45.865Z",
       "source_facts": [
         "83f9b1232145d970"
       ]
@@ -4316,9 +4316,9 @@
       "id": "ishaanlabs-awesome-ai-agents",
       "label": "IshaanLabs/Awesome-AI-Agents",
       "type": "source",
-      "mentions": 40,
+      "mentions": 41,
       "first_seen": "2026-09-20T18:14:31.025Z",
-      "updated_at": "2026-09-30T12:19:54.153Z",
+      "updated_at": "2026-09-30T18:16:45.868Z",
       "source_facts": [
         "github:IshaanLabs/Awesome-AI-Agents"
       ]
@@ -4349,9 +4349,9 @@
       "id": "ferrislucas-iterm-mcp",
       "label": "ferrislucas/iterm-mcp",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:28.855Z",
-      "updated_at": "2026-09-30T12:19:25.071Z",
+      "updated_at": "2026-09-30T18:16:21.792Z",
       "source_facts": [
         "dd7a3368be9654a0"
       ]
@@ -4437,9 +4437,9 @@
       "id": "niledatabase-nile-mcp-server",
       "label": "niledatabase/nile-mcp-server",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:31.207Z",
-      "updated_at": "2026-09-30T12:19:27.697Z",
+      "updated_at": "2026-09-30T18:16:23.821Z",
       "source_facts": [
         "c0021e5caf390954"
       ]
@@ -4503,9 +4503,9 @@
       "id": "openzeppelin-contracts-wizard",
       "label": "OpenZeppelin/contracts-wizard",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:32.088Z",
-      "updated_at": "2026-09-30T12:19:28.961Z",
+      "updated_at": "2026-09-30T18:16:24.527Z",
       "source_facts": [
         "6ca4b0f974d98158"
       ]
@@ -4525,9 +4525,9 @@
       "id": "pskill9-website-downloader",
       "label": "pskill9/website-downloader",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:32.378Z",
-      "updated_at": "2026-09-30T12:19:29.468Z",
+      "updated_at": "2026-09-30T18:16:24.762Z",
       "source_facts": [
         "e72c5b86473e85d3"
       ]
@@ -4558,9 +4558,9 @@
       "id": "tamarengel-jira-github-mcp",
       "label": "TamarEngel/jira-github-mcp",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:32.687Z",
-      "updated_at": "2026-09-30T12:19:29.800Z",
+      "updated_at": "2026-09-30T18:16:24.985Z",
       "source_facts": [
         "0ae5cd95ec1eb6cc"
       ]
@@ -4592,9 +4592,9 @@
       "id": "valado-pantheon-mcp",
       "label": "valado/pantheon-mcp",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:33.009Z",
-      "updated_at": "2026-09-30T12:19:30.084Z",
+      "updated_at": "2026-09-30T18:16:25.206Z",
       "source_facts": [
         "4289bf9964cdd9cb"
       ]
@@ -4636,9 +4636,9 @@
       "id": "vivekvells-mcp-pandoc",
       "label": "vivekvells/mcp-pandoc",
       "type": "tool",
-      "mentions": 14,
+      "mentions": 15,
       "first_seen": "2026-09-27T06:17:33.386Z",
-      "updated_at": "2026-09-30T12:19:30.372Z",
+      "updated_at": "2026-09-30T18:16:25.432Z",
       "source_facts": [
         "6fcc99cbe1fb8959"
       ]
@@ -5507,5 +5507,5 @@
       "github-com"
     ]
   },
-  "updated_at": "2026-09-30T12:19:54.153Z"
+  "updated_at": "2026-09-30T18:16:45.868Z"
 }
