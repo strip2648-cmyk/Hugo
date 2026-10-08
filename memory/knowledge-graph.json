@@ -5,9 +5,9 @@
       "id": "e2b-dev-awesome-ai-agents",
       "label": "e2b-dev/awesome-ai-agents",
       "type": "source",
-      "mentions": 69,
+      "mentions": 70,
       "first_seen": "2026-09-20T18:14:13.468Z",
-      "updated_at": "2026-10-08T06:19:41.596Z",
+      "updated_at": "2026-10-08T12:18:56.868Z",
       "source_facts": [
         "github:e2b-dev/awesome-ai-agents"
       ]
@@ -5507,5 +5507,5 @@
       "github-com"
     ]
   },
-  "updated_at": "2026-10-08T06:20:12.545Z"
+  "updated_at": "2026-10-08T12:18:56.868Z"
 }
